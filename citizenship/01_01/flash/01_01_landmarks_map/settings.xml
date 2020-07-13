@@ -1,0 +1,52 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Drag the landmarks to the correct location on the map. <br/><br/>You may scroll through the remaining landmarks by selecting the "next" and "prev" buttons.<br/>]]>
+	</instructions>
+
+	<intro>Time to play a drag and drop game. Good luck, citizen!</intro>
+
+
+	<segments>
+		<segment clip="HudsonClip" 	label="Hudson River" 	id="0"/>
+		<segment clip="StJohnsClip" 	label="St. Johns River" 	id="1"/>
+		<segment clip="DeathValleyClip" 	label="Death Valley" 	id="2"/>
+		<segment clip="PaintedDesertClip" 	label="Painted Desert" 	id="3"/>
+		<segment clip="GreatLakesClip" 	label="Great Lakes" 	id="4"/>
+		<segment clip="DismalSwampClip" 	label="Dismal Swamp" 	id="5"/>
+		<segment clip="MtMckinleyClip" 	label="Mount McKinley" 	id="6"/>
+		<segment clip="AppalachianClip" 	label="Appalachian Mountains" 	id="7"/>
+		<segment clip="EvergladesClip" 	label="Everglades" 	id="8"/>
+		<segment clip="GrandCanyonClip" 	label="Grand Canyon" 	id="9"/>
+		<segment clip="GreatSaltLakeClip" 	label="Great Salt Lake" 	id="10"/>
+		<segment clip="MississippiClip" 	label="Mississippi River" 	id="11"/>
+		<segment clip="GreatPlainsClip" 	label="Great Plains" 	id="12"/>
+	</segments>
+
+	<bins>
+		<bin clip="SmallPoint" 	label="Hudson River" 	id="0"/>
+		<bin clip="SmallPoint" 	label="St. John's River" 	id="1"/>
+		<bin clip="SmallPoint" 	label="Death Valley" 	id="2"/>
+		<bin clip="SmallPoint" 	label="Painted Desert" 	id="3"/>
+		<bin clip="SmallPoint" 	label="Great Lakes" 	id="4"/>
+		<bin clip="SmallPoint" 	label="Dismal Swamp" 	id="5"/>
+		<bin clip="SmallPoint" 	label="Mount Mckinley" 	id="6"/>
+		<bin clip="SmallPoint" 	label="Appalachian Mountains" 	id="7"/>
+		<bin clip="SmallPoint" 	label="Everglades" 	id="8"/>
+		<bin clip="SmallPoint" 	label="Grand Canyon" 	id="9"/>
+		<bin clip="SmallPoint" 	label="Great Salt Lake" 	id="10"/>
+		<bin clip="SmallPoint" 	label="Mississippi River" 	id="11"/>
+		<bin clip="SmallPoint" 	label="Great Plains" 	id="12"/>
+	</bins>
+
+	<feedback title="Good Job!">Select "continue" to close this window, and then select "reset" to try again.</feedback>
+
+</settings>	

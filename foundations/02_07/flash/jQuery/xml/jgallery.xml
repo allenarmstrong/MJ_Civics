@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gallery accordion="true">
+
+	<directions>
+		<![CDATA[<p>View this slideshow to learn about how the Bill of Rights has Safeguards and Limits of Rights</p><p>Select "Continue" to begin.</p>]]>
+	</directions>
+
+	<photo src="flash/jQuery/images/02_07_05_01.jpg" title="National Guard building">
+  
+		<info><![CDATA[<h3>Info</h3><div>The Second Amendment safeguards the people's right to "bear arms." Were the writers concerned about wearing sleeveless shirts? No, to "bear arms" means to own and carry weapons. Americans disagree about whether owning guns causes an increase or decrease in crime. They also disagree about whether this amendment applies only to those who are members of the armed forces or National Guard.</div><h3>More Info</h3><div>U.S. law limits the Second Amendment. It prohibits certain people from owning guns, like those found guilty of serious crimes. The Supreme Court has said that it is OK for the federal government to make this law, but that it is up to the state governments to enforce it (based on the 10th Amendment). Therefore, many states require background checks of people who wish to purchase guns to be sure they have not had this right taken away for a crime or other reason.</div>]]></info>
+		<copyright><![CDATA[Creative Commons Attribution-Share Alike 3.0]]></copyright>
+	</photo>
+	
+	<photo src="flash/jQuery/images/02_07_05_02.jpg" title="Unwarranted search and seizure">
+   
+		<info><![CDATA[<h3>Info</h3><div>The Fourth Amendment safeguards people from unwarranted search and seizure. This means that people are protected from government officials searching their property and seizing, or taking, their property without a warrant. Police should not search a home or take anything from it without a judge's permission.</div><h3>More Info</h3><div>An example of a limit to this right is when a person is a suspect in a crime. A judge may give permission for officers to look for and take evidence when the owner is suspected of a crime. Another limit on this right is when officers see a crime in progress. They do not have to wait for a warrant to act in that situation. The officers that witness the crime have probable cause to act.</div><h3>Even More Info</h3><div>The Constitution does not say directly that Americans have a right to privacy. However, the Supreme Court has ruled that Americans generally have this right, supported by the Fourth Amendment. In addition, the Ninth Amendment says the people have rights that the Constitution does not name. In other words, just because the Constitution does not state a specific right does not mean the people do not have it.</div>]]></info>
+		<copyright><![CDATA[Digital Vision]]></copyright>
+	</photo>
+	
+	<photo src="flash/jQuery/images/02_07_05_03.jpg" title="Very crowded beach">
+
+		<info><![CDATA[<h3>Info</h3><div>The First Amendment safeguards Americans' right to free speech. People may share opinions and meet in groups. They may publish their ideas in newspapers and on the Internet. They have the right to choose what religion to follow. Americans do not have to worry about arrest for speaking about their beliefs.</div><h3>More Info</h3><div>However, this right is limited if the speech threatens public safety or someone else's rights. For example, imagine someone yells "Shark!" as a practical joke at a crowded beach. In the rush to leave the beach, some people are hurt. Or, perhaps one teen spreads false stories about another on the Internet. These people can get in trouble with the law. Laws aimed at protecting public safety and preventing harassment limit the right to free speech.</div>]]></info>
+		<copyright><![CDATA[© 2011 AP Images]]></copyright>
+	</photo>
+	
+	
+	
+	
+
+</gallery>

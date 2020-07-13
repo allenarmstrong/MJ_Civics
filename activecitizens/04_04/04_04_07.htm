@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>M/J Civics</title>
+<link type="text/css" media="screen" href="../../css/theme.css" rel="stylesheet" />
+<link type="text/css" media="print" href="../../css/print.css" rel="stylesheet" />
+
+<link type="text/css" media="screen" href="../../js/jQuery.jPlayer.2.1.0/skins/blue.monday/jplayer.blue.tiny.css" rel="stylesheet" />
+<script type="text/javascript" src="../../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.swfobject.1-1-1.min.js"></script>
+
+<script type="text/javascript" src="../../js/jquery_ui/core/js/custom_plugins/ui_importer.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="../../js/core.js"></script><script type="text/javascript">var unitNo = 4;</script>
+<script type="text/javascript">var unitNoLesNo = 0404;</script>
+<script type="text/javascript" src="../../js/links.js"></script>
+
+<script type="text/javascript" src="../../js/plugins/jquery.jplayer.min.js"></script>
+<link type="text/css" media="screen" href="../../js/plugins/jplayer.blue.monday.css" rel="stylesheet" />
+<script type="text/javascript">
+function PlayAudio(FileToPlay,autoPlay) {
+	$("#jquery_jplayer_1").jPlayer("destroy");
+	$("#jquery_jplayer_1").jPlayer({ 
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				oga: "audio/04_04_07-Pg" + FileToPlay + ".ogg",
+				mp3: "audio/04_04_07-Pg" + FileToPlay + ".mp3"
+			});
+			if(autoPlay){
+				$(this).jPlayer("play");	
+			}
+		},
+		swfPath: "../../js/plugins/Jplayer.swf",
+		supplied: "oga,mp3",
+		wmode: "window",
+		cssSelectorAncestor: "#jp_container_1"
+	});
+}
+
+$(document).ready(function () {
+	//PlayAudio(0,false); //runs on first load
+	
+	$('.ui_interactive').bind('TRANSITION_COMPLETE', function(event, data) { 
+		//if(data > 0){
+			PlayAudio(data,true); // Runs every time slide changes
+		//}
+	});	
+	 $('.ui_interactive').bind('BEGIN',
+      function(event, data) { 
+        PlayAudio(0,true);
+      }
+    );
+});
+</script>
+<style type="text/css">
+.ui_custom_dialog_trigger {-moz-box-shadow: 0px 0px 5px #906;
+				-webkit-box-shadow: 0px 0px 5px #906;
+}
+</style>
+<!--[if IE]>
+			<style type="text/css">
+				.ui_custom_dialog_trigger {
+					-ms-filter: "progid:DXImageTransform.Microsoft.Glow(color=#906,strength=2) ";
+					filter: progid:DXImageTransform.Microsoft.Glow(color=#906,strength=2);
+				}
+			</style>
+		<![endif]-->
+
+</head>
+<body>
+
+ 
+
+<div id="logo"></div>
+<div id="window">
+<div id="page">
+<div id="nav">
+<dl>
+<dt>Navigation</dt>
+<dd>
+<ul>
+<li id="next"><a href="04_04_08.htm" title="Next"><span>Next</span></a></li>
+<li id="prev"><a href="04_04_06.htm" title="Previous"><span>Previous</span></a></li>
+<li id="home"><a href="../../index.htm" title="Home"><span>Home</span></a></li>
+<li id="gloss"><a class="pop" href="../../glossary/glossary.htm" title="Glossary"><span>Glossary</span></a></li>
+<li id="notes"><a href="../../gendocs/courseresources/resource.htm" title="Course resources"><span>Course Resources</span></a></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div id="content">
+<div id="title"><span id="title1"></span><span id="title2"></span></div>
+<div id="margin">
+
+
+<h1>How Have Supreme Court Decisions Affected the Legal Process?</h1>
+<p>Decisions in U.S. Supreme Court cases like <em>Gideon v. Wainwright</em> and <em>Miranda v. Arizona</em> have helped define the rights of the accused. Let's look at how Al Fraydo's arrest should happen considering the rights protected in the U.S. Constitution and these Supreme Court decisions. Be sure to click the question mark buttons in the interactive for important information.</p>
+
+
+
+
+
+
+
+
+
+<div style="clear:both"></div>
+
+<div class="ui_interactive" data-width="555px" data-height="480px" >
+    			<div class="ui_slides">
+            
+            	
+                
+               <div class="ui_slide" style="background-image: url('images/04_04_01_slideshow_a.png') !important; background-repeat: no-repeat; ">
+                
+                	
+                <div class="ui_dialog instructions" title="Welcome!">
+            Select the question mark buttons for important information.
+        </div>
+                    
+                        <p class="speechBubbleBL" style="position:absolute; width: 300px; left: 100px; top: 30px"><strong>Officer:</strong> Are you Al Fraydo? 
+
+				    </p>
+                </div>
+                
+                <div class="ui_slide" style="background-image: url('images/04_04_01_slideshow_a.png') !important; background-repeat: no-repeat; ">
+                        <p class="speechBubbleBL" style="position:absolute; width: 300px; left: 40px; top: 30px"><strong>Al:</strong> Yes. Can I help you, officer?</p>
+                </div>
+                
+                <div class="ui_slide" style="background-image: url('images/04_04_01_slideshow_b.png') !important; background-repeat: no-repeat; ">
+                        <p class="speechBubbleBL" style="position:absolute; width: 300px; left: 30px; top: 00px"><strong>Officer:</strong> Al Fraydo, I have a warrant for your arrest. You are being charged with grand theft from several pasta restaurants. I will now tell you your rights.
+				    </p>
+                        <p><button class="ui_custom_dialog_trigger" style="margin-left: 360px" data-dialog="popup1"><strong>?</strong></button><br/></p>
+                        
+                        <div class="ui_custom_dialog" id="popup1" title="The Sixth Amendment" data-width="300px">The Sixth Amendment says that suspects in crimes have the right to know the accusations made against them. In court, they have the right to learn what evidence exists against them and the right to confront their accusers.</div>
+                </div>
+                
+                <div class="ui_slide" style="background-image: url('images/04_04_01_slideshow_b.png') !important; background-repeat: no-repeat; ">
+                        <p class="speechBubbleBL" style="position:absolute; width: 490px; left: 0px; top: 0px"><strong>Officer:</strong> You have the right to remain silent. If you give up the right to remain silent, anything you say can and will be used against you in a court of law. You have the right to an attorney and to have them present during questioning. If you wish to have an attorney and cannot afford one, one will be appointed for you at no cost. Do you understand these rights that have been read to you?
+				    </p>
+                </div>
+            
+            	<div class="ui_slide" style="background-image: url('images/04_04_01_slideshow_b.png') !important; background-repeat: no-repeat; ">
+                        <p class="speechBubbleBL" style="position:absolute; width: 300px; left: 70px; top: 60px"><strong>Al:</strong> Where are we going?
+				    </p>
+                </div>
+                
+                <div class="ui_slide" style="background-image: url('images/04_04_01_slideshow_b.png') !important; background-repeat: no-repeat; ">
+                        <p class="speechBubbleBL" style="position:absolute; width: 300px; left: 30px; top: 20px"><strong>Officer:</strong> You will be placed in the county jail. You will be questioned and appear before a judge. 
+				    </p>
+                        <p><button class="ui_custom_dialog_trigger" style="margin-top: 20px; margin-left: 360px" data-dialog="popup2"><strong>?</strong></button><br/></p>
+                        
+                        <div class="ui_custom_dialog" id="popup2" title="Miranda vs. Arizona" data-width="400px">In 1966, the Supreme Court ruled in Miranda v. Arizona that suspects must be informed of their rights before and during questioning. Law enforcement must prove they informed the person of the rights and that the person understood them. Without this proof, a judge may refuse to allow what a suspect said during the arrest process to be used as evidence in court. Since this decision, police in every state have made this informing of rights an official part of the arrest process. We say that an officer reads a person their "Miranda rights" or "Miranda warning." </div>
+                </div>
+                
+                <div class="ui_slide" style="background-image: url('images/04_04_01_slideshow_c.png') !important; background-repeat: no-repeat; ">
+                        <p class="speechBubbleBL" style="position:absolute; width: 300px; left: 190px; top: 30px"><strong>Al:</strong> What about an attorney? Can I contact anyone and let them know what's happening?
+				    </p>
+                </div>
+                
+                <div class="ui_slide" style="background-image: url('images/04_04_01_slideshow_c.png') !important; background-repeat: no-repeat; ">
+                        <p class="speechBubbleBL" style="position:absolute; width: 300px; left: 90px; top: 40px"><strong>Officer:</strong> Yes. Like I said, if you do not have an attorney we will get one for you. 
+				    </p>
+                        <p><button class="ui_custom_dialog_trigger" data-dialog="popup3" style="margin-top: 40px; margin-left: 420px"><strong>?</strong></button><br/></p>
+                        
+                        <div class="ui_custom_dialog" id="popup3" title="The Sixth Amendment" data-width="300px">The Sixth Amendment says that suspects in crimes have the right to counsel for their defense. In 1963, the Supreme Court ruled in Gideon v. Wainwright that state courts must provide an attorney to criminal suspects who cannot afford an attorney on their own.  </div>
+                </div>
+                
+                <div class="ui_slide" style="background-image: url('images/04_04_01_slideshow_d.png') !important; background-repeat: no-repeat; ">
+                        <p class="speechBubbleBL" style="position:absolute; width: 300px; left: 100px; top: 50px"><strong>Officer:</strong> We need to question Mr. Fraydo about the night of the crime. 
+				    </p>
+                </div>
+                
+                <div class="ui_slide" style="background-image: url('images/04_04_01_slideshow_d.png') !important; background-repeat: no-repeat; ">
+                        <p class="speechBubbleBC" style="position:absolute; width: 400px; left: 10px; top: 0px"><strong>Attorney:</strong> Of course. Al, remember our discussion of your rights. Anything you say now will be allowed in court. We have a hearing with the judge in the morning. </p>
+                </div>
+                
+                <div class="ui_slide" style="background-image: url('images/04_04_01_slideshow_d.png') !important; background-repeat: no-repeat; ">
+                        <p class="speechBubbleBL" style="position:absolute; width: 200px; left: 190px; top: 130px"><strong>Al:</strong> I understand.</p>
+                </div>
+                
+                <div class="ui_slide" style="background-image: url('images/04_04_01_slideshow_d.png') !important; background-repeat: no-repeat; ">
+                        <p class="speechBubbleBL" style="position:absolute; width: 300px; left: 100px; top: 50px"><strong>Officer:</strong> Are you ready to begin? I will turn on the recorder.</p>
+                </div>
+                
+                <div class="ui_slide" style="background-image: url('images/04_04_01_slideshow_d.png') !important; background-repeat: no-repeat; ">
+                        <p class="speechBubbleBL" style="position:absolute; width: 200px; left: 190px; top: 130px"><strong>Al:</strong> Yes, I'm ready.</p>
+                </div>
+                
+                                                                                                 
+               	  <!--END INTERACTIVE-->
+                </div><!--END SLIDES-->
+            </div>
+           
+    <div class="Media" style="margin: 10px 0px 5px 185px;">
+        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+        <div id="jp_container_1" class="jp-audio Player">
+            <div class="jp-type-single">
+              <div class="jp-gui jp-interface">
+                <ul class="jp-controls">
+                  <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                  <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                  <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+                  <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+                  <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+                  <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+                </ul>
+                <div class="jp-progress">
+                  <div class="jp-seek-bar">
+                    <div class="jp-play-bar"></div>
+                  </div>
+                </div>
+                <div class="jp-volume-bar">
+                  <div class="jp-volume-bar-value"></div>
+                </div>
+                <div class="jp-time-holder">
+                  <div class="jp-current-time"></div>
+                  <div class="jp-duration"></div>
+                </div>
+              </div>
+              <div class="jp-no-solution">
+                <span>Update Required</span>
+                To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+              </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+<div id="menu">
+<div id="segments"><a href="../../index.htm" title="Units"><span>Segments</span></a></div>
+<dl id="units">
+<dt><span>Units</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="lessons">
+<dt><span>Lessons</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="pages">
+<dt><span>7 of 10</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="footer">
+<span id="copy">Unless otherwise noted, &copy; 2011 FLVS</span>
+</div>
+</body>
+</html>

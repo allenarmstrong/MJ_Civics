@@ -1,0 +1,13 @@
+#dhtmltooltip{
+position: absolute;
+width: 150px;
+border: 1px solid #d5b067;
+padding: 5px;
+visibility: hidden;
+z-index: 100;
+font:.9em arial;
+color:#404040;
+background:#fdd585;
+
+}
+

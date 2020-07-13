@@ -1,0 +1,33 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Select the "next" and "prev" buttons to navigate through various U.S. landmarks.<br/><br/> You may also skip directly to a landmark by selecting a hotspot.<br/>]]>
+	</instructions>
+
+	<intro>Time to learn about U.S. landmarks. Good luck, citizen!</intro>
+
+	<popups>
+		<popup title="Hudson River" zoom="90%"><![CDATA[<img src="images/hudson.jpg" id="myimage"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>The Hudson River is a 315-mile river in eastern New York that flows south. In 1825, the Erie Canal opened, connecting Lake Erie to the Hudson River.]]></popup>
+		<popup title="St. Johns River" zoom="90%"><![CDATA[<img src="images/st_johns.jpg" id="myimage"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>St. Johns River is an East Florida river that flows south to north. It is an important trade route to Florida's interior.]]></popup>
+		<popup title="Death Valley" zoom="90%"><![CDATA[<img src="images/death_valley.jpg" id="myimage"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>The lowest point in the United States is 282 feet below sea level, in Death Valley. This dry area in California borders the Mojave Desert.]]></popup>
+		<popup title="Painted Desert" zoom="90%"><![CDATA[<img src="images/painted_desert.jpg" id="myimage"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Arizona's Painted Desert is famous for its colorful, layered landscape. Much of this land is within the Navajo Nation.]]></popup>
+		<popup title="Great Lakes" zoom="90%"><![CDATA[<img src="images/great_lakes.jpg" id="myimage"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>The Great Lakes form the largest group of freshwater lakes on Earth. They are lakes Huron, Ontario, Michigan, Erie, and Superior. You can remember them by thinking HOMES, each letter standing for one of the lakes.]]></popup>
+		<popup title="Dismal Swamp" zoom="90%"><![CDATA[<img src="images/dismal_swamp.jpg" id="myimage"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>The Dismal Swamp covers about 600 square miles of Virginia and North Carolina. The forested wetlands are a National Wildlife Refuge.]]></popup>
+		<popup title="Mount McKinley" zoom="90%"><![CDATA[<img src="images/mt_mckinley.jpg" id="myimage"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Mount McKinley in Alaska reaches 20,335 feet above sea level at its summit. This is the highest point in the United States. Some people call it "Denali," which means "the High One."]]></popup>
+		<popup title="Appalachian Mountains" zoom="90%"><![CDATA[<img src="images/appalachian.jpg" id="myimage"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>The Appalachian Mountains stretch from Alabama northeast into Canada. Natural gas and coal are important resources here.]]></popup>
+		<popup title="Everglades" zoom="90%"><![CDATA[<img src="images/everglades.jpg" id="myimage"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>The Everglades covers a large portion of South Florida. The U.S. government is trying to restore and protect these wetlands.]]></popup>
+		<popup title="Grand Canyon" zoom="90%"><![CDATA[<img src="images/grand_canyon.jpg" id="myimage"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>The Colorado River carved the Grand Canyon in Arizona. It is 277 miles long and over a mile deep! People from around the world visit this natural wonder.]]></popup>
+		<popup title="Great Salt Lake" zoom="90%"><![CDATA[<img src="images/salt_lake.jpg" id="myimage"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Great Salt Lake, in Utah, is the largest saltwater lake on Earth! The size changes, though, because of flooding and evaporation. Special pumps were built to protect buildings.]]></popup>
+		<popup title="Mississippi River" zoom="90%"><![CDATA[<img src="images/mississippi.jpg" id="myimage"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>The Mississippi River and its tributaries drain 31 U.S. states. It is a critical route for moving goods. Many important towns and cities are along its banks.]]></popup>
+		<popup title="Great Plains" zoom="90%"><![CDATA[<img src="images/great_plains.jpg" id="myimage"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>The Great Plains is a large area of open grassland. It lies between the Mississippi River and the Rocky Mountains. Today this land is an important source of wind power.]]></popup>
+	</popups>
+
+</settings>	

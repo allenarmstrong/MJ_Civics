@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings 
+directions="Match the amendment title to the amendment number. Select a choice from each side. If you get a match they will both disappear. Select “Continue” to get started."
+innerDirections="Select an Amendment and a title to get a match.">  	
+<word id="match1">First Amendment</word> 	
+<definition id="match1">Political and Religious Freedom</definition> 
+<word id="match2">Second Amendment</word> 	
+<definition id="match2">Right to Bear Arms</definition> 	 	
+<word id="match3">Third Amendment</word> 	
+<definition id="match3">Quartering Troops</definition> 	 	
+<word id="match4">Fourth Amendment</word> 	
+<definition id="match4">Search and Seizure</definition> 	 	
+<word id="match5">Fifth Amendment</word> 	
+<definition id="match5">Rights of the Accused</definition> 	 
+<word id="match6">Sixth Amendment</word> 	
+<definition id="match6">Right to a Speedy, Public Trial</definition> 	 	
+<word id="match7">Seventh Amendment</word> 	
+<definition id="match7">Trial by Jury in Civil Cases</definition> 
+<word id="match8">Eighth Amendment</word> 	
+<definition id="match8">Limits to Punishment</definition> 	 	
+<word id="match9">Ninth Amendment</word> 	
+<definition id="match9">Rights of the People</definition> 
+<word id="match9">Tenth Amendment</word> 	
+<definition id="match9">Powers of the States and People</definition> 	 	
+
+</settings>

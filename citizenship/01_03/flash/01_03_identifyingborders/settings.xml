@@ -1,0 +1,79 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Read the questions that appear in the top right corner and select the question mark icons to view the answers.<br/><br/>Use the zoom slider on the bottom left and the hide question / show question button in the top right corner when navigating around the various maps.
+
+When you reach the end of the interactive, select the "restart" button to return to the beginning.]]>
+	</instructions>
+
+	<intro>Time to identify borders. Good luck, citizen!</intro>
+	
+	<popups>
+		<set title="Map 1" zoom="0%">
+			<popup>
+				<question><![CDATA[What kinds of borders do you see on this map?]]></question>
+				<feedback><![CDATA[This map shows county, state, and national borders. The data appear by county. ]]></feedback>
+			</popup>
+			<popup>
+				<question><![CDATA[What does the map key tell you?]]></question>
+				<feedback><![CDATA[Counties in a darker color have a higher percentage of high-school graduates. ]]></feedback>
+			</popup>
+			<popup>
+				<question><![CDATA[Which states have the highest percentage of graduates for all the counties?]]></question>
+				<feedback><![CDATA[Wyoming and Hawaii]]></feedback>
+			</popup>
+		</set>
+		<set title="Map 2" zoom="0%">
+			<popup>
+				<question><![CDATA[What political divisions do the data in this map represent?]]></question>
+				<feedback><![CDATA[The map shows airports for two nations, Canada and the United States. It also shows U.S. state borders.]]></feedback>
+			</popup>
+			<popup>
+				<question><![CDATA[Where do you find the most airports?]]></question>
+				<feedback><![CDATA[Airports are numerous along the coastlines of the United States.]]></feedback>
+			</popup>
+			<popup>
+				<question><![CDATA[How many Canadian airports are on this map?]]></question>
+				<feedback><![CDATA[Six]]></feedback>
+			</popup>
+		</set>
+		<set title="Map 3" zoom="0%">
+			<popup>
+				<question><![CDATA[Which states probably have the most numerous visitors to the theme park in Kansas City? ]]></question>
+				<feedback><![CDATA[The city of Kansas City, in Missouri, borders the state of Kansas. Both Missouri and Kansas are likely home to the greatest number of visitors to this park.]]></feedback>
+			</popup>
+			<popup>
+				<question><![CDATA[Where do you find the most theme parks?]]></question>
+				<feedback><![CDATA[Most theme parks are in the eastern United States.]]></feedback>
+			</popup>
+			<popup>
+				<question><![CDATA[What state has the most theme parks on this map?]]></question>
+				<feedback><![CDATA[California]]></feedback>
+			</popup>
+			
+		</set>
+		<set title="Map 4" zoom="0%">
+			<popup>
+				<question><![CDATA[Where can you find the most foreign-born people in the United States?]]></question>
+				<feedback><![CDATA[The states with the most foreign-born people concentrated near coastlines and near international borders, like the border with Mexico ]]></feedback>
+			</popup>
+			<popup>
+				<question><![CDATA[Where would you expect to meet the most people speaking languages other than English?]]></question>
+				<feedback><![CDATA[States with more foreign-born residents are likely to have more people who speak languages other than English.]]></feedback>
+			</popup>
+			<popup>
+				<question><![CDATA[Which state has fewer foreign-born residents - Montana or Arizona?]]></question>
+				<feedback><![CDATA[Montana]]></feedback>
+			</popup>
+		</set>
+	</popups>
+
+</settings>	

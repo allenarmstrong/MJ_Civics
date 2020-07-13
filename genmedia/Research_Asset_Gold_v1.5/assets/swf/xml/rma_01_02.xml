@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<po>
+	
+	<xml>
+		 <node id="1"><![CDATA[<a href="event:1">Burned Scuba Diver</a>]]></node>
+			
+		 <node id="2" ><![CDATA[Dear Alicia,<br>     I heard a story the other day that I think you might want to consider putting on the school news tomorrow morning. It's pretty amazing! <br><br>Sincerely, <br><br>Paul<br><pre>                                                               <a href="event:1">Burned Scuba Diver</a></pre><br><a href="event:2"><br><br>Early last year</a> firefighters  battled <a href="event:3">raging flames in northern California</a>, as nearly <a href="event:4">a third of a beloved national forest</a> burned to the ground. After weeks of round-the-clock efforts, the firefighters finally contained the deadly flames and saved the rest of the trees and habitats.<br><br>California residents were thrilled, and a relief effort began nearly immediately to clean up and restore the damaged forest. Imagine the surprise and confusion when <a href="event:5"> one of the cleanup volunteers (a graduate from our high school)</a> found the charred remains of a scuba diver – wearing full scuba gear – in one of the blackened branches of a sycamore tree!<br><br>How did this happen?<br><br><a href="event:6">Authorities</a> puzzled over the mystery for <a href="event:7">several days</a> before they identified the body as that of a <a href="event:8">world-renowned scuba diver</a>. He had been diving off the California coast during the raging fire, but he had not entered the woods to anyone’s knowledge.<br><br><a href="event:9">Finally, investigations showed</a> that the diver had been caught in a <a href="event:10">bucket as fire-fighting helicopters pulled water from the ocean to put out the flames</a>. One moment the diver was enjoying his favorite pastime, and the next he was being dropped into a burning tree!]]></node>
+		 
+		  <node id="3" ><![CDATA[Dear Alicia,<br><br>I heard a story the other day that I think you might want to consider putting on the school news tomorrow morning. It's pretty amazing!<br><br>Sincerely,<br><br>Paul<br><br><pre>                                                                         <b>Burned Scuba Diver</b></pre><br><br><b>Early last year</b> firefighters battled <b>raging flames in northern California</b>, as nearly a <b>third of a beloved national forest</b> burned to the ground. After weeks of round-the-clock efforts, the firefighters finally contained the deadly flames and saved the rest of the trees and habitats. <br><br>California residents were thrilled, and a relief effort began nearly immediately to clean up and restore the damaged forest. Imagine the surprise and confusion when  <b>one of the cleanup volunteers (a graduate from our high school)</b> found the charred remains of a scuba diver – wearing full scuba gear – in one of the blackened branches of a sycamore tree!<br><br>How did this happen?<br><br><b>Authorities</b> puzzled over the mystery for several days before they identified the body as that of a <b>world-renowned scuba </b>diver. He had been diving off the California coast during the raging fire, but he had not entered the woods to anyone’s knowledge.<br><br><b>Finally, investigations showed</b> that the diver had been caught in <b>a bucket as fire-fighting helicopters pulled water from the ocean to put out the flames</b>. One moment the diver was enjoying his favorite pastime, and the next he was being dropped into a burning tree!]]></node>
+			<popup>
+ 		
+		<descr id="1" type="text" title="Burned Scuba Diver"><![CDATA[This is an example of a subject heading. Subject headings appear in e-mails as well as textbooks, newspapers, research documents, and other materials. They can often help narrow research topics down to the most important information. In this case, Alicia knows from the subject heading that the main idea of her story is the burned scuba diver and that she should begin to formulate questions about that topic in order to find useful information.]]></descr>
+		
+		<descr id="2" type="text" title="Early last year"><![CDATA[This is an example of a point in the story where not enough information is provided. In which month did this occur? Was it really this year, or is this e-mail message older than several months? Alicia will need to pin down a specific date for this event.]]></descr>
+				
+		<descr id="3" type="text" title="battled raging flames in northern California"><![CDATA[This is an example of information that may help Alicia to pin a date for the event. She will want to search for recent fires in northern California, though it would be helpful if she knew which cities to search! ]]></descr>
+		
+		<descr id="4" type="text" title="a third of a beloved national forest"><![CDATA[This is an example of another point in the story where not enough information is provided. Which national forest was nearly destroyed? Alicia will need to determine a specific location for this event. ]]></descr>
+		
+		<descr id="5" type="text" title="one of the cleanup volunteers (a graduate from our high school)"><![CDATA[This is an important example of missing information. Did anyone get the volunteer's name? When did he or she graduate from Alicia's high school? Alicia may want to interview the volunteer for more information about what really happened. ]]></descr>
+		
+		<descr id="6" type="text" title="Authorities"><![CDATA[Once again, Alicia's story has another hole in it. Which authorities handled this mystery? If Alicia can find out who they were, she can call them for more clarification. ]]></descr>
+		
+		<descr id="7" type="text" title="several days"><![CDATA[If Alicia wants to run a story on the news about this event, she will want to have specific details about everything. How long did authorities take to figure out this mystery? “Several days” is not a specific length of time. ]]></descr>
+		
+		<descr id="8" type="text" title="world-renowned scuba diver"><![CDATA[Here is an example of missing information. Why is the scuba diver not named if he is famous? Alicia will need a name before she can run her story. ]]></descr>
+		
+		<descr id="9" type="text" title="California coast"><![CDATA[This is another example of information that Alicia will need to research. Where exactly did the man go diving? The state of California has a very large coastline. ]]></descr>
+		
+		<descr id="10" type="text" title="bucket as fire-fighting helicopters pulled water from the ocean to put out the flames"><![CDATA[This is one of the most interesting parts of the story because it describes a freak accident that has not been reported often—or ever before. Alicia will need to research these emergency buckets to determine whether they are, indeed, dangerous to divers in the area.]]></descr>
+		
+		<descr id="11" type="text" title="a third of a beloved national forest"><![CDATA[This is an example of another point in the story where not enough information is provided. Which national forest was nearly destroyed? Alicia will need to determine a specific location for this event. ]]></descr>
+		
+		<descr id="12" type="text" title="world-renowned scuba diver"><![CDATA[Here is an example of missing information. Why is the scuba diver not named if he is famous? Alicia will need a name before she can run her story. ]]></descr>
+		
+		<descr id="13" type="text" title="bucket as fire-fighting helicopters pulled water from the ocean to put out the flames"><![CDATA[This is one of the most interesting parts of the story because it describes a freak accident that has not been reported often—or ever before. Alicia will need to research these emergency buckets to determine whether they are, indeed, dangerous to divers in the area.]]></descr>
+		
+		<descr id="14" type="text" title="one of the cleanup volunteers (a graduate from our high school)"><![CDATA[This is an important example of missing information. Did anyone get the volunteer's name? When did he or she graduate from Alicia's high school? Alicia may want to interview the volunteer for more information about what really happened. ]]></descr>
+	<!--	
+		<descr id="11" type="text" title="Burded scuba diver2"><![CDATA[This is an example of a subject heading. Subject headings appear in e-mails as well as textbooks, newspapers, research documents, and other materials. They can often help narrow research topics down to the most important information. In this case, Alicia knows from the subject heading that the main idea of her story is the “burned scuba diver,” and that she should begin to formulate questions about that topic in order to find useful information.]]></descr>	-->
+
+</popup>
+</xml>
+
+
+
+
+</po>
+

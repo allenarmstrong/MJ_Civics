@@ -1,0 +1,29 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Roll your mouse over the following photographs to learn more about them.<br/>]]>
+	</instructions>
+
+	<intro>Time to learn more about great citizenship. Good luck, citizen.</intro>
+
+	<rollovers>
+		<rollover clip="RolloverClip1" title="" x="147" y="169" rotation="-5">
+			<![CDATA[I come here each Saturday to help and listen. I am not paid or anything. I do it because it helps people. We talk, and I learn about their lives. Many people have such fascinating stories. Some people have no family members to visit them here. I try to make people laugh or have some fun playing a game. It feels good to help make another person's day a little bit better.]]>
+		</rollover>
+		<rollover clip="RolloverClip2" title="" x="276" y="169" rotation="10">
+			<![CDATA[In one of my classes I read a story about a kid who never had any toys or much of anything at all. I learned that many families in my community are too poor to provide their children more than just basic needs. I convinced my classmates to help me collect new toys to donate to a local charity. The charity will deliver them to needy children. I hope that our efforts will be result in a happy surprise for many children.]]>
+		</rollover>
+		<rollover clip="RolloverClip3" title="" x="370" y="169" rotation="-5">
+			<![CDATA[My city is planning to shut down our youth center to save money. Many students went there every day because it was a safe place to hang out and study. I worry that without the center more kids will get in trouble or hurt. They may not do as well in school. I am writing a letter to my city council to suggest ways we can keep the center open and still save money.]]>
+		</rollover>
+	</rollovers>
+
+</settings>	

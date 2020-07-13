@@ -1,0 +1,9 @@
+html {overflow-x:auto; overflow-y:hidden; height:100%}
+body{overflow-y:auto;height:120%}
+*html #page-header{position:absolute;}
+*html #contentDiv{height:330px;}
+.fade{opacity:0.30;}
+*html #dropmenudiv{position:absolute;z-index:101;border-right:1px solid #acacac;}
+
+
+

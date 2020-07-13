@@ -1,0 +1,423 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>M/J Civics</title>
+<link type="text/css" media="screen" href="../../css/theme.css" rel="stylesheet" />
+<link type="text/css" media="print" href="../../css/print.css" rel="stylesheet" />
+<script type="text/javascript" src="../../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.swfobject.1-1-1.min.js"></script>
+<script type="text/javascript" src="../../js/core.js"></script>
+<script type="text/javascript">var unitNo = 1;</script>
+<script type="text/javascript">var unitNoLesNo = 0106;</script>
+<script type="text/javascript" src="../../js/links.js"></script>
+<script type="text/javascript" src="../../js/plugins/jquery.flip.min.js"></script>
+<script type="text/javascript" src="../../js/jquery_ui/core/js/custom_plugins/ui_importer.js" charset="utf-8"></script>
+<script type="text/javascript">
+
+	var Timer;
+	var MaxTime;
+	var Chances;
+	var Points;
+	var MessageTimer = 5;
+	var GameOver = false;
+	var Complete = false;
+	var TotalQuestions = 0;
+	var CorrectAnswers = 0;
+
+	function Tick() {
+		timeout = window.setTimeout("Tick()", 1000);
+		Timer--;
+		MessageTimer--;
+		if ( Timer <= 0 ) {
+			Chances--;
+			if ( Chances > 0 ) { Timer = MaxTime; }
+		}
+		
+		if ( MessageTimer <= 0 ) {
+			$("#FeudMessage").empty().css("color","red");
+			MessageTimer = 5;
+		}
+		
+		$("#TimeLeft").html(Timer);
+		$("#FeudPoints").html(Points);
+		$("#ChancesRemain").html(Chances);
+		
+		if ( Chances <= 0 ) {
+			clearTimeout(timeout);
+			GameOver = true;
+			$("#FeudMessage").html("The game has ended.").css("background-color","white");
+			$("#ChancesRemain").css("color","red");
+			$("#FeudAnswers li").each(function(){
+				AnswerIndex = $(this).parent().index() + 1;
+				AnswerText = $("#FeudAnswers ul:nth-child(" + AnswerIndex + ") li[display]").text();
+				AnswerPoints = $("#FeudAnswers ul:nth-child(" + AnswerIndex + ")").attr("points");
+				FlipOver(AnswerIndex, AnswerText, AnswerPoints);
+			});
+		}
+	
+		if ( Chances == 1 ) { $("#ChancesRemain").css("color","yellow");}
+		if ( Timer > 20 ) { $("#TimeLeft").css("color","none"); }
+		if ( Timer <= 20 ) { $("#TimeLeft").css("color","yellow"); }
+		if ( Timer <= 10 ) { $("#TimeLeft").css("color","orange"); }
+		if ( Timer == 0 ) { $("#TimeLeft").css("color","red"); }
+	}
+	
+	function FlipOver(AnswerIndex, AnswerText, AnswerPoints) {
+		$("#FeudDisplay div.FeudBlock:nth-child(" + AnswerIndex + ") div.FeudAnswerText").flip({ 
+			direction: 'tb',
+			speed: 250,
+			color: "#A5A09C",
+			content: AnswerText
+		});
+		$("#FeudDisplay div.FeudBlock:nth-child(" + AnswerIndex + ") div.points").flip({ 
+			direction: 'rl',
+			speed: 250,
+			color: "#A5A09C",
+			content: AnswerPoints
+		});
+	}
+	
+	function CheckAnswer() {
+		var AnswerInput = $.trim($("input[name=AnswerInput]").val().toLowerCase());
+		var Success = false;
+		var AnswerIndex;
+		var AnswerText;
+		var AnswerPoints;
+		
+		$("#FeudAnswers li").each(function(){
+			if ( $.trim($(this).text().toLowerCase()) == AnswerInput ) { 
+				AnswerIndex = $(this).parent().index() + 1;
+				AnswerText = $("#FeudAnswers ul:nth-child(" + AnswerIndex + ") li[display]").text();
+				AnswerPoints = $("#FeudAnswers ul:nth-child(" + AnswerIndex + ")").attr("points");
+				Success = true;
+				FlipSuccess = $(this);
+			}
+			if ( $(this).data("Answered") == true ) { CorrectAnswers++; }
+		});
+		
+		if ( Success && GameOver == false ) {
+			if ( FlipSuccess.data("Answered") ) {
+				$("#FeudMessage").html("Already Picked").css("color","yellow");
+				MessageTimer = 5;
+			} else {
+				FlipSuccess.data("Answered","true");
+				$("#FeudMessage").html("Correct!").css("color","green");
+				MessageTimer = 5;
+				Points += Number(AnswerPoints);
+				CorrectAnswers++;
+				Timer = MaxTime;
+				FlipOver(AnswerIndex, AnswerText, AnswerPoints);
+			}
+		}
+		
+		if ( Success == false && GameOver == false ) {
+			$("#FeudMessage").html("Incorrect").css("color","red");
+			Chances--;
+			Timer = MaxTime;
+		}
+		
+		if ( GameOver ) {
+			$("#FeudMessage").html("Sorry, the game is over.");
+		}
+		
+		if ( CorrectAnswers == TotalQuestions ) { 
+			clearTimeout(timeout);
+			GameOver = true;
+			$("#FeudMessage").html("Congratulations! You win!").css("color","green");
+		}
+		
+		$("input[name=AnswerInput]").val("")
+	}
+
+	$(document).ready(function(){
+		Chances = $("#FeudAnswers").attr("chances");
+		MaxTime = $("#FeudAnswers").attr("time");
+		$("#FeudMessage").empty();
+		Timer = MaxTime;
+		Points = 0;
+		
+		$("#FeudAnswers").hide();
+				
+		$("#FeudAnswers ul").each(function(){
+			$("<div class='FeudBlock'><div class='FeudAnswerText'></div><div class='points'></div></div>").appendTo("#FeudDisplay");
+			TotalQuestions++;
+		});
+		
+		$("#Submit").click(function(){
+			CheckAnswer();
+		});
+		
+		$("form").submit(function(e) {
+			CheckAnswer();
+			e.preventDefault();
+		});
+		
+		$('.ui_interactive').bind('BEGIN', function(event, data) { 
+			Tick();
+		});	
+		
+	});
+</script>
+<style type="text/css">
+	#FeudPoints {
+		width: 25px;
+		height: 20px;
+		padding: 2px;
+		text-align: center;
+		font-size: 25px;
+		font-weight: bold;
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		vertical-align: middle;
+		color: black;
+	}
+	#ChancesRemain {
+		width: 20px;
+		height: 20px;
+		padding: 2px;
+		text-align: center;
+		font-size: 25px;
+		font-weight: bold;
+		display: inline-block;
+		vertical-align: middle;
+		color: black;
+		*display: inline;
+		*zoom: 1;
+	}
+	#TimeLeft {
+		width: 20px;
+		height: 20px;
+		padding: 2px;
+		text-align: center;
+		font-size: 25px;
+		font-weight: bold;
+		display: inline-block;
+		vertical-align: middle;
+		color: black;
+		*display: inline;
+		*zoom: 1;
+	}
+	#FeudMessage {
+		width: 350px;
+		padding: 2px;
+		text-align: center;
+		font-size: 25px;
+		font-weight: bold;
+		display: inline-block;
+		vertical-align: middle;
+		color: black;
+		margin-top:10px;
+		*display: inline;
+		*zoom: 1;
+	}
+	#FeudDisplay {
+		margin: 10px;
+	}
+	.FeudBlock  {
+		display: inline-block;
+		width: 185px;
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		margin: 5px;
+		vertical-align: top;
+		font-size: 12px;
+		*display: inline;
+		*zoom: 1;
+	}
+	.FeudAnswerText {
+		display: inline-block;
+		border: 1px solid black;
+		width: 150px;
+		height: 20px;
+		margin: 0px;
+		padding:3px;
+		background: #666 url("images/01_06_01_panel_open.jpg");
+		color: #FFF;
+		font-weight:bold;
+		font-size:16px;
+		vertical-align: top;
+		*display: inline;
+		*zoom: 1;
+	}
+	.points {
+		display: inline-block;
+		border-right: 1px solid black;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		background-color: #666;
+		margin: 0px;
+		width: 20px;
+		height: 20px;
+		padding:3px;
+		font-weight:bold;
+		font-size:16px;
+		vertical-align: top;
+		*display: inline;
+		*zoom: 1;
+	}
+	input {
+		border: 1px solid black;
+		padding:5px;
+		font-size:18px;
+	}
+	#Submit { background-color:#0FEF00}
+	
+	.ui_interactive {
+	    background-image: url("images/01_06_01_back.jpg");
+	}
+	
+	.FeudInfo  {
+		font-size:25px;
+	}
+	.FeudInfo div { margin-top:-10px; margin-right:5px;}
+	
+	.white { color:white!important;}
+	.green { color:#0FEF00!important;}
+	.black { color:black!important;}
+	.bigger {font-size:22px;}
+	
+</style>
+</head>
+<body>
+<div id="logo"></div>
+<div id="window">
+<div id="page">
+<div id="nav">
+<dl>
+<dt>Navigation</dt>
+<dd>
+<ul>
+<li id="next"><a href="01_06_02.htm" title="Next"><span>Next</span></a></li>
+<li id="prev"><a href="../01_05/01_05_11.htm" title="Previous"><span>Previous</span></a></li>
+<li id="home"><a href="../../index.htm" title="Home"><span>Home</span></a></li>
+<li id="gloss"><a class="pop" href="../../glossary/glossary.htm" title="Glossary"><span>Glossary</span></a></li>
+<li id="notes"><a href="../../gendocs/courseresources/resource.htm" title="Course resources"><span>Course Resources</span></a></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div id="content">
+<div id="title"><span id="title1"></span><span id="title2"></span></div>
+<div id="margin">
+
+
+<h1>What is Most Important to Being a Good Citizen?</h1>
+<p>Type in your ideas and see how other online students responded.</p>
+
+<div class="ui_interactive" data-width="700px" data-height="400px" >
+    <div class="ui_slides">
+        <div class="ui_slide">
+        	<h2 class="black">Type in your ideas</h2>
+            <p class="bigger black">What is most important to being a good citizen?</p>
+        	<div class="ui_dialog instructions" title="Welcome!">
+                <p>In this game you will type in your ideas to see what other students thought was most important to being a good citizen.</p><p>Click "Begin" when you are ready.</p>
+            </div>
+			<div id="FeudAnswers" chances="3" time="60">
+				<ul points="30">
+					<li display="true">Obeying Laws</li>
+					<li>Obey Law</li>
+					<li>Obey Laws</li>
+                    <li>Obey The Law</li>
+				</ul>
+				<ul points="21">
+					<li display="true">Being Respectful</li>
+                    <li>Be Respectful</li>
+					<li>Respectful</li>
+					<li>Respect</li>
+				</ul>
+				<ul points="16">
+					<li display="true">Helping Others</li>
+					<li>Help Others</li>
+					<li>Help Other</li>
+                    <li>Help People</li>
+                    <li>Help</li>
+				</ul>
+				<ul points="13">
+					<li display="true">Voting</li>
+					<li>Vote</li>
+				</ul>
+				<ul points="12">
+					<li display="true">Paying Taxes</li>
+					<li>Pay Taxes</li>
+					<li>Pay Tax</li>
+					<li>Taxes</li>
+                    <li>Tax</li>
+                    <li>Pay Your Taxes</li>
+				</ul>
+				<ul points="12">
+					<li display="true">Attending School</li>
+					<li>Attend School</li>
+					<li>Go to School</li>
+					<li>School</li>
+				</ul>
+				<ul points="12">
+					<li display="true">Donating Money</li>
+					<li>Donate Money</li>
+					<li>Give Money</li>
+                    <li>Money</li>
+				</ul>
+				<ul points="9">
+					<li display="true">Support Troops</li>
+					<li>Support Military</li>
+					<li>Help Troops</li>
+                    <li>Military</li>
+                    <li>Troops</li>
+                    <li>Support Our Troops</li>
+				</ul>
+			</div>
+            <div class="FeudInfo">
+                Points: <div id="FeudPoints"></div>
+                Chances: <div id="ChancesRemain"></div>
+                Time Left: <div id="TimeLeft"></div>
+                Status: <div id="FeudMessage"></div>
+            </div>
+			<div id="FeudDisplay"></div><br><br>
+			<form>
+				<div class="bigger">Type your idea here: </div><br>
+				<input name="AnswerInput" type="text" size="20"/>
+				<input type="button" value="Submit Answer" id="Submit"/>
+			</form>
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+<div id="menu">
+<div id="segments"><a href="../../index.htm" title="Units"><span>Segments</span></a></div>
+<dl id="units">
+<dt><span>Units</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="lessons">
+<dt><span>Lessons</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="pages">
+<dt><span>1 of 10</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="footer">
+<span id="copy">Unless otherwise noted, &copy; 2011 FLVS</span>
+</div>
+</body>
+</html>

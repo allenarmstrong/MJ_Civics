@@ -1,0 +1,219 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[You are a clerk in the federal court system. Help citizens find their way to the right court for the next step in their cases by answering questions. <br/><br/>Remember that though the names of the courts differ, state court systems follow the same basic process. <br/><br/>All new cases begin at the trial court level. Choose the appropriate court to begin.<br/>]]>
+	</instructions>
+
+	<intro>Time to do learn about the federal court system. Good luck, citizen!</intro>
+
+	<problems>
+		<set>
+		<problem>
+			<question>If the case fails in this court ( U.S. District Court), a lawyer may appeal the verdict to</question>
+			<choice type="" feedbackTitle="Incorrect" >a. a different U.S. District Court</choice>
+			<choice type="correct" feedbackTitle="Correct!" feedback="Yes! The U.S. Court of Appeals could elect to review the case next.">b. the U.S. Court of Appeals</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. the U.S. Supreme Court</choice>
+		</problem>
+		<problem>
+			<question>If the events of the case happened in Texas, the people will appear to court in </question>
+			<choice type="correct" feedbackTitle="Correct" feedback="Yes! A U.S. District Court in Texas would hear the case.">a. Texas</choice>
+			<choice type="" feedbackTitle="Incorrect!">b. Washington, D.C.</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. any U.S. District Court in the 5th Circuit</choice>
+		</problem>
+		<problem>
+			<question>A person accused of breaking a law would first have a</question>
+			<choice type="" feedbackTitle="Incorrect">a. civil trial</choice>
+			<choice type="" feedbackTitle="Incorrect">b. appeal trial</choice>
+			<choice type="correct" feedbackTitle="Correct" feedback="Yes! Criminal trials are for people accused of breaking laws.">c. criminal trial</choice>
+		</problem>
+		<problem>
+			<question>A U.S. District Court is a type of</question>
+			<choice type="" feedbackTitle="Incorrect!" >a. appellate court</choice>
+			<choice type="correct" feedbackTitle="Correct!">b. trial court</choice>
+			<choice type="" feedbackTitle="Incorrect" feedback="Yes! A U.S. District Court is a type of trial court. These courts will hear civil and criminal trials related to federal law.">c. supreme court</choice>
+		</problem>
+		<problem>
+			<question>Which of the following cases could a U.S. District Court select to hear?</question>
+			<choice type="" feedbackTitle="Incorrect!" >a. Justice City resident accused of robbing local stores</choice>
+			<choice type="" feedbackTitle="Incorrect!">b. Justice City resident accused of robbing stores in several counties</choice>
+			<choice type="correct" feedbackTitle="Correct" feedback="Yes! The federal court system can hear cases involving multiple states.">c. Justice City resident accused of robbing stores in several states</choice>
+		</problem>
+		<problem>
+			<question>The U.S. District Court is the only level of federal court where</question>
+			<choice type="" feedbackTitle="Incorrect!" >a. a civil case may be brought to trial</choice>
+			<choice type="correct" feedbackTitle="Correct!" feedback="Yes! U.S. District Courts are the first to hear federal cases. Each side presents evidence to prove their arguments.">b. each side of the case may present new evidence</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. a judge can overturn a lower court's ruling</choice>
+		</problem>
+		<problem>
+			<question>Which of the following lists is in the correct order from left to right?</question>
+			<choice type="correct" feedbackTitle="Correct!" feedback="Yes! In the federal court system, a case would first to a U.S. District Court, then a U.S. Court of Appeals, then the U.S. Supreme Court. Note that very few cases actually reach the U.S. Supreme Court.">a. U.S. District Court, U.S. Court of Appeals, U.S. Supreme Court</choice>
+			<choice type="" feedbackTitle="Incorrect!">b. U.S. Court of Appeals, U.S. District Court, U.S. Supreme Court</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. U.S. Supreme Court, U.S. Court of Appeals, U.S. District Court</choice>
+		</problem>
+		<problem>
+			<question>Which of the following usually determines the verdict in a U.S. District Court?</question>
+			<choice type="" feedbackTitle="Incorrect!" >a. judge</choice>
+			<choice type="correct" feedbackTitle="Correct!" feedback="Yes! Juries usually hear cases and determine verdicts in U.S. District Courts.">b. jury</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. justice</choice>
+		</problem>
+		</set>
+		<set>
+		<problem>
+			<question>If the case fails in this court, either side may appeal the verdict to</question>
+			<choice type="" feedbackTitle="Incorrect!" >a. a different U.S. District Court</choice>
+			<choice type="" feedbackTitle="Incorrect!" >b. the U.S. Court of Appeals</choice>
+			<choice type="correct" feedbackTitle="Correct" feedback="Yes! The U.S. Supreme Court could elect to review the case.">c. the U.S. Supreme Court</choice>
+		</problem>
+		<problem>
+			<question>If the events of the case happened in Texas, the people will appeal the case to a U.S. Court of Appeals for the</question>
+			<choice type="" feedbackTitle="Incorrect!" >a. Texas Circuit</choice>
+			<choice type="" feedbackTitle="Incorrect!" >b. Washington, D.C. Circuit </choice>
+			<choice type="correct" feedbackTitle="Correct" >c. 5th Circuit </choice>
+		</problem>
+		<problem>
+			<question>Which of the following cases could a U.S. Court of Appeals select to hear?</question>
+			<choice type="" feedbackTitle="Incorrect!" >a. citizen who challenges the verdict of a state trial court</choice>
+			<choice type="" feedbackTitle="Incorrect!" >b. citizen who challenges the verdict of the U.S. Supreme Court</choice>
+			<choice type="correct" feedbackTitle="Correct" feedback="Yes! The U.S. Court of Appeals can review select cases from a federal trial court, called a U.S. District Court.">c. citizen who challenges the verdict of a federal trial court</choice>
+		</problem>
+		<problem>
+			<question>A U.S. District Court is a type of</question>
+			<choice type="correct" feedbackTitle="Correct!" feedback="Yes! A U.S. Court of Appeals is a type of appellate court. These courts will review select cases from U.S. District Courts.">a. appellate court</choice>
+			<choice type="" feedbackTitle="Incorrect!" >b. trial court</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. supreme court</choice>
+		</problem>
+		<problem>
+			<question>If the U.S. Court of Appeals affirms a case, that means that</question>
+			<choice type="correct" feedbackTitle="Correct!" feedback="Yes! If a U.S. Court of Appeals affirms a verdict, it is saying that the decision of the lower court is correct and will remain in place.">a. the verdict of the lower court will remain</choice>
+			<choice type="" feedbackTitle="Incorrect!" >b. the verdict of the lower court is reversed</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. the verdict of the lower court is unclear and needs a new trial</choice>
+		</problem>
+		<problem>
+			<question>The U.S. District Court is the lowest level of federal court where</question>
+			<choice type="" feedbackTitle="Incorrect!" >a. a civil case may be brought to trial </choice>
+			<choice type="" feedbackTitle="Incorrect!" >b. each side of the case may present new evidence</choice>
+			<choice type="correct" feedbackTitle="Correct" feedback="Yes! U.S. Courts of Appeal may overturn a ruling of a U.S. District Court in both criminal and civil cases. The judges will not hear new evidence, however.">c. a judge can overturn a lower courtÕs ruling</choice>
+		</problem>
+		<problem>
+			<question>Which of the following lists is in the correct order from left to right?</question>
+			<choice type="" feedbackTitle="Incorrect!" >a. appeal, trial, verdict</choice>
+			<choice type="correct" feedbackTitle="Correct!" feedback="Yes! First, the case would go to trial and receive a verdict. Either side of the case may appeal the verdict.">b. trial, verdict, appeal</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. verdict, appeal, trial</choice>
+		</problem>
+		<problem>
+			<question>Which of the following usually determines the verdict in a U.S. Court of Appeals? </question>
+			<choice type="correct" feedbackTitle="Correct!" feedback="Yes! A panel of three judges usually hears cases and determines verdicts in a U.S. Court of Appeals.">a. panel of judges</choice>
+			<choice type="" feedbackTitle="Incorrect!" >b. jury members</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. citizen panel</choice>
+		</problem>
+		</set>
+		<set>
+		<problem>
+			<question>If the case fails in this court, </question>
+			<choice type="correct" feedbackTitle="Correct!" feedback="Yes! The U.S. Supreme Court is the highest court in the U.S. court system.">a. the case is over</choice>
+			<choice type="" feedbackTitle="Incorrect!" >b. the state will begin a new trial</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. the justices create a new law</choice>
+		</problem>
+		<problem>
+			<question>Which court has the final authority over all other U.S. courts?</question>
+			<choice type="" feedbackTitle="Incorrect!">a. a stateÕs supreme court</choice>
+			<choice type="" feedbackTitle="Incorrect!" >b. a municipal supreme court</choice>
+			<choice type="correct" feedbackTitle="Correct" feedback="Yes! The U.S. Supreme Court has final authority over all other courts in the nation.">c. the U.S. Supreme Court</choice>
+		</problem>
+		<problem>
+			<question>The U.S. Constitution created the </question>
+			<choice type="" feedbackTitle="Incorrect!">a. State-level courts</choice>
+			<choice type="correct" feedbackTitle="Correct!" feedback="Yes! The U.S. Constitution created only the U.S. Supreme Court. Yet it does also protect the right of states to create their own court systems.">b. U.S. Supreme Court</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. U.S. District Court</choice>
+		</problem>
+		<problem>
+			<question>When a case goes to the U.S. Supreme Court</question>
+			<choice type="" feedbackTitle="Incorrect!">a. all of the original witnesses must appear</choice>
+			<choice type="" feedbackTitle="Incorrect!" >b. the president will issue the majority opinion</choice>
+			<choice type="correct" feedbackTitle="Correct" feedback="Yes! The U.S. Supreme Court will only review evidence from the prior trials, not new information.">c. no new evidence is allowed</choice>
+		</problem>
+		<problem>
+			<question>If a law is labeled 'unconstitutional,' that means that the U.S. Supreme Court</question>
+			<choice type="correct" feedbackTitle="Correct!" feedback="Yes! The U.S. Supreme Court determines whether laws violate the U.S. Constitution.">a. decided that a state or federal law goes against the U.S. Constitution</choice>
+			<choice type="" feedbackTitle="Incorrect!" >b. supports a law even though it does not appear in the U.S. Constitution</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. will rewrite a law so that everyone can agree to it</choice>
+		</problem>
+		<problem>
+			<question>When the U.S. Supreme Court presents the majority opinion,</question>
+			<choice type="" feedbackTitle="Incorrect!">a. all nine justices must agree to what it says</choice>
+			<choice type="correct" feedbackTitle="Correct!" feedback="Yes! The final ruling, or majority opinion, only requires a majority of justices to agree to it. Justices who disagree present a dissenting opinion.">b. a justice who disagree s presents a dissenting opinion</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. the justices declare that a law is unconstitutional</choice>
+		</problem>
+		<problem>
+			<question>Which of the following could be the last court to hear a case before it arrives at the U.S. Supreme Court?</question>
+			<choice type="" feedbackTitle="Incorrect!">a. U.S. District Court</choice>
+			<choice type="" feedbackTitle="Incorrect!" >b. U.S. Municipal Court</choice>
+			<choice type="correct" feedbackTitle="Correct" feedback="Yes! The U.S. Supreme Court hears select cases drawn from the U.S. Court of Appeals and state-level supreme courts.">c. U.S. Court of Appeals</choice>
+		</problem>
+		<problem>
+			<question>Which of the following cases is the U.S. Supreme Court most likely to hear?</question>
+			<choice type="" feedbackTitle="Incorrect!">a. Citizens sue their neighbor for property damage</choice>
+			<choice type="" feedbackTitle="Incorrect!" >b. a state prosecutes  suspects in a murder trial</choice>
+			<choice type="correct" feedbackTitle="Correct" feedback="Yes! A case where the constitutionality of a law is in question is most likely case from this group to get to the U.S. Supreme Court.">c. citizens complain that a law in their home state violates their rights</choice>
+		</problem>
+		</set>
+	</problems>
+
+	<feedback>
+		<correct>Select continue to close this window.</correct>
+		<retry>Oops, that was wrong. Select "continue" to close this window and try again.</retry>
+		<restart></restart>
+	</feedback>
+
+	<phases>
+		<phase title="Good work!">The citizen has won the case and is traveling home. The U.S. Supreme Court has the final say in matters of U.S. laws and the Constitution. Return to the first floor to go through the process again.</phase>
+		<phase title="Good work!">Unfortunately, the citizen lost the case. Help the citizen appeal the verdict. Please escort this citizen to the next court who may hear the case. </phase>
+		<phase title="Good work!">Unfortunately, the citizen lost the case. Help the citizen appeal the verdict. Please escort this citizen to the next court who may hear the case. </phase>
+		<phase title="Good work!">The citizen has won the case and is traveling home. The U.S. Supreme Court has the final say in matters of U.S. laws and the Constitution. Return to the first floor to go through the process again.</phase>
+	</phases>
+
+	<floors>
+		<floor title=""><![CDATA[U.S. Supreme Court
+- highest court in the United States
+- only court created by the U.S. Constitution
+- reviews select cases from a U.S. Court of Appeals or a state-level supreme court
+- hears no new evidence
+- usually a case gets to this level because the constitutionality of a law is in question
+- 9 justices
+- court issues a majority opinion (verdict of the majority of justices)
+- majority opinion can affirm the constitutionality of a law or declare it unconstitutional
+- justices who do not vote with the majority issue a dissenting, or minority, opinion to explain why they disagree]]></floor>
+		<floor title=""><![CDATA[U.S. District Court
+- first court to hear a federal case
+- can have a jury hear the case
+- criminal and civil cases 
+- each side presents evidence to prove their argument
+- 94 districts organized into 12 circuits
+- at least one U.S. District Court in each state]]></floor>
+		<floor title=""><![CDATA[U.S. Court of Appeals
+- reviews select cases from a U.S. District Court
+- usually a 3-judge panel hears the case
+- no new evidence presented
+- at least one U.S. Court of Appeals in each of the 12 circuits
+- court can affirm the lower court decision ("let it stand"), reverse the verdict, or send the case back to the lower court]]></floor>
+		<floor title=""><![CDATA[U.S. Supreme Court
+- highest court in the United States
+- only court created by the U.S. Constitution
+- reviews select cases from a U.S. Court of Appeals or a state-level supreme court
+- hears no new evidence
+- usually a case gets to this level because the constitutionality of a law is in question
+- 9 justices
+- court issues a majority opinion (verdict of the majority of justices)
+- majority opinion can affirm the constitutionality of a law or declare it unconstitutional
+- justices who do not vote with the majority issue a dissenting, or minority, opinion to explain why they disagree]]></floor>
+	</floors>
+
+</settings>	

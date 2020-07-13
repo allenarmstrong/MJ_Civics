@@ -1,0 +1,69 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Select "next" and "prev" to navigate through the slideshow. Select "restart" when you reach the end to restart the slideshow.<br/>]]>
+	</instructions>
+
+	<intro>Time to learn about Citizenship and Ecology. Good luck, citizen!</intro>
+	
+	<scenarios>
+
+		<scenario type="scene" clip="IntroClip" label="Intro">
+			<button clip="StartButton" label="Start" destination="Scenario1Clip"/>
+		</scenario>
+
+		<scenario type="scene" clip="Scenario1Clip" label="Scenario1">
+			<button clip="AButton" label="Use some of the grant money for lawyers. Seek arrests of people who harvest oysters without a license." destination="Scenario2AClip" />
+			<button clip="BButton" label="Ask volunteers for help restoring oyster beds. Use some of the grant money to build special domes for the oysters." destination="Scenario2BClip" />
+		</scenario>
+
+		<scenario type="scene" clip="Scenario2AClip" label="Scenario2A">
+			<button clip="AButton" label="Use grant money to eliminate invasive species* of plants. Ask volunteers to help find and destroy them. These plants spread quickly. They choke and destroy the native mangroves." destination="Scenario3AAClip" />
+			<button clip="BButton" label="Use grant money to purchase large mangrove forests. Refuse all requests to build on the land. Leave the mangroves to their natural state." destination="Scenario3ABClip" />
+		</scenario>
+
+		<scenario type="scene" clip="Scenario2BClip" label="Scenario2B">
+			<button clip="AButton" label="Use grant money to eliminate invasive species* of plants. Ask volunteers to help find and destroy them. These plants spread quickly. They choke and destroy the native mangroves." destination="Scenario3BAClip" />
+			<button clip="BButton" label="Use grant money to purchase large mangrove forests. Refuse all requests to build on the land. Leave the mangroves to their natural state." destination="Scenario3BBClip" />
+		</scenario>
+
+		<scenario type="scene" clip="Scenario3AAClip" label="Scenario3AA">
+			<button clip="AButton" label="Use grant money to build water treatment plants for the drainage water. This will remove chemicals from the water before they can reach and pollute the bay. Require boaters to take special precautions to prevent manatee injury." destination="Scenario4AClip" />
+			<button clip="BButton" label="Use grant money to educate people about the gentle manatees. Post signs near drains warning people not to dump chemicals there. Continue efforts to increase oyster growth because they filter the bay water." destination="Scenario4BClip" />
+		</scenario>
+
+		<scenario type="scene" clip="Scenario3ABClip" label="Scenario3AA">
+			<button clip="AButton" label="Use grant money to build water treatment plants for the drainage water. This will remove chemicals from the water before they can reach and pollute the bay. Require boaters to take special precautions to prevent manatee injury." destination="Scenario4CClip" />
+			<button clip="BButton" label="Use grant money to educate people about the gentle manatees. Post signs near drains warning people not to dump chemicals there. Continue efforts to increase oyster growth because they filter the bay water." destination="Scenario4DClip" />
+		</scenario>
+
+		<scenario type="scene" clip="Scenario3BAClip" label="Scenario3AA">
+			<button clip="AButton" label="Use grant money to build water treatment plants for the drainage water. This will remove chemicals from the water before they can reach and pollute the bay. Require boaters to take special precautions to prevent manatee injury." destination="Scenario4EClip" />
+			<button clip="BButton" label="Use grant money to educate people about the gentle manatees. Post signs near drains warning people not to dump chemicals there. Continue efforts to increase oyster growth because they filter the bay water." destination="Scenario4FClip" />
+		</scenario>
+
+		<scenario type="scene" clip="Scenario3BBClip" label="Scenario3AB">
+			<button clip="AButton" label="Use grant money to build water treatment plants for the drainage water. Require boaters to take special precautions to prevent manatee injury." destination="Scenario4AClip" />
+			<button clip="BButton" label="Use grant money to educate people about the gentle manatees. Post signs near drains warning people not to dump chemicals there. Continue efforts to increase oyster growth because they filter the bay water." destination="Scenario4BClip" />
+		</scenario>
+
+		<scenario type="final" clip="Scenario4AClip" label="Scenario4A" destination="ConclusionClip" />
+		<scenario type="final" clip="Scenario4BClip" label="Scenario4B" destination="ConclusionClip" />
+		<scenario type="final" clip="Scenario4CClip" label="Scenario4C" destination="ConclusionClip" />
+		<scenario type="final" clip="Scenario4DClip" label="Scenario4D" destination="ConclusionClip" />
+		<scenario type="final" clip="Scenario4EClip" label="Scenario4E" destination="ConclusionClip" />
+		<scenario type="final" clip="Scenario4FClip" label="Scenario4F" destination="ConclusionClip" />	
+		<scenario type="end" clip="ConclusionClip" label="Conclusion" />
+
+
+	</scenarios>
+
+</settings>	

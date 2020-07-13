@@ -1,0 +1,18 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Select "next" and "prev" to learn about the three main sections of the Declaration of Independence.<br/>]]>
+	</instructions>
+
+	<intro>Time to learn about the Declaration of Independence. </intro>
+	
+
+</settings>	

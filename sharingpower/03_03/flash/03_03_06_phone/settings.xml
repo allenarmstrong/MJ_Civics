@@ -1,0 +1,44 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Select each official to read their quote.
+
+Judge Diane Wood © 2011 AP Images
+All other images of officials are Public Domain
+]]>
+	</instructions>
+
+	<intro>Time to study some famous words. Good luck, citizen.</intro>
+
+	<rollovers>
+		<rollover clip="RolloverClip1" title= "Roosevelt" x="166" y="160" rotation="0">
+			<![CDATA["No man is above the law, and no man is below it." 
+- President Theodore Roosevelt]]>
+		</rollover>
+		<rollover clip="RolloverClip2" title="Obama" x="254" y="160" rotation="0">
+			<![CDATA["Transparency and the rule of law will be the touchstones of this presidency." 
+- President Barack Obama]]>
+		</rollover>
+		<rollover clip="RolloverClip3" title="Eisenhower" x="166" y="235" rotation="0">
+			<![CDATA["The clearest way to show what the rule of law means to us in everyday life is to recall what has happened when there is no rule of law." 
+- President Dwight Eisenhower]]>
+		</rollover>
+		<rollover clip="RolloverClip4" title="Wood" x="254" y="235" rotation="0">
+			<![CDATA["Neither laws nor the procedures used to create or implement them should be secret." 
+- U.S. Court of Appeals Judge Diane Wood]]>
+		</rollover>
+		<rollover clip="RolloverClip5" title="Kennedy" x="166" y="305" rotation="0">
+			<![CDATA["When we talk about the rule of law, we assume that weÕre talking about a law that promotes freedom, that promotes justice, that promotes equality." 
+- U.S. Supreme Court Justice Anthony Kennedy]]>
+		</rollover>
+	</rollovers>
+
+</settings>	

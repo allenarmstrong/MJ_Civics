@@ -1,0 +1,32 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Welcome to the Wheel of Citizenship!
+
+Select the wheel, "next" or "prev," and I will make it spin! <br/><br/>Rolling your mouse over a term will reveal more information about that term.<br/>]]>
+	</instructions>
+
+	<intro>Time to study some terms. Good luck, citizen!</intro>
+
+	<terms>
+		<term title="Speech"><![CDATA[<b>Definition:</b> Communication through spoken words and gestures
+<b>Examples:</b> Wearing a shirt with an American flag on it, giving a speech about online classes, telling others why you support a certain person running for political office,  making a ÒpeaceÓ sign with your hand]]></term>
+		<term title="Press"><![CDATA[<b>Definition:</b> All the people involved in gathering and reporting the news
+<b>Examples:</b> A newspaper editor commenting on the remarks of political leaders, a news website editor sharing ideas for improving national security, a magazine article writer complaining about health care law]]></term>
+		<term title="Assembly"><![CDATA[<b>Definition:</b> The coming together of people for a common purpose
+<b>Examples:</b> A local organization sponsoring a holiday parade, a political leader holding a street rally to gain supporters, a public protest against a new policy, people from a neighborhood meeting to discuss problems with residents allowing pets to roam free]]></term>
+		<term title="Religious expression"><![CDATA[<b>Definition:</b> The communication of religious beliefs, thoughts, or feelings
+<b>Examples:</b> People gathering in a religious building, such as a church, to worship together, a group of teens meet to study the Bible and share their thoughts, beginning a meeting with a prayer]]></term>
+		<term title="Petition"><![CDATA[<b>Definition:</b> A formal request, or to make a formal request to government to address a problem
+<b>Examples:</b> People signing a letter to show support for government action on a certain issue, sending a personal request for legal help to a member of Congress, talking to a political leader about a problem, gathering signatures from voters as a step toward adding a proposal for a new law to the next election ballot]]></term>
+		
+	</terms>
+</settings>	

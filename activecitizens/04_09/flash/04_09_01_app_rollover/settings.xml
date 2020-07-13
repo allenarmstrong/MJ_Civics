@@ -1,0 +1,41 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Roll your mouse over the following apps to learn more about them.<br/>]]>
+	</instructions>
+
+	<intro>Time for a review. Good luck, citizen.</intro>
+
+	<rollovers>
+		<rollover clip="RolloverClip1" title= "Information is Power!" x="166" y="110" rotation="0">
+			<![CDATA[Not everyone agrees on how to handle issues that face the nation, states, or even local communities.  Effective government officials and active citizens gather as much information as possible. They consider many perspectives on issues so they can make the best decisions possible.]]>
+		</rollover>
+		<rollover clip="RolloverClip2" title="Take It to the Judge!" x="254" y="110" rotation="0">
+			<![CDATA[Courts in the United States settle disputes and help define the laws through their decisions. The Supreme Court has the final say on the meaning of the U.S. Constitution.]]>
+		</rollover>
+		<rollover clip="RolloverClip3" title="Read Me My Rights!" x="166" y="185" rotation="0">
+			<![CDATA[The U.S. Constitution protects rights of those accused of crimes. This helps to ensure they have a fair chance to defend themselves. Cases such as Miranda v. Arizona have helped define what these rights mean to the arrest and trial process.]]>
+		</rollover>
+		<rollover clip="RolloverClip4" title="Say It or Display It!" x="254" y="185" rotation="0">
+			<![CDATA[Freedom of expression is an important right in U.S. society. Cases such as Tinker v. Des Moines have helped define what the First Amendment means for students.]]>
+		</rollover>
+		<rollover clip="RolloverClip5" title="Watchdog!" x="166" y="265" rotation="0">
+			<![CDATA[Individuals and groups help to monitor and influence government. The media help spread ideas and information to many people.]]>
+		</rollover>
+		<rollover clip="RolloverClip6" title="I Voted!" x="254" y="265" rotation="0">
+			<![CDATA[Campaigning and voting are important ways people can shape government. Many factors can affect who wins an election. Examples include the role of political parties and the media.]]>
+		</rollover>
+		<rollover clip="RolloverClip7" title="Map It!" x="166" y="315" rotation="0">
+			<![CDATA[A map of demographic data can help us understand the results of an election. It also can show the preferences or needs of a community. The case of Bush v. Gore showed how important it is for every eligible citizen to vote!]]>
+		</rollover>
+	</rollovers>
+
+</settings>	

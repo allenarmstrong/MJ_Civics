@@ -1,0 +1,37 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Match each image to the type of expression it represents.
+
+©2011 AP Images]]>
+	</instructions>
+
+	<intro>Time to identify some images. Good luck, citizen!</intro>	
+
+	<segments>
+		<segment clip="Speech" 	label=""	id="0" cat="0"/>
+		<segment clip="Religion" 	label=""	id="1" cat="1"/>
+		<segment clip="Petition" 	label=""	id="2" cat="2"/>
+		<segment clip="Press" 	label=""	id="3" cat="3"/>
+		<segment clip="Assembly" 	label=""	id="4" cat="4"/>	
+	</segments>
+
+	<bins>
+		<bin clip="Bin0Clip" 	label=""	id="0"/>
+		<bin clip="Bin1Clip" 	label=""	id="1"/>
+		<bin clip="Bin2Clip" 	label=""	id="2"/>
+		<bin clip="Bin3Clip" 	label=""	id="3"/>
+		<bin clip="Bin4Clip" 	label=""	id="4"/>
+	</bins>
+
+	<feedback title="Good Job!">Select "continue" and then select the "reset" button to restart the interactive.</feedback>
+
+</settings>	

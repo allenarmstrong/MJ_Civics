@@ -1,0 +1,38 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Roll your mouse over the following apps to learn more about them.<br/>]]>
+	</instructions>
+
+	<intro>Time for a review. Good luck, citizen.</intro>
+
+	<rollovers>
+		<rollover clip="RolloverClip1" title="Government Roundup!" x="166" y="130" rotation="0">
+			<![CDATA[The world has many different types of government. The type affects who holds decision-making power in the country. The United States is a representative democracy.]]>
+		</rollover>
+		<rollover clip="RolloverClip2" title="World Geo-Hunt!" x="254" y="130" rotation="0">
+			<![CDATA[Geography has a great influence on the development of a country. The resources and challenges a country faces can affect its standard of living. We can use gross domestic product (GDP) to measure standard of living.]]>
+		</rollover>
+		<rollover clip="RolloverClip3" title="Diversify!" x="166" y="215" rotation="0">
+			<![CDATA[A country's natural resources help shape the goods and services it produces. Countries trade products they can make well for others they want or need.]]>
+		</rollover>
+		<rollover clip="RolloverClip4" title="Foreign or Domestic?" x="254" y="215" rotation="0">
+			<![CDATA[Currency is important to trade. Countries need to have a way to exchange their currencies. Supply and demand determine the values of currencies.]]>
+		</rollover>
+		<rollover clip="RolloverClip5" title="Got Cash?" x="166" y="295" rotation="0">
+			<![CDATA[Building ties with others around the world promotes good will and peace. The U.S. government and people are members of many international organizations.]]>
+		</rollover>
+		<rollover clip="RolloverClip6" title="Global Citizens!" x="254" y="295" rotation="0">
+			<![CDATA[The world has many different types of government. The type affects who holds decision-making power in the country. The United States is a representative democracy.]]>
+		</rollover>
+	</rollovers>
+
+</settings>	

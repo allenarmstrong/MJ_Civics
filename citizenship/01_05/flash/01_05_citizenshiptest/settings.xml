@@ -1,0 +1,96 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Read the questions presented before you and select the best possible answer.<br/>]]>
+	</instructions>
+
+	<intro>See if you can answer these questions! Good luck, citizen!</intro>
+
+	<problems>
+		<problem>
+			<question>1 of 10: What is the name of the national anthem?</question>
+			<choice type="" feedbackTitle="Incorrect" >a. God Bless the U.S.A. </choice>
+			<choice type="correct" feedbackTitle="Correct!" >b. The Star Spangled Banner</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. My Country 'Tis of Thee</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. America the Beautiful</choice>
+		</problem>
+		<problem>
+			<question>2 of 10: Name one of the two longest rivers in the United States.</question>
+			<choice type="" feedbackTitle="Incorrect" >a. Ohio River</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. Rio Grande</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. Colorado River</choice>
+			<choice type="correct" feedbackTitle="Correct!" >d. Mississippi River</choice>
+		</problem>
+		<problem>
+			<question>3 of 10: What do we show loyalty to when we say the Pledge of Allegiance?</question>
+			<choice type="" feedbackTitle="Incorrect" >a. State where you live</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. President</choice>
+			<choice type="correct" feedbackTitle="Correct!" >c. United States</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. Congress</choice>
+		</problem>
+		<problem>
+			<question>4 of 10: In what month do we vote for President?</question>
+			<choice type="" feedbackTitle="Incorrect" >a. January</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. February</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. October</choice>
+			<choice type="correct" feedbackTitle="Correct!" >d. November</choice>
+		</problem>
+		<problem>
+			<question>5 of 10: Name two national U.S. holidays.</question>
+			<choice type="" feedbackTitle="Incorrect" >a. Valentine's Day and Presidents' Day</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. April Fool's Day and Labor Day</choice>
+			<choice type="correct" feedbackTitle="Correct!" >c. Labor Day and Thanksgiving</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. Citizenship Day and Columbus Day</choice>
+		</problem>
+		<problem>
+			<question>6 of 10: Why does the flag have 50 stars?</question>
+			<choice type="" feedbackTitle="Incorrect" >a. One star for each president</choice>
+			<choice type="correct" feedbackTitle="Correct!" >b. One star for each state</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. For the original 50 colonies</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. For the 50 people who originally came to the United States</choice>
+		</problem>
+		<problem>
+			<question>7 of 10: Name one right only for U.S. citizens.</question>
+			<choice type="" feedbackTitle="Incorrect" >a. Freedom of religion</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. Freedom to attend public school</choice>
+			<choice type="correct" feedbackTitle="Correct!" >c. Freedom to run for federal office</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. Freedom of speech</choice>
+		</problem>
+		<problem>
+			<question>8 of 10: What is one responsibility that is only for United States citizens?</question>
+			<choice type="" feedbackTitle="Incorrect" >a. Obey the law</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. Pay taxes</choice>
+			<choice type="correct" feedbackTitle="Correct!" >c. Serve on a jury</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. Be respectful of others</choice>
+		</problem>
+		<problem>
+			<question>9 of 10: What are the two major political parties in the United States?</question>
+			<choice type="" feedbackTitle="Incorrect" >a. American and Bull Moose</choice>
+			<choice type="correct" feedbackTitle="Correct!" >b. Democratic and Republican</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. Democratic-Republican and Whigs</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. Reform and Green</choice>
+		</problem>
+		<problem>
+			<question>10 of 10: Why does the flag have 13 stripes?</question>
+			<choice type="" feedbackTitle="Incorrect" >a. The stripes represent the members of the Second Continental Congress.</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. It was considered lucky to have 13 stripes on the flag.</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. The stripes represent the number of signatures on the U.S. Constitution.</choice>
+			<choice type="correct" feedbackTitle="Correct!" >d. The stripes represent the original colonies.</choice>
+		</problem>
+	</problems>
+
+	<feedback>
+		<correct>Select continue to close this window and "next" to view the next question.</correct>
+		<retry>Oops, that was wrong. Select "continue" to close this window and try again.</retry>
+		<restart></restart>
+	</feedback>
+
+</settings>	

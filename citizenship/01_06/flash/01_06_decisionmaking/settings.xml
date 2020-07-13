@@ -1,0 +1,95 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Read the questions presented and select the best possible answer.<br/>]]>
+	</instructions>
+
+	<intro>Time to show off your citizenship skills. Good luck, citizen!</intro>
+
+	<problems>
+		<problem>
+			<question>1 of 6: You and your friends ride your skateboards every day. When you reach your favorite parking lot, you see a new sign. It says "No Skateboarding in the Parking Lot." Your friend says not to worry about it because you have always skated there. Another points out that no police officers are nearby to see you.
+
+What would you do?
+&nbsp;</question>
+			<choice type="" feedbackTitle="Hmm, is this the best choice?" feedback="Local officials must have thought it important to ban skateboarding for a reason. Perhaps someone was seriously injured skating in this area. Rules and laws are often created to keep people safe. Choosing to ignore the sign might get you in trouble and could risk your safety. 
+
+Instead of just saying no, you can suggest somewhere else to skate. Following rules and obeying laws are important to good citizenship.">a. Skateboard in the parking lot. You do not want to look weak to your friends.</choice>
+			<choice type="correct" feedbackTitle="Great choice!" feedback="Instead of just saying no, you can suggest somewhere else to skate. Following rules and obeying laws are important to good citizenship. 
+
+Local officials must have thought it important to ban skateboarding for a reason. Perhaps someone was seriously injured skating in this area. Rules and laws are often created to keep people safe. Choosing to ignore the sign might get you in trouble and could risk your safety." >b. Suggest finding a new place to skateboard. You do not want to risk trouble.</choice>
+		</problem>
+		<problem>
+			<question>2 of 6: Your parents agree to let you go to a movie with a friend. They say to be home by 10 p.m., which is the city's curfew for teens. Teens must be with an adult to be out after 10.
+
+After the movie, your friend offers to buy ice cream. You really want ice cream and to stay with your friend longer. It is already 9:30 p.m.
+
+What would you do?
+&nbsp;</question>
+			<choice type="" feedbackTitle="Hmm, is this the best choice?" feedback="Families worry when loved ones are missing. The city curfew is a law. Great citizens are responsible, trustworthy, and law-abiding. 
+
+Asking your parents first lets them know you are responsible. Being responsible lets people know you are someone they can trust.">a. Go out for ice cream. You love it and rarely see your friend. You will only be a few minutes late.</choice>
+			<choice type="correct" feedbackTitle="Great choice!" feedback="Asking your parents first lets them know you are responsible. Being responsible lets people know you are someone they can trust.
+
+Families worry when loved ones are missing. The city curfew is a law. Great citizens are responsible, trustworthy, and law-abiding.">b. Ask to call your parents first. They may say no, but better to risk that than coming home late.</choice>
+		</problem>
+		<problem>
+			<question>3 of 6: Teens in your neighborhood are sending a girl cruel text messages. Some comments have deeply upset her. She changed her number. Yet now they are posting cruel comments about her online. Some of your friends think it is funny. She says she is afraid to go to school or the park now.
+
+What would you do?
+&nbsp;</question>
+			<choice type="correct" feedbackTitle="Great choice!" feedback="Good citizens protect rights. You and the girl have the right to feel safe. Speak to a trusted adult. The adults may not be aware of the problem. They need to know in order to take action.
+
+It seems the bullying is growing worse by ignoring it. Many states have laws against bullying and cyberbullying.">a. Speak to a trusted adult. She is afraid, and that is not funny at all.</choice>
+			<choice type="" feedbackTitle="Hmm, is this the best choice?" feedback="It seems the bullying is growing worse by ignoring it. Many states have laws against bullying and cyberbullying. 
+
+Good citizens protect rights. You and the girl have the right to feel safe. Speak to a trusted adult. The adults may not be aware of the problem. They need to know in order to take action.">b. Keep quiet. Telling will make things worse for her. The other students will know it was you.</choice>
+		</problem>
+		<problem>
+			<question>4 of 6: Many of your friends complain that they have nothing to do after school. Your community has parks, but many are dirty or in need of repairs. You heard your parents complain about the city not putting enough money into the parks. You have an idea that local teens could work together to clean and repair the parks. You think that they would then be more likely to use them, too.
+
+What would you do?</question>
+			<choice type="" feedbackTitle="Hmm, is this the best choice?" feedback="Every project begins with an idea. People share their ideas with government officials and other leaders. Choosing to take action is the first step to making a change.
+
+Local governments are usually in charge of parks. You will need the support of local officials. Organizing teens to help is a great idea.">b. Play your video games as usual. Your idea could never happen, anyway.</choice>
+			<choice type="correct" feedbackTitle="Great choice!" feedback="Local governments are usually in charge of parks. You will need the support of local officials. Organizing teens to help is a great idea.
+
+Every project begins with an idea. People share their ideas with government officials and other leaders. Choosing to take action is the first step to making a change." >a. Write a letter about your idea to have teen volunteers clean up the parks. Send it to city officials.</choice>
+		</problem>
+		<problem>
+			<question>5 of 6: You hear your family debating whether to vote on Election Day. Some say their votes will not count, so they will not waste the time. Some have not registered to vote for the same reason. You know that voting is an important way for citizens to impact government.
+
+What would you do?
+&nbsp;</question>
+			
+			<choice type="correct" feedbackTitle="Great choice!" feedback="Going to the polls can be exciting. You will see how citizens come together to support their candidates. Some U.S. communities allow teens to preregister to vote at age 16 or 17.
+
+While you should respect your family's opinions, you could mention to your family that you think voting is an important citizen duty. Voting is one way to influence government and create change. Every vote counts, especially if citizens are nearly evenly divided on an issue! You could ask your family to bring you to the polls to see the process in action.">b. Ask family members to take you to the polls so you can see the voting process.</choice>
+			<choice type="" feedbackTitle="Hmm, is this the best choice?" feedback="It is true you should respect your family's opinions. You could mention to your family that you think voting is an important citizen duty. Voting is one way to influence government and create change. Every vote counts, especially if citizens are nearly evenly divided on an issue! You could ask your family to bring you to the polls to see the process in action. 
+
+Going to the polls can be exciting. You will see how citizens come together to support their candidates. Some U.S. communities allow teens to preregister to vote at age 16 or 17.">a. Listen to them debate and then forget about it. Their opinions are none of your business. </choice>
+		</problem>
+		<problem>
+			<question>6 of 6: You and a group of friends are watching a parade. As members of the National Guard pass by two of your friends begin booing. Your friends say that there would be no war if no one joined the military. Others watching the parade are staring at your friends.
+
+What would you do?
+&nbsp;</question>
+			<choice type="" feedbackTitle="Hmm, is this the best choice?" feedback="Your friends are being disrespectful. They have the right to express their opinions. Yet people can share opinions without hurting others or creating anger. A celebration like a parade is not a good choice of place or time to express negative feelings.
+
+Remember that people who choose to serve the military make a promise to protect the nation. They protect the rights that citizens use every day. That includes the right to express opinions.">b. Look away and pretend you are not with those two friends.</choice>
+			<choice type="correct" feedbackTitle="Great choice!" feedback="Remember that people who choose to serve the military make a promise to protect the nation. They protect the rights that citizens use every day. That includes the right to express opinions.
+
+Your friends are being disrespectful. They have the right to express their opinions. Yet people can share opinions without hurting others or creating anger. A celebration like a parade is not a good choice of place or time to express negative feelings.">a. Remind your friends that soldiers protect citizens.</choice>
+			
+		</problem>
+	</problems>
+
+</settings>	

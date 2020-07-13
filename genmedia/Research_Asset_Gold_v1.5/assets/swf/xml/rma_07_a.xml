@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PO>
+  <xml>
+
+    <node id="14"><![CDATA[<b>Read the following urban legend and then answer the questions about how you would research it. </b>]]></node>
+	<node id="15"><![CDATA[You have found four different web articles. Which ones are credible, and which ones are not credible? Choose the up arrow for credible article or down arrow for article that is not credible and then select Submit.]]></node>
+   
+   <interaction>
+   		<node><![CDATA['Why I think 1950s police were good,' by Joe Schmoe ]]></node>
+		<node><![CDATA['Electronic Hotel Key Cards and their Purposes,' by Hotel Reviewer ]]></node>
+		<node><![CDATA['Best International Travel Sites,' by users]]></node>
+		<node><![CDATA['Identity Theft and You,' by local government]]></node>
+		 <feedback>
+          <quesTitle><![CDATA[You have found four different web articles. Which ones are credible, and which ones are not credible? Choose the up arrow for credible article or down arrow for article that is not credible and then select Submit.]]></quesTitle>
+          <head><![CDATA[<b><i>Feedback</i><b>]]></head>
+		  <submit><![CDATA[submit]]></submit>
+          <correct><![CDATA[Great job! You have correctly assessed each article and its credibility.]]></correct>
+          <wrong><![CDATA[Try again! Take a close look at the article titles and their authors. Do they meet credible standards?]]></wrong>
+		    <wrong1><![CDATA[Almost! Take a look at the correct answers. <br>'Electronic Hotel Key Cards and their Purposes,' by Hotel Reviewer. <br>'Identity Theft and You,' by local government.<br>These are the articles and authors that meet credible standards.]]></wrong1>
+        </feedback>
+   </interaction>
+   
+    <questions id="1">
+      <question1 ans="2" optionDistance="45" numberOfOptions="4">
+        <node><![CDATA[What are the major hotels in the United States?]]></node>
+        <node><![CDATA[What information is stored on a hotel key card?]]></node>
+        <node><![CDATA[How many people have experienced identity theft?]]></node>
+		<node><![CDATA[Are you allowed to keep your key card from a hotel?]]></node>
+        <feedback>
+          <quesTitle><![CDATA[Which of the following questions would be a strong research question for this subject? Choose the best answer and select Submit.]]></quesTitle>
+          <head><![CDATA[<b><i>Feedback</i><b>]]></head>
+          <correct><![CDATA[Very good! This question will lead to strong research about this topic.]]></correct>
+          <wrong><![CDATA[Read through the e-mail again. What is the most important information you need to find out?]]></wrong>
+		   <wrong1><![CDATA[Almost! 'What information is stored on a hotel key card?' is the question that will lead to strong research on this topic.]]></wrong1>
+        </feedback>
+      </question1>
+	  
+      <question2 ans="1" optionDistance="45" numberOfOptions="4">
+        <node><![CDATA[Hotels AND Identity theft]]></node>
+        <node><![CDATA[Hotels OR Key cards]]></node>
+        <node><![CDATA[Part time NOT Full time]]></node>
+		<node><![CDATA[Identity theft AND Police]]></node>
+		
+        <feedback>
+          <quesTitle><![CDATA[What would be a strong key word search for this subject? Choose the best answer and select Submit.]]></quesTitle>
+          <head><![CDATA[<b><i>Feedback</i><b>]]></head>
+          <correct><![CDATA[Well done! This search will point you in the right direction.]]></correct>
+          <wrong><![CDATA[Review the information on searching. How could you streamline your results for this research?]]></wrong>
+		     <wrong1><![CDATA[Almost! Hotels AND Identity theft - This is the combination of key words that will lead you in the right direction for this topic.]]></wrong1>
+        </feedback>
+      </question2>
+	  
+      
+      <question3 ans="4" optionDistance="45" numberOfOptions="4">
+         <node><![CDATA[Plagiarize your paper from someone.]]></node>
+        <node><![CDATA[Make the sources up on your own.]]></node>
+		<node><![CDATA[Choose the first sources you find.]]></node>
+		<node><![CDATA[Look at the sources the author used.]]></node>
+        <feedback>
+          <quesTitle><![CDATA[How can you best use an author's work to locate more sources for your search? Choose the best answer and select Submit.]]></quesTitle>
+          <head><![CDATA[<b><i>Feedback</i><b>]]></head>
+          <correct><![CDATA[Excellent! This is a great way to locate more sources that will add to your research. ]]></correct>
+          <wrong><![CDATA[Give this another try. Where can you find some quick help with credible sources for your topic?]]></wrong>
+		     <wrong1><![CDATA[Almost! Looking at the sources an author used is a great way to locate more sources that will add to your research.]]></wrong1>
+        </feedback>
+      </question3>
+	  
+	
+      <question4 ans="3" optionDistance="45" numberOfOptions="4">
+        <node><![CDATA[as compare/contrast]]></node>
+        <node><![CDATA[in alphabetical order]]></node>
+        <node><![CDATA[chronologically]]></node>
+		 <node><![CDATA[on paper only]]></node>
+        <feedback>
+          <quesTitle><![CDATA[If you want to write your paper about the order in which events occurred, you should organize your notes. Choose the best answer and select Submit.]]></quesTitle>
+          <head><![CDATA[<b><i>Feedback</i><b>]]></head>
+          <correct><![CDATA[Excellent! Arranging your notes chronologically will help you when you try to write a paper in this same order. ]]></correct>
+          <wrong><![CDATA[Take another look. What is the best way to show your information in its correct order?]]></wrong>
+		     <wrong1><![CDATA[Almost! Arranging your notes in chronological order will help you write a paper where events are discussed in the order of time.]]></wrong1>
+        </feedback>
+      </question4>
+
+    </questions>
+    <ins>
+      <feedBackTitle><![CDATA[<b><i>Feedback</i></b>]]></feedBackTitle>
+      <feedBackDragTitle><![CDATA[]]></feedBackDragTitle>
+      <submit><![CDATA[Submit]]></submit>
+      <tryagain><![CDATA[Try Again]]></tryagain>
+      <show_answer><![CDATA[Continue]]></show_answer>
+    </ins>
+  </xml>
+</PO>

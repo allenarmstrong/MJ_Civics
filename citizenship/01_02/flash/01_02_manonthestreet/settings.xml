@@ -1,0 +1,15 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="Info"><![CDATA[This is a placeholder<br/>]]>
+	</instructions>
+
+</settings>	

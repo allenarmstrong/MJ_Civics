@@ -1,0 +1,159 @@
+
+/* ===================================== */
+/* CUSTOM
+/* ===================================== */
+
+
+.ui_interactive {
+	width: 540px;
+	height: 440px;
+	background-color: #E4E4E4;
+	border: 1px solid #ddd;	
+	padding: 5px;
+}
+
+
+/* ------ */
+/* Sortable
+/* ------ */
+.sortable {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 95%;
+}
+
+.sortable li {
+	margin: 0 3px 3px 3px;
+	padding: 0.4em;
+	padding-left: 1.5em;
+	font-size: 1em;
+	height: 18px;
+	display: inline-block;
+}
+
+.sortable li span {
+	position: absolute; 
+	margin-left: -1.3em;
+}
+
+
+
+/* navigation */
+.ui-navigation {
+	float: right;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ui-navigation-header {
+	overflow:hidden;
+	padding: 5px;
+	margin: 0 0 5px;
+}
+.ui-navigation-header li {
+	float: left;
+	list-style: none;
+	margin: 0 5px;
+}
+
+.ui-navigation-tracker {
+	float: left;
+	padding: 1px 0 0;
+	margin: 0 5px 0 0;
+}
+
+/* Slideshow */
+.ui-slideshow-clip {
+	overflow: hidden;
+	position: relative;
+	width: 540px;
+	height: 430px;
+}
+.ui-slideshow-slide {
+	width: 20000px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 430px;
+}
+.ui-slideshow-item {
+	position: relative;
+	float: left;
+	line-height: normal;
+	width: 520px;
+	height: 430px;
+	margin: 0 10px 0 0;
+	padding: 10px;
+	overflow: auto;
+}
+
+.selectable .ui-selecting { background: #FECA40; }
+.selectable .ui-selected { background: #F39814; color: white; }
+.selectable { list-style-type: none; margin: 0; padding: 0; width: 95%; }
+.selectable li { margin: 3px; padding: 0.4em; font-size: 1em; height: 18px;  }
+
+
+.draggable { min-width: 50px; max-width: 130px; min-height: 10px; padding: 2px; float: left; margin: 2px; font-size: .7em; position: relative }
+.droppable { width: 150px; min-height: 35px; float: left; margin: 5px; padding: 0; font-size: .7em }
+.droppable h3 { text-align: center }
+.droppable .bin { background-color: #FFF; color: #000; text-align: left; font-size: .9em; padding: 3px; margin: 0}
+.droppable .bin ul { margin-left: 0px; padding-left: 25px }
+
+.ui-accordion {
+	width: 520px;	
+}
+
+.ui-tabs {
+	width: 510px;	
+}
+
+/* interface */
+.ui_edge_buttons {
+	position: relative;
+	float: right;
+	margin: 10px;	
+}
+
+.ui_cucle_button {
+}
+
+.ui-widget textarea{
+	font-size: .7em;
+	font-family: 'Courier New', Courier, monospace;	
+}
+
+.ui_dialog {
+	position: absolute;	
+}
+.ui-widget-overlay {
+		
+}
+
+.ui_results {
+	text-align: center;	
+}
+
+.ui_pending .help {
+	height: 30px;
+	width: 30px;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+
+.invisibleElement {
+	overflow: hidden;
+	height: 0;
+	width: 0;
+	position:absolute;
+	padding: 0;
+	margin: 0;
+	border: none;
+	
+}
+

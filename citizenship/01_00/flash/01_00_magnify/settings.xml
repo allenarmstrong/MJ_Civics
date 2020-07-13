@@ -1,0 +1,36 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  What is happening in this image?"><![CDATA[First, imagine yourself inside the image. Consider what you would experience as part of the event while asking yourself the following questions:<br/><br/>• What do you see?<br/>• What do you hear?<br/>• What do you feel?<br/>• What do you taste?<br/>• What do you smell?<br/><br/>Select the "analyze image" button  in the top right corner to reveal the magnifying lens. Then drag the lens over the four quadrants of the screen.<br/><br/>Image: ©2007 Eric Abderhalden<br/>]]>
+	</instructions>
+
+	<intro>Time to analyze an image. Good luck, citizen!</intro>
+
+	<analyses>
+		<set>
+		<analysis><b>Type in your responses:</b><br/>• What do you see?<br/>• What do you hear?<br/>• What do you feel?<br/>• What do you taste?<br/>• What do you smell?</analysis>
+		<response><b>Suggested responses:</b><br/>• What do you see? Soldier waving.<br/>• What do you hear? People cheering. <br/>• What do you feel? Wind blowing.<br/>• What do you taste? N/A<br/>• What do you smell? Trees.</response>
+		</set>
+		<set>
+		<analysis><b>Type in your responses:</b><br/>• What do you see?<br/>• What do you hear?<br/>• What do you feel?<br/>• What do you taste?<br/>• What do you smell?</analysis>
+		<response><b>Suggested responses:</b><br/>• What do you see? Soldier waving.<br/>• What do you hear? People cheering. <br/>• What do you feel? Wind blowing.<br/>• What do you taste? N/A<br/>• What do you smell? Trees.</response>
+		</set>
+		<set>
+		<analysis><b>Type in your responses:</b><br/>• What do you see?<br/>• What do you hear?<br/>• What do you feel?<br/>• What do you taste?<br/>• What do you smell?</analysis>
+		<response><b>Suggested responses:</b><br/>• What do you see? Children. Man driving. <br/>• What do you hear? Car running.<br/>• What do you feel? Car rumbling.<br/>• What do you taste? N/A<br/>• What do you smell? Car exhaust.</response>
+		</set>
+		<set>
+		<analysis><b>Type in your responses:</b><br/>• What do you see?<br/>• What do you hear?<br/>• What do you feel?<br/>• What do you taste?<br/>• What do you smell?</analysis>
+		<response><b>Suggested responses:</b><br/>• What do you see? Solders. A single red rose. <br/>• What do you hear? Car running. <br/>• What do you feel? Car rumbling. <br/>• What do you taste? N/A<br/>• What do you smell? Rose. Car Exhaust. </response>
+		</set>
+	</analyses>
+
+</settings>	

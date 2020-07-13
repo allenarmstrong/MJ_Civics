@@ -1,0 +1,284 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>M/J Civics</title>
+<link type="text/css" media="screen" href="../../css/theme.css" rel="stylesheet" />
+<link type="text/css" media="print" href="../../css/print.css" rel="stylesheet" />
+<script type="text/javascript" src="../../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.swfobject.1-1-1.min.js"></script>
+<script type="text/javascript" src="../../js/core.js"></script><script type="text/javascript">var unitNo = 5;</script>
+<script type="text/javascript">var unitNoLesNo = 0503;</script>
+<script type="text/javascript" src="../../js/links.js"></script>
+
+
+<script type="text/javascript" src="../../js/jquery_ui/core/js/custom_plugins/ui_importer.js" charset="utf-8"></script>
+
+
+<script type="text/javascript" src="../../js/plugins/jquery.jplayer.min.js"></script>
+<link type="text/css" media="screen" href="../../js/plugins/jplayer.blue.monday.css" rel="stylesheet" />
+
+<script type="text/javascript">
+function PlayAudio(FileToPlay,autoPlay) {
+	$("#jquery_jplayer_1").jPlayer("destroy");
+	$("#jquery_jplayer_1").jPlayer({ 
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				oga: "audio/05_03_04_" + FileToPlay + ".ogg",
+				mp3: "audio/05_03_04_" + FileToPlay + ".mp3"
+			});
+			if(autoPlay){
+				$(this).jPlayer("play");	
+			}
+		},
+		swfPath: "../../js/plugins/Jplayer.swf",
+		supplied: "oga,mp3",
+		wmode: "window",
+		cssSelectorAncestor: "#jp_container_1"
+	});
+}
+
+$(document).ready(function () {
+	
+	$('.ui_interactive').bind('BEGIN',
+      function(event, data) { 
+        PlayAudio(1,true); //runs when user hits Begin
+      }
+    );
+	
+	$('.ui_interactive').bind('TRANSITION_COMPLETE', function(event, data) { 
+			data = data+1;
+			//alert(data);
+			PlayAudio(data,true);	
+	});	
+
+});
+</script>
+
+
+
+<style type="text/css">
+
+.ui_interactive { 
+	background-image:url(images/05_03_04_back.jpg);
+}
+
+.bg { background-position:right top; background-repeat: no-repeat; position:relative;}
+
+.host {position:absolute; left:100px; top:20px; width:430px;}
+.smith {    
+	left: 260px;
+    position: absolute;
+    top: 20px;
+    width: 380px;
+ }
+ 
+ .marx {    
+	left: 310px;
+    position: absolute;
+    top: 20px;
+    width: 370px;
+ }
+.bfont { font-weight:bold; font-size:16px; line-height:28px;}
+</style>
+
+</head>
+<body>
+<div id="logo"></div>
+<div id="window">
+<div id="page">
+<div id="nav">
+<dl>
+<dt>Navigation</dt>
+<dd>
+<ul>
+<li id="next"><a href="05_03_05.htm" title="Next"><span>Next</span></a></li>
+<li id="prev"><a href="05_03_03.htm" title="Previous"><span>Previous</span></a></li>
+<li id="home"><a href="../../index.htm" title="Home"><span>Home</span></a></li>
+<li id="gloss"><a class="pop" href="../../glossary/glossary.htm" title="Glossary"><span>Glossary</span></a></li>
+<li id="notes"><a href="../../gendocs/courseresources/resource.htm" title="Course resources"><span>Course Resources</span></a></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div id="content">
+<div id="title"><span id="title1"></span><span id="title2"></span></div>
+<div id="margin">
+
+
+<h1>How Do We Organize An Economy?</h1>
+<p>People answer the three basic questions as they take care of their families and their businesses. Government must also answer these questions since it supplies goods and services for the <span class="tooltip">common good<span><strong>Common Good:</strong> the greatest possible conditions of society for the greatest number of people living in it</span></span>, such as roads and bridges.</p>
+<p>The Founding Fathers believed that the freedom to make your own choices was important to the economy. Competition and the forces of <span class="tooltip">supply<span><strong>Supply:</strong> the total amount of a good or service available for purchase</span></span> and <span class="tooltip">demand<span><strong>Demand:</strong> the total amount of a good or service that people are willing to buy</span></span> would encourage growth. They thought the United States would be most successful if people worked and provided for their families how they thought best.</p>
+<p>Yet this independent spirit sometimes created tricky situations for a community. What if a farmer's crop failed and he could not feed his family? What if the people in a town wanted a road but no one knew how to build one? As technology has changed and the country has grown, national leaders have looked to different ideas for how to organize the economy and answer the three basic questions.</p>
+<p>View this imaginary conversation to understand the principles of U.S. economy today.</p>
+
+
+
+<div style="clear:both"></div>
+<div class="ui_interactive" data-width="700px" data-height="486px" data-transition="blend">
+    		<div class="ui_slides" >
+
+               <div class="ui_slide bg"  style="background-image: url('images/05_03_04_intro.png') !important;">
+               	
+				<div class="ui_dialog instructions" title="Conversation">
+				 	View this imaginary conversation to understand the principles of U.S. economy today.
+			  	</div>
+				
+				<div  class="host bfont">
+				Good day to you! Today we are in the presence of three famous economic thinkers—Adam Smith, Karl Marx, and John Maynard Keynes. They will share their ideas, and we will see how they affected the development of the United States. Adam Smith, let's start with you. You probably had the greatest impact on the Founding Fathers.
+				</div>
+				
+                </div>
+			  <div class="ui_slide bg"  style="background-image: url('images/05_03_04_smith.png') !important;">
+					<div  class="smith bfont" style="line-height:23px;">
+					That's no surprise! I believe in a free market—meaning let businesses and households run without government making a bunch of rules. Competition and the natural forces of supply and demand determine what goods and services are made, how they are made, and who gets them for what price. Since the Founding Fathers were full of the independent spirit, they did discuss my ideas.
+					</div>
+                </div>
+			 <div class="ui_slide bg"  style="background-image: url('images/05_03_04_host.png') !important;">
+               <div  class="host bfont">
+				Keynes and Marx lived later anyway.
+				</div>
+                </div>
+			 <div class="ui_slide bg"  style="background-image: url('images/05_03_04_smith.png') !important;">
+               	<div  class="smith bfont" style="line-height:23px; font-size:14px;">
+				That's true, but I was not the only economic thinker at the time. My ideas just worked best with what the U.S. leaders thought about government. Now, I do think government should be able to collect taxes to support its own basic functions. I also think laws and law enforcement would help protect ownership of property and businesses. It would help enforce agreements between people and businesses, such as a work agreement or price agreement.
+				</div>
+                </div>
+			 <div class="ui_slide bg"  style="background-image: url('images/05_03_04_host.png') !important;">
+               <div  class="host bfont">
+				Adam Smith believed in a market economy, where government would have little to do with answering the three basic questions. Karl Marx, how is that different from your ideas? 
+				</div>
+                </div>
+			 <div class="ui_slide bg"  style="background-image: url('images/05_03_04_marx.png') !important;">
+               	<div  class="marx bfont" style="line-height:18px; font-size:13px;">
+				It is very different. You see, I worry about private ownership of property like land and other goods and people being angry with others for what they have. I think if people share all the goods and services, everyone will have enough to survive. Instead of each person determining the three basic questions for themselves, people should think about what's best for the community. As a group, people, through their leaders, should make decisions about the three basic questions. All people should have a fair share of what they make and have a part in making it. Leaving competition and supply and demand to work on their own can lead to prices that are too high and lack of jobs.
+				</div>
+                </div>
+			 <div class="ui_slide bg"  style="background-image: url('images/05_03_04_host.png') !important;">
+               <div  class="host bfont">
+				I see. Why do you think your ideas about government and the economy weren't shared by the Founding Fathers?
+				</div>
+                </div>
+			 <div class="ui_slide bg"  style="background-image: url('images/05_03_04_marx.png') !important;">
+               	<div  class="marx bfont" style="line-height:18px; font-size:13px;">
+				Thanks for asking. One reason is the independent spirit you mentioned before. Americans cherish the right to make their own choices about how to live and how to work. Making these decisions in a group takes away some of that freedom. The country has so many people, too. Government would have to make the economic decisions on behalf of the people. It would need many people to figure out what they should produce, the best ways to produce it, and how to distribute the products to the people. The Founding Fathers wanted a small government, not one with a great many working for it, as my ideas would require.
+				</div>
+                </div>
+			 <div class="ui_slide bg"  style="background-image: url('images/05_03_04_host.png') !important;">
+               <div  class="host bfont" style="width:420px;">
+				Karl Marx believed in a command economy, where government would make economic decisions. He thought it was most fair and would prevent the problems of having so few wealthy people and so many poor people. The U.S. government does have some control over the economy, though. Isn't that right, John Maynard Keynes?
+				</div>
+                </div>
+			 <div class="ui_slide bg"  style="background-image: url('images/05_03_04_keynes.png') !important;">
+               	<div  class="marx bfont" style="line-height:19px; font-size:14px;">
+				That is correct. See, the United States quickly grew and expanded. It needed roads. People wanted to use new technology to improve their lives, like farming equipment that increased their food supply. All people share some goods and services, like roads and water systems. It would not be fair for one person to decide to build a road, for example, and not let anyone else use it or charge high prices to use it. The U.S. government does make economic decisions about goods and services that support the common good, meaning they are for everyone.
+				</div>
+                </div>
+			 <div class="ui_slide bg"  style="background-image: url('images/05_03_04_host.png') !important;">
+               <div  class="host bfont">
+				So how do your ideas differ from Mr. Smith and Mr. Marx?
+				</div>
+                </div>
+			 <div class="ui_slide bg"  style="background-image: url('images/05_03_04_keynes.png') !important;">
+               	<div  class="marx bfont" style="line-height:19px; font-size:14px;">
+				You could say I am somewhere in between them with my ideas. See, I do support free markets and think individuals should answer the three basic questions. Yet I also think that a government can act to protect people from the bad effects of supply and demand. For example, it can build the roads and determine the best place for them so everyone benefits. Another way government can act is to set a minimum wage so that people can expect at least a certain amount of pay for their work. 
+				</div>
+                </div>
+			 <div class="ui_slide bg"  style="background-image: url('images/05_03_04_host.png') !important;">
+               <div  class="host bfont" style="line-height:25px;">
+				John Maynard Keynes supported a mixed economy, where individuals, businesses, and government all have a role in answering the three basic questions. This is the economy of the United States today. Americans can choose what type of work or business to do and will make those choices based on supply and demand. Government puts in place certain rules to protect the people and support common goods and services.
+				</div>
+                </div>
+		
+		
+		</div>
+		
+</div>
+
+
+
+
+
+<div class="Media" style="margin: 10px 0px 5px 185px;">
+        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+        <div id="jp_container_1" class="jp-audio Player">
+            <div class="jp-type-single">
+              <div class="jp-gui jp-interface">
+                <ul class="jp-controls">
+                  <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                  <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                  <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+                  <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+                  <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+                  <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+                </ul>
+                <div class="jp-progress">
+                  <div class="jp-seek-bar">
+                    <div class="jp-play-bar"></div>
+                  </div>
+                </div>
+                <div class="jp-volume-bar">
+                  <div class="jp-volume-bar-value"></div>
+                </div>
+                <div class="jp-time-holder">
+                  <div class="jp-current-time"></div>
+                  <div class="jp-duration"></div>
+                </div>
+              </div>
+              <div class="jp-no-solution">
+                <span>Update Required</span>
+                To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+<div id="menu">
+<div id="segments"><a href="../../index.htm" title="Units"><span>Segments</span></a></div>
+<dl id="units">
+<dt><span>Units</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="lessons">
+<dt><span>Lessons</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="pages">
+<dt><span>4 of 10</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="footer">
+<span id="copy">Unless otherwise noted, &copy; 2011 FLVS</span>
+</div>
+</body>
+</html>

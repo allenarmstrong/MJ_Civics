@@ -1,0 +1,431 @@
+@charset "UTF-8";
+/* incase an inverted custom gradient isn't specified */
+/* line 176, ../../../../../../../.gem/ruby/1.8/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-reset-base-class, #jTakeMyCase button {
+  font-family: "Lucida Grande", Lucida, Arial, sans-serif;
+  background: url('../images/button_bg.png?1290524416') repeat-x bottom left;
+  margin: 0;
+  width: auto;
+  overflow: visible;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border-style: solid;
+  font-weight: bold;
+}
+/* line 165, ../../../../../../../.gem/ruby/1.8/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-reset-base-class::-moz-focus-inner, #jTakeMyCase button::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+/* line 168, ../../../../../../../.gem/ruby/1.8/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+.fancy-button-reset-base-class:focus, #jTakeMyCase button:focus {
+  outline: none;
+}
+
+/* line 26, ../src/jquiz3.scss */
+#jTakeMyCase {
+  background: transparent url("../../../../../imgs/jQuery/bgs/paper-bg.jpg") repeat;
+  position: relative;
+  width: 680px;
+  height: 380px;
+  margin: 0px;
+  padding: 10px;
+  overflow: hidden;
+  border: 4px solid #bfbfbf;
+  font-family: sans-serif, Arial;
+  /* INSTRUCTIONS */
+}
+/* line 37, ../src/jquiz3.scss */
+#jTakeMyCase h1 {
+  color: #b06e2e;
+  font: bold 40px/40px sans-serif, Arial;
+}
+/* line 41, ../src/jquiz3.scss */
+#jTakeMyCase h2 {
+  color: #2c3540;
+  font: bold 20px/20px sans-serif, Arial;
+}
+/* line 47, ../src/jquiz3.scss */
+#jTakeMyCase .overlay {
+  position: absolute;
+  background: transparent url("../../../../../imgs/jQuery/bgs/paper-bg.jpg") repeat;
+  top: 0px;
+  left: 0px;
+  width: 700px;
+  height: 400px;
+}
+/* line 47, ../src/jquiz3.scss */
+#jTakeMyCase .specialText {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 700px;
+}
+/* line 56, ../src/jquiz3.scss */
+#jTakeMyCase .instructions {
+  position: absolute;
+  top: 80px;
+  left: 106px;
+  background-color: #FFF;
+  /*
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px; */
+  width: 505px;
+  height: 246px;
+  padding: 10px 0px 0px 0px;
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+  border: 6px solid #0079D8;
+}
+/* line 68, ../src/jquiz3.scss */
+#jTakeMyCase .instructions #jtitle {
+  font: bold 24px sans-serif, Arial;
+  color: #D30000;
+  letter-spacing: -1pt;
+  padding: 5px 0px 0px 15px;
+}
+/* line 75, ../src/jquiz3.scss */
+#jTakeMyCase .instructions #text {
+  width: 440px;
+  font: 12pt sans-serif, Arial;
+  padding: 15px 0px 0px 15px;
+}
+/* line 77, ../src/jquiz3.scss */
+#jTakeMyCase .instructions .go-btn {
+  background-color: #0079D8;
+  position: absolute;
+  bottom: 0px;
+  right: 18px;
+  width: 102px;
+  height: 41px;
+  font-size: 1.8em;
+  text-align: center;
+  padding: 10px 2px 0px 0px;
+  color: #FFFFFF;
+  
+  cursor: pointer;
+  /*
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -o-border-top-left-radius: 10px;
+  -ms-border-top-left-radius: 10px;
+  -khtml-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -o-border-top-right-radius: 10px;
+  -ms-border-top-right-radius: 10px;
+  -khtml-border-top-right-radius: 10px;
+  border-top-right-radius: 10px; */
+}
+/* line 93, ../src/jquiz3.scss */
+#jTakeMyCase .instructions .go-btn:hover {
+  background-color: #272a2b;
+}
+/* line 94, ../src/jquiz3.scss */
+#jTakeMyCase .instructions .go-btn:active {
+  background-color: #2c3540;
+  padding: 9px 2px 0px 0px;
+}
+/* line 97, ../src/jquiz3.scss */
+#jTakeMyCase .btn-i {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  background: transparent url(../images/icons/i.png) no-repeat;
+  width: 41px;
+  height: 40px;
+  z-index: 99999;
+  cursor: pointer;
+}
+/* line 108, ../src/jquiz3.scss */
+#jTakeMyCase h1 {
+  margin: 0 0 15px 0;
+}
+/* line 112, ../src/jquiz3.scss */
+#jTakeMyCase .navigation {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font: 12px sans-serif, Arial;
+  background-color: #6699aa;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #6699aa), color-stop(100%, #46707e));
+  background-image: -moz-linear-gradient(top, #6699aa 0%, #46707e 100%);
+  background-image: linear-gradient(top, #6699aa 0%, #46707e 100%);
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -o-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -khtml-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+  padding: 3px 5px;
+  border: 1px solid #46707e;
+  -moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.5);
+  -o-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.5);
+}
+/* line 127, ../src/jquiz3.scss */
+#jTakeMyCase .statement {
+  position: relative;
+  height: 91px;
+  padding: 10px 0 0 20px;
+}
+/* line 133, ../src/jquiz3.scss */
+#jTakeMyCase .statement span {
+  color: #7c8588;
+  font: bold 12px sans-serif, Arial;
+  position: absolute;
+}
+/* line 139, ../src/jquiz3.scss */
+#jTakeMyCase .statement h3 {
+  position: absolute;
+  top: 24px;
+  font: bold 17px/17px sans-serif, Arial;
+  width: 650px;
+  margin: 0px;
+}
+/* line 147, ../src/jquiz3.scss */
+#jTakeMyCase .answer {
+  position: relative;
+  height: 190px;
+}
+/* line 149, ../src/jquiz3.scss */
+#jTakeMyCase .selection {
+  float: left;
+  width: 170px;
+  height: 95px;
+  padding: 10px;
+  margin: 35px 0px 0px 15px;
+  -moz-box-shadow: 2px 2px 0px 0px #404040;
+  -webkit-box-shadow: 2px 2px 0px 0px #404040;
+  -o-box-shadow: 2px 2px 0px 0px #404040;
+  box-shadow: 2px 2px 0px 0px #404040;
+  overflow: hidden;
+  border: 6px solid #fff;
+}
+
+/* line 133, ../src/jquiz3.scss */
+#jTakeMyCase .amendments {
+   margin: -10px 0px 0px 10px;
+}
+
+/* line 133, ../src/jquiz3.scss */
+#jTakeMyCase .amendments h3 {
+  color: #7c8588;
+  font: bold 12px sans-serif, Arial;
+ 
+}
+
+/* line 149, ../src/jquiz3.scss */
+#jTakeMyCase .amendment {
+  float: left;
+  width: 31px;
+  height: 42px;
+  padding: 10px;
+  margin: 0px 0px 0px 15px;
+  -moz-box-shadow: 2px 2px 0px 0px #404040;
+  -webkit-box-shadow: 2px 2px 0px 0px #404040;
+  -o-box-shadow: 2px 2px 0px 0px #404040;
+  box-shadow: 2px 2px 0px 0px #404040;
+  color: #000;
+}
+
+
+/* line 149, ../src/jquiz3.scss */
+#jTakeMyCase .amendments .tooltip {
+  visibility: hidden;
+  background-color: #FFF;
+  position: absolute;
+  bottom: 85px;
+  left: 110px;
+  width: 530px;
+  padding: 10px;
+  margin: 0px 0px 0px 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  user-select: none; 
+  -o-user-select: none; 
+  -moz-user-select: none; 
+  -khtml-user-select: none; 
+  -webkit-user-select: none; 
+  overflow: hidden;
+}
+
+/* line 133, ../src/jquiz3.scss */
+#jTakeMyCase .amendments .tooltip h3 {
+ font: bold 24px sans-serif, Arial;
+  color: #D30000;
+}
+
+/* line 159, ../src/jquiz3.scss */
+#jTakeMyCase .selection .letter {
+  font: bold 36pt sans-serif, Arial;
+  color: #FFF;
+  text-shadow: 0px 1px 0px #272a2b;
+}
+
+#jTakeMyCase .amendment .letter {
+  font: bold 20pt sans-serif, Arial;
+  text-shadow: 0px 1px 0px #272a2b;
+}
+
+
+/* line 56, ../src/jquiz3.scss */
+#jTakeMyCase .chooseAmendment {
+  position: absolute;
+  top: 100px;
+  left: 106px;
+  width: 505px;
+  height: 196px;
+  padding: 10px 0px 0px 0px;
+}
+/* line 68, ../src/jquiz3.scss */
+#jTakeMyCase .chooseAmendment #jtitle {
+  font: bold 24px sans-serif, Arial;
+  color: #D30000;
+  letter-spacing: -1pt;
+  padding: 5px -10px 0px 15px;
+}
+/* line 75, ../src/jquiz3.scss */
+#jTakeMyCase .chooseAmendment #text {
+  width: 440px;
+  font: 12pt sans-serif, Arial;
+  padding: 15px 0px 0px 15px;
+}
+
+
+/* line 160, ../src/jquiz3.scss */
+#jTakeMyCase .selection .text {
+  font: bold 20pt/18pt sans-serif, Arial;
+  letter-spacing: -1pt;
+  color: #E2E2E2;
+  text-shadow: 0px 1px 0px #272a2b;
+}
+/* line 162, ../src/jquiz3.scss */
+#jTakeMyCase .selection:first-child {
+  margin: 35px 0px 0px 110px;
+}
+/* line 163, ../src/jquiz3.scss */
+#jTakeMyCase .selection:active {
+  -moz-box-shadow: -2px -2px 0px 0px #404040;
+  -webkit-box-shadow: -2px -2px 0px 0px #404040;
+  -o-box-shadow: -2px -2px 0px 0px #404040;
+  box-shadow: -2px -2px 0px 0px #404040;
+}
+/* line 165, ../src/jquiz3.scss */
+#jTakeMyCase #t {
+  background: #0079D8 url("../images/selection_bg.png") no-repeat top;
+  margin-left: 10px;
+}
+
+/* line 166, ../src/jquiz3.scss */
+#jTakeMyCase #f {
+  background: #D30000 url("../images/selection_bg.png") no-repeat top;
+}
+
+#jTakeMyCase #a {
+  background-color: #ccc;
+}
+
+#jTakeMyCase #null {
+  background-color: #ccc;
+}
+/* line 171, ../src/jquiz3.scss */
+#jTakeMyCase #a:hover,
+#jTakeMyCase #t:hover,
+#jTakeMyCase #f:hover,
+#jTakeMyCase #a:focus,
+#jTakeMyCase #t:focus,
+#jTakeMyCase #f:focus {
+  background-color: #272a2b;
+  cursor: pointer;
+  color: #FFF;
+}
+
+#jTakeMyCase #null:hover
+#jTakeMyCase #null:focus {
+  background-color: #ccc;
+}
+/* line 173, ../src/jquiz3.scss */
+#jTakeMyCase button {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 18px;
+  line-height: 1.2em;
+  padding: 0.3em 1em;
+  border-width: 1px;
+  background-color: #163356;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #7588a0), color-stop(10%, #4b5b6d), color-stop(50%, #262d37), color-stop(50%, #20262e), color-stop(100%, #343f4c));
+  background-image: -moz-linear-gradient(top, #7588a0 0%, #4b5b6d 10%, #262d37 50%, #20262e 50%, #343f4c 100%);
+  background-image: linear-gradient(top, #7588a0 0%, #4b5b6d 10%, #262d37 50%, #20262e 50%, #343f4c 100%);
+  border-color: #0d0f13;
+  text-shadow: black 0px 1px 1px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.212) 0 0 0.1em 1px inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.212) 0 0 0.1em 1px inset;
+  -o-box-shadow: rgba(255, 255, 255, 0.212) 0 0 0.1em 1px inset;
+  box-shadow: rgba(255, 255, 255, 0.212) 0 0 0.1em 1px inset;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box;
+  float: right;
+}
+/* line 116, ../../../../../../../.gem/ruby/1.8/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+#jTakeMyCase button, #jTakeMyCase button:visited {
+  color: white;
+}
+/* line 31, ../../../../../../../.gem/ruby/1.8/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+#jTakeMyCase button:hover, #jTakeMyCase button:focus {
+  background-color: #132c49;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #6b809a), color-stop(10%, #455364), color-stop(50%, #20262e), color-stop(50%, #191e25), color-stop(100%, #2e3843));
+  background-image: -moz-linear-gradient(top, #6b809a 0%, #455364 10%, #20262e 50%, #191e25 50%, #2e3843 100%);
+  background-image: linear-gradient(top, #6b809a 0%, #455364 10%, #20262e 50%, #191e25 50%, #2e3843 100%);
+  border-color: #07080a;
+  text-shadow: black 0px 1px 1px;
+}
+/* line 116, ../../../../../../../.gem/ruby/1.8/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+#jTakeMyCase button:hover, #jTakeMyCase button:hover:visited, #jTakeMyCase button:focus, #jTakeMyCase button:focus:visited {
+  color: white;
+}
+/* line 36, ../../../../../../../.gem/ruby/1.8/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+#jTakeMyCase button:active {
+  background-color: #10243d;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #20262e), color-stop(30%, #242b34), color-stop(50%, #1b2128), color-stop(50%, #15191f), color-stop(100%, #303a46));
+  background-image: -moz-linear-gradient(top, #20262e 0%, #242b34 30%, #1b2128 50%, #15191f 50%, #303a46 100%);
+  background-image: linear-gradient(top, #20262e 0%, #242b34 30%, #1b2128 50%, #15191f 50%, #303a46 100%);
+  border-color: #000001;
+  text-shadow: black 0px -1px -1px;
+  -moz-box-shadow: #0d0f13 0 0.08em 0.1em 1px inset;
+  -webkit-box-shadow: #0d0f13 0 0.08em 0.1em 1px inset;
+  -o-box-shadow: #0d0f13 0 0.08em 0.1em 1px inset;
+  box-shadow: #0d0f13 0 0.08em 0.1em 1px inset;
+}
+/* line 116, ../../../../../../../.gem/ruby/1.8/gems/fancy-buttons-1.0.4/lib/stylesheets/_fancy-buttons.sass */
+#jTakeMyCase button:active, #jTakeMyCase button:active:visited {
+  color: white;
+}

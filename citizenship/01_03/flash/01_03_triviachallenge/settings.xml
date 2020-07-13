@@ -1,0 +1,89 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Read the question displayed in the top right corner of the screen and select the correct state on the map.<br/>]]>
+	</instructions>
+
+	<intro>Time to learn some U.S. trivia. Good luck, citizen!</intro>
+	
+	<prompts>
+		<prompt>
+			<question>1. My official muffin is the apple muffin. I border Canada and two of the Great Lakes. What state am I?</question>
+			<answer>New York</answer>
+			<feedback title="Yes!">New York shares a border with Canada. New York City's nickname is the "Big Apple." It's no surprise, then, that the state muffin contains this fruit.</feedback>
+		</prompt>
+		<prompt>
+			<question>2. I have the world's largest prairie dog! I also appear to be in the center of the contiguous United States. What state am I?</question>
+			<answer>Kansas</answer>
+			<feedback title="Yes!">Kansas boasts an 8,000-pound prairie dog. You may be surprised to know, though, that this dog is made of concrete! </feedback>
+		</prompt>
+		<prompt>
+			<question>3. Once upon a time, before I was a U.S. state, some of my people declared independence from Mexico. They named me the "Bear Flag Republic." What state am I?</question>
+			<answer>California</answer>
+			<feedback title="Yes!">California still has a bear on its state flag today. The state shares a southern border with Mexico.</feedback>
+		</prompt>
+		<prompt>
+			<question>4. I am a huge state. In fact, people like to say we do everything big here. I share a border with another nation, four states, and a large body of water. What state am I?</question>
+			<answer>Texas</answer>
+			<feedback title="Yes!">Texas is the second largest state, just behind Alaska. The state motto there is "Friendship."</feedback>
+		</prompt>
+		<prompt>
+			<question>5. One of my parks is known as the crown jewel of the continent! I am part of the West and share a long border with Canada. What state am I?</question>
+			<answer>Montana</answer>
+			<feedback title="Yes!">The most visited place in Montana is Glacier National Park, known as the crown jewel of the continent. It lies along Montana's northern border and adjoins Waterton Lakes National Park in Canada, forming the world's first International Peace Park.</feedback>
+		</prompt>
+		<prompt>
+			<question>6. I was the first official U.S. state, but I am the only state without a national park! What state am I?</question>
+			<answer>Delaware</answer>
+			<feedback title="Yes!">Delaware was the first state to ratify the U.S. Constitution. It is the second smallest state, behind only Rhode Island.</feedback>
+		</prompt>
+		<prompt>
+			<question>7. Before I was a U.S. state, I was a kingdom with a queen! Ocean water forms my entire border. What state am I?</question>
+			<answer>Hawaii</answer>
+			<feedback title="Yes!">Hawaii became U.S. territory in 1898 and then a U.S. state in 1959. Queen Liliuokalani was its last monarch.</feedback>
+		</prompt>
+		<prompt>
+			<question>8. I am the only state to require a license to teach swimming. People sure swim a lot here. I have many natural springs and water bordering three sides. What state am I?</question>
+			<answer>Florida</answer>
+			<feedback title="Yes!">Florida swimming and diving instructors must have a license. The Sunshine State has 1,350 miles of coastline along the Gulf of Mexico and Atlantic Ocean. </feedback>
+		</prompt>
+		<prompt>
+			<question>9. Rivers border two of my sides. I am the only state whose name begins with two vowels! What state am I?</question>
+			<answer>Iowa</answer>
+			<feedback title="Yes!">Iowa has the Mississippi River on its eastern border, and the Missouri River on its western border. Iowa is the only state name beginning with two vowels.</feedback>
+		</prompt>
+		<prompt>
+			<question>10. I am the only state that shares a border with only one other U.S. state. I also happen to border another nation! What state am I?</question>
+			<answer>Maine</answer>
+			<feedback title="Yes!">Maine was once part of Massachusetts. It became its own state in 1820. Maine shares its border with New Hampshire and Canada.</feedback>
+		</prompt>
+		<prompt>
+			<question>11. All my border corners make 90-degree angles. My official bird is the seagull, though I am landlocked. What state am I?</question>
+			<answer>Utah</answer>
+			<feedback title="Yes!">Utah is one of the "four corners" states with Colorado, New Mexico, and Arizona. Its state bird is the seagull, but Utah borders no seas. </feedback>
+		</prompt>
+		<prompt>
+			<question>12. All other U.S. states have "counties," but my people call this state's divisions "parishes." My southern coastline has been a center of trade for centuries. What state am I?</question>
+			<answer>Louisiana</answer>
+			<feedback title="Yes!">Louisiana is the only state to call its divisions "parishes." French explorers and Native Americans began trading in New Orleans in the 1690s. Select the "restart" button to return to the first question.</feedback>
+		</prompt>
+	</prompts>
+
+	<feedback title="Good Job!">Feedback goes here.</feedback>
+	<wrongFeedback title="Nice try">
+		<first>Please try again.</first>
+		<second>The correct answer is</second>
+		<cont>When you are ready, select the "next" button to continue to the next question.</cont>
+		<select>The state has been highlighted for you. Please select it on the map and read the corresponding trivia.</select>
+		<restart>Select the "restart" button to return to the first question.</restart>
+	</wrongFeedback>
+
+</settings>	

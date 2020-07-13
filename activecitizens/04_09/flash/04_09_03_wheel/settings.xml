@@ -1,0 +1,33 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Welcome to the Wheel of Citizenship!
+
+Select the wheel, "next" or "prev," and I will make it spin! <br/><br/>Rolling your mouse over a term will reveal more information about that term.<br/>]]>
+	</instructions>
+
+	<intro>Time to study some terms. Good luck, citizen!</intro>
+
+	<terms>
+		<term title="Media"><![CDATA[Media are the various means of mass communication as a whole group. Examples are television, radio, newspapers, magazines, and the Internet. The media help spread information and monitor government leaders.]]></term>
+		<term title="Perspective"><![CDATA[A perspective is a mental view or outlook on a particular situation or issue. People in a community may have different perspectives on issues. Often this results in very different ideas on how to solve a community problem. ]]></term>
+		<term title="Censor"><![CDATA[To censor is to remove or change any part of a performance, movie, or printed material considered offensive or a threat to security. The case of Hazelwood v. Kuhlmeier was about censorship in school.]]></term>
+		<term title="Influence"><![CDATA[To influence means to have an effect on something. Active citizens can have influence in many ways. Examples include voting, contacting officials, and sharing opinions.]]></term>
+		<term title="Interest group"><![CDATA[An interest group is a group of people with shared goals. They work together to influence public policy. Joining an interest group is one way for people to work together to influence leaders.]]></term>
+		<term title="'Watchdog'"><![CDATA[A "watchdog" is a person or group guarding against illegal, wasteful, or unacceptable practices. Watchdogs help ensure that elected leaders are doing their best in office, following laws, and serving the peopleÕs interests.]]></term>
+		<term title="Demographics"><![CDATA[Demographics are characteristics about the human population or a part of it. Examples may be the number of people living in a state or the percent of residents who vote. Mapping this data can help people understand important information. This could be election results or the needs of a community.]]></term>
+		<term title="Electoral College"><![CDATA[The Electoral College is the group of people who officially elect the president of the United States. Most states require electors to vote for the candidate who wins the most votes of the people.]]></term>
+		<term title="Political Party"><![CDATA[A political party is a group of people who share beliefs about government. They support their members in elections to increase the group's power. The major U.S. political parties are the Democrats and the Republicans.]]></term>
+		<term title="Platform"><![CDATA[A platform is the group of principles and policies on which a group is based. An example is a political party platform. People may choose candidates for an office based on whether or not they are true to their party platform.]]></term>
+		<term title="Propaganda"><![CDATA[Propaganda is information that an organization or government sends out to promote a policy, idea, or cause. A candidate or interest group can use propaganda to gain support.]]></term>
+		
+	</terms>
+</settings>	

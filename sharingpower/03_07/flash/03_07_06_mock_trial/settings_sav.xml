@@ -1,0 +1,767 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="600" 
+			screenHeight="500"
+			>
+
+	</config>
+
+	<notes background="NotesBg">
+		<section type="Plaintiff/Prosecution" button="PlaintiffNotesButton" x="200" y="250" />
+		<section type="Defense" button="DefenseNotesButton" x="400" y="250" />
+	</notes>
+	
+	<introduction title="Welcome" background="WelcomeBg">
+		<scene type="slide" clip="InYourHandsClip" x="300" y ="250" ></scene>
+		<scene type="slide" clip="NameEntryClip" x="300" y ="250" ></scene>
+	</introduction>
+	
+	<judgeIntroduction>
+
+		<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+			<dialogue audio="">Attorneys, let's hear your opening arguments.</dialogue>
+		</scene>
+	</judgeIntroduction>
+	
+	<cases background="CasesBg">
+		<case type="Civil" button="CivilCaseButton" x="200" y="200">
+			
+			<introduction background="CourtSceneBg">
+				<scene type="slide" clip="CourtSceneIntroClip" x="300" y="250"></scene>
+				<scene type="slide" clip="CourtSceneCivilClip" x="300" y="250"></scene>
+			</introduction>
+			
+			
+			
+			<openingArguments background="OpeningArgumentsBg">
+				
+				<argument type="Plaintiff" button="PlaintiffArgumentButton" x="200" y="200">
+					<scene type="passive" personName="Plaintiff's Attorney, Emile Proofinder" clip="ProofinderFront" background="BarFacingBench">
+						<dialogue audio="">Good morning members of the Jury, Judge, and all of you with us today. I am Emile Proofinder, representing the plaintiff, Suzy Snoozer. Ms. Snoozer awoke late one summer morning to find her birds missing that she left in their cage outside overnight for air. </dialogue>
+						<dialogue audio="">We will prove to you today that her neighbor, Ms. Felina Early, was negligent in allowing her cats to attack and kill Ms. Snoozer's birds.</dialogue>
+						<dialogue audio="" note="Ms. Snoozer loved her birds." type="plaintiff">Ms. Snoozer is seeking compensation for the loss of her beloved birds and her pain and suffering.</dialogue>
+					</scene>
+				</argument>
+				
+				<argument type="Defense" button="DefenseArgumentButton" x="400" y="200">
+					<scene type="passive" personName="Defense Attorney, Bobby Refuter" clip="RefuterFront" background="BarFacingBench">
+						<dialogue audio="">Judge, Jury, and respected citizens-good morning. I am Bobby Refuter, today representing Ms. Felina Early.</dialogue>
+						<dialogue audio="">Today I will show you that the plaintiff lacks the evidence to prove Ms. Early is liable for the loss of Ms. Snoozer's birds.</dialogue>
+						<dialogue audio="">The loss of her birds is unfortunate. However, falsely placing blame and forcing compensation will not replace the birds.</dialogue>
+					</scene>
+				</argument>
+				
+			</openingArguments>
+			
+			<judgeCallingAttorneys>
+				<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+					<dialogue audio="">Plaintiff, choose a witness to examine.</dialogue>
+				</scene>
+			</judgeCallingAttorneys>
+			
+			<callingOfWitnesses background="CallingWitnessesBg">
+				
+				<argument type="Amy Anticattus" button="AnticattusButton" x="200" y="200">
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">Plaintiff, you may begin your direct examination.</dialogue>
+					</scene>
+					<scene type="passive" personName="Plaintiff's Attorney, Emile Proofinder" clip="ProofinderFront" background="BarFacingJury">
+						<dialogue audio="">Please state your name and relationship to the defendant. </dialogue>
+					</scene>
+					<scene type="passive" personName="Amy Anticattus" clip="AnticattusFront" background="WitnessStand">
+						<dialogue audio="">My name is Amy Anticattus. I have been Ms. Snoozer's and Ms. Early's neighbor for 11 years. </dialogue>
+					</scene>
+					<scene type="passive" personName="Plaintiff's Attorney, Emile Proofinder" clip="ProofinderFront" background="BarFacingJury">
+						<dialogue audio="">Please tell us what you witnessed.</dialogue>
+					</scene>
+					<scene type="passive" personName="Amy Anticattus" clip="AnticattusFront" background="WitnessStand">
+						<dialogue audio="">Well, that morning I woke up to the most panicked screams! I jumped out of bed and rushed outside. I saw Ms. Snoozer on her front porch, staring at the birdcage and clearly upset. </dialogue>
+						<dialogue audio="" note="The cat was seen nearby with a yellow feather on it right after the birds went missing." type="plaintiff">I could see the door was open and yellow feathers were everywhere.  The birds were gone.</dialogue>
+					</scene>
+					<scene type="passive" personName="Plaintiff's Attorney, Emile Proofinder" clip="ProofinderFront" background="BarFacingJury">
+						<dialogue audio="">Did you see anything else?</dialogue>
+					</scene>
+					<scene type="passive" personName="Amy Anticattus" clip="AnticattusFront" background="WitnessStand">
+						<dialogue audio="">Yes! I looked around for the birds and saw Ms. Early's cat sneaking around the side of Ms. Snoozer's garage. It had a yellow feather clinging to its back.</dialogue>
+					</scene>
+					<scene type="passive" personName="Plaintiff's Attorney, Emile Proofinder" clip="ProofinderFront" background="BarFacingJury">
+						<dialogue audio="">Thank you Ms. Anticattus. No more questions, your Honor.</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">The defense may now cross-examine the witness.</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Bobby Refuter" clip="RefuterFront" background="BarFacingJury">
+						<dialogue audio="">Ms. Anticattus, you said you saw Ms. Early's cat sneaking around the garage. How do you know it was her cat?</dialogue>
+					</scene>
+					<scene type="passive" personName="Amy Anticattus" clip="AnticattusFront" background="WitnessStand">
+						<dialogue audio="">The cat is very distinctive. It has a broad face with unique markings. I would know it anywhere. </dialogue>
+						<dialogue audio=""  note="The cat is always lurking on her property and near the birdcage." type="plaintiff">In addition, it's always sneaking around Ms. Snoozer's garage. It seems to be the cat's favorite hangout.</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Bobby Refuter" clip="RefuterFront" background="BarFacingJury">
+						<dialogue audio="" note="The location of the cat and feather at the time is a coincidence." type="defense">So then, it is possibly just a coincidence the cat was nearby, right, if it hangs around there often?</dialogue>
+					</scene>
+					<scene type="passive" personName="Amy Anticattus" clip="AnticattusFront" background="WitnessStand">
+						<dialogue audio="">But the feather-there was a yellow feather on it! I have seen the cat often brushing against the cage before Ms. Snoozer awakes.</dialogue>
+						<dialogue audio="">It is always trying to figure out how to get in! I shooed it away myself many times!</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Bobby Refuter" clip="RefuterFront" background="BarFacingJury">
+						<dialogue audio="" note="Ms. Snoozer failed to protect her birds, though she knew about the threat." type="defense">So Ms. Snoozer knew about the threat but failed to protect her birds--</dialogue>
+					</scene>
+					<scene type="passive" personName="Amy Anticattus" clip="AnticattusFront" background="WitnessStand">
+						<dialogue audio="">No, no, you misunderstand!</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Bobby Refuter" clip="RefuterFront" background="BarFacingBench">
+						<dialogue audio="">Thank you Ms. Anticattus. No more questions, your Honor.</dialogue>
+					</scene>
+					<scene type="passive" personName="Court Reporter" clip="ReporterFront" background="CourtReporterBg">
+						<dialogue audio="">...(typing)...</dialogue>
+					</scene>
+				</argument>
+				
+				<argument type="Animus Arresta" button="ArrestaButton" x="400" y="200">
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">Plaintiff, you may examine the witness.</dialogue>
+					</scene>
+					<scene type="passive" personName="Plaintiff's Attorney, Emile Proofinder" clip="ProofinderFront" background="BarFacingJury">
+						<dialogue audio="">Please state your name and relationship to the defendant.</dialogue>
+					</scene>
+					<scene type="passive" personName="Animus Arresta" clip="ArrestaFront" background="WitnessStand">
+						<dialogue audio="" note="People made several complaints about the cat's behavior to animal control" type="plaintiff">Animus Arresta, chief animal control officer for the county. I have visited Ms. Early's home several times, responding to complaints of her wandering cat.</dialogue>
+					</scene>
+					<scene type="passive" personName="Plaintiff's Attorney, Emile Proofinder" clip="ProofinderFront" background="BarFacingJury">
+						<dialogue audio="">Who made the complaints and why, Mr. Arresta?</dialogue>
+					</scene>
+					<scene type="passive" personName="Animus Arresta" clip="ArrestaFront" background="WitnessStand">
+						<dialogue audio="">Well, I can't tell you who made the complaints and still keep my job. I can say, though, that the cat is a menace.</dialogue>
+						<dialogue audio="" note="The cat attacks wildlife." type="plaintiff">It roams free outside each morning. It snarls at children, attacks wildlife, and prowls on others' property.</dialogue>
+					</scene>
+					<scene type="passive" personName="Plaintiff's Attorney, Emile Proofinder" clip="ProofinderFront" background="BarFacingJury">
+						<dialogue audio="">So the cat has a history of showing aggression?</dialogue>
+					</scene>
+					<scene type="passive" personName="Animus Arresta" clip="ArrestaFront" background="WitnessStand">
+						<dialogue audio="">Definitely. I once responded to a call about a dead mouse on a doorstep. The family didn't own a cat, but Ms. Early's cat is often in their yard.</dialogue>
+						<dialogue audio="">I have reminded Ms. Early often that cats, just like dogs, must be on a leash by law when outdoors, but well...</dialogue>
+					</scene>
+					<scene type="passive" personName="Plaintiff's Attorney, Emile Proofinder" clip="ProofinderFront" background="BarFacingJury">
+						<dialogue audio="">Thank you Mr. Arresta. No more questions, your Honor.</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">Defense, you may now cross-examine the witness.</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Bobby Refuter" clip="RefuterFront" background="BarFacingJury">
+						<dialogue audio="">Mr. Arresta, in your job as an animal control officer, you know much about animals' nature, do you not?</dialogue>
+					</scene>
+					<scene type="passive" personName="Animus Arresta" clip="ArrestaFront" background="WitnessStand">
+						<dialogue audio="">I absolutely do. I began my career studying to be a veterinarian, but a case of cat scratch fever put an end to that goal.</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Bobby Refuter" clip="RefuterFront" background="BarFacingJury">
+						<dialogue audio="">So it would be perfectly natural for a cat to go after squirrels, mice, and birds, would it not?</dialogue>
+					</scene>
+					<scene type="passive" personName="Animus Arresta" clip="ArrestaFront" background="WitnessStand">
+						<dialogue audio="">Of course, and that's why we have animal control laws, to prevent this kind of heartbreak.</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Bobby Refuter" clip="RefuterFront" background="BarFacingJury">
+						<dialogue audio="">Then Ms. Snoozer should also know, as a bird owner, to protect her birds from any known menace, should she not?</dialogue>
+						<dialogue audio="" note="Ms. Early fails to control her aggressive cat." type="plaintiff">Isn't she responsible for the control of her own animals?</dialogue>
+					</scene>
+					<scene type="passive" personName="Animus Arresta" clip="ArrestaFront" background="WitnessStand">
+						<dialogue audio="">Well yes, but, I think you're twisting my words!</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Bobby Refuter" clip="RefuterFront" background="BarFacingBench">
+						<dialogue audio="">Thank you Mr. Arresta. No more questions, your Honor.</dialogue>
+					</scene>
+					<scene type="passive" personName="Court Reporter" clip="ReporterFront" background="CourtReporterBg">
+						<dialogue audio="">...(typing)...</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">(instructing jury to listen fairly to all the evidence)</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JuryClip" background="JuryBox">
+						<dialogue audio="">The jurors are making notes. Are you?</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">Defense, call your next witness.</dialogue>
+					</scene>
+				</argument>
+			</callingOfWitnesses>
+			
+			<callingOfWitnesses2 background="CallingWitnessesBg">
+				
+				<argument type="Tayme Dibeast" button="DibeastButton" x="200" y="200">
+					<scene type="passive" personName="Defense Attorney, Bobby Refuter" clip="RefuterFront" background="BarFacingBench">
+						<dialogue audio="">Please state your name and relationship to the defendant.</dialogue>
+					</scene>
+					<scene type="passive" personName="Tayme Dibeast" clip="DibeastFront" background="WitnessStand">
+						<dialogue audio="">Hello, my name is Tayme Dibeast. I am an animal trainer. I helped Felina Early tame her cat.</dialogue>
+						<dialogue audio="" note="Ms. Early loves animals. She rescued her cat from a shelter." type="defense">She rescued it from the animal shelter where I volunteer. It was a wild cat.</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Bobby Refuter" clip="RefuterFront" background="BarFacingJury">
+						<dialogue audio="">So is it safe to say that Ms. Snoozer is a lover of all animals?</dialogue>
+						<dialogue audio="">She wouldn't put her own cat or others' animals in danger on purpose, correct? </dialogue>
+					</scene>
+					<scene type="passive" personName="Tayme Dibeast" clip="DibeastFront" background="WitnessStand">
+						<dialogue audio="">Oh, absolutely! Her cat is in excellent health. Ms. Early was very enthusiastic about the training and practiced often.</dialogue>
+						<dialogue audio="">She only lets the cat outside in the early mornings, before the neighbors are out. </dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Bobby Refuter" clip="RefuterFront" background="BarFacingJury">
+						<dialogue audio="">Would this cat be likely to have attacked Ms. Snoozer's birds?</dialogue>
+					</scene>
+					<scene type="passive" personName="Tayme Dibeast" clip="DibeastFront" background="WitnessStand">
+						<dialogue audio="" type="Ms. Early supervises her cat while outside." note="defense">Absolutely not, the cat knows to leave other pets alone. Besides, Ms. Early supervises her cat while it is outside.</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Bobby Refuter" clip="RefuterFront" background="BarFacingJury">
+						<dialogue audio="">Thank you Ms. Dibeast. No more questions, your Honor.</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">Plaintiff, you may now cross-examine the witness.</dialogue>
+					</scene>
+					
+					<scene type="passive" personName="Plaintiff's Attorney, Emile Proofinder" clip="ProofinderFront" background="BarFacingJury">
+						<dialogue audio="">Ms. Dibeast, you said you are an animal trainer. Could you teach an animal, say a cat, to open doors or cages? </dialogue>
+					</scene>
+					<scene type="passive" personName="Tayme Dibeast" clip="DibeastFront" background="WitnessStand">
+						<dialogue audio="">Hmm, it is possible if you had the right kind of handle. However, I did not teach Ms. Early's cat to do that.</dialogue>
+					</scene>
+					<scene type="passive" personName="Plaintiff's Attorney, Emile Proofinder" clip="ProofinderFront" background="BarFacingJury">
+						<dialogue audio="">Yet you said Ms. Early was "very enthusiastic" about the trainings. Might she have extended her cat's tricks on her own?</dialogue>
+					</scene>
+					<scene type="passive" personName="Tayme Dibeast" clip="DibeastFront" background="WitnessStand">
+						<dialogue audio="">Again, it's possible, but Ms. Early supervises her cat. She lets it capture the occasional mouse that gets in her garden, just like any normal cat.</dialogue>
+						<dialogue audio="">However, it's not unlocking the gate or anything.</dialogue>
+					</scene>
+					<scene type="passive" personName="Plaintiff's Attorney, Emile Proofinder" clip="ProofinderFront" background="BarFacingJury">
+						<dialogue audio="" note="Ms. Early could have taught her cat to open the cage, or done it herself." type="plaintiff">Oh, Ms. Early is annoyed by some animals like singing canaries? Is it possible she opened the canaries' cage herself? </dialogue>
+					</scene>
+					<scene type="passive" personName="Tayme Dibeast" clip="DibeastFront" background="WitnessStand">
+						<dialogue audio="">No, that is not the point-- </dialogue>
+					</scene>
+					<scene type="passive" personName="Plaintiff's Attorney, Emile Proofinder" clip="ProofinderFront" background="BarFacingJury">
+						<dialogue audio="">Thank you Ms. Dibeast. No more questions, your Honor.</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">Once all of the witnesses have testified, we'll hear the closing arguments.</dialogue>
+					</scene>
+				</argument>
+				
+				<argument type="Pax Plantis" button="PlantisButton" x="400" y="200">
+					<scene type="passive" personName="Defense Attorney, Bobby Refuter" clip="RefuterFront" background="BarFacingJury">
+						<dialogue audio="">Please state your name and relationship to the defendant.</dialogue>
+					</scene>
+					<scene type="passive" personName="Pax Plantis" clip="PlantisFront" background="WitnessStand">
+						<dialogue audio="">Yes, of course. I am Pax Plantis, Felina Early's friend and lawn maintenance man.</dialogue>
+						<dialogue audio="">I do yard work for her every Tuesday morning, then we go to breakfast. </dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Bobby Refuter" clip="RefuterFront" background="BarFacingJury">
+						<dialogue audio="">What can you tell me about Ms. Early, Ms. Snoozer, and their pets?</dialogue>
+					</scene>
+					<scene type="passive" personName="Pax Plantis" clip="PlantisFront" background="WitnessStand">
+						<dialogue audio="">Every Tuesday the birds are outside singing when I show up. Ms. Snoozer gets them when I start working.</dialogue>
+						<dialogue audio="" note="Ms. Early is friendly and responsible." type="defense">My tools must wake her up. Ms. Early is always outside to greet me with her cat. </dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Bobby Refuter" clip="RefuterFront" background="BarFacingJury">
+						<dialogue audio="">How does Ms. Snoozer act when she retrieves the birds?</dialogue>
+					</scene>
+					<scene type="passive" personName="Pax Plantis" clip="PlantisFront" background="WitnessStand">
+						<dialogue audio="">She is angry. She gives dirty looks to Felina, the cat, and me.</dialogue>
+						<dialogue audio="">I think the noise irritates her and her birds, though I arrive at a decent hour.</dialogue>
+						<dialogue audio="">She is always in her robe and the birds are plucking their feathers. This is a sign that the birds are feeling stress.</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Bobby Refuter" clip="RefuterFront" background="BarFacingBench">
+						<dialogue audio="">Thank you Mr. Plantis. No more questions, your Honor.</dialogue>
+					</scene>
+					
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">Plaintiff, you may now cross-examine the witness.</dialogue>
+					</scene>
+					<scene type="passive" personName="Plaintiff's Attorney, Emile Proofinder" clip="ProofinderFront" background="BarFacingJury">
+						<dialogue audio="">Mr. Plantis, you have been Ms. Early's friend for years. How does she feel about Ms. Snoozer?</dialogue>
+					</scene>
+					<scene type="passive" personName="Pax Plantis" clip="PlantisFront" background="WitnessStand">
+						<dialogue audio="" note="Ms. Snoozer is irritable toward her neighbor and the cat." type="defense">Well, she does not understand why Ms. Snoozer is so irritable. </dialogue>
+						<dialogue audio="" note="Ms. Early lets the cat out when neighbors are asleep." type="defense">She only puts her cat out when Ms. Snoozer is sleeping, even though the canaries keep her up all night with their singing.</dialogue>
+					</scene>
+					<scene type="passive" personName="Plaintiff's Attorney, Emile Proofinder" clip="ProofinderFront" background="BarFacingJury">
+						<dialogue audio="">Hmm, So Ms. Early really doesn't like the canaries, does she?</dialogue>
+					</scene>
+					<scene type="passive" personName="Pax Plantis" clip="PlantisFront" background="WitnessStand">
+						<dialogue audio="" note="Ms. Early felt irritated by the singing and lack of sleep." type="plaintiff">Who would if you couldn't get any sleep? Honestly...</dialogue>
+					</scene>
+					<scene type="passive" personName="Plaintiff's Attorney, Emile Proofinder" clip="ProofinderFront" background="BarFacingJury">
+						<dialogue audio="">So perhaps she did let the cat attack Ms. Snoozer's innocent birds, to get some sleep?</dialogue>
+					</scene>
+					<scene type="passive" personName="Pax Plantis" clip="PlantisFront" background="WitnessStand">
+						<dialogue audio="">I don't think Felina would--</dialogue>
+					</scene>
+					<scene type="passive" personName="Plaintiff's Attorney, Emile Proofinder" clip="ProofinderFront" background="BarFacingBench">
+						<dialogue audio="">Thank you Mr. Plantis. No more questions, your Honor.</dialogue>
+					</scene>
+					
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">Once all of the witnesses have testified, we'll hear the closing arguments.</dialogue>
+					</scene>
+				</argument>
+			</callingOfWitnesses2>
+			
+			<closingArguments background="OpeningArgumentsBg">
+				
+				<argument type="Plaintiff" button="PlaintiffArgumentButton" x="200" y="200">
+					<scene type="passive" personName="Plaintiff's Attorney, Emile Proofinder" clip="ProofinderFront" background="BarFacingBench">
+						<dialogue audio="">Members of the jury, you have heard the facts for yourself. Ms. Early is clearly responsible for the untimely loss of Ms. Snoozer's birds.</dialogue>
+						<dialogue audio="" note="She trained her cat and let it out to release extra energy." type="defense">She did not like them, trained her cat to attack animals that bothered her, and let her cat roam outside in the mornings.</dialogue>
+						<dialogue audio="">Deliver justice by awarding compensation to Ms. Snoozer.</dialogue>
+					</scene>
+				</argument>
+				
+				<argument type="Defense" button="DefenseArgumentButton" x="400" y="200">
+					<scene type="passive" personName="Defense Attorney, Bobby Refuter" clip="RefuterFront" background="BarFacingBench">
+						<dialogue audio="">Members of the jury, the plaintiff has failed to prove Ms. Early is responsible for the loss of the birds.</dialogue>
+						<dialogue audio="">She clearly respects her neighbors, even those who are not respectful. She cares for her cat and supervises it well.</dialogue>
+						<dialogue audio="">Ms. Snoozer's loss, though unfortunate, is due to her own failure to supervise her birds.</dialogue>
+					</scene>
+				</argument>
+				
+			</closingArguments>
+			
+			<deliberationIntro>
+				<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+					<dialogue audio="">Members of the jury, you have heard both sides of this case. </dialogue>
+					<dialogue audio="">Your community depends on you to consider the evidence fairly and make a wise decision. Please keep these points in mind:</dialogue>
+					<dialogue audio="">You must follow the law. The question here is whether Ms. Felina Early is responsible for the loss of Ms. Snoozer's birds.</dialogue>
+					<dialogue audio="">You must determine this based on the evidence available, not any assumptions you may make.</dialogue>
+					<dialogue audio="">Do not make a decision based on feeling sorry or angry with anyone involved in the case, including the attorneys.</dialogue>
+					<dialogue audio="">Your feelings about anyone in this room should not affect your decision.</dialogue>
+					<dialogue audio="">Your decision as a jury must be unanimous. Each juror must agree to the same verdict.</dialogue>
+					<dialogue audio="">Jury, you are excused. Please review the facts of the case.</dialogue>
+				</scene>
+			</deliberationIntro>
+
+			<liability background="LiabilityBg">
+				<vote type="Ms. Early is liable for the loss of Ms. Snoozer's canaries" button="LiableButton" x="200" y="200"></vote>
+				<vote type="Ms. Early is not liable for the loss of Ms. Snoozer's canaries" button="NotLiableButton" x="400" y="200"></vote>
+			</liability>
+
+			<persuasion>
+				<statements background="PersuasionBg">
+					<statement type="Ms. Early is liable. She obviously hates Ms. Snoozer and birds." button="PersuasionButton" x="100" y="200" correct="false"></statement>
+					<statement type="Ms. Early acknowledges her cat attacked the birds. Paying Ms. Snoozer is the very least she can do to help!" button="PersuasionButton" x="300" y="200" correct="false"></statement>
+					<statement type="Ms. Early is liable because she has failed to control her animal, as required by law. She ignored warnings." button="PersuasionButton" x="500" y="200" correct="true"></statement>
+				</statements>
+				<statements background="PersuasionBg">
+					<statement type="Ms. Early is not liable because Ms. Snoozer allowed her birds to roam freely. They simply flew away." button="PersuasionButton" x="100" y="200" correct="false"></statement>
+					<statement type="Ms. Early should not be liable. We have no concrete proof that her cat attacked the birds." button="PersuasionButton" x="300" y="200" correct="true"></statement>
+					<statement type="Ms. Early is a victim here. Attorney Proofinder was very mean to her and so it is wrong to hold her liable." button="PersuasionButton" x="500" y="200" correct="false"></statement>
+				</statements>
+			</persuasion>
+
+			<verdicts>
+				<verdict>
+					<scene type="passive" personName="Jury" clip="JuryClip" background="JuryBox">
+						<dialogue audio="">We, the jury, find the defendant, Felina Early, liable to the plaintiff, Suzy Snoozer, for compensation of personal pain and damages due to negligence, as charged in the complaint.</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">(The judge orders Ms. Snoozer to pay Ms. Early $2000 within 60 days.)</dialogue>
+						<dialogue audio="">(The judge then thanks the jury and lawyers and raps his gavel on the desk.)</dialogue>
+					</scene>
+					<scene type="passive" personName="Bailiff" clip="BailiffFront" background="Wall">
+						<dialogue audio="">(Everyone rises, and the judge leaves the courtroom. The bailiff announces the end of the court session. )</dialogue>
+					</scene>
+				</verdict>
+				<verdict>
+					<scene type="passive" personName="Jury" clip="JuryClip" background="JuryBox">
+						<dialogue audio="">We, the jury, find the defendant, Felina Early, not liable to the plaintiff, Suzy Snoozer, for compensation of personal pain and damages due to negligence, as charged in the complaint.</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">(The judge orders Ms. Snoozer to pay Ms. Early $2000 within 60 days.)</dialogue>
+						<dialogue audio="">(The judge then thanks the jury and lawyers and raps his gavel on the desk.)</dialogue>
+					</scene>
+					<scene type="passive" personName="Bailiff" clip="BailiffFront" background="Wall">
+						<dialogue audio="">(Everyone rises, and the judge leaves the courtroom. The bailiff announces the end of the court session. )</dialogue>
+					</scene>
+				</verdict>
+			</verdicts>
+
+			<outro>
+				<scene type="passive" personName="Judge" clip="JusticeClip" background="GavelBg">
+					<dialogue audio="">Thank you for fulfilling your civic duty as a juror in this civil suit. You may try the case again to practice your skills.</dialogue>
+					<dialogue audio="">If you have not yet served on the criminal case, please report for duty now.</dialogue>
+				</scene>
+			</outro>
+		</case>
+		
+		<case type="Criminal" button="CriminalCaseButton" x="400" y="200">	
+			<introduction background="CourtSceneBg">
+				<scene type="slide" clip="CourtSceneIntroClip" x="300" y="250"></scene>
+				<scene type="slide" clip="CourtSceneCriminalClip" x="300" y="250"></scene>
+			</introduction>	
+
+			<openingArguments background="OpeningArgumentsBg">
+				
+				<argument type="Prosecution" button="PlaintiffArgumentButton" x="200" y="200">
+					<scene type="passive" personName="Prosecuting Attorney, Jesse Jailem" clip="JailemFront" background="BarFacingBench">
+						<dialogue audio="">Good morning members of the Jury, Judge, and all of you with us today. I am Jesse Jailem, representing our government and the laws that protect respectful citizens like you. </dialogue>
+						<dialogue audio="">Today I will prove to you that the defendant is guilty beyond a reasonable doubt. He broke several laws by robbing a video game store. The laws he broke are destruction of property, unlawful entry, and robbery. </dialogue>
+						<dialogue audio="">Police arrested this young man, Justin B. Goode, the day after the incident. He plead not guilty at his arraignment. Despite the evidence against him, he refused the plea bargain offered.</dialogue>
+					</scene>
+				</argument>
+				
+				<argument type="Defense" button="DefenseArgumentButton" x="400" y="200">
+					<scene type="passive" personName="Defense Attorney, Orrie Defendorr" clip="DefendorrFront" background="BarFacingBench">
+						<dialogue audio="">Judge, Jury, respected citizens--good morning. I am Orrie Defendorr, today representing Justin B. Goode. </dialogue>
+						<dialogue audio="">Attorney Jailem has the burden of proof, meaning that Mr. Goode is innocent until proven guilty with facts and evidence.</dialogue>
+						<dialogue audio="">Today I will show you that the prosecution lacks the evidence necessary to prove Mr. Goode is guilty of breaking any law beyond a reasonable doubt.</dialogue>
+						<dialogue audio=""> He is a respectful citizen just like you. He rightly plead not guilty and refused a plea bargain. You should find him not guilty of these charges.</dialogue>
+					</scene>
+				</argument>
+				
+			</openingArguments>
+
+				<judgeCallingAttorneys>
+				<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+					<dialogue audio="">Prosecutor, choose a witness to examine.</dialogue>
+				</scene>
+			</judgeCallingAttorneys>
+
+			<callingOfWitnesses background="CallingWitnessesBg">
+				
+				<argument type="Runnuh Bizz" button="BizzButton" x="200" y="200">
+					
+					<scene type="passive" personName="Prosecuting Attorney, Jesse Jailem" clip="JailemFront" background="BarFacingJury">
+						<dialogue audio="">Please state your name and relationship to the defendant. </dialogue>
+					</scene>
+					<scene type="passive" personName="Runnuh Bizz" clip="BizzFront" background="WitnessStand">
+						<dialogue audio="">My name is Runnuh Bizz. I own the video game store that was broken into and robbed. </dialogue>
+						<dialogue audio="">Justin comes in the store all the time. The day before the break in, he yelled at me.</dialogue>
+					</scene>
+					<scene type="passive" personName="Prosecuting Attorney, Jesse Jailem" clip="JailemFront" background="BarFacingJury">
+						<dialogue audio="">Please tell us about the break in and the robbery.</dialogue>
+					</scene>
+					<scene type="passive" personName="Runnuh Bizz" clip="BizzFront" background="WitnessStand">
+						<dialogue audio="">My alarm company called at 2am to tell me the alarms were going off. I called the police and went to the shop.</dialogue>
+						<dialogue audio="">The front window was in pieces and all the game systems were gone. Glass was everywhere. I made a police report and listed what was missing.</dialogue>
+					</scene>
+					<scene type="passive" personName="Prosecuting Attorney, Jesse Jailem" clip="JailemFront" background="BarFacingJury">
+						<dialogue audio="">Please tell us what was missing.</dialogue>
+					</scene>
+					<scene type="passive" personName="Runnuh Bizz" clip="BizzFront" background="WitnessStand">
+						<dialogue audio="">I had 10 of the hot new 4D systems and 8 pre-owned systems on the shelves that are missing now. </dialogue>
+						<dialogue audio="">Justin had been drooling over the 4D for weeks, begging for a discount. </dialogue>
+						<dialogue audio="">He told me he was trying to save money for it. The last time he said this was about a week before the argument and break-in.</dialogue>
+					</scene>
+					<scene type="passive" personName="Prosecuting Attorney, Jesse Jailem" clip="JailemFront" background="BarFacingBench">
+						<dialogue audio="">Thank you Ms. Bizz. No more questions, your Honor.</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">The defense may now cross-examine the witness.</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Orrie Defendorr" clip="DefendorrFront" background="BarFacingJury">
+						<dialogue audio="" note="He had an argument with the shop owner the day before." type="plaintiff">Ms. Bizz, you said you and Mr. Goode had an argument. Please tell us about it.</dialogue>
+					</scene>
+					<scene type="passive" personName="Runnuh Bizz" clip="BizzFront" background="WitnessStand">
+						<dialogue audio="">Well, I sell new and pre-owned video games and systems. Justin wanted to sell me a game that was old. </dialogue>
+						<dialogue audio="">He was angry and called me names because I would not buy it. I know I could not have sold it again. I have to make a profit.</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Orrie Defendorr" clip="DefendorrFront" background="BarFacingJury">
+						<dialogue audio="">Is Mr. Goode the only customer that was ever angry in your store?</dialogue>
+					</scene>
+					<scene type="passive" personName="Runnuh Bizz" clip="BizzFront" background="WitnessStand">
+						<dialogue audio="">Well, no. Sometimes people fail to read store policy before trying to sell their items. When I will not buy the items, the people are confused and upset.</dialogue>
+						<dialogue audio="">I usually am able to settle the situation though.</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Orrie Defendorr" clip="DefendorrFront" background="BarFacingJury">
+						<dialogue audio="">So Mr. Goode would not be the only person in town angry enough to get revenge, right?</dialogue>
+					</scene>
+					<scene type="passive" personName="Runnuh Bizz" clip="BizzFront" background="WitnessStand">
+						<dialogue audio="">I, well no, I know it was him!</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Orrie Defendorr" clip="DefendorrFront" background="BarFacingBench">
+						<dialogue audio="">Thank you Ms. Bizz. No more questions, your Honor.</dialogue>
+					</scene>
+					<scene type="passive" personName="Court Reporter" clip="ReporterFront" background="CourtReporterBg">
+						<dialogue audio="">...(typing)...</dialogue>
+					</scene>
+				</argument>
+				
+				<argument type="Suss Pihshawn" button="PihshawnButton" x="400" y="200">
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">Prosecutor, you may examine the witness.</dialogue>
+					</scene>
+					<scene type="passive" personName="Prosecuting Attorney, Jesse Jailem" clip="JailemFront" background="BarFacingJury">
+						<dialogue audio="">Please state your name and relationship to the defendant.</dialogue>
+					</scene>
+					<scene type="passive" personName="Suss Pihshawn" clip="PihshawnFront" background="WitnessStand">
+						<dialogue audio="">Suss Pihshawn, Chief of Police.</dialogue>
+					</scene>
+					<scene type="passive" personName="Prosecuting Attorney, Jesse Jailem" clip="JailemFront" background="BarFacingJury">
+						<dialogue audio="">What did you discover at the scene of the crime?</dialogue>
+					</scene>
+					<scene type="passive" personName="Suss Pihshawn" clip="PihshawnFront" background="WitnessStand">
+						<dialogue audio="">Ms. Bizz has video monitoring. </dialogue>
+						<dialogue audio="" note="Justin B. Goode's image appears in the security video at time of robbery." type="plaintiff">Mr. Goode is all over it, from smashing the windows to taking out the game systems to leaving before we arrived.</dialogue>
+					</scene>
+					<scene type="passive" personName="Prosecuting Attorney, Jesse Jailem" clip="JailemFront" background="BarFacingJury">
+						<dialogue audio="">Did you find anything else?</dialogue>
+					</scene>
+					<scene type="passive" personName="Suss Pihshawn" clip="PihshawnFront" background="WitnessStand">
+						<dialogue audio="" note="His fingerprints were near the door and counter." type="plaintiff">Yes, we found fingerprints on the door and counter matching Mr. Goode's fingerprints. </dialogue>
+					</scene>
+					<scene type="passive" personName="Prosecuting Attorney, Jesse Jailem" clip="JailemFront" background="BarFacingJury">
+						<dialogue audio="">Thank you Chief Pihshawn. No more questions, your Honor.</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">Defense, you may now cross-examine the witness.</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Orrie Defendorr" clip="DefendorrFront" background="BarFacingJury">
+						<dialogue audio="">Chief Pihshawn, in your investigation, did you find Mr. Goode's fingerprints in the areas around the smashed window or missing game systems? </dialogue>
+					</scene>
+					<scene type="passive" personName="Suss Pihshawn" clip="PihshawnFront" background="WitnessStand">
+						<dialogue audio="">Well no, but along with the video and the altercation the day before, we had enough to arrest him.</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Orrie Defendorr" clip="DefendorrFront" background="BarFacingJury">
+						<dialogue audio="">Did you use face recognition software to identify him in the video?</dialogue>
+					</scene>
+					<scene type="passive" personName="Suss Pihshawn" clip="PihshawnFront" background="WitnessStand">
+						<dialogue audio="" note="The police could not confirm his image in the security video." type="defense">No, but we did try. The video never shows his whole face at once. He had his hoodie on over his head as well.</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Orrie Defendorr" clip="DefendorrFront" background="BarFacingJury">
+						<dialogue audio="" note="The fingerprints make sense where they were as he recently visited the store." type="defense">So you identified Mr. Goode based on fingerprints that should have been there from his visit anyway. </dialogue>
+						<dialogue audio="">In addition, because of Ms. Bizz's story you decided he was in the video though the image was not clear. That sounds like a poor investigation to me.</dialogue>
+					</scene>
+					<scene type="passive" personName="Suss Pihshawn" clip="PihshawnFront" background="WitnessStand">
+						<dialogue audio="">No sir, my officers were very--</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Orrie Defendorr" clip="DefendorrFront" background="BarFacingJury">
+						<dialogue audio="">Thank you Chief Pihshawn. No more questions, your Honor.</dialogue>
+					</scene>
+					<scene type="passive" personName="Court Reporter" clip="ReporterFront" background="CourtReporterBg">
+						<dialogue audio="">...(typing)...</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">(instructing jury to listen fairly to all the evidence)</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JuryClip" background="JuryBox">
+						<dialogue audio="">The jurors are making notes. Are you?</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">Defense, call your next witness.</dialogue>
+					</scene>
+				</argument>
+			</callingOfWitnesses>	
+			<callingOfWitnesses2 background="CallingWitnessesBg">
+				
+				<argument type="Tech Rool" button="RoolButton" x="200" y="200">
+					
+					<scene type="passive" personName="Defense Attorney, Orrie Defendorr" clip="DefendorrFront" background="BarFacingJury">
+						<dialogue audio="">Please state your name and relationship to the defendant. </dialogue>
+					</scene>
+					<scene type="passive" personName="Tech Rool" clip="RoolFront" background="WitnessStand">
+						<dialogue audio="">Hello, my name is Tech Rool, teacher at Gaming Senior Academy.</dialogue>
+						<dialogue audio="">Justin is in my programming class. </dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Orrie Defendorr" clip="DefendorrFront" background="BarFacingJury">
+						<dialogue audio="">What kind of a student is Mr. Goode? </dialogue>
+					</scene>
+					<scene type="passive" personName="Tech Rool" clip="RoolFront" background="WitnessStand">
+						<dialogue audio="">He's a wonderful student! Average grades, but he has incredible talent. </dialogue>
+						<dialogue audio="" note="He is a very talented and kind student, eager to help others." type="defense">He often assists other students with their projects. </dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Orrie Defendorr" clip="DefendorrFront" background="BarFacingJury">
+						<dialogue audio="">Do you think Justin could have robbed this store?</dialogue>
+					</scene>
+					<scene type="passive" personName="Tech Rool" clip="RoolFront" background="WitnessStand">
+						<dialogue audio="" note="He was saving money for a game system." type="plaintiff">No, of course he would not. He was trying to save money for the new game system. </dialogue>
+						<dialogue audio="">He respects my class rules and the other students. I cannot imagine him breaking the law.</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Orrie Defendorr" clip="DefendorrFront" background="BarFacingBench">
+						<dialogue audio="">Thank you Ms. Rool. No more questions, your Honor.</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">The prosecution may now cross-examine the witness.</dialogue>
+					</scene>
+					<scene type="passive" personName="Prosecuting Attorney, Jesse Jailem" clip="JailemFront" background="BarFacingJury">
+						<dialogue audio="">Ms. Rool, you said Mr. Goode has 'average' grades. Why would that be if he were so talented?</dialogue>
+					</scene>
+					<scene type="passive" personName="Tech Rool" clip="RoolFront" background="WitnessStand">
+						<dialogue audio="">He often forgets to turn in paperwork or it is incomplete. He much prefers the hands-on programming work we do most days.</dialogue>
+					</scene>
+					<scene type="passive" personName="Prosecuting Attorney, Jesse Jailem" clip="JailemFront" background="BarFacingJury">
+						<dialogue audio="">So he's talented, but not a hard worker. </dialogue>
+					</scene>
+					<scene type="passive" personName="Tech Rool" clip="RoolFront" background="WitnessStand">
+						<dialogue audio="">Well, he works hard on the tasks he enjoys, just like most of my students. That does not make him a criminal.</dialogue>
+					</scene>
+					<scene type="passive" personName="Prosecuting Attorney, Jesse Jailem" clip="JailemFront" background="BarFacingJury">
+						<dialogue audio="">It does mean he might get too impatient saving money for a game system.</dialogue>
+						<dialogue audio="">He loves gaming so much he could get desperate enough to steal, right? </dialogue>
+					</scene>
+					<scene type="passive" personName="Tech Rool" clip="RoolFront" background="WitnessStand">
+						<dialogue audio="">That's unfair--and not what I meant!</dialogue>
+					</scene>
+					<scene type="passive" personName="Prosecuting Attorney, Jesse Jailem" clip="JailemFront" background="BarFacingBench">
+						<dialogue audio="">Thank you Ms. Rool. No more questions, your Honor.</dialogue>
+					</scene>
+					<scene type="passive" personName="Court Reporter" clip="ReporterFront" background="CourtReporterBg">
+						<dialogue audio="">...(typing)...</dialogue>
+					</scene>
+				</argument>
+				
+				<argument type="Vet Gaimer" button="GaimerButton" x="400" y="200">
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">Prosecutor, you may examine the witness.</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Orrie Defendorr" clip="DefendorrFront" background="BarFacingJury">
+						<dialogue audio="">Please state your name and relationship to the defendant.</dialogue>
+					</scene>
+					<scene type="passive" personName="Vet Gaimer" clip="GaimerFront" background="WitnessStand">
+						<dialogue audio="">Yes, of course. I am Vet Gaimer, Justin B. Goode's friend and neighbor. </dialogue>
+						<dialogue audio="">I have known him and his family for years. We sometimes challenge each other in games.</dialogue>
+						<dialogue audio="">We have our systems wirelessly connected. It's awesome. </dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Orrie Defendorr" clip="DefendorrFront" background="BarFacingJury">
+						<dialogue audio="">Were you home the night of the robbery? What can you tell us about it?</dialogue>
+					</scene>
+					<scene type="passive" personName="Vet Gaimer" clip="GaimerFront" background="WitnessStand">
+						<dialogue audio="" note="No one can confirm his location at the time of robbery." type="plaintiff">I was up, playing games of course, and Justin signed off around 11pm. He must have gone to bed. I did not hear any cars all night. </dialogue>
+						<dialogue audio="" note="He was in bed at the time of the robbery and up early the next morning." type="defense">He was up early mowing the lawn the next day and putting out huge garbage bags of yard debris.</dialogue>
+						<dialogue audio="" note="He was saving money by doing yard work for his parents." type="defense">His parents give him allowance for working on the yard.</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Orrie Defendorr" clip="DefendorrFront" background="BarFacingJury">
+						<dialogue audio="">What did he tell you about the incident with Ms. Buzz?</dialogue>
+					</scene>
+					<scene type="passive" personName="Vet Gaimer" clip="GaimerFront" background="WitnessStand">
+						<dialogue audio="" note="He was saving for a new game system and the saving was not going well." type="plaintiff">Oh, he was sorry for it. He was having a bad day because he had to spend some of his savings to fix his computer. </dialogue>
+						<dialogue audio="" note="Other people have had arguments with the shop owner as well. Besides, he planned to apologize." type="defense">Justin said he would go back in a couple days and apologize. But then, well, he was arrested...</dialogue>
+					</scene>
+					<scene type="passive" personName="Defense Attorney, Orrie Defendorr" clip="DefendorrFront" background="BarFacingBench">
+						<dialogue audio="">Thank you Mr. Gaimer. No more questions, your Honor.</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">The prosecution may now cross-examine the witness.</dialogue>
+					</scene>
+					<scene type="passive" personName="Prosecuting Attorney, Jesse Jailem" clip="JailemFront" background="BarFacingJury">
+						<dialogue audio="">Mr. Gaimer, you have been Mr. Goode's friend for years. Is he involved in any activities or work outside school?</dialogue>
+					</scene>
+					<scene type="passive" personName="Vet Gaimer" clip="GaimerFront" background="WitnessStand">
+						<dialogue audio="" note="He does not work nor is he involved in school activities." type="plaintiff">No, he was hoping to get a job at Ms. Bizz's store but she had no openings. However, he is working on his own video game while teaching himself advanced programming skills.</dialogue>
+					</scene>
+					<scene type="passive" personName="Prosecuting Attorney, Jesse Jailem" clip="JailemFront" background="BarFacingJury">
+						<dialogue audio="">Hmm, so Mr. Goode has no extra activities or responsibilities, other than the yard, apparently. Perhaps he thought he would make some money by selling stolen game systems?</dialogue>
+					</scene>
+					<scene type="passive" personName="Vet Gaimer" clip="GaimerFront" background="WitnessStand">
+						<dialogue audio="">What?! No, I mean, I would have seen him if he had stolen all those game systems. The criminal would have been busy the next day trying to get rid of them quickly.</dialogue>
+					</scene>
+					<scene type="passive" personName="Prosecuting Attorney, Jesse Jailem" clip="JailemFront" background="BarFacingJury">
+						<dialogue audio="">You have a good point there, Mr. Gaimer. Perhaps that idea comes from experience. Maybe you bought one of the stolen systems. </dialogue>
+						<dialogue audio="">I bet you helped him bag up the packaging into those large yard waste bags.</dialogue>
+					</scene>
+					<scene type="passive" personName="Vet Gaimer" clip="GaimerFront" background="WitnessStand">
+						<dialogue audio="">That's ridiculous!</dialogue>
+					</scene>
+					<scene type="passive" personName="Prosecuting Attorney, Jesse Jailem" clip="JailemFront" background="BarFacingJury">
+						<dialogue audio="">Thank you Mr. Gaimer. No more questions, your Honor.</dialogue>
+					</scene>
+					<scene type="passive" personName="Court Reporter" clip="ReporterFront" background="CourtReporterBg">
+						<dialogue audio="">...(typing)...</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">(instructing jury to listen fairly to all the evidence)</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JuryClip" background="JuryBox">
+						<dialogue audio="">The jurors are making notes. Are you?</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">Once all of the witnesses have testified, we'll hear the closing arguments.</dialogue>
+					</scene>
+				</argument>
+			</callingOfWitnesses2>	
+			
+			<closingArguments background="OpeningArgumentsBg">
+				
+				<argument type="Prosecution" button="PlaintiffArgumentButton" x="200" y="200">
+					<scene type="passive" personName="Prosecuting Attorney, Jesse Jailem" clip="JailemFront" background="BarFacingBench">
+						<dialogue audio="">Members of the jury, you have heard the facts for yourself. Mr. Goode clearly had the motive and the means to break in and rob Ms. Bizz's store. </dialogue>
+						<dialogue audio="">He wanted revenge and he wanted that new game system desperately.</dialogue>
+						<dialogue audio="" note="He is a lazy student, prone to unlawful action to get what he wants." type="plaintiff">His grades in school show he is willing to take the lazy route to meeting goals--like stealing instead of working hard and saving money.</dialogue>
+					</scene>
+				</argument>
+				
+				<argument type="Defense" button="DefenseArgumentButton" x="400" y="200">
+					<scene type="passive" personName="Defense Attorney, Orrie Defendorr" clip="DefendorrFront" background="BarFacingBench">
+						<dialogue audio="">Members of the jury, the prosecution has failed to prove Mr. Goode broke the law. The evidence is weak and easily explained.</dialogue>
+						<dialogue audio="">Justin B. Goode is a law-abiding young citizen, working hard to achieve his future goals in computer programming and gaming.</dialogue>
+						<dialogue audio="">Recognize that even a sliver of doubt about his guilt, and there is plenty of doubt here, means you cannot convict him. He is not guilty beyond a reasonable doubt, as required by law.</dialogue>
+					</scene>
+				</argument>
+				
+			</closingArguments>
+			
+			<deliberationIntro>
+				<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+					<dialogue audio="">Members of the jury, you have heard both sides of this case. </dialogue>
+					<dialogue audio="">Your community depends on you to consider the evidence fairly and make a wise decision. Please keep these points in mind:</dialogue>
+					<dialogue audio="">You must follow the law. The question here is whether Justin B. Goode broke the laws against destruction of property, unlawful entry, and robbery.</dialogue>
+					<dialogue audio="">You must determine this based on the evidence available, not any assumptions you may make.</dialogue>
+					<dialogue audio="">Do not make a decision based feeling sorry or angry with anyone involved in the case, including the attorneys.</dialogue>
+					<dialogue audio="">Your feelings about anyone in this room should not affect your decision.</dialogue>
+					<dialogue audio="">Your decision as a jury must be unanimous. Each juror must agree to the same verdict.</dialogue>
+					<dialogue audio="">Jury, you are excused. Please review the facts of the case.</dialogue>
+				</scene>
+			</deliberationIntro>
+
+			<liability background="LiabilityBg">
+				<vote type="Justin B. Goode is guilty of the following charges: destruction of property, unlawful entry, and robbery." button="LiableButton" x="200" y="200"></vote>
+				<vote type="Justin B. Goode is not guilty of the following charges: destruction of property, unlawful entry, and robbery." button="NotLiableButton" x="400" y="200"></vote>
+			</liability>
+
+			<persuasion>
+				<statements background="PersuasionBg">
+					<statement type="Justin B. Goode is guilty. Anyone who doesn't bother to join an afterschool club or get a job is a waste." button="PersuasionButton" x="100" y="200" correct="false"></statement>
+					<statement type="Justin B. Goode is guilty because the game systems' packaging was in the yard waste bags." button="PersuasionButton" x="300" y="200" correct="false"></statement>
+					<statement type="Justin B. Goode is guilty because we have his image on video and fingerprints at the scene of the crime." button="PersuasionButton" x="500" y="200" correct="true"></statement>
+				</statements>
+				<statements background="PersuasionBg">
+					<statement type="Justin B. Goode is not guilty. He sent an apology email to the storeowner. Some other angry customer robbed it." button="PersuasionButton" x="100" y="200" correct="false"></statement>
+					<statement type="Justin B. Goode is not guilty because we lack enough evidence to place him at the store at the right time." button="PersuasionButton" x="300" y="200" correct="true"></statement>
+					<statement type="Justin B. Goode is a victim here. Attorney Stater twisted the words of the defense witnesses." button="PersuasionButton" x="500" y="200" correct="false"></statement>
+				</statements>
+			</persuasion>
+
+			<verdicts>
+				<verdict>
+					<scene type="passive" personName="Jury" clip="JuryClip" background="JuryBox">
+						<dialogue audio="">We, the jury, find the defendant, Justin B. Goode, guilty of the charges of destruction of property, unlawful entry, and robbery as charged.</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">(The judge orders Mr. Goode to one year of jail followed by five years of probation.)</dialogue>
+						<dialogue audio="">(The judge then thanks the jury and lawyers and raps his gavel on the desk.)</dialogue>
+					</scene>
+					<scene type="passive" personName="Bailiff" clip="BailiffFront" background="Wall">
+						<dialogue audio="">(Everyone rises, and the judge leaves the courtroom. The bailiff announces the end of the court session. )</dialogue>
+					</scene>
+				</verdict>
+				<verdict>
+					<scene type="passive" personName="Jury" clip="JuryClip" background="JuryBox">
+						<dialogue audio="">We, the jury, find the defendant, Justin B. Goode, not guilty of the charges of destruction of property, unlawful entry, and robbery as charged.</dialogue>
+					</scene>
+					<scene type="passive" personName="Judge" clip="JudgeFront" background="Bench">
+						<dialogue audio="">(The judge then thanks the jury and lawyers and raps his gavel on the desk.)</dialogue>
+					</scene>
+					<scene type="passive" personName="Bailiff" clip="BailiffFront" background="Wall">
+						<dialogue audio="">(Everyone rises, and the judge leaves the courtroom. The bailiff announces the end of the court session. )</dialogue>
+					</scene>
+				</verdict>
+			</verdicts>
+
+			<outro>
+				<scene type="passive" personName="Judge" clip="JusticeClip" background="GavelBg">
+					<dialogue audio="">Justice is served! 
+Thank you for fulfilling your civic duty as a juror in this criminal case. You may try the case again to practice your skills.</dialogue>
+					<dialogue audio="">If you have not yet served on the civil case, please report for duty now.</dialogue>
+				</scene>
+			</outro>
+		</case>
+	</cases>
+	
+</settings>

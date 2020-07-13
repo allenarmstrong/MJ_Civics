@@ -1,0 +1,57 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="530"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Pick up each item by selecting its "grab" icon and practice dragging in order the steps of the federal lawmaking process.<br/>]]>
+	</instructions>
+
+	<intro>Time to learn about federal lawmaking. Good luck, citizen!</intro>	
+
+	<segments>
+		<segment clip="RoundStarClip" 	label="The bill is introduced in the House" 			id="0" cat="0"/>
+		<segment clip="RoundStarClip" 	label="The bill is introduced in the Senate" 		id="1" cat="1"/>
+		<segment clip="RoundStarClip" 	label="House subcommittee debates and votes on the bill" 		id="2" cat="2"/>
+		<segment clip="RoundStarClip" 	label="Senate subcommittee debates and votes on the bill" 	id="3" cat="3"/>
+
+		<segment clip="RoundStarClip" 	label="Full committee in the House debates and votes on the bill" 		id="4" cat="4"/>
+		<segment clip="RoundStarClip" 	label="Full committee in the Senate debates and votes on the bill" 		id="5" cat="5"/>
+		<segment clip="RoundStarClip" 	label="House Rules Committee sets rules for debate and voting on bill for the whole House" 			id="6" cat="6"/>
+		<segment clip="RoundStarClip" 	label="House debates and votes on the bill" 		id="7" cat="7"/>
+
+		<segment clip="RoundStarClip" 	label="Senate debates and votes on the bill" 		id="8" cat="8"/>
+		<segment clip="RoundStarClip" 	label="Conference Committee meets to resolve differences between House and Senate versions of the bill" 			id="9" cat="9"/>
+		<segment clip="RoundStarClip" 	label="House votes on compromise version of the bill" 		id="10" cat="10"/>
+		<segment clip="RoundStarClip" 	label="Senate votes on compromise version of the bill" 			id="11" cat="11"/>
+
+		<segment clip="RoundStarClip" 	label="Bill sent to the president, who can sign it, veto it, or do nothing" 	id="12" cat="12"/>
+	</segments>
+
+	<bins>
+		<bin clip="Bin0Clip" 	label="" 	id="0"/>
+		<bin clip="Bin0Clip" 	label=""	 id="1"/>
+		<bin clip="Bin0Clip" 	label=""	 id="2"/>
+		<bin clip="Bin0Clip" 	label=""	 id="3"/>
+
+		<bin clip="Bin0Clip" 	label=""	 id="4"/>
+		<bin clip="Bin0Clip" 	label=""	 id="5"/>
+		<bin clip="Bin0Clip" 	label=""	 id="6"/>
+		<bin clip="Bin0Clip" 	label=""	 id="7"/>
+
+		<bin clip="Bin0Clip" 	label=""	 id="8"/>
+		<bin clip="Bin0Clip" 	label=""	 id="9"/>
+		<bin clip="Bin0Clip" 	label=""	 id="10"/>
+		<bin clip="Bin0Clip" 	label=""	 id="11"/>
+
+		<bin clip="Bin0Clip" 	label=""	 id="12"/>
+	</bins>
+
+	<feedback title="Good Job!">Select continue to close this window. Then, select "next" in the bottom right corner when you are done reviewing to reset this interactive and try again!</feedback>
+
+</settings>	

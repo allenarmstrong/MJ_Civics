@@ -1,0 +1,63 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Drag items that appear from the bottom left corner of the screen to the appropriate categories.<br/>]]>
+	</instructions>
+
+	<intro>Time to learn about civic duties. Good luck, citizen!</intro>	
+
+	<segments>
+		<segment clip="RoundStarClip" 	label="Laws that impact them" 			id="0" cat="0"/>
+		<segment clip="RoundStarClip" 	label="Rights that apply to them" 		id="1" cat="0"/>
+		<segment clip="RoundStarClip" 	label="How government works" 		id="2" cat="0"/>
+		<segment clip="RoundStarClip" 	label="Duties and Responsibilities of Citizens" 	id="3" cat="0"/>
+
+		<segment clip="RoundStarClip" 	label="Filling out voter registration card" 		id="4" cat="1"/>
+		<segment clip="RoundStarClip" 	label="Ability to read and write" 		id="5" cat="1"/>
+		<segment clip="RoundStarClip" 	label="Choosing the best candidate" 			id="6" cat="1"/>
+		<segment clip="RoundStarClip" 	label="Disagreeing respectfully" 		id="7" cat="1"/>
+
+		<segment clip="RoundStarClip" 	label="Supporting troops" 		id="8" cat="2"/>
+		<segment clip="RoundStarClip" 	label="Respecting people" 			id="9" cat="2"/>
+		<segment clip="RoundStarClip" 	label="Caring for others" 		id="10" cat="2"/>
+		<segment clip="RoundStarClip" 	label="Respecting rights" 			id="11" cat="2"/>
+
+		<segment clip="RoundStarClip" 	label="Obey laws" 	id="12" cat="3"/>
+		<segment clip="RoundStarClip" 	label="Pay taxes" 	id="13" cat="3"/>
+		<segment clip="RoundStarClip" 	label="Serve on juries" 	id="14" cat="3"/>
+		<segment clip="RoundStarClip" 	label="Vote" 	id="15" cat="3"/>
+	</segments>
+
+	<bins>
+		<bin clip="Bin0Clip" 	label="" 	id="0"/>
+		<bin clip="Bin0Clip" 	label=""	 id="1"/>
+		<bin clip="Bin0Clip" 	label=""	 id="2"/>
+		<bin clip="Bin0Clip" 	label=""	 id="3"/>
+
+		<bin clip="Bin1Clip" 	label=""	 id="4"/>
+		<bin clip="Bin1Clip" 	label=""	 id="5"/>
+		<bin clip="Bin1Clip" 	label=""	 id="6"/>
+		<bin clip="Bin1Clip" 	label=""	 id="7"/>
+
+		<bin clip="Bin2Clip" 	label=""	 id="8"/>
+		<bin clip="Bin2Clip" 	label=""	 id="9"/>
+		<bin clip="Bin2Clip" 	label=""	 id="10"/>
+		<bin clip="Bin2Clip" 	label=""	 id="11"/>
+
+		<bin clip="Bin2Clip" 	label=""	 id="12"/>
+		<bin clip="Bin2Clip" 	label=""	 id="13"/>
+		<bin clip="Bin3Clip" 	label=""	 id="14"/>
+		<bin clip="Bin3Clip" 	label=""	 id="15"/>
+	</bins>
+
+	<feedback title="Good Job!">Select continue to close this window. Then, select "next" in the bottom right corner when you are done reviewing to reset this interactive and try again!</feedback>
+
+</settings>	

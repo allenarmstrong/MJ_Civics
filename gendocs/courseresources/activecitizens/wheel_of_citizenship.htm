@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Wheel of Citizenship</title>
+<link type="text/css" media="screen" href="../../../css/theme.css" rel="stylesheet" />
+<link type="text/css" media="print" href="../../../css/print.css" rel="stylesheet" />
+
+<script type="text/javascript" src="../../../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../../../js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="../../../js/jquery.swfobject.1-1-1.min.js"></script>
+<script type="text/javascript" src="../../../js/jquery_ui/core/js/custom_plugins/ui_importer.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../../js/plugins/jquery.fancyzoom.js"></script>
+<script type="text/javascript" src="../../../js/core.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#Speech').fancyZoom({directory: '../../../js/plugins/fancyzoom.images'});
+		$('#Press').fancyZoom({directory: '../../../js/plugins/fancyzoom.images'});
+		$('#Assembly').fancyZoom({directory: '../../../js/plugins/fancyzoom.images'});
+		$('#Religious').fancyZoom({directory: '../../../js/plugins/fancyzoom.images'});
+		$('#Petition').fancyZoom({directory: '../../../js/plugins/fancyzoom.images'});
+	});
+</script>
+<style type="text/css">
+	.ui_interactive {
+		background-image: url(../../../activecitizens/04_05/images/capitol.png);
+		background-position: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	.FancyZoom { width: 350px; }
+	#zoom {z-index:99999;}
+	.tm, .tl, .tr, .ml, .mm, .mr, .bl, .bm, .br { border: 0px; }
+	.ui_slide a {
+		position: absolute;
+		display: block;
+		border: 1px solid black;
+		width: 175px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		font-size: 14px;
+		font-weight: bold;
+		text-decoration: none;
+		background-color: white;
+		color: blue;
+		border-radius: 4px;
+	}
+	.ui_slide a:hover {
+		text-decoration: underline;
+		color: cyan;
+	}
+	.def {
+		border: 1px solid black;
+		padding: 5px;
+		margin: 5px 5px 0px 5px;
+		color: white;
+		background-color: purple;
+		font-size: 12pt;
+		font-weight: bold;
+	}
+	.ex {
+		border: 1px solid black;
+		padding: 5px;
+		margin: 0px 5px 5px 5px;
+		color: black;
+		background-color: white;
+		font-size: 10pt;
+	}
+	#Center {
+		position: absolute;
+		top: 140px;
+		left: 275px;
+	}
+	#Speech { top: 130px; left: 395px; }
+	#Press { top: 130px; left: 195px; }
+	#Assembly { top: 330px; left: 290px; }
+	#Religious { top: 290px; left: 460px; }
+	#Petition { top: 290px; left: 118px; }
+</style>
+</head>
+
+<body>
+<div id="page" style="width:800px;">
+<div id="content" style="padding:20px;">
+<div id="margin">
+<p class="print">[ <a href="javascript:window.print()" title="print page">print page</a> ]</p>
+
+<h2>Wheel of Citizenship</h2>
+<div class="ui_interactive" >
+	<div class="ui_slides">
+    	<div class="ui_slide">
+        	<h2>Types of Expression:</h2>
+            <p>Click on any type of expression below for more information.</p>
+        	<div id="Center"><img src="../../../activecitizens/04_05/images/04_05_04.png" width="202" height="197"></div>
+            <a href="#Speech_box" id="Speech">Speech</a>
+            <div id="Speech_box" class="FancyZoom">
+              <div class="def">Communication through spoken words and gestures.</div>
+              <div class="ex">Wearing a shirt with an American flag on it, giving a speech about online classes, telling others why you support a certain person running for political office,  making a "peace" sign with your hand.</div>
+            </div>
+            <a href="#Press_box" id="Press">Press</a>
+            <div id="Press_box" class="FancyZoom">
+              <div class="def">All the people involved in gathering and reporting the news.</div>
+              <div class="ex">A newspaper editor commenting on the remarks of political leaders, a news website editor sharing ideas for improving national security, a magazine article writer complaining about health care law.</div>
+            </div>
+            <a href="#Assembly_box" id="Assembly">Assembly</a>
+            <div id="Assembly_box" class="FancyZoom">
+              <div class="def">The coming together of people for a common purpose.</div>
+              <div class="ex">A local organization sponsoring a holiday parade, a political leader holding a street rally to gain supporters, a public protest against a new policy, people from a neighborhood meeting to discuss problems with residents allowing pets to roam free.</div>
+            </div>
+            <a href="#Religious_box" id="Religious">Religious Expression</a>
+            <div id="Religious_box" class="FancyZoom">
+              <div class="def">The communication of religious beliefs, thoughts, or feelings.</div>
+              <div class="ex">People gathering in a religious building, such as a church, to worship together, a group of teens meet to study the Bible and share their thoughts, beginning a meeting with a prayer.</div>
+            </div>
+            <a href="#Petition_box" id="Petition">Petition</a>
+            <div id="Petition_box" class="FancyZoom">
+              <div class="def">A formal request, or to make a formal request to government to address a problem.</div>
+              <div class="ex">People signing a letter to show support for government action on a certain issue, sending a personal request for legal help to a member of Congress, talking to a political leader about a problem, gathering signatures from voters as a step toward adding a proposal for a new law to the next election ballot.</div>
+            </div>
+		</div>
+	</div>
+</div>
+<div class="textVersion"><a class="pop" href="../../../activecitizens/04_05/04_05_04_a.htm" title="Definitions and examples" data-height="750">Text Version</a></div>
+
+
+<p class="close">[ <a href="javascript:window.close();" title="Close this external window and return to course">Close this window</a> ]</p>
+</div>
+</div>
+</div>
+</body>
+</html>

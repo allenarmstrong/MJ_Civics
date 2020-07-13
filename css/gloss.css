@@ -1,0 +1,44 @@
+@charset "utf-8";
+h1{
+padding-left:20px;
+line-height:32px;
+color:#055e9d;
+font-family:Tahoma, Geneva, sans-serif;;
+font-weight:bold;
+font-size:20px;
+border-bottom:1px solid #dcdcdc;
+text-align:center;
+}
+ul#letters{
+text-align:center;
+}
+ul#letters li{
+display:inline;
+list-style-type:none;
+}
+ul#letters li a{
+color:#0680d6 ;
+}
+p.backTo{
+text-align:center;
+font-size:10px
+}
+dl.glossaryTerm{
+margin:20px;;
+clear:both;
+}
+dl.glossaryTerm dt{
+font-weight:bold;
+}
+dl.glossaryTerm, dd{
+margin-bottom:20px;
+}
+dl.glossaryTerm dt, dl.glossaryTerm dd  {
+display:inline;
+}
+	
+p{margin:20px;font-size:14px;}
+p.backtotop{
+text-align:center;
+font-size:10px;
+}

@@ -1,0 +1,47 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Drag the images to the correct folder based on what you've learned from previous lessons.<br/>]]>
+	</instructions>
+
+	<intro>Time to identify some images. Good luck, citizen!</intro>	
+
+	<segments>
+		<segment clip="Direct1" 	label=""	id="0" cat="0"/>
+		<segment clip="Direct2" 	label=""	id="1" cat="0"/>
+		<segment clip="Direct3" 	label=""	id="2" cat="0"/>
+		<segment clip="Indirect1" 	label="" 	id="3" cat="1"/>
+		<segment clip="Indirect2" 	label="" 	id="4" cat="1"/>
+		<segment clip="Indirect3" 	label="" 	id="5" cat="1"/>
+		<segment clip="Indirect4" 	label="" 	id="6" cat="1"/>
+		<segment clip="Advocacy1" 	label="" 	id="7" cat="2"/>
+		<segment clip="Advocacy2" 	label="" 	id="8" cat="2"/>
+		<segment clip="Advocacy3" 	label="" 	id="9" cat="2"/>
+		<segment clip="Advocacy4" 	label="" 	id="10" cat="2"/>
+	</segments>
+
+	<bins>
+		<bin clip="Bin0Clip" 	label=""	id="0"/>
+		<bin clip="Bin0Clip" 	label=""	id="1"/>
+		<bin clip="Bin0Clip" 	label=""	id="2"/>
+		<bin clip="Bin1Clip" 	label=""	id="3"/>
+		<bin clip="Bin1Clip" 	label=""	id="4"/>
+		<bin clip="Bin1Clip" 	label=""	id="5"/>
+		<bin clip="Bin1Clip" 	label=""	id="6"/>
+		<bin clip="Bin2Clip" 	label=""	id="7"/>
+		<bin clip="Bin2Clip" 	label=""	id="8"/>
+		<bin clip="Bin2Clip" 	label=""	id="9"/>
+		<bin clip="Bin2Clip" 	label=""	id="10"/>
+	</bins>
+
+	<feedback title="Good Job!">Select "continue" and then select the "reset" button to restart the interactive.</feedback>
+
+</settings>	

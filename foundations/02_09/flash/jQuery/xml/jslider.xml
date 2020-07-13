@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slider>
+	<directions>
+		<![CDATA[<p>Please examine this headline by selecting "Continue" to begin.</p>]]>
+	</directions>
+
+	<item title="Proposed Amendment Falls Short" background="../../imgs/jQuery/bgs/gmn-news-bg.jpg">
+		<content>
+			<![CDATA[
+			<div><p>The United States first heard of the Equal Rights Amendment, or ERA, in 1923. However, nearly 100 years later, the amendment has failed to pass the 38 state legislatures required for ratification by the 1982 deadline. Efforts to increase support for the ERA continue, but should they?</p></div>
+			]]>
+		</content>
+	</item>
+	
+</slider>

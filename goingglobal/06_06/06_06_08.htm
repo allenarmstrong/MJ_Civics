@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>M/J Civics</title>
+<link type="text/css" media="screen" href="../../css/theme.css" rel="stylesheet" />
+<link type="text/css" media="print" href="../../css/print.css" rel="stylesheet" />
+<script type="text/javascript" src="../../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.swfobject.1-1-1.min.js"></script>
+<script type="text/javascript" src="../../js/core.js"></script>
+<script type="text/javascript">var unitNo = 6;</script>
+<script type="text/javascript">var unitNoLesNo = 0606;</script>
+<script type="text/javascript" src="../../js/links.js"></script>
+<script type="text/javascript" src="../../js/jquery_ui/core/js/custom_plugins/ui_importer.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="../../js/plugins/jquery.jplayer.min.js"></script>
+<link type="text/css" media="screen" href="../../js/plugins/jplayer.blue.monday.css" rel="stylesheet" />
+<script type="text/javascript">
+function PlayAudio(FileToPlay) {
+	$("#jquery_jplayer_1").jPlayer("destroy");
+	$("#jquery_jplayer_1").jPlayer({ 
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				oga: "audio/06_06_08_a_" + FileToPlay + ".ogg",
+				mp3: "audio/06_06_08_a_" + FileToPlay + ".mp3"
+			}).jPlayer("play");
+		},
+		swfPath: "../../js/plugins/Jplayer.swf",
+		supplied: "oga,mp3",
+		wmode: "window",
+		cssSelectorAncestor: "#jp_container_1"
+	});
+}
+
+$(document).ready(function () {
+	PlayAudio(0); //runs on first load
+	
+	$('.ui_interactive').bind('TRANSITION_COMPLETE', function(event, data) { 
+		PlayAudio(data); // Runs every time slide changes
+	});	
+
+});
+</script>
+
+<style type="text/css">
+
+.ui_interactive { background-image:url(images/06_06_08_back.jpg); background-color:#047DB4; background-position:top}
+.ui_slide { background-repeat:no-repeat;}
+</style>
+
+
+
+</head>
+<body>
+<div id="logo"></div>
+<div id="window">
+<div id="page">
+		<div id="nav">
+				<dl>
+						<dt>Navigation</dt>
+						<dd>
+								<ul>
+										<li id="next"><a href="06_06_09.htm" title="Next"><span>Next</span></a></li>
+										<li id="prev"><a href="06_06_07.htm" title="Previous"><span>Previous</span></a></li>
+										<li id="home"><a href="../../index.htm" title="Home"><span>Home</span></a></li>
+										<li id="gloss"><a class="pop" href="../../glossary/glossary.htm" title="Glossary"><span>Glossary</span></a></li>
+										<li id="notes"><a href="../../gendocs/courseresources/resource.htm" title="Course resources"><span>Course Resources</span></a></li>
+								</ul>
+						</dd>
+				</dl>
+		</div>
+		<div id="content">
+				<div id="title"><span id="title1"></span><span id="title2"></span></div>
+				<div id="margin">
+						<h1>What Is Better, a Strong or Weak U.S. Dollar?</h1>
+						<p>If U.S. business owners hear that the value of the dollar is strong, what does that mean? Will they be happy? First, it means the value of the dollar has risen compared to other currencies. Whether the business owner will be happy about it, however, depends on the business.</p>
+						<p>A strong dollar makes American products appear more expensive to foreign companies. The demand for U.S. goods will decrease because they have to pay more. Foreign currencies and products appear less expensive to Americans, so the U.S. demand for imported products will increase.</p>
+						<p>Therefore, U.S. business owners will be happy if they sell foreign products in the United States. They will be unhappy if they sell U.S. products to other countries. Examine these images to learn more.</p>
+						
+						
+						<div class="ui_interactive" data-width="750px" data-height="580px" data-transition="fade">
+								<div class="ui_slides"> 
+										<!--START INTERACTIVE-->
+										
+										<div class="ui_slide" style="background-image:url(images/06_06_08_intro.png);">   </div>
+
+										
+										<div class="ui_slide" style="background-image:url(images/06_06_08_strongdollar_title.png)">   </div>
+										
+										<div class="ui_slide" style="background-image:url(images/06_06_08_strongdollar_01.png)">   </div>
+										
+										<div class="ui_slide" style="background-image:url(images/06_06_08_strongdollar_02.png)">   </div>
+										
+										<div class="ui_slide" style="background-image:url(images/06_06_08_strongdollar_03.png)">   </div>
+										
+										<div class="ui_slide" style="background-image:url(images/06_06_08_strongdollar_04.png)">   </div>
+										
+										
+										<div class="ui_slide" style="background-image:url(images/06_06_08_wealdollar_title.png)">   </div>
+										
+										<div class="ui_slide" style="background-image:url(images/06_06_08_weakdollar_01.png)">   </div>
+										
+										<div class="ui_slide" style="background-image:url(images/06_06_08_weakdollar_02.png)">   </div>
+										
+										<div class="ui_slide" style="background-image:url(images/06_06_08_weakdollar_03.png)">   </div>
+										
+										<div class="ui_slide" style="background-image:url(images/06_06_08_weakdollar_04.png)">   </div>
+
+						</div>
+	
+						
+				</div>
+				
+				
+				
+				
+							 <div class="Media" style="margin: 10px 0px 5px 185px;">
+							   <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+							   <div id="jp_container_1" class="jp-audio Player">
+								  <div class="jp-type-single">
+								    <div class="jp-gui jp-interface">
+									 <ul class="jp-controls">
+									   <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+									   <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+									   <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+									   <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+									   <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+									   <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+									 </ul>
+									 <div class="jp-progress">
+									   <div class="jp-seek-bar">
+										<div class="jp-play-bar"></div>
+									   </div>
+									 </div>
+									 <div class="jp-volume-bar">
+									   <div class="jp-volume-bar-value"></div>
+									 </div>
+									 <div class="jp-time-holder">
+									   <div class="jp-current-time"></div>
+									   <div class="jp-duration"></div>
+									 </div>
+								    </div>
+								    <div class="jp-no-solution">
+									 <span>Update Required</span>
+									 To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+								    </div>
+								  </div>
+							   </div>
+						    </div>
+				
+	<div class="textVersion"><a class="pop" href="06_06_08_a.htm" title="U.S. dollar" data-height="750">Text Version</a></div>			
+				
+				
+				
+				<div id="menu">
+						<div id="segments"><a href="../../index.htm" title="Units"><span>Segments</span></a></div>
+						<dl id="units">
+								<dt><span>Units</span></dt>
+								<dd>
+										<ul>
+												<li></li>
+										</ul>
+								</dd>
+						</dl>
+						<dl id="lessons">
+								<dt><span>Lessons</span></dt>
+								<dd>
+										<ul>
+												<li></li>
+										</ul>
+								</dd>
+						</dl>
+						<dl id="pages">
+								<dt><span>8 of 10</span></dt>
+								<dd>
+										<ul>
+												<li></li>
+										</ul>
+								</dd>
+						</dl>
+				</div>
+		</div>
+</div>
+<div id="footer"> <span id="copy">Unless otherwise noted, &copy; 2011 FLVS</span> </div>
+</body>
+</html>

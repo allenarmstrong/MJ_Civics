@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>M/J Civics</title>
+<link type="text/css" media="screen" href="../../css/theme.css" rel="stylesheet" />
+<link type="text/css" media="print" href="../../css/print.css" rel="stylesheet" />
+<script type="text/javascript" src="../../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.swfobject.1-1-1.min.js"></script>
+<script type="text/javascript" src="../../js/core.js"></script>
+<script type="text/javascript">var unitNo = 1;</script>
+<script type="text/javascript">var unitNoLesNo = 0106;</script>
+<script type="text/javascript" src="../../js/links.js"></script>
+<script type="text/javascript" src="../../js/jquery_ui/core/js/custom_plugins/ui_importer.js" charset="utf-8"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#Collage div").each(function(){
+			$(this).hide();
+			$(this).css("position","absolute").css("top",$(this).attr("y")+"px").css("left",$(this).attr("x")+"px").css("z-index","100")
+			$(this).css("width",$(this).attr("width"));
+			if ( $(this).attr("height") ) { $(this).css("height",$(this).attr("height")); }
+		});
+		
+		$("#Collage img").each(function(){			
+			$(this).css("position","absolute").css("top",$(this).attr("y")+"px").css("left",$(this).attr("x")+"px").css("z-index",$(this).attr("z"));
+			$(this).data("origsrc",$(this).attr("src")).data("origz",$(this).attr("z"));
+		});
+		
+		$("#Collage img").mouseover(function(){
+			var div = "div." + $(this).attr("class");
+			
+			$(this).attr("src",$(this).attr("over"));
+			$(this).css("z-index","99");
+			$(div).show();
+		});
+		
+		$("#Collage img").mouseout(function(){
+			var div = "div." + $(this).attr("class");
+			
+			$(this).attr("src",$(this).data("origsrc"));
+			$(this).css("z-index",$(this).data("origz"));
+			$(div).hide();
+		});
+	});
+</script>
+<style type="text/css">
+	.ui_slides {
+		background-color: #abcbd8;
+	}
+	#Collage div {
+		border: 1px solid black;
+		padding: 0px 10px 10px 10px;
+	}
+	#Collage h4 {
+		color: white;
+		padding: 0px;
+	}
+	#Collage div ul {
+		background-color: white;
+		list-style-position: inside;
+		padding: 10px;
+		margin: 0px;
+	}
+	div.i6, div.i7, div.i8, div.i9, div.i10, div.i11 {
+		background-color: #0680d6;
+	}
+	div.i1, div.i2, div.i3, div.i4, div.i5 {
+		background-color: #900;
+	}
+</style>
+</head>
+<body>
+<div id="logo"></div>
+<div id="window">
+<div id="page">
+<div id="nav">
+<dl>
+<dt>Navigation</dt>
+<dd>
+<ul>
+<li id="next"><a href="01_06_04.htm" title="Next"><span>Next</span></a></li>
+<li id="prev"><a href="01_06_02.htm" title="Previous"><span>Previous</span></a></li>
+<li id="home"><a href="../../index.htm" title="Home"><span>Home</span></a></li>
+<li id="gloss"><a class="pop" href="../../glossary/glossary.htm" title="Glossary"><span>Glossary</span></a></li>
+<li id="notes"><a href="../../gendocs/courseresources/resource.htm" title="Course resources"><span>Course Resources</span></a></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div id="content">
+<div id="title"><span id="title1"></span><span id="title2"></span></div>
+<div id="margin">
+
+
+<h1>What Are the Duties and Responsibilities of Good Citizens?</h1>
+<p>Some of the responsibilities of citizens are required by law. We refer to these as &quot;civic duties.&quot;</p>
+<p>One citizen duty is to obey laws. People must follow the laws; however, citizens can legally act to change laws they feel are unjust. Responsibilities of citizenship include <span class="tooltip">community<span><strong>Community:</strong> a group of people who live in the same area, have a common background, or share similar interests</span></span> expectations. Good citizens choose to meet these expectations. Americans have specific ideas about what good citizenship means. <span class="tooltip">Influencing<span><strong>Influence:</strong> to have an effect on something</span></span> government, such as through contacting leaders or holding office, is one of these expectations.</p>
+<p>People who are not legal U.S. citizens can also show good citizenship! Acting like a good citizen helps improve the community for everyone. Fulfilling the responsibilities and duties of citizenship helps secure the <span class="tooltip">common good<span><strong>Common Good:</strong> the greatest possible conditions of society for the greatest number of people living in it</span></span>. Ask a trusted adult about their experiences with civic responsibilities.</p>
+
+<!--<div>
+
+<object width="550" height="450">
+    <param name="allowfullscreen" value="true" /><param name="wmode" value="opaque" />
+    <param name="allowscriptaccess" value="always" />
+    <param name="movie" value="flash/01_06_scrapbook/main.swf" />
+    <embed src="flash/01_06_scrapbook/main.swf" type="application/x-shockwave-flash" allowfullscreen="true" wmode="opaque" allowscriptaccess="always" width="550" height="450"></embed>
+</object> 
+</div><br />  -->
+
+<div class="ui_interactive" data-width="600" data-height="450">
+	<div class="ui_slides">
+    	<div class="ui_slide">
+        	<div class="ui_dialog instructions" title="Welcome!">
+                Move your mouse over any of the pictures to see more on the responsibilities and duties of good citizens.
+            </div>
+        	<div id="Collage">
+                <img class="i1" src="images/01_06_03-1.png" over="images/01_06_03-1o.png" width="234" height="206" x="0" y="270" z="1" alt="Young man with a skateboard">
+                <div class="i1" width="250" x="100" y="100">
+                	<h4>Duty: Obey Laws</h4>
+                    <ul>
+                    	<li>Crossing streets in crosswalks.</li>
+                        <li>Walking pets on a leash.</li>
+                        <li>No fighting.</li>
+                    </ul>
+                </div>
+                <img class="i2" src="images/01_06_03-2.png" over="images/01_06_03-2o.png" width="200" height="161" x="165" y="0" z="2" alt="Cash Register">
+                <div class="i2" width="250" x="100" y="200">
+                	<h4>Duty: Pay Taxes</h4>
+                    <ul>
+                    	<li>Taxes added to items you purchase.</li>
+                        <li>Taxes paid based on money earned.</li>
+                        <li>Taxes on special items like gasoline and cell phones.</li>
+                    </ul>
+                </div>
+                <img class="i3" src="images/01_06_03-3.png" over="images/01_06_03-3o.png" width="145" height="167" x="320" y="170" z="4" alt="Soliders performing training">
+                <div class="i3" width="250" x="50" y="50">
+                	<h4>Duty: Defend the Nation</h4>
+                    <ul>
+                    	<li>Registering for draft (if required).</li>
+                        <li>Serving in military when required by law.</li>
+                    </ul>
+                </div>
+                <img class="i4" src="images/01_06_03-4.png" over="images/01_06_03-4o.png" width="265" height="185" x="330" y="290" z="5" alt="Female lawyer talking to a jury">
+                <div class="i4" width="250" x="100" y="100">
+                	<h4>Duty: Serve on Juries</h4>
+                    <ul>
+                    	<li>Showing up when called for jury service.</li>
+                        <li>Examining evidence fairly when serving on a jury/</li>
+                    </ul>
+                </div>
+                <img class="i5" src="images/01_06_03-5.png" over="images/01_06_03-5o.png" width="230" height="154" x="0" y="130" z="3" alt="Young girl performing a science experiment">
+                <div class="i5" width="250" x="220" y="220">
+                	<h4>Duty: Attend School</h4>
+                    <ul>
+                    	<li>Going to public, private, charter school, or homeschooling.</li>
+                        <li>Meeting state requirements.</li>
+                        <li>To advance to the next grade or graduate.</li>
+                    </ul>
+                </div>
+                <img class="i6" src="images/01_06_03-6.png" over="images/01_06_03-6o.png" width="156" height="178" x="210" y="300" z="1" alt="Ballot being dropped into a box">
+                <div class="i6" width="250" x="100" y="100">
+                	<h4>Responsibility: Vote</h4>
+                    <ul>
+                    	<li>Voting for local, state, and national leaders.</li>
+                        <li>Voting on issues like whether to build a new park or change a school's hours.</li>
+                    </ul>
+                </div>
+                <img class="i7" src="images/01_06_03-7.png" over="images/01_06_03-7o.png" width="156" height="169" x="350" y="0" z="1" alt="Politician delivering a speech">
+                <div class="i7" width="250" x="100" y="200">
+                	<h4>Responsibility: Influence Government</h4>
+                    <ul>
+                    	<li>Attending public meetings.</li>
+                        <li>Writing letters to elected officials or newspapers.</li>
+                        <li>Participating in surveys or polls.</li>
+                        <li>Watching and discussing important news.</li>
+                    </ul>
+                </div>
+                <img class="i8" src="images/01_06_03-8.png" over="images/01_06_03-8o.png" width="155" height="252" x="430" y="200" z="3" alt="Young man saluting a navy solider">
+                <div class="i8" width="250" x="100" y="100">
+                    <h4>Responsibility: Show support for troops</h4>
+                    <ul>
+                    	<li>Saying "Thank You" when you see or meet a solider or veteran.</li>
+                        <li>Being friendly to kids with parents in the military.</li>
+                        <li>Sending treats and supplies to troops overseas.</li>
+                    </ul>
+                </div>
+                <img class="i9" src="images/01_06_03-9.png" over="images/01_06_03-9o.png" width="172" height="186" x="180" y="130" z="5" alt="Two teenage girls cleaning up a park">
+                <div class="i9" width="220" x="340" y="180">
+                	<h4>Responsibility: Help Other People</h4>
+                    <ul>
+                    	<li>Helping with cleanup and repairs after a storm.</li>
+                        <li>Helping family with daily chores like cooking and cleaning.</li>
+                        <li>Helping younger children with reading or homework.</li>
+                        <li>Volunteering at the library or with local clubs.</li>
+                    </ul>
+                </div>
+                <img class="i10" src="images/01_06_03-10.png" over="images/01_06_03-10o.png" width="141" height="234" x="459" y="0" z="2" alt="Young girl giving the pledge of alligence">
+                <div class="i10" width="250" x="100" y="100">
+                	<h4>Responsibility: Show Respect for Leaders and Symbols</h4>
+                    <ul>
+                    	<li>Referring to elected officials by title, such as the President by using "President" as the title before the name.</li>
+                        <li>Reparing or replacing worn U.S. flags.</li>
+                        <li>Following rules when visiting landmarks.</li>
+                        <li>Remaining silent with a hand over the heart during the national anthem.</li>
+                    </ul>
+                </div>
+                <img class="i11" src="images/01_06_03-11.png" over="images/01_06_03-11o.png" width="207" height="143" x="0" y="0" z="2" alt="Older boy scolding his younger brother">
+                <div class="i11" width="250" x="100" y="200">
+                	<h4>Responsibility: Protect Rights</h4>
+                    <ul>
+                    	<li>Offering to help settle disputes.</li>
+                        <li>Speaking up for people who cannot do so for themselves.</li>
+                        <li>Learning about the rights that are protected by law.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="textVersion"><a class="pop" href="01_06_03_a.htm" title="Civic responsibilities text version" data-height="750">Text Version</a></div>
+
+
+
+</div>
+</div>
+<div id="menu">
+<div id="segments"><a href="../../index.htm" title="Units"><span>Segments</span></a></div>
+<dl id="units">
+<dt><span>Units</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="lessons">
+<dt><span>Lessons</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="pages">
+<dt><span>3 of 10</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="footer">
+<span id="copy">Unless otherwise noted, &copy; 2011 FLVS</span>
+</div>
+</body>
+</html>

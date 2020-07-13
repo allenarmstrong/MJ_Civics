@@ -1,0 +1,17 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Drag the magnifying glass over each image to learn more about them.<br/>]]>
+	</instructions>
+
+	<intro>Time to analyze some images. Good luck, citizen!</intro>
+
+</settings>	

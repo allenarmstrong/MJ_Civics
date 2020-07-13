@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<directions>
+		<![CDATA[Read to each statement. Choose whether you think a Federalist or an Anti-Federalist would have said each statement. <br /><br />Select "Continue" to begin.]]>
+	</directions>
+
+	<endfeedback><![CDATA[Select "Restart" to try again.]]></endfeedback>
+	
+	<question string="Strong national government is needed to protect citizens from threats">
+		<correct><![CDATA["A strong national government will protect the people in times of crisis." - Federalist.]]></correct>
+		<incorrect><![CDATA[Incorrect. Please try again.]]></incorrect>
+		<choice string="Federalist" correct="true" />
+		<choice string="Anti-Federalist" correct="false" />
+	</question>
+
+	<question string="Constitution already limits powers of government, a Bill of Rights is unnecessary">
+		<correct><![CDATA["Consider your duties to the people! Consider that 'We the People' made this Constitution! There is no need of a separate Bill of Rights. We already have limits on power in place. Why declare exceptions to a power that is not given anyway?" - Federalist]]></correct>
+		<incorrect><![CDATA[Incorrect. Please try again.]]></incorrect>
+		<choice string="Federalist" correct="true" />
+		<choice string="Anti-Federalist" correct="false" />
+	</question>
+	
+	<question string="Central government is too strong, could become abusive of power ">
+		<correct><![CDATA["The states fought to overthrow Britain's powerful government. Why should we give our new government so much power? Too much power corrupts men." - Anti-Federalist]]></correct>
+		<incorrect><![CDATA[Incorrect. Please try again.]]></incorrect>
+		<choice string="Federalist" correct="false" />
+		<choice string="Anti-Federalist" correct="true" />	</question>
+	
+	<question string="Constitution should be ratified immediately to strengthen the nation">
+<correct><![CDATA["We do not want to be the only state that does not join the Union. Our country is in crisis. Our economy is weak and foreign governments do not respect us. The Constitution will strengthen the government. If the Constitution fails to be ratified, we will have failed the people." - Federalist]]></correct>
+<incorrect><![CDATA[Incorrect. Please try again.]]></incorrect>
+		<choice string="Federalist" correct="true" />
+		<choice string="Anti-Federalist" correct="false" />
+	</question>	
+	
+	<question string="Not enough protection for powers of state governments">
+		<correct><![CDATA["The Constitution does not give enough power to the states." - Anti-Federalist]]></correct>
+		<incorrect><![CDATA[Incorrect. Please try again.]]></incorrect>
+		<choice string="Federalist" correct="false" />
+		<choice string="Anti-Federalist" correct="true" />
+	</question>
+
+	
+	<question string="Will not ratify Constitution without a Bill of Rights">
+		<correct><![CDATA["This Constitution does not have a Bill of Rights. A Bill of Rights would guarantee the freedom of speech and religion. It would prevent the government from unjustly imprisoning people. Unless we all agree to add one, we must refuse to ratify." - Anti-Federalist]]></correct>
+		<incorrect><![CDATA[Incorrect. Please try again.]]></incorrect>
+		<choice string="Federalist" correct="false" />
+		<choice string="Anti-Federalist" correct="true" />
+	</question>
+	
+	<question string="Constitution should be ratified immediately to prevent chaos">
+<correct><![CDATA["A strong national government will safeguard the liberties of the people by preventing the nation from falling into mob rule." - Federalist]]></correct>
+<incorrect><![CDATA[Incorrect. Please try again.]]></incorrect>
+		<choice string="Federalist" correct="true" />
+		<choice string="Anti-Federalist" correct="false" />
+	</question>
+	
+	<question string="Constitution does not provide enough protection for people's rights">
+<correct><![CDATA["People need protection against a strong national government." - Anti-Federalist]]></correct>
+<incorrect><![CDATA[Incorrect. Please try again.]]></incorrect>
+		<choice string="Federalist" correct="false" />
+		<choice string="Anti-Federalist" correct="true" /> 
+	</question>
+	
+
+	
+</quiz>

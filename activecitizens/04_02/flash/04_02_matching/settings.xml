@@ -1,0 +1,32 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Drag the image directly over the folder of the Supreme Court case it best represents.
+
+©2011 AP Images]]>
+	</instructions>
+
+	<intro>Time to identify some images. Good luck, citizen!</intro>	
+
+	<segments>
+		<segment clip="Segregation" 	label=""	id="0" cat="0"/>
+		<segment clip="Diversity" 	label=""	id="1" cat="1"/>
+		<segment clip="Headline" 	label=""	id="2" cat="2"/>	</segments>
+
+	<bins>
+		<bin clip="Bin0Clip" 	label=""	id="0"/>
+		<bin clip="Bin1Clip" 	label=""	id="1"/>
+		<bin clip="Bin2Clip" 	label=""	id="2"/>
+	</bins>
+
+	<feedback title="Good Job!">Select "continue" and then select the "reset" button to restart the interactive.</feedback>
+
+</settings>	

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings 
+directions="Match the description to the image that represents it. Select a choice from each side. If you get a match they will both disappear. Select “Continue” to get started."
+innerDirections="Select an description and an image to get a match."> 	
+<word id="match1">This bar graph shows the ratification history of the ERA.</word> 	
+<definition id="match1"><![CDATA[<img src="flash/jQuery/images/02_09_07_04.jpg" width="170px"/> ]]></definition> 
+<word id="match2">A person who thinks the ERA would hurt women's rights would wear this button.</word> 	
+<definition id="match2"><![CDATA[<div style="text-align:center"><img src="flash/jQuery/images/02_09_07_02_StopERA_b.png" /></div> ]]></definition> 	 	
+<word id="match3">A person who thinks the ERA is necessary to protect women's rights would wear this button.</word> 	
+<definition id="match3"><![CDATA[<div style="text-align:center"><img src="flash/jQuery/images/02_09_07_03_ERA_YES_b.png" /></div> ]]></definition> 	 	
+<word id="match4">This bar graph shows that the majority of ideas for amendments do not achieve ratification.</word> 	
+<definition id="match4"><![CDATA[<img src="images/02_09_03_bar_graph.jpg" width="170px"/> ]]></definition> 	 	
+<word id="match5">This image represents what happens to the majority of amendment ideas.</word> 	
+<definition id="match5"><![CDATA[<img src="flash/jQuery/images/02_09_07_05b.png"/> ]]></definition> 	 
+ 	
+<!-- This bar graph shows the history of ratifying the 27th Amendment, begun in 1789. -->
+</settings>

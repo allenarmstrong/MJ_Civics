@@ -1,0 +1,1924 @@
+
+/* incase an inverted custom gradient isn't specified */
+.fancy-button-reset-base-class, .jDrag button, .jGallery .audio-controls .play a,
+.jGallery .audio-controls .pause a,
+.jGallery .audio-controls .stop a,
+.jGallery .audio-controls .mute a,
+.jGallery .audio-controls .unmute a, .jQuiz #button, .jQuiz button.next, .jQuiz button.restart, .jQuiz2MC button, .jQuiz2TF button {
+  font-family: "Lucida Grande", Lucida, Arial, sans-serif;
+  background: url('../imgs/jQuery/button_bg.png?1290524416') repeat-x bottom left;
+  margin: 0;
+  width: auto;
+  overflow: visible;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border-style: solid;
+  font-weight: bold; }
+  .fancy-button-reset-base-class::-moz-focus-inner, .jDrag button::-moz-focus-inner, .jGallery .audio-controls .play a::-moz-focus-inner,
+  .jGallery .audio-controls .pause a::-moz-focus-inner,
+  .jGallery .audio-controls .stop a::-moz-focus-inner,
+  .jGallery .audio-controls .mute a::-moz-focus-inner,
+  .jGallery .audio-controls .unmute a::-moz-focus-inner, .jQuiz #button::-moz-focus-inner, .jQuiz button.next::-moz-focus-inner, .jQuiz button.restart::-moz-focus-inner, .jQuiz2MC button::-moz-focus-inner, .jQuiz2TF button::-moz-focus-inner {
+    border: none;
+    padding: 0; }
+  .fancy-button-reset-base-class:focus, .jDrag button:focus, .jGallery .audio-controls .play a:focus,
+  .jGallery .audio-controls .pause a:focus,
+  .jGallery .audio-controls .stop a:focus,
+  .jGallery .audio-controls .mute a:focus,
+  .jGallery .audio-controls .unmute a:focus, .jQuiz #button:focus, .jQuiz button.next:focus, .jQuiz button.restart:focus, .jQuiz2MC button:focus, .jQuiz2TF button:focus {
+    outline: none; }
+
+body {
+  margin: 1em; }
+
+.interactive {
+  width: 700px;
+  height: 400px;
+  border: 5px solid #bfbfbf; }
+
+/* jDrag */
+.jDrag {
+  background: white url("../imgs/bgs/stack-bg.jpg") no-repeat top left;
+  background-size: 105% 105%;
+  position: relative;
+  width: 700px;
+  height: 400px;
+  font-family: sans-serif;
+  overflow: hidden;
+  /* INSTRUCTIONS */ }
+  .jDrag .overlay {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0px;
+    left: 0px;
+    width: 700px;
+    height: 400px;
+    z-index: 99999; }
+  .jDrag .instructions {
+    background-color: #cccccc;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    padding: 1em 0 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -khtml-border-radius: 0.5em;
+    border-radius: 0.5em;
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6); }
+    .jDrag .instructions #title {
+      font: 1.6em sans-serif;
+      font-weight: bold;
+      color: #df0000;
+  
+      padding: .1em 0px 0px .5em; }
+    .jDrag .instructions #text {
+      width: 90%;
+      font: 0.9em sans-serif;
+      padding: 1em 0 0 1em; }
+    .jDrag .instructions .go-btn {
+      background-color: #df0000;
+      position: absolute;
+      bottom: 0px;
+      right: 5%;
+      width: 25%;
+      height: 17%;
+      font: italic bold 1.6em sans-serif;
+      text-align: center;
+      padding: 3% 1% 0 0;
+      color: white;
+      
+      cursor: pointer;
+      -moz-border-radius-topleft: 0.5em;
+      -webkit-border-top-left-radius: 0.5em;
+      -o-border-top-left-radius: 0.5em;
+      -ms-border-top-left-radius: 0.5em;
+      -khtml-border-top-left-radius: 0.5em;
+      border-top-left-radius: 0.5em;
+      -moz-border-radius-topright: 0.5em;
+      -webkit-border-top-right-radius: 0.5em;
+      -o-border-top-right-radius: 0.5em;
+      -ms-border-top-right-radius: 0.5em;
+      -khtml-border-top-right-radius: 0.5em;
+      border-top-right-radius: 0.5em; }
+    .jDrag .instructions .go-btn:hover {
+      background-color: #ac0000; }
+    .jDrag .instructions .go-btn:active {
+      background-color: #df0000;
+      height: 16%; }
+  .jDrag .btn-i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: transparent url("../imgs/jQuery/icons/i.png") no-repeat;
+    width: 41px;
+    height: 40px;
+    z-index: 99999;
+    cursor: pointer; }
+  .jDrag .selections {
+    display: none; }
+  .jDrag #selection0 h1,
+  .jDrag #selection1 h1 {
+    width: 35%;
+    color: black;
+    border-bottom: 0px;
+    font: 1.6em/1em sans-serif;
+    text-align: left; }
+  .jDrag #selection0 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 275px;
+    height: 163px;
+    background: transparent url("../imgs/jQuery/newspaper.png") no-repeat right; }
+    .jDrag #selection0 h1 {
+      margin: 15% 0 0 0; }
+  .jDrag #selection1 {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    width: 275px;
+    height: 163px;
+    background: transparent url("../imgs/jQuery/newspaper.png") no-repeat right; }
+    .jDrag #selection1 h1 {
+      margin: 20% 0 0 0; }
+  .jDrag .selection button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 0px; }
+  .jDrag button {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 1.2em;
+    padding: 0.3em 1em;
+    border-width: 1px;
+    background-color: #005fa2;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #51b4f9), color-stop(10%, #078ae7), color-stop(50%, #05558e), color-stop(50%, #044c7f), color-stop(100%, #066ab1));
+    background-image: -webkit-linear-gradient(#51b4f9, #078ae7 10%, #05558e 50%, #044c7f 50%, #066ab1);
+    background-image: -moz-linear-gradient(#51b4f9, #078ae7 10%, #05558e 50%, #044c7f 50%, #066ab1);
+    background-image: -o-linear-gradient(#51b4f9, #078ae7 10%, #05558e 50%, #044c7f 50%, #066ab1);
+    background-image: linear-gradient(#51b4f9, #078ae7 10%, #05558e 50%, #044c7f 50%, #066ab1);
+    border-color: #033253;
+    text-shadow: #001423 0px 1px 1px;
+    -moz-box-shadow: rgba(255, 255, 255, 0.318) 0 0 0.1em 1px inset;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.318) 0 0 0.1em 1px inset;
+    -o-box-shadow: rgba(255, 255, 255, 0.318) 0 0 0.1em 1px inset;
+    box-shadow: rgba(255, 255, 255, 0.318) 0 0 0.1em 1px inset;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    -o-background-clip: padding-box;
+    -ms-background-clip: padding-box;
+    -khtml-background-clip: padding-box;
+    background-clip: padding-box;
+    position: absolute;
+    left: 58%;
+    bottom: 2%; }
+    .jDrag button, .jDrag button:visited {
+      color: white; }
+    .jDrag button:hover, .jDrag button:focus {
+      background-color: #005693;
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #42adf9), color-stop(10%, #0782d8), color-stop(50%, #044c7f), color-stop(50%, #044371), color-stop(100%, #0561a2));
+      background-image: -webkit-linear-gradient(#42adf9, #0782d8 10%, #044c7f 50%, #044371 50%, #0561a2);
+      background-image: -moz-linear-gradient(#42adf9, #0782d8 10%, #044c7f 50%, #044371 50%, #0561a2);
+      background-image: -o-linear-gradient(#42adf9, #0782d8 10%, #044c7f 50%, #044371 50%, #0561a2);
+      background-image: linear-gradient(#42adf9, #0782d8 10%, #044c7f 50%, #044371 50%, #0561a2);
+      border-color: #022944;
+      text-shadow: #000b13 0px 1px 1px; }
+      .jDrag button:hover, .jDrag button:hover:visited, .jDrag button:focus, .jDrag button:focus:visited {
+        color: white; }
+    .jDrag button:active {
+      background-color: #004d83;
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #044c7f), color-stop(30%, #045289), color-stop(50%, #044675), color-stop(50%, #033d67), color-stop(100%, #0564a7));
+      background-image: -webkit-linear-gradient(#044c7f, #045289 30%, #044675 50%, #033d67 50%, #0564a7);
+      background-image: -moz-linear-gradient(#044c7f, #045289 30%, #044675 50%, #033d67 50%, #0564a7);
+      background-image: -o-linear-gradient(#044c7f, #045289 30%, #044675 50%, #033d67 50%, #0564a7);
+      background-image: linear-gradient(#044c7f, #045289 30%, #044675 50%, #033d67 50%, #0564a7);
+      border-color: #022035;
+      text-shadow: #000204 0px -1px -1px;
+      -moz-box-shadow: #033253 0 0.08em 0.2em 1px inset;
+      -webkit-box-shadow: #033253 0 0.08em 0.2em 1px inset;
+      -o-box-shadow: #033253 0 0.08em 0.2em 1px inset;
+      box-shadow: #033253 0 0.08em 0.2em 1px inset; }
+      .jDrag button:active, .jDrag button:active:visited {
+        color: white; }
+  .jDrag #drop {
+    display: none; }
+    .jDrag #drop h1 {
+      color: #333333;
+      font: 1.6em sans-serif;
+      position: absolute;
+      top: 11%;
+      left: 2%;
+      border-bottom: 1px double #333333;
+      padding: 0 0 .1em 0; }
+    .jDrag #drop .title {
+      position: absolute;
+      top: 20%;
+      left: 2%;
+      font-size: 0.81em;
+      font-weight: bold; }
+    .jDrag #drop .author {
+      position: absolute;
+      top: 24%;
+      left: 2%;
+      font-size: 0.81em;
+      font-style: italic; }
+    .jDrag #drop ul.sortable {
+      position: absolute;
+      top: 30%;
+      left: 2%;
+      width: 46%;
+      height: 65%;
+      background-color: #e6e6e6;
+      list-style: none;
+      padding: .3em;
+      margin: 0;
+      text-indent: 0;
+      overflow-y: scroll;
+      overflow-x: hidden; }
+  .jDrag #drags {
+    display: none;
+    position: relative;
+    left: 53%;
+    top: 0;
+    width: 47%;
+    height: 95%; }
+    .jDrag #drags .directions {
+      position: absolute;
+      top: 4%;
+      right: 3%;
+      font-size: 1.44em;
+     
+      width: 95%;
+      color: #0680d6; }
+    .jDrag #drags ul.drags {
+      position: absolute;
+      top: 23%;
+      right: 2%;
+      background-color: #f2f2f2;
+      list-style: none;
+      padding: .3em;
+      margin: 0;
+      width: 95%;
+      height: 77%;
+      text-indent: 0;
+      overflow-y: scroll;
+      overflow-x: hidden; }
+    .jDrag #drags .back-btn {
+      background-color: #0680d6;
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: white;
+      cursor: pointer;
+      padding: .1em .3em;
+      -moz-border-radius-bottomleft: 7px;
+      -webkit-border-bottom-left-radius: 7px;
+      -o-border-bottom-left-radius: 7px;
+      -ms-border-bottom-left-radius: 7px;
+      -khtml-border-bottom-left-radius: 7px;
+      border-bottom-left-radius: 7px;
+      font-weight: bold;
+      font-size: 0.9em; }
+  .jDrag li {
+    list-style: none url();
+    margin-left: 0 !important;
+    padding: .3em;
+    cursor: pointer;
+    font-size: 0.81em;
+    line-height: 1.17em;
+    line-height: 0.99em/9; }
+  .jDrag li:hover {
+    outline: 1px dashed #e6e6e6; }
+  .jDrag li:last-child {
+    margin: 0; }
+  .jDrag .correct {
+    background: transparent url("../imgs/jQuery/icons/correct.png") no-repeat;
+    padding-left: 20px !important; }
+
+/* END jDrag */
+/* jFlip */
+.jFlip {
+  background: transparent url("../imgs/jQuery/bgs/paper-bg.jpg") repeat;
+  position: relative;
+  width: 700px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* INSTRUCTIONS */
+  /*
+    .front:hover{
+     	border: 1px solid darken($white, 20);
+      @include box-shadow(0px 0px 30px 0px darken($white, 20)); }
+  */ }
+  .jFlip .overlay {
+    position: absolute;
+    background: transparent url("../imgs/jQuery/bgs/paper-bg.jpg") repeat;
+    top: 0px;
+    left: 0px;
+    width: 700px;
+    height: 400px;
+    z-index: 99; }
+  .jFlip .instructions {
+     background-color: white;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    padding: 1em 0 0 0;
+    border: 6px solid #0680d6;
+   /* -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -khtml-border-radius: 0.5em;
+    border-radius: 0.5em; */
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6); }
+    .jFlip .instructions #title {
+      font: 1.6em sans-serif;
+      font-weight: bold;
+      color: #black;
+      padding: .1em 0px 0px .5em; }
+    .jFlip .instructions #text {
+      width: 90%;
+      font: 0.9em sans-serif;
+      padding: 1em 0 0 1em; }
+    .jFlip .instructions .go-btn {
+     background-color: #0680d6;
+      position: absolute;
+      bottom: 0px;
+      right: 5%;
+      width: 25%;
+      height: 17%;
+      font: bold 1.6em sans-serif;
+      text-align: center;
+      padding: 3% 1% 0 0;
+      color: white;
+      cursor: pointer;
+	  /*
+      -moz-border-radius-topleft: 0.5em;
+      -webkit-border-top-left-radius: 0.5em;
+      -o-border-top-left-radius: 0.5em;
+      -ms-border-top-left-radius: 0.5em;
+      -khtml-border-top-left-radius: 0.5em;
+      border-top-left-radius: 0.5em;
+      -moz-border-radius-topright: 0.5em;
+      -webkit-border-top-right-radius: 0.5em;
+      -o-border-top-right-radius: 0.5em;
+      -ms-border-top-right-radius: 0.5em;
+      -khtml-border-top-right-radius: 0.5em;
+      border-top-right-radius: 0.5em;
+	  */
+	   }
+	  
+    .jFlip .instructions .go-btn:hover {
+      background-color: #ac0000; }
+    .jFlip .instructions .go-btn:active {
+      background-color: #df0000;
+      height: 16%; }
+  .jFlip .btn-i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: transparent url("../imgs/jQuery/icons/i.png") no-repeat;
+    width: 41px;
+    height: 40px;
+    z-index: 98;
+    cursor: pointer; }
+  .jFlip .btn-i {
+    left: 0;
+    top: 0; }
+  .jFlip .flipcard {
+    width: 19%;
+    height: 70%;
+    float: left;
+    margin: 10% 0 10% 3%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 5px solid #0680d6; }
+    .jFlip .flipcard:hover {
+      -moz-box-shadow: 0px 0px 30px 5px #b3b3b3;
+      -webkit-box-shadow: 0px 0px 30px 5px #b3b3b3;
+      -o-box-shadow: 0px 0px 30px 5px #b3b3b3;
+      box-shadow: 0px 0px 30px 5px #b3b3b3; }
+  .jFlip .front {
+    background-color: #656565;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    white-space: normal; }
+    .jFlip .front .content {
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
+    .jFlip .front img {
+      vertical-align: top;
+      margin: 0; }
+	
+	 .jFlip .front .front_text{
+		 color: white;
+		 font-weight: bold;
+		 font-size: 1.5em;
+		 padding: 5px;
+		 line-height: normal;
+	 }
+  .jFlip .back {
+    display: none; }
+  .jFlip .description {
+    font-size: 1.12em;
+    padding: 1em;
+    font-style: italic;
+    line-height: 1.08em; }
+
+/* END jFlip */
+/* jGallery */
+.hide_me {
+	display: none;	
+}
+.jGallery {
+  background: transparent url("../imgs/jQuery/bgs/paper-bg.jpg") repeat;
+  position: relative;
+  width: 700px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* INSTRUCTIONS */ }
+  .jGallery .overlay {
+    position: absolute;
+    background: transparent url("../imgs/jQuery/bgs/paper-bg.jpg") repeat;
+    top: 0px;
+    left: 0px;
+    width: 700px;
+    height: 400px;
+    z-index: 110; }
+  .jGallery .instructions {
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    padding: 1em 0 0 0;
+    border: 6px solid #0680d6;;
+	/*
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -khtml-border-radius: 0.5em;
+    border-radius: 0.5em; */
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6); }
+    .jGallery .instructions #title {
+      font: 1.6em sans-serif;
+      font-weight: bold;
+      color: black;
+      
+      padding: .1em 0px 0px .5em; }
+    .jGallery .instructions #text {
+      width: 90%;
+      font: 0.9em sans-serif;
+      padding: 1em 0 0 1em; }
+    .jGallery .instructions .go-btn {
+      background-color: #0680d6;
+      position: absolute;
+      bottom: 0px;
+      right: 5%;
+      width: 25%;
+      height: 17%;
+      font: bold 1.6em sans-serif;
+      text-align: center;
+      padding: 3% 1% 0 0;
+      color: white;
+     
+      cursor: pointer;
+	  /*
+      -moz-border-radius-topleft: 0.5em;
+      -webkit-border-top-left-radius: 0.5em;
+      -o-border-top-left-radius: 0.5em;
+      -ms-border-top-left-radius: 0.5em;
+      -khtml-border-top-left-radius: 0.5em;
+      border-top-left-radius: 0.5em;
+      -moz-border-radius-topright: 0.5em;
+      -webkit-border-top-right-radius: 0.5em;
+      -o-border-top-right-radius: 0.5em;
+      -ms-border-top-right-radius: 0.5em;
+      -khtml-border-top-right-radius: 0.5em;
+      border-top-right-radius: 0.5em;*/ }
+	  
+    .jGallery .instructions .go-btn:hover {
+      background-color: #ac0000; }
+    .jGallery .instructions .go-btn:active {
+      background-color: #df0000;
+      height: 16%; }
+  .jGallery .btn-i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: transparent url("../imgs/jQuery/icons/i.png") no-repeat;
+    width: 41px;
+    height: 40px;
+    z-index: 100;
+    cursor: pointer; }
+  .jGallery .navigation {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font: bold 0.9em sans-serif; }
+  .jGallery div {
+    position: relative;
+    display: block; }
+  .jGallery .inactive {
+    position: absolute;
+    left: -700px;
+    width: 700px;
+    opacity: 0; }
+  .jGallery .active {
+    position: absolute;
+    left: 0;
+    width: 700px;
+    opacity: 1; }
+  .jGallery .photo {
+    float: left;
+    margin: 5% 0 0 5%;
+    width: 50%; }
+    .jGallery .photo img {
+      border: 5px solid white;
+      width: 100%;
+      -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+      -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+      vertical-align: top; }
+	
+	  
+  .jGallery .info {
+    background: white\9;
+    padding: 10px\9;
+    float: right;
+    width: 35%;
+    margin: 5% 5% 0 0; 
+	}
+    .jGallery .info h1 {
+      font: bold 1.6em sans-serif;
+      color: #0680d6;
+      margin: 0 0 1em 0; }
+    .jGallery .info div {
+	
+      line-height: 1.17em;
+      font: normal 0.9em sans-serif;
+	  }
+  .jGallery #nav-btns, .jGallery #jprev, .jGallery #jnext {
+    background-color: #0680d6;
+    -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
+    -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 2%;
+    font-weight: bold;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    color: white;
+    border: 1px solid #0680d6;
+    text-shadow: 0px 1px 0px black;
+        cursor: pointer;
+    z-index: 100; }
+    .jGallery #nav-btns:hover, .jGallery #jprev:hover, .jGallery #jnext:hover {
+      background: #034573;
+      color: white;
+      border: 1px solid #034573;
+      text-shadow: 0px 1px 0px black; }
+  .jGallery #jprev {
+    left: 0;
+    padding: .5em 1em .5em 1.3em;
+    -moz-border-radius-topright: 7px;
+    -webkit-border-top-right-radius: 7px;
+    -o-border-top-right-radius: 7px;
+    -ms-border-top-right-radius: 7px;
+    -khtml-border-top-right-radius: 7px;
+    border-top-right-radius: 7px;
+    -moz-border-radius-bottomright: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    -o-border-bottom-right-radius: 7px;
+    -ms-border-bottom-right-radius: 7px;
+    -khtml-border-bottom-right-radius: 7px;
+    border-bottom-right-radius: 7px; }
+  .jGallery #jnext {
+    right: 0;
+    padding: .5em 1.3em .5em 1em;
+    -moz-border-radius-topleft: 7px;
+    -webkit-border-top-left-radius: 7px;
+    -o-border-top-left-radius: 7px;
+    -ms-border-top-left-radius: 7px;
+    -khtml-border-top-left-radius: 7px;
+    border-top-left-radius: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -o-border-bottom-left-radius: 7px;
+    -ms-border-bottom-left-radius: 7px;
+    -khtml-border-bottom-left-radius: 7px;
+    border-bottom-left-radius: 7px; }
+  .jGallery .text {
+    margin: 0 0 .5em 0; }
+    .jGallery .text h3 {
+      background: transparent url("../imgs/jQuery/icons/arrow-click-reveal.png") no-repeat 0px -40px;
+      border: 0px;
+      padding: .5em 0 0 2em;
+      margin: -0.5em 0 0.2em -0.2em;
+      height: auto;
+      font: bold 1em/2em sans-serif;
+      cursor: pointer;
+      float: none;
+      outline: 0; }
+    .jGallery .text h3:hover {
+		
+      background: transparent url("../imgs/jQuery/icons/arrow-click-reveal.png") no-repeat 0px 0px; }
+    .jGallery .text div {
+      margin: 0 0 1em 0; }
+  .jGallery .copyright {
+    margin: 1em 0 0 0; }
+  .jGallery .audio-controls {
+    background-color: #0d0d0d;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #4d4d4d));
+    background: -webkit-linear-gradient(top center, #333333, #4d4d4d);
+    background: -moz-linear-gradient(top center, #333333, #4d4d4d);
+    background: -o-linear-gradient(top center, #333333, #4d4d4d);
+    background: linear-gradient(top center, #333333, #4d4d4d);
+    border: 1px solid #0d0d0d;
+    width: 10em;
+    height: 1.6em;
+    padding: .2em 0 .2em 1.1em;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -o-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -khtml-border-radius: 1em;
+    border-radius: 1em; }
+    .jGallery .audio-controls .title {
+      float: left;
+      font: bold 0.9em/1.8em sans-serif;
+      text-transform: uppercase;
+      color: white;
+      margin: 0 .5em 0 0; }
+    .jGallery .audio-controls .play a,
+    .jGallery .audio-controls .pause a,
+    .jGallery .audio-controls .stop a,
+    .jGallery .audio-controls .mute a,
+    .jGallery .audio-controls .unmute a {
+      -moz-border-radius: 1em;
+      -webkit-border-radius: 1em;
+      -o-border-radius: 1em;
+      -ms-border-radius: 1em;
+      -khtml-border-radius: 1em;
+      border-radius: 1em;
+      font-size: 0.9em;
+      line-height: 1.2em;
+      padding: 0.3em 1em;
+      border-width: 1px;
+      background-color: #333333;
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #878787), color-stop(10%, #595959), color-stop(50%, #2b2b2b), color-stop(50%, #242424), color-stop(100%, #3d3d3d));
+      background-image: -webkit-linear-gradient(#878787, #595959 10%, #2b2b2b 50%, #242424 50%, #3d3d3d);
+      background-image: -moz-linear-gradient(#878787, #595959 10%, #2b2b2b 50%, #242424 50%, #3d3d3d);
+      background-image: -o-linear-gradient(#878787, #595959 10%, #2b2b2b 50%, #242424 50%, #3d3d3d);
+      background-image: linear-gradient(#878787, #595959 10%, #2b2b2b 50%, #242424 50%, #3d3d3d);
+      border-color: #0d0d0d;
+      text-shadow: black 0px 1px 1px;
+      -moz-box-shadow: rgba(255, 255, 255, 0.2) 0 0 0.1em 1px inset;
+      -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 0 0.1em 1px inset;
+      -o-box-shadow: rgba(255, 255, 255, 0.2) 0 0 0.1em 1px inset;
+      box-shadow: rgba(255, 255, 255, 0.2) 0 0 0.1em 1px inset;
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding;
+      -o-background-clip: padding-box;
+      -ms-background-clip: padding-box;
+      -khtml-background-clip: padding-box;
+      background-clip: padding-box;
+      float: left;
+      line-height: 1em;
+      margin: 0 .2em 0 0; }
+      .jGallery .audio-controls .play a, .jGallery .audio-controls .play a:visited,
+      .jGallery .audio-controls .pause a,
+      .jGallery .audio-controls .pause a:visited,
+      .jGallery .audio-controls .stop a,
+      .jGallery .audio-controls .stop a:visited,
+      .jGallery .audio-controls .mute a,
+      .jGallery .audio-controls .mute a:visited,
+      .jGallery .audio-controls .unmute a,
+      .jGallery .audio-controls .unmute a:visited {
+        color: white; }
+      .jGallery .audio-controls .play a:hover, .jGallery .audio-controls .play a:focus,
+      .jGallery .audio-controls .pause a:hover,
+      .jGallery .audio-controls .pause a:focus,
+      .jGallery .audio-controls .stop a:hover,
+      .jGallery .audio-controls .stop a:focus,
+      .jGallery .audio-controls .mute a:hover,
+      .jGallery .audio-controls .mute a:focus,
+      .jGallery .audio-controls .unmute a:hover,
+      .jGallery .audio-controls .unmute a:focus {
+        background-color: #2b2b2b;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #808080), color-stop(10%, #525252), color-stop(50%, #242424), color-stop(50%, #1c1c1c), color-stop(100%, #363636));
+        background-image: -webkit-linear-gradient(#808080, #525252 10%, #242424 50%, #1c1c1c 50%, #363636);
+        background-image: -moz-linear-gradient(#808080, #525252 10%, #242424 50%, #1c1c1c 50%, #363636);
+        background-image: -o-linear-gradient(#808080, #525252 10%, #242424 50%, #1c1c1c 50%, #363636);
+        background-image: linear-gradient(#808080, #525252 10%, #242424 50%, #1c1c1c 50%, #363636);
+        border-color: #050505;
+        text-shadow: black 0px 1px 1px; }
+        .jGallery .audio-controls .play a:hover, .jGallery .audio-controls .play a:hover:visited, .jGallery .audio-controls .play a:focus, .jGallery .audio-controls .play a:focus:visited,
+        .jGallery .audio-controls .pause a:hover,
+        .jGallery .audio-controls .pause a:hover:visited,
+        .jGallery .audio-controls .pause a:focus,
+        .jGallery .audio-controls .pause a:focus:visited,
+        .jGallery .audio-controls .stop a:hover,
+        .jGallery .audio-controls .stop a:hover:visited,
+        .jGallery .audio-controls .stop a:focus,
+        .jGallery .audio-controls .stop a:focus:visited,
+        .jGallery .audio-controls .mute a:hover,
+        .jGallery .audio-controls .mute a:hover:visited,
+        .jGallery .audio-controls .mute a:focus,
+        .jGallery .audio-controls .mute a:focus:visited,
+        .jGallery .audio-controls .unmute a:hover,
+        .jGallery .audio-controls .unmute a:hover:visited,
+        .jGallery .audio-controls .unmute a:focus,
+        .jGallery .audio-controls .unmute a:focus:visited {
+          color: white; }
+      .jGallery .audio-controls .play a:active,
+      .jGallery .audio-controls .pause a:active,
+      .jGallery .audio-controls .stop a:active,
+      .jGallery .audio-controls .mute a:active,
+      .jGallery .audio-controls .unmute a:active {
+        background-color: #242424;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #242424), color-stop(30%, #292929), color-stop(50%, #1f1f1f), color-stop(50%, #171717), color-stop(100%, #383838));
+        background-image: -webkit-linear-gradient(#242424, #292929 30%, #1f1f1f 50%, #171717 50%, #383838);
+        background-image: -moz-linear-gradient(#242424, #292929 30%, #1f1f1f 50%, #171717 50%, #383838);
+        background-image: -o-linear-gradient(#242424, #292929 30%, #1f1f1f 50%, #171717 50%, #383838);
+        background-image: linear-gradient(#242424, #292929 30%, #1f1f1f 50%, #171717 50%, #383838);
+        border-color: black;
+        text-shadow: black 0px -1px -1px;
+        -moz-box-shadow: #0d0d0d 0 0.08em 0.2em 1px inset;
+        -webkit-box-shadow: #0d0d0d 0 0.08em 0.2em 1px inset;
+        -o-box-shadow: #0d0d0d 0 0.08em 0.2em 1px inset;
+        box-shadow: #0d0d0d 0 0.08em 0.2em 1px inset; }
+        .jGallery .audio-controls .play a:active, .jGallery .audio-controls .play a:active:visited,
+        .jGallery .audio-controls .pause a:active,
+        .jGallery .audio-controls .pause a:active:visited,
+        .jGallery .audio-controls .stop a:active,
+        .jGallery .audio-controls .stop a:active:visited,
+        .jGallery .audio-controls .mute a:active,
+        .jGallery .audio-controls .mute a:active:visited,
+        .jGallery .audio-controls .unmute a:active,
+        .jGallery .audio-controls .unmute a:active:visited {
+          color: white; }
+    .jGallery .audio-controls .play, .jGallery .audio-controls .unmute {
+      display: none; }
+
+/* END jGallery */
+/* jMatch */
+.jMatch {
+  position: relative;
+  background: transparent url("../imgs/jQuery/bgs/paper-bg.jpg") repeat;
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+  font: 0.9em sans-serif;
+  /* INSTRUCTIONS */ }
+  .jMatch .overlay {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0px;
+    left: 0px;
+    width: 700px;
+    height: 400px;
+    z-index: 99999; }
+  .jMatch .instructions {
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    padding: 1em 0 0 0;
+    border: 6px solid #0680d6; }
+    .jMatch .instructions #title {
+      font: 1.6em sans-serif;
+      font-weight: bold;
+      color: #df0000;
+     
+      padding: .1em 0px 0px .5em; }
+    .jMatch .instructions #text {
+      width: 90%;
+      font: 0.9em sans-serif;
+      padding: 1em 0 0 1em; }
+    .jMatch .instructions .go-btn {
+      background-color: #df0000;
+      position: absolute;
+      bottom: 0px;
+      right: 5%;
+      width: 25%;
+      height: 17%;
+      font: italic bold 1.6em sans-serif;
+      text-align: center;
+      padding: 3% 1% 0 0;
+      color: white;
+      
+      cursor: pointer;
+      -moz-border-radius-topleft: 0.5em;
+      -webkit-border-top-left-radius: 0.5em;
+      -o-border-top-left-radius: 0.5em;
+      -ms-border-top-left-radius: 0.5em;
+      -khtml-border-top-left-radius: 0.5em;
+      border-top-left-radius: 0.5em;
+      -moz-border-radius-topright: 0.5em;
+      -webkit-border-top-right-radius: 0.5em;
+      -o-border-top-right-radius: 0.5em;
+      -ms-border-top-right-radius: 0.5em;
+      -khtml-border-top-right-radius: 0.5em;
+      border-top-right-radius: 0.5em; }
+    .jMatch .instructions .go-btn:hover {
+      background-color: #ac0000; }
+    .jMatch .instructions .go-btn:active {
+      background-color: #df0000;
+      height: 16%; }
+  .jMatch .btn-i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: transparent url("../imgs/jQuery/icons/i.png") no-repeat;
+    width: 41px;
+    height: 40px;
+    z-index: 99999;
+    cursor: pointer; }
+  .jMatch .innerInstructions {
+    margin-top: 1em;
+    text-align: center; }
+  .jMatch #title1, .jMatch #title2 {
+    position: absolute;
+    top: 10%;
+    font: bold 1.6em sans-serif;
+    padding: .2em 0;
+    border-bottom: 5px solid #0680d6;
+    border-top: 5px solid #0680d6;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    text-shadow: 0px 1px 0px white; }
+  .jMatch #title1 {
+    left: 13%; }
+  .jMatch #title2 {
+    right: 25%; }
+  .jMatch .t3565Left {
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    width: 25%;
+    height: 65%;
+    padding: .5em;
+    overflow: hidden;
+    border: 4px solid #0680d6;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    background-color: white; }
+  .jMatch .t3565Right {
+    position: absolute;
+    top: 17%;
+    right: 3%;
+    width: 65%;
+    height: 80%;
+    overflow: hidden; }
+  .jMatch .definitions {
+    width: 90%;
+    height: 85%;
+    overflow: hidden; }
+  .jMatch .hover, .jMatch .word:hover, .jMatch .definition:hover, .jMatch .selected {
+    background-color: #055e9d !important;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 0px 1px 0px black;
+    cursor: pointer; }
+  .jMatch .word {
+    width: 100%;
+    height: 8%;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding-top: 5px; }
+  .jMatch .definition {
+    background: white;
+    width: 90%;
+    margin: 0 1em 1em 0;
+    padding: 1em;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #055e9d; }
+  .jMatch .jScrollPaneContainer {
+    position: absolute;
+    top: 35px;
+    left: 45px;
+    width: 100%;
+    height: 285px;
+    overflow: hidden;
+    z-index: 10; }
+  .jMatch .jScrollPaneTrack {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: gray;
+    opacity: .3;
+    filter: alpha(opacity=30);
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -o-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -khtml-border-radius: 7px;
+    border-radius: 7px; }
+  .jMatch .jScrollPaneDrag {
+    position: absolute;
+    background: black;
+    cursor: pointer;
+    overflow: hidden;
+    filter: alpha(opacity=30);
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -o-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -khtml-border-radius: 7px;
+    border-radius: 7px; }
+  .jMatch .jScrollPaneDragTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden; }
+  .jMatch a.jScrollArrowUp {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    text-indent: -2000px;
+    overflow: hidden;
+    background: transparent url("../imgs/jQuery/icons/arrow-up.png") no-repeat;
+    height: 10px;
+    width: 10px;
+    border-bottom: 0px; }
+  .jMatch a.jScrollArrowDown {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    text-indent: -2000px;
+    overflow: hidden;
+    background: transparent url("../imgs/jQuery/icons/arrow-down.png") no-repeat;
+    height: 10px;
+    width: 10px;
+    border-bottom: 0px; }
+
+/* END jMatch */
+/* jQuiz */
+.jQuiz {
+  background: #e6e6e6 url("../imgs/jQuery/bgs/paper-bg.jpg") repeat;
+  position: relative;
+  width: 700px;
+  height: 266.667px;
+  overflow: hidden;
+  font-family: sans-serif;
+  /* INSTRUCTIONS */ }
+  .jQuiz .overlay {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0px;
+    left: 0px;
+    width: 700px;
+    height: 400px;
+    z-index: 99999; }
+  .jQuiz .instructions {
+    background-color: #cccccc;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    padding: 1em 0 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -khtml-border-radius: 0.5em;
+    border-radius: 0.5em;
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6); }
+    .jQuiz .instructions #title {
+      font: 1.6em sans-serif;
+      font-weight: bold;
+      color: #df0000;
+      
+      padding: .1em 0px 0px .5em; }
+    .jQuiz .instructions #text {
+      width: 90%;
+      font: 0.9em sans-serif;
+      padding: 1em 0 0 1em; }
+    .jQuiz .instructions .go-btn {
+      background-color: #df0000;
+      position: absolute;
+      bottom: 0px;
+      right: 5%;
+      width: 25%;
+      height: 17%;
+      font: italic bold 1.6em sans-serif;
+      text-align: center;
+      padding: 3% 1% 0 0;
+      color: white;
+    
+      cursor: pointer;
+      -moz-border-radius-topleft: 0.5em;
+      -webkit-border-top-left-radius: 0.5em;
+      -o-border-top-left-radius: 0.5em;
+      -ms-border-top-left-radius: 0.5em;
+      -khtml-border-top-left-radius: 0.5em;
+      border-top-left-radius: 0.5em;
+      -moz-border-radius-topright: 0.5em;
+      -webkit-border-top-right-radius: 0.5em;
+      -o-border-top-right-radius: 0.5em;
+      -ms-border-top-right-radius: 0.5em;
+      -khtml-border-top-right-radius: 0.5em;
+      border-top-right-radius: 0.5em; }
+    .jQuiz .instructions .go-btn:hover {
+      background-color: #ac0000; }
+    .jQuiz .instructions .go-btn:active {
+      background-color: #df0000;
+      height: 16%; }
+  .jQuiz .btn-i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: transparent url("../imgs/jQuery/icons/i.png") no-repeat;
+    width: 41px;
+    height: 40px;
+    z-index: 99999;
+    cursor: pointer; }
+  .jQuiz .overlay {
+    height: 266.667px; }
+  .jQuiz .instructions {
+    top: 10%;
+    height: 70%; }
+  .jQuiz .notVisible {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -700px; }
+  .jQuiz form {
+    position: relative;
+    width: 700px;
+    height: 266.667px; }
+  .jQuiz h2 {
+    font-size: 1.6em;
+    
+    font-weight: bold;
+    line-height: 1em;
+    color: #0680d6;
+    margin: .1em 0 0 .3em; }
+  .jQuiz h2 .directions {
+    font-size: 0.8em;
+    color: black;
+    font-weight: normal;
+    letter-spacing: 0pt; }
+  .jQuiz h3 {
+    font-size: 1.6em;
+    line-height: 1em;
+    float: none;
+    margin: .5em 0px 1em 0px; }
+  .jQuiz .left {
+    width: 55%;
+    float: left;
+    margin: 0 0 0 .5em; }
+  .jQuiz .right {
+    width: 40%;
+    float: right;
+    margin: .5em 1em 0 0; }
+  .jQuiz .navigation {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 0.9em;
+    font-weight: bold; }
+  .jQuiz fieldset {
+    padding: 0;
+    border: 0; }
+  .jQuiz .answers {
+    margin: 1em 0 0 0;
+    width: 90%;
+    height: 90%; }
+  .jQuiz input:hover {
+    cursor: pointer; }
+  .jQuiz input[type=radio] {
+    float: left;
+    margin: 0 1em 1em 0;
+    width: 2em;
+    clear: both; }
+  .jQuiz label {
+    font-size: 0.9em;
+    float: left;
+    width: 80%;
+    margin: 0 1em 1em 0; }
+  .jQuiz .rightBox, .jQuiz div.correct, .jQuiz
+  .jQuiz div.incorrect,
+  .jQuiz .jQuiz div.incorrect {
+    clear: both;
+    width: 90%;
+    margin: 0;
+    padding: 1em;
+    font-size: 0.9em;
+    background-color: white;
+    border: 1px solid #cccccc; }
+  .jQuiz div.incorrect {
+    clear: both;
+    width: 90%;
+    margin: 0;
+    padding: 1em;
+    font-size: 0.9em;
+    background-color: white;
+    border: 1px solid #cccccc; }
+  .jQuiz p.correct {
+    background: transparent url("../imgs/jQuery/icons/correct.png") no-repeat;
+    color: black;
+    font-weight: bold;
+    font-size: 0.99em;
+    padding-left: 25px;
+    line-height: 20px;
+    height: 3em; }
+  .jQuiz p.incorrect {
+    background: transparent url("../imgs/jQuery/icons/incorrect.png") no-repeat;
+    color: black;
+    font-weight: bold;
+    font-size: 0.99em;
+    padding-left: 25px;
+    line-height: 20px;
+    height: 3em; }
+  .jQuiz #button, .jQuiz button.next, .jQuiz button.restart {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 1.2em;
+    padding: 0.3em 1em;
+    border-width: 1px;
+    background-color: #0081dc;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #89ccfc), color-stop(10%, #2fa6f9), color-stop(50%, #0677c7), color-stop(50%, #056eb8), color-stop(100%, #078cea));
+    background-image: -webkit-linear-gradient(#89ccfc, #2fa6f9 10%, #0677c7 50%, #056eb8 50%, #078cea);
+    background-image: -moz-linear-gradient(#89ccfc, #2fa6f9 10%, #0677c7 50%, #056eb8 50%, #078cea);
+    background-image: -o-linear-gradient(#89ccfc, #2fa6f9 10%, #0677c7 50%, #056eb8 50%, #078cea);
+    background-image: linear-gradient(#89ccfc, #2fa6f9 10%, #0677c7 50%, #056eb8 50%, #078cea);
+    border-color: #04538c;
+    text-shadow: #00365d 0px 1px 1px;
+    -moz-box-shadow: rgba(255, 255, 255, 0.431) 0 0 0.1em 1px inset;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.431) 0 0 0.1em 1px inset;
+    -o-box-shadow: rgba(255, 255, 255, 0.431) 0 0 0.1em 1px inset;
+    box-shadow: rgba(255, 255, 255, 0.431) 0 0 0.1em 1px inset;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    -o-background-clip: padding-box;
+    -ms-background-clip: padding-box;
+    -khtml-background-clip: padding-box;
+    background-clip: padding-box;
+    z-index: 10000; }
+    .jQuiz #button, .jQuiz button.next, .jQuiz button.restart, .jQuiz #button:visited, .jQuiz button.next:visited, .jQuiz button.restart:visited {
+      color: white; }
+    .jQuiz #button:hover, .jQuiz button.next:hover, .jQuiz button.restart:hover, .jQuiz #button:focus, .jQuiz button.next:focus, .jQuiz button.restart:focus {
+      background-color: #0078cd;
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7ac6fb), color-stop(10%, #209ff9), color-stop(50%, #056eb8), color-stop(50%, #0565a9), color-stop(100%, #0683db));
+      background-image: -webkit-linear-gradient(#7ac6fb, #209ff9 10%, #056eb8 50%, #0565a9 50%, #0683db);
+      background-image: -moz-linear-gradient(#7ac6fb, #209ff9 10%, #056eb8 50%, #0565a9 50%, #0683db);
+      background-image: -o-linear-gradient(#7ac6fb, #209ff9 10%, #056eb8 50%, #0565a9 50%, #0683db);
+      background-image: linear-gradient(#7ac6fb, #209ff9 10%, #056eb8 50%, #0565a9 50%, #0683db);
+      border-color: #034b7d;
+      text-shadow: #002d4d 0px 1px 1px; }
+      .jQuiz #button:hover, .jQuiz button.next:hover, .jQuiz button.restart:hover, .jQuiz #button:hover:visited, .jQuiz button.next:hover:visited, .jQuiz button.restart:hover:visited, .jQuiz #button:focus, .jQuiz button.next:focus, .jQuiz button.restart:focus, .jQuiz #button:focus:visited, .jQuiz button.next:focus:visited, .jQuiz button.restart:focus:visited {
+        color: white; }
+    .jQuiz #button:active, .jQuiz button.next:active, .jQuiz button.restart:active {
+      background-color: #006fbd;
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #056eb8), color-stop(30%, #0574c2), color-stop(50%, #0568ae), color-stop(50%, #045f9f), color-stop(100%, #0686e0));
+      background-image: -webkit-linear-gradient(#056eb8, #0574c2 30%, #0568ae 50%, #045f9f 50%, #0686e0);
+      background-image: -moz-linear-gradient(#056eb8, #0574c2 30%, #0568ae 50%, #045f9f 50%, #0686e0);
+      background-image: -o-linear-gradient(#056eb8, #0574c2 30%, #0568ae 50%, #045f9f 50%, #0686e0);
+      background-image: linear-gradient(#056eb8, #0574c2 30%, #0568ae 50%, #045f9f 50%, #0686e0);
+      border-color: #03426e;
+      text-shadow: #00243e 0px -1px -1px;
+      -moz-box-shadow: #04538c 0 0.08em 0.2em 1px inset;
+      -webkit-box-shadow: #04538c 0 0.08em 0.2em 1px inset;
+      -o-box-shadow: #04538c 0 0.08em 0.2em 1px inset;
+      box-shadow: #04538c 0 0.08em 0.2em 1px inset; }
+      .jQuiz #button:active, .jQuiz button.next:active, .jQuiz button.restart:active, .jQuiz #button:active:visited, .jQuiz button.next:active:visited, .jQuiz button.restart:active:visited {
+        color: white; }
+  .jQuiz button.next {
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+    float: right; }
+  .jQuiz button.restart {
+    position: relative;
+    float: right;
+    bottom: 10%; }
+
+/* END jQuiz */
+/* jQuiz2 */
+.jQuiz2MC, .jQuiz2TF {
+  background: transparent url("../imgs/jQuery/bgs/paper-bg.jpg") repeat;
+  position: relative;
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+  /* INSTRUCTIONS */ }
+  .jQuiz2MC .overlay, .jQuiz2TF .overlay {
+    position: absolute;
+    background: transparent url("../imgs/jQuery/bgs/paper-bg.jpg") repeat;
+    top: 0px;
+    left: 0px;
+    width: 700px;
+    height: 400px;
+    z-index: 99999; }
+  .jQuiz2MC .instructions, .jQuiz2TF .instructions {
+    background-color: #cccccc;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    padding: 1em 0 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+	/*
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -khtml-border-radius: 0.5em;
+    border-radius: 0.5em; */
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6); }
+    .jQuiz2MC .instructions #title, .jQuiz2TF .instructions #title {
+      font: 1.6em sans-serif;
+      font-weight: bold;
+      color: #df0000;
+   
+      padding: .1em 0px 0px .5em; }
+    .jQuiz2MC .instructions #text, .jQuiz2TF .instructions #text {
+      width: 90%;
+      font: 0.9em sans-serif;
+      padding: 1em 0 0 1em; }
+    .jQuiz2MC .instructions .go-btn, .jQuiz2TF .instructions .go-btn {
+      background-color: #df0000;
+      position: absolute;
+      bottom: 0px;
+      right: 5%;
+      width: 25%;
+      height: 17%;
+      font: bold 1.6em sans-serif;
+      text-align: center;
+      padding: 3% 1% 0 0;
+      color: white;
+      
+      cursor: pointer;
+	  /*
+      -moz-border-radius-topleft: 0.5em;
+      -webkit-border-top-left-radius: 0.5em;
+      -o-border-top-left-radius: 0.5em;
+      -ms-border-top-left-radius: 0.5em;
+      -khtml-border-top-left-radius: 0.5em;
+      border-top-left-radius: 0.5em;
+      -moz-border-radius-topright: 0.5em;
+      -webkit-border-top-right-radius: 0.5em;
+      -o-border-top-right-radius: 0.5em;
+      -ms-border-top-right-radius: 0.5em;
+      -khtml-border-top-right-radius: 0.5em;
+      border-top-right-radius: 0.5em; 
+	  */
+	  }
+    .jQuiz2MC .instructions .go-btn:hover, .jQuiz2TF .instructions .go-btn:hover {
+      background-color: #ac0000; }
+    .jQuiz2MC .instructions .go-btn:active, .jQuiz2TF .instructions .go-btn:active {
+      background-color: #df0000;
+      height: 16%; }
+  .jQuiz2MC .btn-i, .jQuiz2TF .btn-i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: transparent url("../imgs/jQuery/icons/i.png") no-repeat;
+    width: 41px;
+    height: 40px;
+    z-index: 99999;
+    cursor: pointer; }
+  .jQuiz2MC .navigation, .jQuiz2TF .navigation { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    font: bold 0.9em sans-serif;
+    color: white;
+    padding: .2em .5em;
+    border-bottom: 1px solid #02233a;
+    border-left: 1px solid #02233a;
+    background-color: #055e9d;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #055e9d), color-stop(100%, #02233a));
+    background: -webkit-linear-gradient(top center, #055e9d, #02233a);
+    background: -moz-linear-gradient(top center, #055e9d, #02233a);
+    background: -o-linear-gradient(top center, #055e9d, #02233a);
+    background: linear-gradient(top center, #055e9d, #02233a);
+    -moz-border-radius-bottomleft: 1em;
+    -webkit-border-bottom-left-radius: 1em;
+    -o-border-bottom-left-radius: 1em;
+    -ms-border-bottom-left-radius: 1em;
+    -khtml-border-bottom-left-radius: 1em;
+    border-bottom-left-radius: 1em; }
+  .jQuiz2MC .question, .jQuiz2MC .statement, .jQuiz2TF .question, .jQuiz2TF .statement {
+    position: absolute;
+    margin: .5em 0 0 0;
+    width: 2%;
+    height: 80%; }
+    .jQuiz2MC .question span.bracket, .jQuiz2MC .statement span.bracket, .jQuiz2TF .question span.bracket, .jQuiz2TF .statement span.bracket {
+      border-top: 12px solid #055e9d;
+      border-bottom: 12px solid #055e9d;
+      border-left: 12px solid #055e9d;
+      display: block;
+      height: 25%;
+      width: 65%; }
+    .jQuiz2MC .question span.text, .jQuiz2MC .statement span.text, .jQuiz2TF .question span.text, .jQuiz2TF .statement span.text {
+      padding: 0 0 0 1em;
+      position: absolute;
+      top: -1%;
+      left: 100%;
+      width: 15em; }
+  .jQuiz2MC .inactive, .jQuiz2TF .inactive {
+    position: absolute;
+    left: -700px;
+    width: 700px;
+    height: 100%;
+    opacity: 0; }
+  .jQuiz2MC .active, .jQuiz2TF .active {
+    position: absolute;
+    left: 0;
+    width: 700px;
+    height: 100%;
+    opacity: 1; }
+  .jQuiz2MC h1, .jQuiz2MC h2, .jQuiz2MC h3, .jQuiz2TF h1, .jQuiz2TF h2, .jQuiz2TF h3 {
+    text-align: left;
+    margin: 0;
+    border-bottom: 0px;
+    height: 25%; }
+  .jQuiz2MC h1, .jQuiz2TF h1 {
+    color: black;
+    padding: .8em 1em 0 1.9em;
+    font: bold 1.76em/1em sans-serif; }
+  .jQuiz2MC h3, .jQuiz2TF h3 {
+    color: black;
+    padding: 1.2em 2em 0 2.6em;
+    font: bold 1.28em/1em sans-serif; }
+  .jQuiz2MC h2, .jQuiz2MC .statement, .jQuiz2MC .question, .jQuiz2TF h2, .jQuiz2TF .statement, .jQuiz2TF .question {
+    color: #02233a;
+    padding: 0 0 0 1.8em;
+    font: bold 0.9em sans-serif; }
+  .jQuiz2MC ol.answer, .jQuiz2TF ol.answer {
+    position: relative;
+    margin: 0 0 0 1em;
+    height: 65%; }
+  .jQuiz2MC ul.answer, .jQuiz2TF ul.answer {
+    position: relative;
+    margin: 0 0 0 15%;
+    width: 100%;
+    height: 50%; }
+  .jQuiz2MC .selection, .jQuiz2TF .selection {
+    float: left;
+    width: 25%;
+    height: 85%;
+    padding: 1em;
+    margin: 0 0 0 1em;
+    -moz-box-shadow: 0.1em 0.1em 0px 0px black;
+    -webkit-box-shadow: 0.1em 0.1em 0px 0px black;
+    -o-box-shadow: 0.1em 0.1em 0px 0px black;
+    box-shadow: 0.1em 0.1em 0px 0px black;
+    overflow: hidden;
+    cursor: pointer; }
+  .jQuiz2MC .selection:first-child, .jQuiz2TF .selection:first-child {
+    margin: 0 0 0 1em; }
+  .jQuiz2MC .selection:hover,
+  .jQuiz2MC .selection:focus, .jQuiz2TF .selection:hover, .jQuiz2TF .selection:focus {
+    -moz-box-shadow: -2px -2px 0px 0px black;
+    -webkit-box-shadow: -2px -2px 0px 0px black;
+    -o-box-shadow: -2px -2px 0px 0px black;
+    box-shadow: -2px -2px 0px 0px black; }
+  .jQuiz2MC .endfeedback p, .jQuiz2TF .endfeedback p {
+    padding: 0 1em 0 3.6em; }
+  .jQuiz2MC #a, .jQuiz2MC #t, .jQuiz2TF #a, .jQuiz2TF #t {
+    background-color: #0680d6;
+    color: white;
+    text-shadow: 0px 1px 0px black; }
+  .jQuiz2MC #b, .jQuiz2MC #f, .jQuiz2TF #b, .jQuiz2TF #f {
+    background-color: #df0000;
+    color: white;
+    text-shadow: 0px 1px 0px black; }
+  .jQuiz2MC #c, .jQuiz2TF #c {
+    background-color: #055e9d;
+    color: white;
+    text-shadow: 0px 1px 0px black; }
+  .jQuiz2MC #a:hover,
+  .jQuiz2MC #t:hover,
+  .jQuiz2MC #b:hover,
+  .jQuiz2MC #f:hover,
+  .jQuiz2MC #c:hover,
+  .jQuiz2MC #a:focus,
+  .jQuiz2MC #t:focus,
+  .jQuiz2MC #b:focus,
+  .jQuiz2MC #f:focus,
+  .jQuiz2MC #c:focus, .jQuiz2TF #a:hover, .jQuiz2TF #t:hover, .jQuiz2TF #b:hover, .jQuiz2TF #f:hover, .jQuiz2TF #c:hover, .jQuiz2TF #a:focus, .jQuiz2TF #t:focus, .jQuiz2TF #b:focus, .jQuiz2TF #f:focus, .jQuiz2TF #c:focus {
+    background-color: #81dbfc;
+    color: black;
+    text-shadow: 0px 1px 0px white; }
+  .jQuiz2MC .selection .letter, .jQuiz2TF .selection .letter {
+    font: bold 3.2em sans-serif; }
+  .jQuiz2MC .selection .text, .jQuiz2TF .selection .text {
+    font: bold 1.8em/0.9em sans-serif;
+    }
+  .jQuiz2MC button, .jQuiz2TF button {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 1.2em;
+    padding: 0.3em 1em;
+    border-width: 1px;
+    background-color: #0081dc;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #89ccfc), color-stop(10%, #2fa6f9), color-stop(50%, #0677c7), color-stop(50%, #056eb8), color-stop(100%, #078cea));
+    background-image: -webkit-linear-gradient(#89ccfc, #2fa6f9 10%, #0677c7 50%, #056eb8 50%, #078cea);
+    background-image: -moz-linear-gradient(#89ccfc, #2fa6f9 10%, #0677c7 50%, #056eb8 50%, #078cea);
+    background-image: -o-linear-gradient(#89ccfc, #2fa6f9 10%, #0677c7 50%, #056eb8 50%, #078cea);
+    background-image: linear-gradient(#89ccfc, #2fa6f9 10%, #0677c7 50%, #056eb8 50%, #078cea);
+    border-color: #04538c;
+    text-shadow: #00365d 0px 1px 1px;
+    -moz-box-shadow: rgba(255, 255, 255, 0.431) 0 0 0.1em 1px inset;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.431) 0 0 0.1em 1px inset;
+    -o-box-shadow: rgba(255, 255, 255, 0.431) 0 0 0.1em 1px inset;
+    box-shadow: rgba(255, 255, 255, 0.431) 0 0 0.1em 1px inset;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding;
+    -o-background-clip: padding-box;
+    -ms-background-clip: padding-box;
+    -khtml-background-clip: padding-box;
+    background-clip: padding-box;
+    position: absolute;
+    bottom: 5%;
+    right: 10%; }
+    .jQuiz2MC button, .jQuiz2MC button:visited, .jQuiz2TF button, .jQuiz2TF button:visited {
+      color: white; }
+    .jQuiz2MC button:hover, .jQuiz2MC button:focus, .jQuiz2TF button:hover, .jQuiz2TF button:focus {
+      background-color: #0078cd;
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7ac6fb), color-stop(10%, #209ff9), color-stop(50%, #056eb8), color-stop(50%, #0565a9), color-stop(100%, #0683db));
+      background-image: -webkit-linear-gradient(#7ac6fb, #209ff9 10%, #056eb8 50%, #0565a9 50%, #0683db);
+      background-image: -moz-linear-gradient(#7ac6fb, #209ff9 10%, #056eb8 50%, #0565a9 50%, #0683db);
+      background-image: -o-linear-gradient(#7ac6fb, #209ff9 10%, #056eb8 50%, #0565a9 50%, #0683db);
+      background-image: linear-gradient(#7ac6fb, #209ff9 10%, #056eb8 50%, #0565a9 50%, #0683db);
+      border-color: #034b7d;
+      text-shadow: #002d4d 0px 1px 1px; }
+      .jQuiz2MC button:hover, .jQuiz2MC button:hover:visited, .jQuiz2MC button:focus, .jQuiz2MC button:focus:visited, .jQuiz2TF button:hover, .jQuiz2TF button:hover:visited, .jQuiz2TF button:focus, .jQuiz2TF button:focus:visited {
+        color: white; }
+    .jQuiz2MC button:active, .jQuiz2TF button:active {
+      background-color: #006fbd;
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #056eb8), color-stop(30%, #0574c2), color-stop(50%, #0568ae), color-stop(50%, #045f9f), color-stop(100%, #0686e0));
+      background-image: -webkit-linear-gradient(#056eb8, #0574c2 30%, #0568ae 50%, #045f9f 50%, #0686e0);
+      background-image: -moz-linear-gradient(#056eb8, #0574c2 30%, #0568ae 50%, #045f9f 50%, #0686e0);
+      background-image: -o-linear-gradient(#056eb8, #0574c2 30%, #0568ae 50%, #045f9f 50%, #0686e0);
+      background-image: linear-gradient(#056eb8, #0574c2 30%, #0568ae 50%, #045f9f 50%, #0686e0);
+      border-color: #03426e;
+      text-shadow: #00243e 0px -1px -1px;
+      -moz-box-shadow: #04538c 0 0.08em 0.2em 1px inset;
+      -webkit-box-shadow: #04538c 0 0.08em 0.2em 1px inset;
+      -o-box-shadow: #04538c 0 0.08em 0.2em 1px inset;
+      box-shadow: #04538c 0 0.08em 0.2em 1px inset; }
+      .jQuiz2MC button:active, .jQuiz2MC button:active:visited, .jQuiz2TF button:active, .jQuiz2TF button:active:visited {
+        color: white; }
+
+/* END jQuiz2 */
+/* jSlider */
+.jSlider {
+  position: relative;
+  background: white url("../imgs/jQuery/bgs/iphone.png") no-repeat top right;
+  background-size: 78% 100%;
+  width: 350px;
+  height: 480px;
+  margin: 0px auto;
+  overflow: hidden;
+  /* INSTRUCTIONS */ }
+  .jSlider .overlay {
+    position: absolute;
+    background: url("../imgs/jQuery/bgs/iphone.png") no-repeat top right;
+    top: 0px;
+    left: 0px;
+    width: 700px;
+    height: 400px;
+    z-index: 99999; }
+  .jSlider .instructions {
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    padding: 1em 0 0 0;
+    border: 6px solid #0680d6;
+   /* -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -khtml-border-radius: 0.5em;
+    border-radius: 0.5em;*/
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6); }
+    .jSlider .instructions #title {
+      font: 1.6em sans-serif;
+      font-weight: bold;
+      color: black;
+     
+      padding: .1em 0px 0px .5em; }
+    .jSlider .instructions #text {
+      width: 90%;
+      font: 0.9em sans-serif;
+      padding: 1em 0 0 1em; }
+    .jSlider .instructions .go-btn {
+      background-color: #0680d6;
+      position: absolute;
+      bottom: 0px;
+      right: 5%;
+      width: 25%;
+      height: 17%;
+      font: bold 1.4em sans-serif;
+      text-align: center;
+      padding: 3% 1% 0 0;
+      color: white;
+      
+      cursor: pointer;
+	  /*
+      -moz-border-radius-topleft: 0.5em;
+      -webkit-border-top-left-radius: 0.5em;
+      -o-border-top-left-radius: 0.5em;
+      -ms-border-top-left-radius: 0.5em;
+      -khtml-border-top-left-radius: 0.5em;
+      border-top-left-radius: 0.5em;
+      -moz-border-radius-topright: 0.5em;
+      -webkit-border-top-right-radius: 0.5em;
+      -o-border-top-right-radius: 0.5em;
+      -ms-border-top-right-radius: 0.5em;
+      -khtml-border-top-right-radius: 0.5em;
+      border-top-right-radius: 0.5em;
+	  */ }
+    .jSlider .instructions .go-btn:hover {
+      background-color: #ac0000; }
+    .jSlider .instructions .go-btn:active {
+      background-color: #df0000;
+      height: 16%; }
+  .jSlider .btn-i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: transparent url("../imgs/jQuery/icons/i.png") no-repeat;
+    width: 41px;
+    height: 40px;
+    z-index: 99999;
+    cursor: pointer; }
+  .jSlider .overlay {
+    height: 480px; }
+  .jSlider .instructions {
+    left: 2%;
+    width: 45%; }
+  .jSlider #paging {
+    position: absolute;
+    top: 22%;
+    left: 31%;
+    height: 60%;
+    width: 60%;
+    overflow: hidden; }
+    .jSlider #paging div.page {
+      background-color: white;
+      float: left;
+      width: 100%;
+      height: 100%;
+      color: black;
+      cursor: pointer; }
+      .jSlider #paging div.page div {
+        position: relative;
+        top: 18%;
+        left: 7%;
+        width: 90%; }
+      .jSlider #paging div.page .title {
+        font-weight: bold;
+        line-height: 1.2em;
+        margin: 0 0 1em 0; }
+      .jSlider #paging div.page ol {
+        list-style-position: inside;
+        margin: 0px;
+        padding: 0 1em 0; }
+        .jSlider #paging div.page ol li {
+          line-height: 1em;
+          *line-height: 1em;
+          margin: 0 0 .5em .1em; }
+          .jSlider #paging div.page ol li p {
+            font: 0.8em/0.8em sans-serif, Arial;
+            margin: 0 0 .5em -.5em \9;
+            *margin: 0 0 .5em .5em; 
+			font-weight: normal;} 
+		.jSlider #paging div.page p {
+			font: Arial;
+			font-size: 1em;
+			line-height: .8em;
+			font-weight: normal;
+			}
+  .jSlider .navigation {
+    padding: 5px;
+    background-color: #333333;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold; }
+
+/* END jSlider */
+/* jTimeline */
+.jTimeline {
+  height: 400px;
+  width: 700px;
+  position: relative; }
+  .jTimeline #head {
+    background-color: #055e9d;
+    /* fallback color */
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #055e9d), color-stop(100%, #077cce));
+    background: -webkit-linear-gradient(top center, #055e9d, #077cce);
+    background: -moz-linear-gradient(top center, #055e9d, #077cce);
+    background: -o-linear-gradient(top center, #055e9d, #077cce);
+    background: linear-gradient(top center, #055e9d, #077cce);
+    margin: 0 0 1em 0;
+    overflow: hidden;
+    border-bottom: 1px solid gray;
+    text-shadow: 0px 1px 0px black;
+    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.3);
+    -o-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    *zoom: 1; }
+    .jTimeline #head h1 {
+      font: bold 1.6em/1em sans-serif;
+      color: white;
+      border-bottom: 0px;
+      text-align: center;
+      margin: .5em 0 0 0;
+      padding: 0;
+      float: none; }
+    .jTimeline #head h2 {
+      font: bold 0.8em/1em sans-serif;
+      color: white;
+      border-bottom: 0;
+      text-align: center;
+      margin: 0 0 1em 0;
+      float: none;
+      padding: 0; }
+  .jTimeline .timelineInfo {
+    height: 71%;
+    margin: 0;
+    overflow: hidden; }
+    .jTimeline .timelineInfo .item {
+      overflow: hidden;
+      width: 94%;
+      height: 95%;
+      font: 0.9em sans-serif;
+      padding: 0 1em; }
+      .jTimeline .timelineInfo .item h1 {
+        font: 0.9em sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: -0.1em;
+        margin-bottom: 0;
+        color: black;
+        float: none; }
+      .jTimeline .timelineInfo .item h2 {
+        color: black;
+        margin: 0 0 1em 0;
+        font: 0.9em/0.9em sans-serif;
+        float: none; }
+    .jTimeline .timelineInfo p {
+      font: 0.9em sans-serif;
+      margin: 0 0 1em 0; }
+  .jTimeline .jcarousel-skin {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: -2px; }
+    .jTimeline .jcarousel-skin .jcarousel-container {
+      background-color: #e6e6e6;
+      /* fallback color */
+      background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #bababa), color-stop(100%, #e6e6e6));
+      background: -webkit-linear-gradient(bottom center, #bababa, #e6e6e6);
+      background: -moz-linear-gradient(bottom center, #bababa, #e6e6e6);
+      background: -o-linear-gradient(bottom center, #bababa, #e6e6e6);
+      background: linear-gradient(bottom center, #bababa, #e6e6e6);
+      margin: 0 auto;
+      -moz-border-radius-topleft: 7px;
+      -webkit-border-top-left-radius: 7px;
+      -o-border-top-left-radius: 7px;
+      -ms-border-top-left-radius: 7px;
+      -khtml-border-top-left-radius: 7px;
+      border-top-left-radius: 7px;
+      -moz-border-radius-topright: 7px;
+      -webkit-border-top-right-radius: 7px;
+      -o-border-top-right-radius: 7px;
+      -ms-border-top-right-radius: 7px;
+      -khtml-border-top-right-radius: 7px;
+      border-top-right-radius: 7px;
+      -moz-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.1);
+      -o-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.1);
+      border-top: 1px solid #cccccc;
+      border-right: 1px solid #cccccc;
+      border-left: 1px solid #cccccc; }
+    .jTimeline .jcarousel-skin .jcarousel-list {
+      height: 100%; }
+    .jTimeline .jcarousel-skin .jcarousel-item {
+      height: 100%; }
+      .jTimeline .jcarousel-skin .jcarousel-item a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding: 1em 0 0 0;
+        text-align: center;
+        color: black;
+        text-shadow: 0px 1px 0px white;
+        text-decoration: none;
+        font: bold 0.9em sans-serif; }
+        .jTimeline .jcarousel-skin .jcarousel-item a:hover, .jTimeline .jcarousel-skin .jcarousel-item a.jcarousel-item-active {
+          background-color: #df0000;
+          background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #df0000), color-stop(100%, #c60000));
+          background: -webkit-linear-gradient(bottom center, #df0000, #c60000);
+          background: -moz-linear-gradient(bottom center, #df0000, #c60000);
+          background: -o-linear-gradient(bottom center, #df0000, #c60000);
+          background: linear-gradient(bottom center, #df0000, #c60000);
+          -moz-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5);
+          -webkit-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5);
+          -o-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5);
+          color: white;
+          text-shadow: 0px -1px 0px black;
+          cursor: pointer; }
+    .jTimeline .jcarousel-skin .jcarousel-item-horizontal {
+      margin: 0px; }
+    .jTimeline .jcarousel-skin .jcarousel-container-horizontal {
+      width: 83%;
+      height: 95%;
+      padding: 0 6% 0 7%; }
+    .jTimeline .jcarousel-skin .jcarousel-clip-horizontal {
+      height: 100%; }
+    .jTimeline .jcarousel-skin .jcarousel-next-horizontal {
+      position: absolute;
+      top: 15%;
+      right: 2%;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      background: transparent url("../imgs/jQuery/icons/next.png") no-repeat 0 0; }
+    .jTimeline .jcarousel-skin .jcarousel-next-horizontal:hover {
+      background-position: -32px 0; }
+    .jTimeline .jcarousel-skin .jcarousel-next-horizontal:active {
+      background-position: -64px 0; }
+    .jTimeline .jcarousel-skin .jcarousel-next-disabled-horizontal,
+    .jTimeline .jcarousel-skin .jcarousel-next-disabled-horizontal:hover,
+    .jTimeline .jcarousel-skin .jcarousel-next-disabled-horizontal:active {
+      cursor: default;
+      background-position: -96px 0; }
+    .jTimeline .jcarousel-skin .jcarousel-prev-horizontal {
+      position: absolute;
+      top: 15%;
+      left: 2%;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      background: transparent url("../imgs/jQuery/icons/prev.png") no-repeat 0 0; }
+    .jTimeline .jcarousel-skin .jcarousel-prev-horizontal:hover {
+      background-position: -32px 0; }
+    .jTimeline .jcarousel-skin .jcarousel-prev-horizontal:active {
+      background-position: -64px 0; }
+    .jTimeline .jcarousel-skin .jcarousel-prev-disabled-horizontal,
+    .jTimeline .jcarousel-skin .jcarousel-prev-disabled-horizontal:hover,
+    .jTimeline .jcarousel-skin .jcarousel-prev-disabled-horizontal:active {
+      cursor: default;
+      background-position: -96px 0; }
+  .jTimeline .jScrollPaneContainer {
+    position: relative;
+    overflow: hidden;
+    z-index: 10; }
+  .jTimeline .jScrollPaneTrack {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: gray;
+    opacity: .3;
+    filter: alpha(opacity=30);
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -o-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -khtml-border-radius: 7px;
+    border-radius: 7px; }
+  .jTimeline .jScrollPaneDrag {
+    position: absolute;
+    background: black;
+    cursor: pointer;
+    overflow: hidden;
+    filter: alpha(opacity=30);
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -o-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -khtml-border-radius: 7px;
+    border-radius: 7px; }
+  .jTimeline .jScrollPaneDragTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden; }
+  .jTimeline a.jScrollArrowUp {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    text-indent: -2000px;
+    overflow: hidden;
+    background: transparent url("../imgs/jQuery/icons/arrow-up.png") no-repeat;
+    height: 10px;
+    width: 10px;
+    border-bottom: 0px; }
+  .jTimeline a.jScrollArrowDown {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    text-indent: -2000px;
+    overflow: hidden;
+    background: transparent url("../imgs/jQuery/icons/arrow-down.png") no-repeat;
+    height: 10px;
+    width: 10px;
+    border-bottom: 0px; }
+
+/* END jTimeline */

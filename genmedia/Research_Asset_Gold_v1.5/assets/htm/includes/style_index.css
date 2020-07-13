@@ -1,0 +1,121 @@
+body{margin:0px; background:url(../../genimages/body-bg.jpg) repeat;}
+a{outline:none;}
+img{border:0px;}
+p,h1,h2,h3,h4,h5,h6,ul,li,form,label,select{padding:0px;margin:0px;list-style-type:none;}
+#page{
+width:755px;
+margin:0px auto;
+}
+#contentDiv{
+width:755px;
+background-image:url(../../genimages/content-bg1.jpg);
+background-repeat:repeat-y;
+padding:10px 0px 10px 0px;
+margin:0px auto;
+}
+#contentDiv img{
+margin:0px auto;
+display:block;
+}
+#contentDiv p{
+font:.9em Arial;
+padding:10px 0px 0px 20px;
+color:#3e3e3e;
+line-height:1.1em;
+}
+#contentDiv h1{
+font:1.2em Arial;
+color:#256c95;
+padding:10px 0px 0px 20px;
+}
+#contentDiv ul{
+padding:10px 0px 0px 20px;
+}
+#contentDiv ul li{ 
+padding:2px 0px 2px 0px;
+font:.9em Arial;
+color:#256c95;
+margin:0px;
+line-height:1.1em;
+}
+.site-tabs{
+width:744px;
+float:left;
+padding:10px 0px 0px 11px;
+font:.9em;
+}
+.tab_container{
+width: 733px;
+border: 1px solid #d0d0d0;
+float:left;
+background-image:url(../../genimages/tabbg.jpg);
+background-repeat:repeat-x;
+background-color:#fefefe;
+}
+.float{
+float:left;
+}
+.tab_content{
+background-color: #FEFEFE;
+background-image:url(../../genimages/acc-bg.jpg);
+background-repeat:repeat-x;
+padding-left:10px;
+padding-right:10px;
+}
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float:left;
+	list-style: none;
+	height: 35px; 
+	width: 733px;
+}
+ul.tabs li {
+	float:left;
+	margin: 0 1px 0 0;
+	padding: 0;
+	height: 34px;
+    border-left:1px solid #d0d0d0;
+	border-top:1px solid #d0d0d0;
+	border-right:1px solid #d0d0d0;
+	
+	
+}
+.les-one-tab{
+height:200px;
+}
+.les-two-tab{
+height:250px;
+}
+.les-two-tab2{
+height:250px;
+}
+.orange{
+height:26px;
+padding:7px 10px 0px 10px; 	
+font:.9em Arial;
+text-decoration:none;
+color:#000;
+background-image:url(../../genimages/hash-grad.jpg);
+background-repeat:repeat-x;
+background-position:left top;
+float:left
+}
+
+.orange:hover{
+height:26px;
+padding:7px 10px 0px 10px; 	
+font:.9em Arial;
+text-decoration:none;
+color:#fff;
+background-image:url(../../genimages/orange-grad.jpg);
+background-repeat:repeat-x;
+background-position:left top;
+float:left
+}
+.active{
+background-image:url(../../genimages/orange-grad.jpg);
+background-repeat:repeat-x;
+color:#fff;
+border:1px solid #E3A007;
+}

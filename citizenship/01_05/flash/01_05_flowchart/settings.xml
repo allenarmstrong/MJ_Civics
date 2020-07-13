@@ -1,0 +1,18 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Select "next" and "prev" to reveal the qualifications of becoming a U.S. citizen.<br/>]]>
+	</instructions>
+
+	<intro>Time to learn about the naturalization process. Good luck, citizen!</intro>
+	
+
+</settings>	

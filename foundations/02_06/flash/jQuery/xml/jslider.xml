@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slider>
+	<directions>
+		<![CDATA[<p>Where can you find credible news online? There are many things you can do. Give a few of these a try. <strong>Select anywhere on the device's screen to view the different ideas.</strong></p><p>Select "Go!" to begin.</p>]]>
+	</directions>
+
+	<item title="Where can you find credible news online?" background="../images/bgs/gmn-news-bg.jpg">
+		<content>
+			<![CDATA[
+			<div><ol>
+				<li><p><strong>Search for names of respected journalists.</strong> Many reporters and news personalities run blogs, and you can subscribe to get regular updates from them.</p></li>
+			</ol></div>
+			]]>
+		</content>
+	</item>
+	<item title="Where can you find credible news online?" background="../images/bgs/gmn-news-bg.jpg">
+		<content>
+			<![CDATA[
+			<div><ol>
+				<li value="2"><p><strong>Read comments under any news stories you read, listen to, or watch online.</strong> Other people on the Internet may share interesting links or information that can lead you to more good sources. Be sure to verify these sources by double-checking them.</p></li>
+			</ol></div>
+			]]>
+		</content>
+	</item>
+	<item title="Where can you find credible news online?" background="../images/bgs/gmn-news-bg.jpg">
+		<content>
+			<![CDATA[
+			<div><ol>
+				<li value="3"><p><strong>Ask other journalists or people who get their news online for a list of favorite sites.</strong> Review these to see what you think.</p></li>
+			</ol></div>
+			]]>
+		</content>
+	</item>
+</slider>

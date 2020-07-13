@@ -1,0 +1,1624 @@
+
+
+/* END Reset */
+/* incase an inverted custom gradient isn't specified */
+.fancy-button-reset-base-class, #jGallery .audio-controls .play a,
+#jGallery .audio-controls .pause a,
+#jGallery .audio-controls .stop a,
+#jGallery .audio-controls .mute a,
+#jGallery .audio-controls .unmute a {
+  font-family: "Lucida Grande", Lucida, Arial, sans-serif;
+  background: url('../imgs/button_bg.png') repeat-x bottom left;
+  margin: 0;
+  width: auto;
+  overflow: visible;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border-style: solid;
+  font-weight: bold; }
+  .fancy-button-reset-base-class::-moz-focus-inner, #jGallery .audio-controls .play a::-moz-focus-inner,
+  #jGallery .audio-controls .pause a::-moz-focus-inner,
+  #jGallery .audio-controls .stop a::-moz-focus-inner,
+  #jGallery .audio-controls .mute a::-moz-focus-inner,
+  #jGallery .audio-controls .unmute a::-moz-focus-inner {
+    border: none;
+    padding: 0; }
+  .fancy-button-reset-base-class:focus, #jGallery .audio-controls .play a:focus,
+  #jGallery .audio-controls .pause a:focus,
+  #jGallery .audio-controls .stop a:focus,
+  #jGallery .audio-controls .mute a:focus,
+  #jGallery .audio-controls .unmute a:focus {
+    outline: none; }
+
+.interactive {
+  width: 700px;
+  height: 400px;
+  border: 5px solid #bfbfbf; }
+
+.colors, .color1, .color2, .color3, .color4, .color5 {
+  width: 100px;
+  height: 100px; }
+
+.color1 {
+  background-color: #055e9d; }
+
+.color2 {
+  background-color: #0680d6; }
+
+.color3 {
+  background-color: #81dbfc; }
+
+.color4 {
+  background-color: #bd0202; }
+
+.color5 {
+  background-color: #81dbfc; }
+
+/* jDrag */
+#jDrag {
+  background: white url("../imgs/bgs/stack-bg.jpg") no-repeat top left;
+  position: relative;
+  width: 700px;
+  height: 400px;
+  font-family: sans-serif;
+  overflow: hidden;
+  /* INSTRUCTIONS */ }
+  #jDrag .overlay {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0px;
+    left: 0px;
+    width: 700px;
+    height: 400px;
+    z-index: 99999; }
+  #jDrag .instructions {
+    background-color: #c9c9c9;
+    position: absolute;
+    top: 100px;
+    left: 175px;
+    width: 350px;
+    height: 200px;
+    padding: 1em 0 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -khtml-border-radius: 0.5em;
+    border-radius: 0.5em;
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6); }
+    #jDrag .instructions #title {
+      font: 1.6em sans-serif;
+      font-weight: bold;
+      color: #bd0202;
+      letter-spacing: -1px;
+      padding: .1em 0px 0px .5em; }
+    #jDrag .instructions #text {
+      width: 330px;
+      font: 0.818em sans-serif;
+      padding: 1em 0 0 1em; }
+    #jDrag .instructions .go-btn {
+      background-color: #bd0202;
+      position: absolute;
+      bottom: 0px;
+      right: 20px;
+      width: 100px;
+      height: 40px;
+      font: italic bold 1.6em sans-serif;
+      text-align: center;
+      padding: .5em .1em 0 0;
+      color: white;
+      letter-spacing: -2pt;
+      cursor: pointer;
+      -moz-border-radius-topleft: 0.5em;
+      -webkit-border-top-left-radius: 0.5em;
+      -o-border-top-left-radius: 0.5em;
+      -ms-border-top-left-radius: 0.5em;
+      -khtml-border-top-left-radius: 0.5em;
+      border-top-left-radius: 0.5em;
+      -moz-border-radius-topright: 0.5em;
+      -webkit-border-top-right-radius: 0.5em;
+      -o-border-top-right-radius: 0.5em;
+      -ms-border-top-right-radius: 0.5em;
+      -khtml-border-top-right-radius: 0.5em;
+      border-top-right-radius: 0.5em; }
+    #jDrag .instructions .go-btn:hover {
+      background-color: #ac0000; }
+    #jDrag .instructions .go-btn:active {
+      background-color: #bd0202;
+      padding: .4em .1em 0 0; }
+  #jDrag .btn-i {
+    position: absolute;
+    left: .1em;
+    bottom: .1em;
+    background: transparent url("../imgs/icons/i.png") no-repeat;
+    width: 41px;
+    height: 40px;
+    z-index: 99999;
+    cursor: pointer; }
+  #jDrag .selections {
+    display: none; }
+  #jDrag #selection0 h1,
+  #jDrag #selection1 h1 {
+    width: 100px;
+    color: #272a2b;
+    border-bottom: 0px;
+    font-size: 1.6em;
+    line-height: 1em;
+    text-align: left; }
+  #jDrag #selection0 {
+    position: absolute;
+    top: 100px;
+    left: 75px;
+    width: 275px;
+    height: 163px;
+    background: transparent url("../imgs/newspaper.png") no-repeat right; }
+    #jDrag #selection0 h1 {
+      margin: 40px 0 0 0; }
+  #jDrag #selection1 {
+    position: absolute;
+    top: 100px;
+    left: 385px;
+    width: 275px;
+    height: 163px;
+    background: transparent url("../imgs/newspaper.png") no-repeat right; }
+    #jDrag #selection1 h1 {
+      margin: 60px 0 0 0; }
+  #jDrag .selection button {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-bottom: 0px; }
+  #jDrag button {
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -o-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -khtml-border-radius: 7px;
+    border-radius: 7px;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #81dbfc), color-stop(100%, #36c6fa));
+    background: -webkit-linear-gradient(#81dbfc, #36c6fa);
+    background: -moz-linear-gradient(#81dbfc, #36c6fa);
+    background: -o-linear-gradient(#81dbfc, #36c6fa);
+    background: linear-gradient(#81dbfc, #36c6fa);
+    font-weight: bold;
+    border: 1px solid #81dbfc;
+    width: 172px;
+    height: 34px;
+    position: absolute;
+    left: 400px;
+    bottom: 10px; }
+    #jDrag button else {
+      -moz-box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.4), 1px 1px 2px rgba(255, 255, 255, 0.5);
+      -webkit-box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.4), 1px 1px 2px rgba(255, 255, 255, 0.5);
+      -o-box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.4), 1px 1px 2px rgba(255, 255, 255, 0.5);
+      box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.4), 1px 1px 2px rgba(255, 255, 255, 0.5);
+      color: black;
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5); }
+    #jDrag button:hover {
+      cursor: pointer; }
+    #jDrag button:active {
+      border: 0px solid #81dbfc; }
+      #jDrag button:active else {
+        -moz-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4), inset 1px 1px 0px rgba(255, 255, 255, 0.5);
+        -webkit-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4), inset 1px 1px 0px rgba(255, 255, 255, 0.5);
+        -o-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4), inset 1px 1px 0px rgba(255, 255, 255, 0.5);
+        box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4), inset 1px 1px 0px rgba(255, 255, 255, 0.5); }
+  #jDrag #drop {
+    display: none; }
+    #jDrag #drop h1 {
+      color: #363636;
+      font-size: 1.6em;
+      position: absolute;
+      top: 40px;
+      left: 15px;
+      border-bottom: 1px double #363636;
+      padding: 0 0 3px 0; }
+    #jDrag #drop .title {
+      position: absolute;
+      top: 75px;
+      left: 15px;
+      font-size: 12px;
+      font-weight: bold; }
+    #jDrag #drop .author {
+      position: absolute;
+      top: 90px;
+      left: 15px;
+      font-size: 12px;
+      font-style: italic; }
+    #jDrag #drop ul.sortable {
+      position: absolute;
+      top: 115px;
+      left: 10px;
+      width: 330px;
+      height: 265px;
+      background-color: #e7e7e7;
+      list-style: none;
+      padding: 5px;
+      margin: 0px;
+      text-indent: 0px;
+      overflow-y: scroll;
+      overflow-x: hidden; }
+  #jDrag #drags {
+    display: none;
+    position: relative;
+    left: 395px;
+    top: 0px;
+    width: 330px;
+    height: 375px; }
+    #jDrag #drags .directions {
+      position: absolute;
+      top: 15px;
+      right: 40px;
+      font-size: 1.44em;
+      letter-spacing: -1px;
+      width: 310px;
+      color: #0680d6; }
+    #jDrag #drags ul.drags {
+      position: absolute;
+      top: 90px;
+      right: 55px;
+      background-color: #f7f7f7;
+      list-style: none;
+      padding: 5px;
+      margin: 0px;
+      width: 285px;
+      height: 275px;
+      text-indent: 0px;
+      overflow-y: scroll;
+      overflow-x: hidden; }
+    #jDrag #drags .back-btn {
+      background-color: #0680d6;
+      position: absolute;
+      top: 0px;
+      right: 25px;
+      color: white;
+      cursor: pointer;
+      padding: 1px 5px;
+      -moz-border-radius-bottomleft: 7px;
+      -webkit-border-bottom-left-radius: 7px;
+      -o-border-bottom-left-radius: 7px;
+      -ms-border-bottom-left-radius: 7px;
+      -khtml-border-bottom-left-radius: 7px;
+      border-bottom-left-radius: 7px;
+      font-weight: bold;
+      font-size: 0.9em; }
+  #jDrag li {
+    list-style: none url();
+    margin-left: 0px !important;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 9pt;
+    line-height: 12pt;
+    line-height: 10pt\9; }
+  #jDrag li:hover {
+    outline: 1px dashed #ccc; }
+  #jDrag li:last-child {
+    margin: 0px; }
+  #jDrag .correct {
+    background: transparent url("../imgs/icons/correct.png") no-repeat;
+    padding-left: 35px !important; }
+
+/* END jDrag */
+/* jFlip */
+#jFlip {
+  background: transparent url("../imgs/bgs/paper-bg.jpg") no-repeat;
+  position: relative;
+  width: 700px;
+  height: 400px;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  /* INSTRUCTIONS */ }
+  #jFlip .overlay {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0px;
+    left: 0px;
+    width: 700px;
+    height: 400px;
+    z-index: 99999; }
+  #jFlip .instructions {
+    background-color: #c9c9c9;
+    position: absolute;
+    top: 100px;
+    left: 175px;
+    width: 350px;
+    height: 200px;
+    padding: 1em 0 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -khtml-border-radius: 0.5em;
+    border-radius: 0.5em;
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6); }
+    #jFlip .instructions #title {
+      font: 1.6em sans-serif;
+      font-weight: bold;
+      color: #bd0202;
+      letter-spacing: -1px;
+      padding: .1em 0px 0px .5em; }
+    #jFlip .instructions #text {
+      width: 330px;
+      font: 0.818em sans-serif;
+      padding: 1em 0 0 1em; }
+    #jFlip .instructions .go-btn {
+      background-color: #bd0202;
+      position: absolute;
+      bottom: 0px;
+      right: 20px;
+      width: 100px;
+      height: 40px;
+      font: italic bold 1.6em sans-serif;
+      text-align: center;
+      padding: .5em .1em 0 0;
+      color: white;
+      letter-spacing: -2pt;
+      cursor: pointer;
+      -moz-border-radius-topleft: 0.5em;
+      -webkit-border-top-left-radius: 0.5em;
+      -o-border-top-left-radius: 0.5em;
+      -ms-border-top-left-radius: 0.5em;
+      -khtml-border-top-left-radius: 0.5em;
+      border-top-left-radius: 0.5em;
+      -moz-border-radius-topright: 0.5em;
+      -webkit-border-top-right-radius: 0.5em;
+      -o-border-top-right-radius: 0.5em;
+      -ms-border-top-right-radius: 0.5em;
+      -khtml-border-top-right-radius: 0.5em;
+      border-top-right-radius: 0.5em; }
+    #jFlip .instructions .go-btn:hover {
+      background-color: #ac0000; }
+    #jFlip .instructions .go-btn:active {
+      background-color: #bd0202;
+      padding: .4em .1em 0 0; }
+  #jFlip .btn-i {
+    position: absolute;
+    left: .1em;
+    bottom: .1em;
+    background: transparent url("../imgs/icons/i.png") no-repeat;
+    width: 41px;
+    height: 40px;
+    z-index: 99999;
+    cursor: pointer; }
+  #jFlip .flipcard {
+    width: 145px;
+    height: 290px;
+    float: left;
+    margin: 40px 0px 0px 25px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden; }
+  #jFlip .front {
+    background-color: white;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 140px;
+    height: 287px;
+    border: 1px solid #ddd; }
+    #jFlip .front .content {
+      width: 135px;
+      height: 282px;
+      overflow: hidden; }
+    #jFlip .front img {
+      vertical-align: top;
+      margin: 5px; }
+  #jFlip .front:hover {
+    border: 1px solid #999;
+    -moz-box-shadow: 0px 0px 30px 0px #999999 inset;
+    -webkit-box-shadow: 0px 0px 30px 0px #999999 inset;
+    -o-box-shadow: 0px 0px 30px 0px #999999 inset;
+    box-shadow: 0px 0px 30px 0px #999999 inset; }
+  #jFlip .back {
+    display: none; }
+  #jFlip .description {
+    font-size: 11px;
+    padding: 20px 15px 20px 15px;
+    font-style: italic;
+    line-height: 13px; }
+
+/* END jFlip */
+/* jGallery */
+#jGallery {
+  background: transparent url("../imgs/bgs/paper-bg.jpg") no-repeat;
+  position: relative;
+  width: 700px;
+  height: 400px;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  /* INSTRUCTIONS */ }
+  #jGallery .overlay {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0px;
+    left: 0px;
+    width: 700px;
+    height: 400px;
+    z-index: 99999; }
+  #jGallery .instructions {
+    background-color: #c9c9c9;
+    position: absolute;
+    top: 100px;
+    left: 175px;
+    width: 350px;
+    height: 200px;
+    padding: 1em 0 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -khtml-border-radius: 0.5em;
+    border-radius: 0.5em;
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6); }
+    #jGallery .instructions #title {
+      font: 1.6em sans-serif;
+      font-weight: bold;
+      color: #bd0202;
+      letter-spacing: -1px;
+      padding: .1em 0px 0px .5em; }
+    #jGallery .instructions #text {
+      width: 330px;
+      font: 0.818em sans-serif;
+      padding: 1em 0 0 1em; }
+    #jGallery .instructions .go-btn {
+      background-color: #bd0202;
+      position: absolute;
+      bottom: 0px;
+      right: 20px;
+      width: 100px;
+      height: 40px;
+      font: italic bold 1.6em sans-serif;
+      text-align: center;
+      padding: .5em .1em 0 0;
+      color: white;
+      letter-spacing: -2pt;
+      cursor: pointer;
+      -moz-border-radius-topleft: 0.5em;
+      -webkit-border-top-left-radius: 0.5em;
+      -o-border-top-left-radius: 0.5em;
+      -ms-border-top-left-radius: 0.5em;
+      -khtml-border-top-left-radius: 0.5em;
+      border-top-left-radius: 0.5em;
+      -moz-border-radius-topright: 0.5em;
+      -webkit-border-top-right-radius: 0.5em;
+      -o-border-top-right-radius: 0.5em;
+      -ms-border-top-right-radius: 0.5em;
+      -khtml-border-top-right-radius: 0.5em;
+      border-top-right-radius: 0.5em; }
+    #jGallery .instructions .go-btn:hover {
+      background-color: #ac0000; }
+    #jGallery .instructions .go-btn:active {
+      background-color: #bd0202;
+      padding: .4em .1em 0 0; }
+  #jGallery .btn-i {
+    position: absolute;
+    left: .1em;
+    bottom: .1em;
+    background: transparent url("../imgs/icons/i.png") no-repeat;
+    width: 41px;
+    height: 40px;
+    z-index: 99999;
+    cursor: pointer; }
+  #jGallery .navigation {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font: bold 10pt sans-serif; }
+  #jGallery div {
+    position: relative;
+    display: block; }
+  #jGallery .inactive {
+    position: absolute;
+    left: -700px;
+    width: 700px;
+    opacity: 0; }
+  #jGallery .active {
+    position: absolute;
+    left: 0px;
+    width: 700px;
+    opacity: 1; }
+  #jGallery .photo {
+    float: left;
+    margin: 25px 0px 0px 25px; }
+    #jGallery .photo img {
+      border: 5px solid white;
+      width: 450px;
+      -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+      -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+      vertical-align: top; }
+  #jGallery .info {
+    background: white\9;
+    padding: 10px\9;
+    float: right;
+    width: 175px;
+    width: 175px\9;
+    margin: 35px 25px 0px 0px;
+    margin: 35px 10px 0px 0px\9; }
+    #jGallery .info h1 {
+      font: bold 1.6em sans-serif;
+      color: #0680d6;
+      margin: 0px 0px 15px 0px; }
+    #jGallery .info div {
+      line-height: 13pt;
+      font: normal 0.9em sans-serif; }
+  #jGallery #nav-btns, #jGallery #prev, #jGallery #next {
+    background-color: #0680d6;
+    -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
+    -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 10px;
+    font-weight: bold;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    color: white;
+    border: 1px solid #0680d6;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.7);
+    letter-spacing: -1pt;
+    cursor: pointer;
+    z-index: 100; }
+    #jGallery #nav-btns:hover, #jGallery #prev:hover, #jGallery #next:hover {
+      background: #034573;
+      color: white;
+      border: 1px solid #034573;
+      text-shadow: 0px 1px 0px #000; }
+  #jGallery #prev {
+    left: 0px;
+    padding: 7px 10px 5px 25px;
+    -moz-border-radius-topright: 7px;
+    -webkit-border-top-right-radius: 7px;
+    -o-border-top-right-radius: 7px;
+    -ms-border-top-right-radius: 7px;
+    -khtml-border-top-right-radius: 7px;
+    border-top-right-radius: 7px;
+    -moz-border-radius-bottomright: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    -o-border-bottom-right-radius: 7px;
+    -ms-border-bottom-right-radius: 7px;
+    -khtml-border-bottom-right-radius: 7px;
+    border-bottom-right-radius: 7px; }
+  #jGallery #next {
+    right: 0px;
+    padding: 7px 25px 5px 10px;
+    -moz-border-radius-topleft: 7px;
+    -webkit-border-top-left-radius: 7px;
+    -o-border-top-left-radius: 7px;
+    -ms-border-top-left-radius: 7px;
+    -khtml-border-top-left-radius: 7px;
+    border-top-left-radius: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -o-border-bottom-left-radius: 7px;
+    -ms-border-bottom-left-radius: 7px;
+    -khtml-border-bottom-left-radius: 7px;
+    border-bottom-left-radius: 7px; }
+  #jGallery .text h3 {
+    background: transparent url("../imgs/icons/arrow-click-reveal.png") no-repeat 0px -40px;
+    border: 0px;
+    padding: 5px 0px 0px 30px;
+    margin: 0px 0px 5px -5px;
+    height: auto;
+    font: bold 1em/2em sans-serif;
+    cursor: pointer;
+    float: none;
+    outline: 0px; }
+  #jGallery .text h3:hover {
+    background: transparent url("../imgs/icons/arrow-click-reveal.png") no-repeat 0px 0px; }
+  #jGallery .text div {
+    margin: 0px 0px 15px 0px; }
+  #jGallery .copyright {
+    margin: 15px 0 0 0; }
+  #jGallery .audio-controls {
+    background-color: #0d0d0d;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333333), color-stop(100%, #4d4d4d));
+    background: -webkit-linear-gradient(top center, #333333, #4d4d4d);
+    background: -moz-linear-gradient(top center, #333333, #4d4d4d);
+    background: -o-linear-gradient(top center, #333333, #4d4d4d);
+    background: linear-gradient(top center, #333333, #4d4d4d);
+    border: 1px solid #0d0d0d;
+    width: 130px;
+    height: 20px;
+    padding: 4px 0px 4px 10px;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -o-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -khtml-border-radius: 1em;
+    border-radius: 1em; }
+    #jGallery .audio-controls .title {
+      float: left;
+      font: bold 0.9em/1.8em sans-serif;
+      text-transform: uppercase;
+      color: white;
+      margin: 0 5px 0 0; }
+    #jGallery .audio-controls .play a,
+    #jGallery .audio-controls .pause a,
+    #jGallery .audio-controls .stop a,
+    #jGallery .audio-controls .mute a,
+    #jGallery .audio-controls .unmute a {
+      -moz-border-radius: 1em;
+      -webkit-border-radius: 1em;
+      -o-border-radius: 1em;
+      -ms-border-radius: 1em;
+      -khtml-border-radius: 1em;
+      border-radius: 1em;
+      font-size: 0.9em;
+      line-height: 1.2em;
+      padding: 0.3em 1em;
+      border-width: 1px;
+      background-color: #333333;
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #878787), color-stop(10%, #595959), color-stop(50%, #2b2b2b), color-stop(50%, #242424), color-stop(100%, #3d3d3d));
+      background-image: -webkit-linear-gradient(top, #878787, #595959 10%, #2b2b2b 50%, #242424 50%, #3d3d3d);
+      background-image: -moz-linear-gradient(top, #878787, #595959 10%, #2b2b2b 50%, #242424 50%, #3d3d3d);
+      background-image: -o-linear-gradient(top, #878787, #595959 10%, #2b2b2b 50%, #242424 50%, #3d3d3d);
+      background-image: linear-gradient(top, #878787, #595959 10%, #2b2b2b 50%, #242424 50%, #3d3d3d);
+      border-color: #0d0d0d;
+      text-shadow: black 0px 1px 1px;
+      -moz-box-shadow: inset 0 0 0.1em 1px rgba(255, 255, 255, 0.2);
+      -webkit-box-shadow: inset 0 0 0.1em 1px rgba(255, 255, 255, 0.2);
+      -o-box-shadow: inset 0 0 0.1em 1px rgba(255, 255, 255, 0.2);
+      box-shadow: inset 0 0 0.1em 1px rgba(255, 255, 255, 0.2);
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding;
+      -o-background-clip: padding-box;
+      -ms-background-clip: padding-box;
+      -khtml-background-clip: padding-box;
+      background-clip: padding-box;
+      float: left;
+      height: 13px;
+      margin: 0 2px 0 0; }
+      #jGallery .audio-controls .play a, #jGallery .audio-controls .play a:visited,
+      #jGallery .audio-controls .pause a,
+      #jGallery .audio-controls .pause a:visited,
+      #jGallery .audio-controls .stop a,
+      #jGallery .audio-controls .stop a:visited,
+      #jGallery .audio-controls .mute a,
+      #jGallery .audio-controls .mute a:visited,
+      #jGallery .audio-controls .unmute a,
+      #jGallery .audio-controls .unmute a:visited {
+        color: white; }
+      #jGallery .audio-controls .play a:hover, #jGallery .audio-controls .play a:focus,
+      #jGallery .audio-controls .pause a:hover,
+      #jGallery .audio-controls .pause a:focus,
+      #jGallery .audio-controls .stop a:hover,
+      #jGallery .audio-controls .stop a:focus,
+      #jGallery .audio-controls .mute a:hover,
+      #jGallery .audio-controls .mute a:focus,
+      #jGallery .audio-controls .unmute a:hover,
+      #jGallery .audio-controls .unmute a:focus {
+        background-color: #2b2b2b;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #808080), color-stop(10%, #525252), color-stop(50%, #242424), color-stop(50%, #1c1c1c), color-stop(100%, #363636));
+        background-image: -webkit-linear-gradient(top, #808080, #525252 10%, #242424 50%, #1c1c1c 50%, #363636);
+        background-image: -moz-linear-gradient(top, #808080, #525252 10%, #242424 50%, #1c1c1c 50%, #363636);
+        background-image: -o-linear-gradient(top, #808080, #525252 10%, #242424 50%, #1c1c1c 50%, #363636);
+        background-image: linear-gradient(top, #808080, #525252 10%, #242424 50%, #1c1c1c 50%, #363636);
+        border-color: #050505;
+        text-shadow: black 0px 1px 1px; }
+        #jGallery .audio-controls .play a:hover, #jGallery .audio-controls .play a:hover:visited, #jGallery .audio-controls .play a:focus, #jGallery .audio-controls .play a:focus:visited,
+        #jGallery .audio-controls .pause a:hover,
+        #jGallery .audio-controls .pause a:hover:visited,
+        #jGallery .audio-controls .pause a:focus,
+        #jGallery .audio-controls .pause a:focus:visited,
+        #jGallery .audio-controls .stop a:hover,
+        #jGallery .audio-controls .stop a:hover:visited,
+        #jGallery .audio-controls .stop a:focus,
+        #jGallery .audio-controls .stop a:focus:visited,
+        #jGallery .audio-controls .mute a:hover,
+        #jGallery .audio-controls .mute a:hover:visited,
+        #jGallery .audio-controls .mute a:focus,
+        #jGallery .audio-controls .mute a:focus:visited,
+        #jGallery .audio-controls .unmute a:hover,
+        #jGallery .audio-controls .unmute a:hover:visited,
+        #jGallery .audio-controls .unmute a:focus,
+        #jGallery .audio-controls .unmute a:focus:visited {
+          color: white; }
+      #jGallery .audio-controls .play a:active,
+      #jGallery .audio-controls .pause a:active,
+      #jGallery .audio-controls .stop a:active,
+      #jGallery .audio-controls .mute a:active,
+      #jGallery .audio-controls .unmute a:active {
+        background-color: #242424;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #242424), color-stop(30%, #292929), color-stop(50%, #1f1f1f), color-stop(50%, #171717), color-stop(100%, #383838));
+        background-image: -webkit-linear-gradient(top, #242424, #292929 30%, #1f1f1f 50%, #171717 50%, #383838);
+        background-image: -moz-linear-gradient(top, #242424, #292929 30%, #1f1f1f 50%, #171717 50%, #383838);
+        background-image: -o-linear-gradient(top, #242424, #292929 30%, #1f1f1f 50%, #171717 50%, #383838);
+        background-image: linear-gradient(top, #242424, #292929 30%, #1f1f1f 50%, #171717 50%, #383838);
+        border-color: black;
+        text-shadow: black 0px -1px -1px;
+        -moz-box-shadow: inset 0 0.08em 0.1em 1px #0d0d0d;
+        -webkit-box-shadow: inset 0 0.08em 0.1em 1px #0d0d0d;
+        -o-box-shadow: inset 0 0.08em 0.1em 1px #0d0d0d;
+        box-shadow: inset 0 0.08em 0.1em 1px #0d0d0d; }
+        #jGallery .audio-controls .play a:active, #jGallery .audio-controls .play a:active:visited,
+        #jGallery .audio-controls .pause a:active,
+        #jGallery .audio-controls .pause a:active:visited,
+        #jGallery .audio-controls .stop a:active,
+        #jGallery .audio-controls .stop a:active:visited,
+        #jGallery .audio-controls .mute a:active,
+        #jGallery .audio-controls .mute a:active:visited,
+        #jGallery .audio-controls .unmute a:active,
+        #jGallery .audio-controls .unmute a:active:visited {
+          color: white; }
+    #jGallery .audio-controls .play, #jGallery .audio-controls .unmute {
+      display: none; }
+
+/* END jGallery */
+/* jQuiz */
+#jQuiz {
+  position: relative;
+  width: 680px;
+  height: 250px;
+  padding: 10px;
+  overflow: hidden;
+  font: normal 0.9em sans-serif;
+  /* INSTRUCTIONS */ }
+  #jQuiz .overlay {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0px;
+    left: 0px;
+    width: 700px;
+    height: 400px;
+    z-index: 99999; }
+  #jQuiz .instructions {
+    background-color: #c9c9c9;
+    position: absolute;
+    top: 100px;
+    left: 175px;
+    width: 350px;
+    height: 200px;
+    padding: 1em 0 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -khtml-border-radius: 0.5em;
+    border-radius: 0.5em;
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6); }
+    #jQuiz .instructions #title {
+      font: 1.6em sans-serif;
+      font-weight: bold;
+      color: #bd0202;
+      letter-spacing: -1px;
+      padding: .1em 0px 0px .5em; }
+    #jQuiz .instructions #text {
+      width: 330px;
+      font: 0.818em sans-serif;
+      padding: 1em 0 0 1em; }
+    #jQuiz .instructions .go-btn {
+      background-color: #bd0202;
+      position: absolute;
+      bottom: 0px;
+      right: 20px;
+      width: 100px;
+      height: 40px;
+      font: italic bold 1.6em sans-serif;
+      text-align: center;
+      padding: .5em .1em 0 0;
+      color: white;
+      letter-spacing: -2pt;
+      cursor: pointer;
+      -moz-border-radius-topleft: 0.5em;
+      -webkit-border-top-left-radius: 0.5em;
+      -o-border-top-left-radius: 0.5em;
+      -ms-border-top-left-radius: 0.5em;
+      -khtml-border-top-left-radius: 0.5em;
+      border-top-left-radius: 0.5em;
+      -moz-border-radius-topright: 0.5em;
+      -webkit-border-top-right-radius: 0.5em;
+      -o-border-top-right-radius: 0.5em;
+      -ms-border-top-right-radius: 0.5em;
+      -khtml-border-top-right-radius: 0.5em;
+      border-top-right-radius: 0.5em; }
+    #jQuiz .instructions .go-btn:hover {
+      background-color: #ac0000; }
+    #jQuiz .instructions .go-btn:active {
+      background-color: #bd0202;
+      padding: .4em .1em 0 0; }
+  #jQuiz .btn-i {
+    position: absolute;
+    left: .1em;
+    bottom: .1em;
+    background: transparent url("../imgs/icons/i.png") no-repeat;
+    width: 41px;
+    height: 40px;
+    z-index: 99999;
+    cursor: pointer; }
+  #jQuiz .instructions {
+    top: 75px;
+    height: 125px; }
+  #jQuiz .notVisible {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -700px; }
+  #jQuiz form {
+    position: relative;
+    width: 680px;
+    height: 250px; }
+  #jQuiz h2 {
+    font-size: 1.6em;
+    letter-spacing: -1px;
+    font-weight: bold;
+    line-height: 1em;
+    color: #055e9d; }
+  #jQuiz h2 .directions {
+    font-size: 0.8em;
+    color: #078ae7;
+    font-weight: normal;
+    letter-spacing: 0pt; }
+  #jQuiz h3 {
+    font-size: 1.6em;
+    line-height: 1em;
+    float: none;
+    margin: .5em 0px 1em 0px; }
+  #jQuiz .left {
+    width: 56%;
+    float: left; }
+  #jQuiz .right {
+    width: 40%;
+    float: right; }
+  #jQuiz .navigation {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 0.9em;
+    font-weight: bold; }
+  #jQuiz fieldset {
+    padding: 0;
+    border: 0; }
+  #jQuiz .answers {
+    margin: 1em 0 0 0;
+    width: 388px;
+    height: 138.889px; }
+  #jQuiz input:hover {
+    cursor: pointer; }
+  #jQuiz input[type=radio] {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 2em;
+    clear: both; }
+  #jQuiz label {
+    font-size: 0.9em;
+    float: left;
+    width: 333px;
+    margin: 0 10px 10px 0; }
+  #jQuiz div.correct {
+    clear: both;
+    width: 215px;
+    margin: 0;
+    padding: 10px;
+    font-size: 0.9em;
+    background-color: #e6e6e6;
+    border: 1px solid #cccccc; }
+  #jQuiz div.incorrect {
+    clear: both;
+    width: 215px;
+    margin: 0;
+    padding: 10px;
+    font-size: 0.9em;
+    background-color: #e6e6e6;
+    border: 1px solid #cccccc; }
+  #jQuiz p.correct {
+    background: transparent url("../imgs/icons/correct.png") no-repeat;
+    color: #272a2b;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding-left: 25px;
+    line-height: 20px;
+    height: 20px; }
+  #jQuiz p.incorrect {
+    background: transparent url("../imgs/icons/incorrect.png") no-repeat;
+    color: #272a2b;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding-left: 25px;
+    line-height: 20px;
+    height: 20px; }
+  #jQuiz #button, #jQuiz button.next, #jQuiz button.restart {
+    -moz-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), 1px 1px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), 1px 1px 2px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: white;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -o-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -khtml-border-radius: 7px;
+    border-radius: 7px;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0680d6), color-stop(100%, #04538c));
+    background: -webkit-linear-gradient(#0680d6, #04538c);
+    background: -moz-linear-gradient(#0680d6, #04538c);
+    background: -o-linear-gradient(#0680d6, #04538c);
+    background: linear-gradient(#0680d6, #04538c);
+    font-weight: bold;
+    border: 1px solid #0680d6;
+    width: 172px;
+    height: 34px;
+    z-index: 10000; }
+    #jQuiz #button else, #jQuiz button.next else, #jQuiz button.restart else {
+      -moz-box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.4), 1px 1px 2px rgba(255, 255, 255, 0.5);
+      -webkit-box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.4), 1px 1px 2px rgba(255, 255, 255, 0.5);
+      -o-box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.4), 1px 1px 2px rgba(255, 255, 255, 0.5);
+      box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.4), 1px 1px 2px rgba(255, 255, 255, 0.5);
+      color: black;
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5); }
+    #jQuiz #button:hover, #jQuiz button.next:hover, #jQuiz button.restart:hover {
+      cursor: pointer; }
+    #jQuiz #button:active, #jQuiz button.next:active, #jQuiz button.restart:active {
+      -moz-box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4), inset 1px 1px 0px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4), inset 1px 1px 0px rgba(0, 0, 0, 0.5);
+      -o-box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4), inset 1px 1px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4), inset 1px 1px 0px rgba(0, 0, 0, 0.5);
+      border: 0px solid #0680d6; }
+      #jQuiz #button:active else, #jQuiz button.next:active else, #jQuiz button.restart:active else {
+        -moz-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4), inset 1px 1px 0px rgba(255, 255, 255, 0.5);
+        -webkit-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4), inset 1px 1px 0px rgba(255, 255, 255, 0.5);
+        -o-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4), inset 1px 1px 0px rgba(255, 255, 255, 0.5);
+        box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4), inset 1px 1px 0px rgba(255, 255, 255, 0.5); }
+  #jQuiz button.next {
+    position: absolute;
+    bottom: 0px;
+    left: 240px;
+    float: right; }
+  #jQuiz button.restart {
+    position: relative;
+    float: right;
+    bottom: 20px; }
+
+/* END jQuiz */
+/* jQuiz2 */
+
+#jQuiz2TF .letter{
+	display: none;	
+}
+#jQuiz2MC, #jQuiz2TF {
+  background: url("../../../../../imgs/jQuery/bgs/paper-bg.jpg") repeat;
+  position: relative;
+  width: 680px;
+  height: 380px;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  /* INSTRUCTIONS */
+  /* ========== CONTENT ========== */
+  /* ========== */ }
+  #jQuiz2MC .overlay, #jQuiz2TF .overlay { 
+    position: absolute;
+    background: url("../../../../../imgs/jQuery/bgs/paper-bg.jpg") repeat;
+    top: 0px;
+    left: 0px;
+    width: 700px; 
+    height: 400px;
+    z-index: 99999; }
+  #jQuiz2MC .instructions, #jQuiz2TF .instructions {
+    background-color: #FFF;
+    position: absolute;
+    top: 100px;
+    left: 175px;
+    width: 350px;
+    height: 200px;
+    padding: 1em 0 0 0;
+    border: 6px solid #0680d6;
+   /* -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -khtml-border-radius: 0.5em;
+    border-radius: 0.5em; */
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6); }
+    #jQuiz2MC .instructions #title, #jQuiz2TF .instructions #title {
+      font: 1.6em sans-serif;
+      font-weight: bold;
+      color: #000;
+      letter-spacing: -1px;
+      padding: .1em 0px 0px .5em; }
+    #jQuiz2MC .instructions #text, #jQuiz2TF .instructions #text {
+      width: 330px;
+      font: 1.2em sans-serif;
+      padding: 1em 0 0 1em; }
+    #jQuiz2MC .instructions .go-btn, #jQuiz2TF .instructions .go-btn {
+      background-color: #0680d6;
+      position: absolute;
+      bottom: 0px;
+      right: 20px;
+      width: 100px;
+      height: 40px;
+      font: bold 1.6em sans-serif;
+      text-align: center;
+      padding: .5em .1em 0 0;
+      color: white;
+      /*letter-spacing: -2pt;*/
+      cursor: pointer;
+	  /*
+      -moz-border-radius-topleft: 0.5em;
+      -webkit-border-top-left-radius: 0.5em;
+      -o-border-top-left-radius: 0.5em;
+      -ms-border-top-left-radius: 0.5em;
+      -khtml-border-top-left-radius: 0.5em;
+      border-top-left-radius: 0.5em;
+      -moz-border-radius-topright: 0.5em;
+      -webkit-border-top-right-radius: 0.5em;
+      -o-border-top-right-radius: 0.5em;
+      -ms-border-top-right-radius: 0.5em;
+      -khtml-border-top-right-radius: 0.5em;
+      border-top-right-radius: 0.5em; */
+	   }
+    #jQuiz2MC .instructions .go-btn:hover, #jQuiz2TF .instructions .go-btn:hover {
+      background-color: #ac0000; }
+    #jQuiz2MC .instructions .go-btn:active, #jQuiz2TF .instructions .go-btn:active {
+      background-color: #bd0202;
+      padding: .4em .1em 0 0; }
+  #jQuiz2MC .btn-i, #jQuiz2TF .btn-i {
+    position: absolute;
+    left: .1em;
+    bottom: .1em;
+    background: transparent url("../imgs/icons/i.png") no-repeat;
+    width: 41px;
+    height: 40px;
+    z-index: 101;
+    cursor: pointer; }
+  #jQuiz2MC .navigation, #jQuiz2TF .navigation {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font: bold 0.9em sans-serif;
+    color: white;
+    padding: .2em .5em;
+    border-bottom: 1px solid #0680d6;
+    border-left: 1px solid #0680d6;
+    background-color: #055e9d;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #055e9d), color-stop(100%, #0680d6));
+    background: -webkit-linear-gradient(top center, #055e9d, #0680d6);
+    background: -moz-linear-gradient(top center, #055e9d, #0680d6);
+    background: -o-linear-gradient(top center, #055e9d, #0680d6);
+    background: linear-gradient(top center, #055e9d, #0680d6);
+    -moz-border-radius-bottomleft: 1em;
+    -webkit-border-bottom-left-radius: 1em;
+    -o-border-bottom-left-radius: 1em;
+    -ms-border-bottom-left-radius: 1em;
+    -khtml-border-bottom-left-radius: 1em;
+    border-bottom-left-radius: 1em; }
+  #jQuiz2MC .question, #jQuiz2MC .statement, #jQuiz2TF .question, #jQuiz2TF .statement {
+    position: absolute;
+    margin: .1em 0 0 0; }
+    #jQuiz2MC .question span.bracket, #jQuiz2MC .statement span.bracket, #jQuiz2TF .question span.bracket, #jQuiz2TF .statement span.bracket {
+      border-top: 12px solid #055e9d;
+      border-bottom: 12px solid #055e9d;
+      border-left: 12px solid #055e9d;
+      display: block;
+      height: 90px;
+      width: 15px; }
+    #jQuiz2MC .question span.text, #jQuiz2MC .statement span.text, #jQuiz2TF .question span.text, #jQuiz2TF .statement span.text {
+      padding: 0 0 0 20px;
+      position: absolute;
+      top: -3px;
+      left: 25px;
+      width: 350px; }
+  #jQuiz2MC .inactive, #jQuiz2TF .inactive {
+    position: absolute;
+    left: -700px;
+    width: 700px;
+    opacity: 0; }
+  #jQuiz2MC .active, #jQuiz2TF .active {
+    position: absolute;
+    left: 0px;
+    width: 700px;
+    opacity: 1; }
+  #jQuiz2MC h1, #jQuiz2MC h2, #jQuiz2MC h3, #jQuiz2TF h1, #jQuiz2TF h2, #jQuiz2TF h3 {
+    text-align: left;
+    margin: 0;
+    border-bottom: 0px;
+    height: 120px; }
+  #jQuiz2MC h1, #jQuiz2TF h1 {
+    color: #272a2b;
+    padding: .8em 1em 0 1.9em;
+    font: bold 1.76em/0.5em sans-serif; }
+  #jQuiz2MC h3, #jQuiz2TF h3 {
+    color: #272a2b;
+    padding: 1.2em 1em 0 2.6em;
+    font: bold 1.28em/1em sans-serif; }
+  #jQuiz2MC h2, #jQuiz2MC .statement, #jQuiz2MC .question, #jQuiz2TF h2, #jQuiz2TF .statement, #jQuiz2TF .question {
+    color: #0680d6;
+    padding: 0 0 0 1em;
+    font: bold 0.9em sans-serif; }
+  #jQuiz2MC ol.answer, #jQuiz2TF ol.answer {
+    position: relative;
+    margin: 0 0 0 1em; }
+  #jQuiz2MC ul.answer, #jQuiz2TF ul.answer {
+    position: relative;
+    margin: 0 auto;
+    width: 435px; }
+  #jQuiz2MC .selection, #jQuiz2TF .selection {
+    float: left;
+    width: 180px;
+    height: 202px;
+    padding: 10px;
+    margin: 0 0 0 15px;
+    -moz-box-shadow: 2px 2px 0px 0px black;
+    -webkit-box-shadow: 2px 2px 0px 0px black;
+    -o-box-shadow: 2px 2px 0px 0px black;
+    box-shadow: 2px 2px 0px 0px black;
+    overflow: hidden;
+    cursor: pointer; }
+  #jQuiz2MC .selection:first-child, #jQuiz2TF .selection:first-child {
+    margin: 0 0 0 10px; }
+  #jQuiz2MC .selection:hover,
+  #jQuiz2MC .selection:focus, #jQuiz2TF .selection:hover, #jQuiz2TF .selection:focus {
+    -moz-box-shadow: -2px -2px 0px 0px black;
+    -webkit-box-shadow: -2px -2px 0px 0px black;
+    -o-box-shadow: -2px -2px 0px 0px black;
+    box-shadow: -2px -2px 0px 0px black; }
+  #jQuiz2MC .endfeedback p, #jQuiz2TF .endfeedback p {
+    padding: 0 1em 0 3.6em; }
+  #jQuiz2MC #a, #jQuiz2MC #t, #jQuiz2TF #a, #jQuiz2TF #t {
+    background-color: #0680d6; }
+  #jQuiz2MC #b, #jQuiz2MC #f, #jQuiz2TF #b, #jQuiz2TF #f {
+    background-color: #bd0202; }
+  #jQuiz2MC #c, #jQuiz2TF #c {
+    background-color: #055e9d; }
+  #jQuiz2MC #a:hover,
+  #jQuiz2MC #t:hover,
+  #jQuiz2MC #b:hover,
+  #jQuiz2MC #f:hover,
+  #jQuiz2MC #c:hover,
+  #jQuiz2MC #a:focus,
+  #jQuiz2MC #t:focus,
+  #jQuiz2MC #b:focus,
+  #jQuiz2MC #f:focus,
+  #jQuiz2MC #c:focus, #jQuiz2TF #a:hover, #jQuiz2TF #t:hover, #jQuiz2TF #b:hover, #jQuiz2TF #f:hover, #jQuiz2TF #c:hover, #jQuiz2TF #a:focus, #jQuiz2TF #t:focus, #jQuiz2TF #b:focus, #jQuiz2TF #f:focus, #jQuiz2TF #c:focus {
+    background-color: #81dbfc; }
+    #jQuiz2MC #a:hover .text,
+    #jQuiz2MC #t:hover .text,
+    #jQuiz2MC #b:hover .text,
+    #jQuiz2MC #f:hover .text,
+    #jQuiz2MC #c:hover .text,
+    #jQuiz2MC #a:focus .text,
+    #jQuiz2MC #t:focus .text,
+    #jQuiz2MC #b:focus .text,
+    #jQuiz2MC #f:focus .text,
+    #jQuiz2MC #c:focus .text, #jQuiz2TF #a:hover .text, #jQuiz2TF #t:hover .text, #jQuiz2TF #b:hover .text, #jQuiz2TF #f:hover .text, #jQuiz2TF #c:hover .text, #jQuiz2TF #a:focus .text, #jQuiz2TF #t:focus .text, #jQuiz2TF #b:focus .text, #jQuiz2TF #f:focus .text, #jQuiz2TF #c:focus .text {
+      color: black;
+      text-shadow: 0px 1px 0px white; }
+
+  #jQuiz2MC .selection .letter, #jQuiz2TF .selection .letter {
+    font: bold 3.2em sans-serif;
+    color: white;
+    text-shadow: 0px 1px 0px #272a2b; }
+  #jQuiz2MC .selection .text, #jQuiz2TF .selection .text {
+    font: bold 1.8em/0.9em sans-serif;
+    letter-spacing: -1pt;
+    text-shadow: 0px 1px 0px black;
+    color: white; }
+  #jQuiz2MC button, #jQuiz2TF button {
+    -moz-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), 1px 1px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), 1px 1px 2px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4), 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: white;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+	/*
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -o-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -khtml-border-radius: 7px;
+    border-radius: 7px; 
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0680d6), color-stop(100%, #04538c));
+    background: -webkit-linear-gradient(#0680d6, #04538c);
+    background: -moz-linear-gradient(#0680d6, #04538c);
+    background: -o-linear-gradient(#0680d6, #04538c);
+    background: linear-gradient(#0680d6, #04538c); */
+	background-color: #0680d6;
+    font-weight: bold;
+    border: 1px solid #black;
+    width: 172px;
+    height: 34px;
+    position: absolute;
+    bottom: 10px;
+    right: 20px; }
+    #jQuiz2MC button else, #jQuiz2TF button else {
+      -moz-box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.4), 1px 1px 2px rgba(255, 255, 255, 0.5);
+      -webkit-box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.4), 1px 1px 2px rgba(255, 255, 255, 0.5);
+      -o-box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.4), 1px 1px 2px rgba(255, 255, 255, 0.5);
+      box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.4), 1px 1px 2px rgba(255, 255, 255, 0.5);
+      color: black;
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5); }
+    #jQuiz2MC button:hover, #jQuiz2TF button:hover {
+      cursor: pointer; }
+    #jQuiz2MC button:active, #jQuiz2TF button:active {
+      -moz-box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4), inset 1px 1px 0px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4), inset 1px 1px 0px rgba(0, 0, 0, 0.5);
+      -o-box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4), inset 1px 1px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4), inset 1px 1px 0px rgba(0, 0, 0, 0.5);
+      border: 0px solid #0680d6; }
+      #jQuiz2MC button:active else, #jQuiz2TF button:active else {
+        -moz-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4), inset 1px 1px 0px rgba(255, 255, 255, 0.5);
+        -webkit-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4), inset 1px 1px 0px rgba(255, 255, 255, 0.5);
+        -o-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4), inset 1px 1px 0px rgba(255, 255, 255, 0.5);
+        box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4), inset 1px 1px 0px rgba(255, 255, 255, 0.5); }
+
+
+
+/* END jQuiz2 */
+/* jSlider */
+#jSlider {
+  position: relative;
+  background: white url("../imgs/bgs/iphone.png") no-repeat top right;
+  width: 350px;
+  height: 500px;
+  margin: 0px auto;
+  overflow: hidden;
+  /* INSTRUCTIONS */ }
+  #jSlider .overlay {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0px;
+    left: 0px;
+    width: 700px;
+    height: 400px;
+    z-index: 99999; }
+  #jSlider .instructions {
+    background-color: #c9c9c9;
+    position: absolute;
+    top: 100px;
+    left: 175px;
+    width: 350px;
+    height: 200px;
+    padding: 1em 0 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -khtml-border-radius: 0.5em;
+    border-radius: 0.5em;
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.6); }
+    #jSlider .instructions #title {
+      font: 1.6em sans-serif;
+      font-weight: bold;
+      color: #bd0202;
+      letter-spacing: -1px;
+      padding: .1em 0px 0px .5em; }
+    #jSlider .instructions #text {
+      width: 330px;
+      font: 0.818em sans-serif;
+      padding: 1em 0 0 1em; }
+    #jSlider .instructions .go-btn {
+      background-color: #bd0202;
+      position: absolute;
+      bottom: 0px;
+      right: 20px;
+      width: 100px;
+      height: 40px;
+      font: italic bold 1.6em sans-serif;
+      text-align: center;
+      padding: .5em .1em 0 0;
+      color: white;
+      letter-spacing: -2pt;
+      cursor: pointer;
+      -moz-border-radius-topleft: 0.5em;
+      -webkit-border-top-left-radius: 0.5em;
+      -o-border-top-left-radius: 0.5em;
+      -ms-border-top-left-radius: 0.5em;
+      -khtml-border-top-left-radius: 0.5em;
+      border-top-left-radius: 0.5em;
+      -moz-border-radius-topright: 0.5em;
+      -webkit-border-top-right-radius: 0.5em;
+      -o-border-top-right-radius: 0.5em;
+      -ms-border-top-right-radius: 0.5em;
+      -khtml-border-top-right-radius: 0.5em;
+      border-top-right-radius: 0.5em; }
+    #jSlider .instructions .go-btn:hover {
+      background-color: #ac0000; }
+    #jSlider .instructions .go-btn:active {
+      background-color: #bd0202;
+      padding: .4em .1em 0 0; }
+  #jSlider .btn-i {
+    position: absolute;
+    left: .1em;
+    bottom: .1em;
+    background: transparent url("../imgs/icons/i.png") no-repeat;
+    width: 41px;
+    height: 40px;
+    z-index: 99999;
+    cursor: pointer; }
+  #jSlider .overlay {
+    height: 500px; }
+  #jSlider .instructions {
+    left: 15px;
+    width: 320px; }
+    #jSlider .instructions #text {
+      width: 300px; }
+  #jSlider #paging {
+    position: absolute;
+    top: 105px;
+    left: 105px;
+    height: 306px;
+    overflow: hidden; }
+    #jSlider #paging div.page {
+      background-color: white;
+      float: left;
+      width: 214px;
+      height: 306px;
+      color: black;
+      cursor: pointer; }
+      #jSlider #paging div.page div {
+        position: relative;
+        top: 60px;
+        left: 15px;
+        width: 189px; }
+      #jSlider #paging div.page .title {
+        font-weight: bold;
+        line-height: 1.2em;
+        margin: 0 0 15px 0; }
+      #jSlider #paging div.page ol {
+        list-style-position: inside;
+        margin: 0px;
+        padding: 0 10px 0; }
+        #jSlider #paging div.page ol li {
+          line-height: 1.2em;
+          *line-height: 1.2em;
+          margin: 0 0 15px 1px; }
+          #jSlider #paging div.page ol li p {
+            font: 10pt/10pt sans-serif, Arial;
+            margin: 0 0 15px -15px \9;
+            *margin: 0 0 15px 5px; }
+  #jSlider .navigation {
+    padding: 5px;
+    background-color: #272a2b;
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold; }
+
+/* END jSlider */
+/* jTimeline */
+#jTimeline {
+  height: 400px; }
+  #jTimeline #head {
+    background-color: #055e9d;
+    /* fallback color */
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #055e9d), color-stop(100%, #077cce));
+    background: -webkit-linear-gradient(top center, #055e9d, #077cce);
+    background: -moz-linear-gradient(top center, #055e9d, #077cce);
+    background: -o-linear-gradient(top center, #055e9d, #077cce);
+    background: linear-gradient(top center, #055e9d, #077cce);
+    margin: 0 0 1em 0;
+    overflow: hidden;
+    border-bottom: 1px solid gray;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.3);
+    -o-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    *zoom: 1; }
+    #jTimeline #head h1 {
+      font: bold 1.6em/1em sans-serif;
+      color: white;
+      border-bottom: 0px;
+      text-align: center;
+      margin: .5em 0 0 0;
+      padding: 0;
+      float: none; }
+    #jTimeline #head h2 {
+      font: bold 0.8em/1em sans-serif;
+      color: #e7e9e9;
+      border-bottom: 0;
+      text-align: center;
+      margin: 0 0 1em 0;
+      float: none;
+      padding: 0; }
+  #jTimeline .timelineInfo {
+    height: 282px;
+    margin: 0px;
+    overflow: hidden; }
+    #jTimeline .timelineInfo .item {
+      overflow: hidden;
+      width: 94%;
+      height: 270px;
+      font: 0.9em sans-serif;
+      padding: 0px 1em; }
+      #jTimeline .timelineInfo .item h1 {
+        font: 0.9em sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: -0.1em;
+        margin-bottom: 0px;
+        color: #272a2b;
+        float: none; }
+      #jTimeline .timelineInfo .item h2 {
+        color: #272a2b;
+        margin: 0 0 1em 0;
+        font: 0.9em/0.9em sans-serif;
+        float: none; }
+    #jTimeline .timelineInfo p {
+      font: 0.9em sans-serif;
+      margin: 0 0 1em 0; }
+  #jTimeline .jcarousel-skin .jcarousel-container {
+    background-color: #e6e6e6;
+    /* fallback color */
+    background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #bababa), color-stop(100%, #e6e6e6));
+    background: -webkit-linear-gradient(bottom center, #bababa, #e6e6e6);
+    background: -moz-linear-gradient(bottom center, #bababa, #e6e6e6);
+    background: -o-linear-gradient(bottom center, #bababa, #e6e6e6);
+    background: linear-gradient(bottom center, #bababa, #e6e6e6);
+    margin: 0 auto;
+    width: 85%;
+    -moz-border-radius-topleft: 7px;
+    -webkit-border-top-left-radius: 7px;
+    -o-border-top-left-radius: 7px;
+    -ms-border-top-left-radius: 7px;
+    -khtml-border-top-left-radius: 7px;
+    border-top-left-radius: 7px;
+    -moz-border-radius-topright: 7px;
+    -webkit-border-top-right-radius: 7px;
+    -o-border-top-right-radius: 7px;
+    -ms-border-top-right-radius: 7px;
+    -khtml-border-top-right-radius: 7px;
+    border-top-right-radius: 7px;
+    -moz-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px -2px 5px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc; }
+  #jTimeline .jcarousel-skin .jcarousel-item a {
+    width: 97px;
+    height: 40px;
+    display: block;
+    padding: 1em 0 0 0;
+    text-align: center;
+    color: #0f1010;
+    text-shadow: rgba(255, 255, 255, 0.6) 0px 1px 0px;
+    text-decoration: none;
+    font: bold 0.9em sans-serif; }
+    #jTimeline .jcarousel-skin .jcarousel-item a:hover, #jTimeline .jcarousel-skin .jcarousel-item a.jcarousel-item-active {
+      background-color: #bd0202;
+      background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #bd0202), color-stop(100%, #c60000));
+      background: -webkit-linear-gradient(bottom center, #bd0202, #c60000);
+      background: -moz-linear-gradient(bottom center, #bd0202, #c60000);
+      background: -o-linear-gradient(bottom center, #bd0202, #c60000);
+      background: linear-gradient(bottom center, #bd0202, #c60000);
+      -moz-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5);
+      -webkit-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5);
+      -o-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5);
+      box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5);
+      color: white;
+      text-shadow: rgba(0, 0, 0, 0.6) 0px -1px 0px;
+      cursor: pointer; }
+  #jTimeline .jcarousel-skin .jcarousel-item-horizontal {
+    margin: 0px; }
+  #jTimeline .jcarousel-skin .jcarousel-container-horizontal {
+    height: 40px;
+    padding: 0px 40px; }
+  #jTimeline .jcarousel-skin .jcarousel-clip-horizontal {
+    height: 40px; }
+  #jTimeline .jcarousel-skin .jcarousel-next-horizontal {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url("../imgs/icons/next.png") no-repeat 0 0; }
+  #jTimeline .jcarousel-skin .jcarousel-next-horizontal:hover {
+    background-position: -32px 0; }
+  #jTimeline .jcarousel-skin .jcarousel-next-horizontal:active {
+    background-position: -64px 0; }
+  #jTimeline .jcarousel-skin .jcarousel-next-disabled-horizontal,
+  #jTimeline .jcarousel-skin .jcarousel-next-disabled-horizontal:hover,
+  #jTimeline .jcarousel-skin .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-position: -96px 0; }
+  #jTimeline .jcarousel-skin .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url("../imgs/icons/prev.png") no-repeat 0 0; }
+  #jTimeline .jcarousel-skin .jcarousel-prev-horizontal:hover {
+    background-position: -32px 0; }
+  #jTimeline .jcarousel-skin .jcarousel-prev-horizontal:active {
+    background-position: -64px 0; }
+  #jTimeline .jcarousel-skin .jcarousel-prev-disabled-horizontal,
+  #jTimeline .jcarousel-skin .jcarousel-prev-disabled-horizontal:hover,
+  #jTimeline .jcarousel-skin .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-position: -96px 0; }
+  #jTimeline .jScrollPaneContainer {
+    position: relative;
+    overflow: hidden;
+    z-index: 10; }
+  #jTimeline .jScrollPaneTrack {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: gray;
+    opacity: .3;
+    filter: alpha(opacity=30);
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -o-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -khtml-border-radius: 7px;
+    border-radius: 7px; }
+  #jTimeline .jScrollPaneDrag {
+    position: absolute;
+    background: black;
+    cursor: pointer;
+    overflow: hidden;
+    filter: alpha(opacity=30);
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -o-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -khtml-border-radius: 7px;
+    border-radius: 7px; }
+  #jTimeline .jScrollPaneDragTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden; }
+  #jTimeline a.jScrollArrowUp {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    text-indent: -2000px;
+    overflow: hidden;
+    background: transparent url("../imgs/icons/arrow-up.png") no-repeat;
+    height: 10px;
+    width: 10px;
+    border-bottom: 0px; }
+  #jTimeline a.jScrollArrowDown {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    text-indent: -2000px;
+    overflow: hidden;
+    background: transparent url("../imgs/icons/arrow-down.png") no-repeat;
+    height: 10px;
+    width: 10px;
+    border-bottom: 0px; }
+
+/* END jTimeline */

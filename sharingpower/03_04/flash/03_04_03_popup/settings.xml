@@ -1,0 +1,53 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Select "next" or "prev" to cycle through the different locations. <br/><br/>Select various items you see before you.<br/>]]>
+	</instructions>
+
+	<intro>Time to learn about public policy. Good luck, citizen!</intro>
+
+	<rooms>
+		<bathroom>
+			<rollover>Toiletries must be monitored for toxins before consumer use.</rollover>
+			<rollover>Congress-funded National Health Institutes developed these medications.</rollover>
+		</bathroom>
+
+		<bedroom>
+			<rollover>Federal government helps provide electricity through funds and regulations.</rollover>
+			<rollover>The federal government sets the standard time.</rollover>
+			<rollover>The Dept. of Agriculture runs cotton and wool programs while the Consumer Product Safety Commission must test fabrics for safety.</rollover>
+			<rollover>The federal National Weather Service provides forecast information to news stations.</rollover>
+		</bedroom>
+
+
+		<kitchen>
+			
+			<rollover>In most areas of the United States, many papers, plastics, and metals are recycled through government efforts.</rollover>
+			<rollover>The U.S. Department of Agriculture monitors the safety of the foods we eat. Local governments provide safe drinking water that meet state and federal standards.</rollover>
+			<rollover>The U.S. Department of Agriculture provides guidelines for what we should eat to be healthy.</rollover>
+			<rollover>Local governments require pets to be registered and vaccinated against diseases.</rollover>
+			<rollover>Local governments take garbage to landfills that meet state and federal regulations to be environmentally safe.</rollover>
+		</kitchen>
+
+		
+
+	<road>
+			<rollover>Local governments can improve traffic through new routes and improving old ones. State and federal governments can provide funds for road projects.</rollover>
+			<rollover>State and local governments set traffic safety laws.</rollover>
+			<rollover>Federal standards for emissions, or poisonous fumes, have reduced pollution from car exhausts.</rollover>
+			<rollover>Federal government controls the use of the airwaves. It also provides copyright protection for music and other original works.</rollover>
+			<rollover>Governments set safe speed limits for roads.</rollover>
+			<rollover>State governments have test requirements to obtain a driver’s license. They also require a car owner to have car insurance.</rollover>
+			<rollover>Federal standards have improved fuel efficiency in cars, meaning cars use less fuel today than they did years ago. </rollover>
+			<rollover>Federal law requires vehicles to have seat belts and air bags, which can save lives in an accident.</rollover>		</road>
+		
+	</rooms>
+</settings>	

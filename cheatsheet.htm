@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link type="text/css" media="screen" href="css/theme.css" rel="stylesheet" />
+<link type="text/css" media="print" href="css/print.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="js/jquery.swfobject.1-1-1.min.js"></script>
+<script type="text/javascript" src="js/core.js"></script>
+</head>
+
+<body>
+<div id="logo"></div>
+<div id="window">
+
+<div id="page">
+
+<div id="nav">
+<dl>
+<dt>Navigation</dt>
+<dd>
+<ul>
+<li id="next"><a href="#" title="Next"><span>Next</span></a></li>
+<li id="crumbs">1 of 10</li>
+<li id="prev"><a href="#" title="Previous"><span>Previous</span></a></li>
+<li id="home"><a href="#" title="Home"><span>Home</span></a></li>
+<li id="gloss"><a class="pop" href="glossary.htm" title="Glossary"><span>Glossary</span></a></li>
+<li id="notes"><a class="pop" href="#" title="Notes"><span>Notes</span></a></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div id="content">
+<h1>Lesson 01.00 <span>Name of Lesson</span></h1>
+<div id="margin">
+<h2>Palette</h2>
+<p>
+<span style="background-color:#0680d6;color:#FFF;">#0680d6</span>
+<span style="background-color:#bd0202;color:#FFF;">#bd0202</span>
+<span style="background-color:#656565;color:#FFF;">#656565</span>
+<span style="background-color:#6ec2e1;">#6ec2e1</span>
+<span style="background-color:#664b3d;color:#FFF;">#664b3d</span>
+</p>
+<hr />
+<h2>Headers</h2>
+<code>&lt;h2&gt;h2: Header&lt;/h2&gt;
+&lt;h3&gt;h3: Header&lt;/h3&gt;
+&lt;h4&gt;h4: Header&lt;/h4&gt;
+&lt;h5&gt;h5: Header&lt;/h5&gt;
+</code>
+<h2>h2: Header</h2>
+<h3>h3: Header</h3>
+<h4>h4: Header</h4>
+<h5>h5: Header</h5>
+<hr />
+<h2>Paragraph</h2>
+<code>&lt;p&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus pulvinar imperdiet. Suspendisse condimentum, dui et vestibulum lacinia, massa neque accumsan arcu, in euismod turpis ante ut nisi.
+&lt;/p&gt;
+</code>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus pulvinar imperdiet. Suspendisse condimentum, dui et vestibulum lacinia, massa neque accumsan arcu, in euismod turpis ante ut nisi.
+</p>
+<h2>Tooltips (HTML Enabled)</h2>
+<code>&lt;span class=&quot;tooltip&quot;&gt;amet &lt;span&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Nulla pharetra viverra suscipit. Phasellus lorem elit, sollicitudin sit amet vestibulum nec, dignissim sed dui.&lt;/span&gt;&lt;/span&gt;
+</code>
+<p>
+Lorem ipsum dolor sit <span class="tooltip">amet <span><strong>Tip:</strong> Nulla pharetra viverra suscipit. Phasellus lorem elit, sollicitudin sit amet vestibulum nec, dignissim sed dui.</span></span>
+</p>
+<hr />
+<h2>Click to Reveal</h2>
+<code>&lt;dl class=&quot;clickReveal&quot;&gt;
+&lt;dt&gt;Click to Reveal&lt;/dt&gt;
+&lt;dd&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/dd&gt;
+&lt;/dl&gt;
+</code>
+<dl class="clickReveal">
+<dt>Click to Reveal</dt>
+<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
+</dl>
+<hr />
+<h2>Tabs</h2>
+<code>&lt;div class=&quot;tabs&quot;&gt; &lt;h3&gt;Thunderstorms&lt;/h3&gt; &lt;div class=&quot;tab&quot;&gt; &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt; &lt;p&gt;PA thunderstorm is a weather system that can produce high winds, heavy rains, thunder, lightning, hail, and possibly tornadoes. In the atmosphere, air can move horizontally or vertically. Horizontal motion occurs as air masses move from one location to another. Vertical motion occurs as changes in temperature and pressure change the density of the air.&lt;/p&gt; &lt;/div&gt; &lt;h3&gt;Lightning&lt;/h3&gt; &lt;div class=&quot;tab&quot;&gt; &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt; &lt;p&gt;Lightning is one hazard associated with a thunderstorm. Lightning is a fast flow of electrical energy between two charged surfaces, usually between the atmosphere and the ground. Laws of physics dictate that positive and negative charges must be equalized.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;
+</code>
+
+<div class="tabs">
+<h3>Thunderstorms</h3>
+<div class="tab">
+<p>Lorem ipsum dolor sit amet.</p>
+<p>PA thunderstorm is a weather system that can produce high winds, heavy rains, thunder, lightning, hail, and possibly tornadoes. In the atmosphere, air can move horizontally or vertically. Horizontal motion occurs as air masses move from one location to another. Vertical motion occurs as changes in temperature and pressure change the density of the air.</p>
+</div>
+<h3>Lightning</h3>
+<div class="tab">
+<p>Lorem ipsum dolor sit amet.</p>
+<p>Lightning is one hazard associated with a thunderstorm. Lightning is a fast flow of electrical energy between two charged surfaces, usually between the atmosphere and the ground. Laws of physics dictate that positive and negative charges must be equalized.</p>
+</div>
+</div>
+
+<hr />
+<h2>Standard Pop Up</h2>
+<code>&lt;a class=&quot;pop&quot; href=&quot;cl_05b_a_c.htm&quot;&gt;Text Version&lt;/a&gt;</code>
+<p>
+<a class="pop" href="textVersion.htm">Pop Up</a>
+</p>
+<hr />
+<h2>Custom Height Pop Up</h2>
+<code>&lt;a class=&quot;pop&quot; href=&quot;cl_05b_a_c.htm&quot; rel=&quot;300&quot;&gt;Text Version&lt;/a&gt;</code>
+<p>
+<a class="pop" href="textVersion.htm" rel="300">Pop Up</a>
+</p>
+<hr />
+<h2>Target Blank</h2>
+<p>Setting an anchors target to "_blank" in XHTML causes the page to fail validation.</p>
+<code>&lt;a class=&quot;pop&quot; href=&quot;http://www.yahoo.com&quot;&gt;New Window&lt;/a&gt;</code>
+<p><a class="pop" href="http://www.yahoo.com">New Window</a></p>
+
+<hr />
+<h2>Text Version</h2>
+<code>&lt;div class=&quot;textVersion&quot;&gt;&lt;a class=&quot;pop&quot; href=&quot;cl_05b_a_c.htm&quot;&gt;Text Version&lt;/a&gt;&lt;/div&gt;</code>
+<div class="textVersion"><a class="pop" href="textVersion.htm">Text Version</a></div>
+<hr />
+<h2>Image Centered</h2>
+<code>&lt;div class=&quot;showcase img&quot;&gt;
+&lt;img src=&quot;imgs/mike.jpg&quot; title=&quot;&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;</code>
+<div class="showcase img">
+<img src="imgs/mike.jpg" title="" alt="" />
+</div>
+<hr />
+<h2>Image Left</h2>
+<code>&lt;div class=&quot;left img&quot;&gt;
+&lt;img src=&quot;imgs/mike.jpg&quot; title=&quot;&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;</code>
+<div class="left img">
+<img src="imgs/mike.jpg" title="" alt="" />
+</div>
+<hr />
+<h2>Image Right</h2>
+<code>&lt;div class=&quot;right img&quot;&gt;
+&lt;img src=&quot;imgs/mike.jpg&quot; title=&quot;&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;
+</code>
+<div class="right img">
+<img src="imgs/mike.jpg" title="" alt="" />
+</div>
+<hr />
+<h2>Lightbox</h2>
+<code>&lt;a class=&quot;lightbox&quot; href=&quot;imgs/mikeLG.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;imgs/mike.jpg&quot; title=&quot;&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;</code>
+<p><a class="lightbox" href="imgs/mikeLG.jpg" title="Here is an area where you can provide extra information &copy; 2011 FLVS"><img src="imgs/mike.jpg" title="" alt="" /></a>
+<br /><span class="imgNote">&copy; 2011 FLVS</span></p>
+<hr />
+<h2>Assignment Box</h2>
+<code>&lt;div class=&quot;box&quot;&gt;
+&lt;h3&gt;Assignment 1.01 &lt;span&gt;Assignment Title&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget lobortis sapien. Vivamus a est ut enim ornare semper sit amet et eros.Quisque fermentum condimentum eros ut consequat. Vestibulum ac lobortis leo. Nam tempor fermentum mi ut molestie. Nulla vel malesuada ligula.
+&lt;/p&gt;
+&lt;p&gt;
+Quisque fermentum condimentum eros ut consequat. Vestibulum ac lobortis leo. Nam tempor fermentum mi ut molestie. Nulla vel malesuada ligula.Integer ut hendrerit arcu. Phasellus sed orci id risus faucibus blandit ut id turpis. Cras lorem massa, tempor nec posuere vitae, mattis eget quam.
+&lt;/p&gt;
+&lt;p&gt;
+Integer ut hendrerit arcu. Phasellus sed orci id risus faucibus blandit ut id turpis. Cras lorem massa, tempor nec posuere vitae, mattis eget quam.
+&lt;/p&gt;
+&lt;/div&gt;</code>
+<div class="box">
+<h3>Assignment 1.01 <span>Assignment Title</span></h3>
+<p>
+Quisque fermentum condimentum eros ut consequat. Vestibulum ac lobortis leo. Nam tempor fermentum mi ut molestie. Nulla vel malesuada ligula.Integer ut hendrerit arcu. Phasellus sed orci id risus faucibus blandit ut id turpis. Cras lorem massa, tempor nec posuere vitae, mattis eget quam.
+</p>
+<p>
+Integer ut hendrerit arcu. Phasellus sed orci id risus faucibus blandit ut id turpis. Cras lorem massa, tempor nec posuere vitae, mattis eget quam.
+</p>
+<p>
+Integer ut hendrerit arcu. Phasellus sed orci id risus faucibus blandit ut id turpis. Cras lorem massa, tempor nec posuere vitae, mattis eget quam.
+</p>
+</div>
+<hr />
+<h2>Interactive Embedding</h2>
+<code>&lt;p&gt;&lt;a class=&quot;swf&quot; href=&quot;swf/01_07a_01.swf&quot; rel=&quot;swf/01_07a_01.swf:530:384&quot;&gt;Title of Interactive&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;textVersion&quot;&gt;&lt;a class=&quot;pop&quot; href=&quot;cl_05b_a_a.htm&quot;&gt;Text Version&lt;/a&gt;&lt;/div&gt;</code>
+<p><a class="swf" href="swf/01_07a_01.swf" rel="swf/01_07a_01.swf:530:384">Title of Interactive</a></p>
+<div class="textVersion"><a class="pop" href="textVersion.htm">Text Version</a></div>
+<hr />
+<h2>Accordian</h2>
+<code>&lt;dl class=&quot;accordian&quot;&gt;
+&lt;dt&gt;Title&lt;/dt&gt;
+&lt;dd&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis libero est, non mattis enim. Mauris vel ligula purus. Vestibulum condimentum ultrices eros vel bibendum. Integer ornare placerat vulputate. Vestibulum at rutrum nisi. Nullam cursus tempus leo. Praesent convallis, dolor nec dignissim accumsan, ante velit sodales urna, eget ullamcorper massa mi non ante. Cras sit amet lacus id sem sagittis bibendum sed vitae dui. Aenean sollicitudin dapibus laoreet. Nullam at laoreet nulla. Nullam dignissim vestibulum nisi eleifend ultricies. Aenean malesuada adipiscing arcu ut posuere. Curabitur ligula lorem, bibendum non egestas vel, adipiscing sed erat. &lt;/dd&gt;
+&lt;dt&gt;Title&lt;/dt&gt;
+&lt;dd&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis libero est, non mattis enim. Mauris vel ligula purus. Vestibulum condimentum ultrices eros vel bibendum. Integer ornare placerat vulputate. Vestibulum at rutrum nisi. Nullam cursus tempus leo. Praesent convallis, dolor nec dignissim accumsan, ante velit sodales urna, eget ullamcorper massa mi non ante. Cras sit amet lacus id sem sagittis bibendum sed vitae dui. Aenean sollicitudin dapibus laoreet. Nullam at laoreet nulla. Nullam dignissim vestibulum nisi eleifend ultricies. Aenean malesuada adipiscing arcu ut posuere. Curabitur ligula lorem, bibendum non egestas vel, adipiscing sed erat. &lt;/dd&gt;
+&lt;dt&gt;Title&lt;/dt&gt;
+&lt;dd&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis libero est, non mattis enim. Mauris vel ligula purus. Vestibulum condimentum ultrices eros vel bibendum. Integer ornare placerat vulputate. Vestibulum at rutrum nisi. Nullam cursus tempus leo. Praesent convallis, dolor nec dignissim accumsan, ante velit sodales urna, eget ullamcorper massa mi non ante. Cras sit amet lacus id sem sagittis bibendum sed vitae dui. Aenean sollicitudin dapibus laoreet. Nullam at laoreet nulla. Nullam dignissim vestibulum nisi eleifend ultricies. Aenean malesuada adipiscing arcu ut posuere. Curabitur ligula lorem, bibendum non egestas vel, adipiscing sed erat. &lt;/dd&gt;
+&lt;/dl&gt;</code>
+<dl class="accordian">
+<dt>Title</dt>
+<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis libero est, non mattis enim. Mauris vel ligula purus. Vestibulum condimentum ultrices eros vel bibendum. Integer ornare placerat vulputate. Vestibulum at rutrum nisi. Nullam cursus tempus leo. Praesent convallis, dolor nec dignissim accumsan, ante velit sodales urna, eget ullamcorper massa mi non ante. Cras sit amet lacus id sem sagittis bibendum sed vitae dui. Aenean sollicitudin dapibus laoreet. Nullam at laoreet nulla. Nullam dignissim vestibulum nisi eleifend ultricies. Aenean malesuada adipiscing arcu ut posuere. Curabitur ligula lorem, bibendum non egestas vel, adipiscing sed erat. </dd>
+<dt>Title</dt>
+<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis libero est, non mattis enim. Mauris vel ligula purus. Vestibulum condimentum ultrices eros vel bibendum. Integer ornare placerat vulputate. Vestibulum at rutrum nisi. Nullam cursus tempus leo. Praesent convallis, dolor nec dignissim accumsan, ante velit sodales urna, eget ullamcorper massa mi non ante. Cras sit amet lacus id sem sagittis bibendum sed vitae dui. Aenean sollicitudin dapibus laoreet. Nullam at laoreet nulla. Nullam dignissim vestibulum nisi eleifend ultricies. Aenean malesuada adipiscing arcu ut posuere. Curabitur ligula lorem, bibendum non egestas vel, adipiscing sed erat. </dd>
+<dt>Title</dt>
+<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis libero est, non mattis enim. Mauris vel ligula purus. Vestibulum condimentum ultrices eros vel bibendum. Integer ornare placerat vulputate. Vestibulum at rutrum nisi. Nullam cursus tempus leo. Praesent convallis, dolor nec dignissim accumsan, ante velit sodales urna, eget ullamcorper massa mi non ante. Cras sit amet lacus id sem sagittis bibendum sed vitae dui. Aenean sollicitudin dapibus laoreet. Nullam at laoreet nulla. Nullam dignissim vestibulum nisi eleifend ultricies. Aenean malesuada adipiscing arcu ut posuere. Curabitur ligula lorem, bibendum non egestas vel, adipiscing sed erat. </dd>
+</dl>
+<hr />
+<h2>Table</h2>
+<table cellpadding="0" cellspacing="0" border="0">
+<thead>
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+<th>Header 3</th>
+<th>Header 4</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td>Footer 1</td>
+<td>Footer 2</td>
+<td>Footer 3</td>
+<td>Footer 4</td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td>Row 1</td>
+<td>Column 1</td>
+<td>Column 2</td>
+<td>Column 3</td>
+</tr>
+<tr class="even">
+<td>Row 2</td>
+<td>Column 1</td>
+<td>Column 2</td>
+<td>Column 3</td>
+</tr>
+<tr>
+<td>Row 3</td>
+<td>Column 1</td>
+<td>Column 2</td>
+<td>Column 3</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Discovery Education Link</h2>
+<form class="pop discoveryVideo" action="http://streaming.discoveryeducation.com/index.cfm?guidAssetId=9EAEDD0E-63A8-4F13-A0DE-106228EB8B26" method="post">
+<input type="hidden" name="blnPasscode" value="false" />
+<input name="username" type="hidden" value="flvs4" class="form" size="20" tabindex="1" />
+<input name="password" type="hidden" value="student" class="form" size="20" tabindex="2" />
+<input type="submit" value="Mesopotamia & Cuneiform [01:18]" tabindex="3" /> 
+<p><a class="pop" href="textVersion.htm" title="Text-only version">Text-only version</a></p>
+<p>Discovery Education&#8482; Streaming</p>
+</form>
+<hr />
+<div class="box">
+<h3>Objectives</h3>
+<ol>
+<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+<li>Suspendisse sed purus at odio consequat lacinia gravida non metus.</li>
+<li>Nam pharetra nisl quis lorem rhoncus sed tempor nulla condimentum.</li>
+<li>Cras laoreet libero vitae dui adipiscing dictum.</li>
+<li>Maecenas nec ipsum massa, vel dictum velit.</li>
+<li>Mauris luctus nibh non ipsum sagittis malesuada.</li>
+<li>Etiam elementum mi in odio bibendum quis dapibus diam pellentesque.</li>
+<li>Cras sollicitudin pretium nibh, mattis vulputate mauris vulputate in.</li>
+<li>Nulla interdum quam vel nunc vehicula iaculis.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="menu">
+<div id="segments"><a href="#" title="Segments"><span>Segments</span></a></div>
+<dl id="modules">
+<dt><span>Modules</span></dt>
+<dd>
+<ul>
+<li><a href="#" title="Page 1"><span>Page 1</span></a></li>
+<li><a href="#" title="Page 2"><span>Page 2</span></a></li>
+<li><a href="#" title="Page 3"><span>Page 3</span></a></li>
+</ul>
+</dd>
+</dl>
+<dl>
+<dt><span>Lessons</span></dt>
+<dd>
+<ul>
+<li><a href="#" title="Page 1"><span>Page 1</span></a></li>
+<li><a href="#" title="Page 2"><span>Page 2</span></a></li>
+<li><a href="#" title="Page 3"><span>Page 3</span></a></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="footer">
+<span id="copy">Unless otherwise noted, &copy; 2011 FLVS</span>
+</div>
+
+</body>
+</html>

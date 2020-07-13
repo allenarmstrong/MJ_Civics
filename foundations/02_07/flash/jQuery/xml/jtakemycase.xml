@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+	<directions>
+		<![CDATA[Imagine you are a lawyer. Potential clients come to you with a problem. You must choose whether to take the case based on whether you think the Bill of Rights is on the client’s side. You will also determine the amendment within the Bill of Rights that most closely relates to the situation. You will earn points based on whether you make good choices on cases you take and identifying the amendments. Be sure to print out the Bill of Rights Reference (insert link to document at the end of this file) for help with this task.<br /><br />Select "Continue" to begin.]]>
+	</directions>
+
+	<endfeedback><![CDATA[Select Restart to try again.]]></endfeedback>
+	
+	<amendments>
+		<amendment title="I" >
+			<fullText><![CDATA[Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.]]></fullText>
+			<meaning title="Political and religious freedom" ><![CDATA[people have the right to speak or publish what they wish. They may also gather in groups to show support for a cause or idea. They may complain to government officials or demand action on an issue. People may also follow or not follow religious beliefs as they choose.]]></meaning>
+		</amendment>
+		<amendment title="II" >
+			<fullText><![CDATA[A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.]]></fullText>
+			<meaning title="Right to bear arms" ><![CDATA[people have the right to own weapons for defense or hunting. ]]></meaning>
+		</amendment>
+		<amendment title="III" >
+			<fullText><![CDATA[No Soldier shall, in time of peace be quartered in any house, without the consent of the Owner, nor in time of war, but in a manner to be prescribed by law.]]></fullText>
+			<meaning title="Quartering troops" ><![CDATA[people have the right to refuse housing soldiers in their homes.]]></meaning>
+		</amendment>
+		<amendment title="IV" >
+			<fullText><![CDATA[The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.]]></fullText>
+			<meaning title="Search and seizure" ><![CDATA[people have the right to protection from searches without a cause. Police must have a warrant or see a crime in progress to search and take things from a person or their property.]]></meaning>
+		</amendment>
+		<amendment title="V" >
+			<fullText><![CDATA[No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a Grand Jury, except in cases arising in the land or naval forces, or in the Militia, when in actual service in time of War or public danger; nor shall any person be subject for the same offence to be twice put in jeopardy of life or limb; nor shall be compelled in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law; nor shall private property be taken for public use, without just compensation.]]></fullText>
+			<meaning title="Rights of the accused" ><![CDATA[people accused of crimes have certain rights. Police cannot place someone in jail without following certain procedures. Accused persons may not face trial or be punished for the same crime twice. They do not have to be a witness during their own trial. The government also may not take property for public use, like building a highway, without paying the owner for the value of the property.]]></meaning>
+		</amendment>
+		<amendment title="VI" >
+			<fullText><![CDATA[In all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial, by an impartial jury of the State and district wherein the crime shall have been committed, which district shall have been previously ascertained by law, and to be informed of the nature and cause of the accusation; to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor, and to have the Assistance of Counsel for his defence.]]></fullText>
+			<meaning title="Right to a speedy, public trial" ><![CDATA[people have the right to know what crime they are accused of violating as well as what evidence the government has to prove their guilt. They have the right to trial by a fair jury in the area where the crime happened. They have the right to question their accusers, bring forward their own witnesses, and have a lawyer’s help.]]></meaning>
+		</amendment>
+		<amendment title="VII" >
+			<fullText><![CDATA[In Suits at common law, where the value in controversy shall exceed twenty dollars, the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise re-examined in any Court of the United States, than according to the rules of the common law.]]></fullText>
+			<meaning title="Trial by jury in civil cases" ><![CDATA[people have the right to a jury even in a civil case. ]]></meaning>
+		</amendment>
+		<amendment title="VIII" >
+			<fullText><![CDATA[Excessive bail shall not be required, nor excessive fines imposed, nor cruel and unusual punishments inflicted.]]></fullText>
+			<meaning title="Limits to punishment" ><![CDATA[people have the right to protection from bail or fines that are too high for the charges against them. They also do not have to face other punishments considered cruel or unusual for the crime.]]></meaning>
+		</amendment>
+		<amendment title="IX" >
+			<fullText><![CDATA[The enumeration in the Constitution, of certain rights, shall not be construed to deny or disparage others retained by the people.]]></fullText>
+			<meaning title="Rights of the people" ><![CDATA[people have rights other than those listed in the Constitution. Just because a right is not specifically named does not mean the people do not have it.]]></meaning>
+		</amendment>
+		<amendment title="X" >
+			<fullText><![CDATA[The powers not delegated to the United States by the Constitution, nor prohibited by it to the States, are reserved to the States respectively, or to the people.]]></fullText>
+			<meaning title="Powers of the states and people" ><![CDATA[state governments or the people have the right to powers not given to the national government.]]></meaning>
+		</amendment>
+	</amendments>
+	<!--
+	<question desc="Please select your gender." 
+			override="true">
+
+		<choice title="Male" 
+			desc="" 
+			correct="true" 
+			feedbackTitle="You've chosen male"
+			feedback="Thank you for making your selection."/>
+
+		<choice title="Female" 
+			desc="" 
+			correct="true" 
+			feedbackTitle="You've chosen female"
+			feedback="Thank you for making your selection." />
+	</question>
+	-->
+	
+	<question bgImg="8" desc="Two months ago at trial, a jury declared me not guilty of robbing the video game store. The court sent me a new trial notice, saying there is new evidence that I may be guilty. It doesn't make sense!">
+
+			<choice title="Yes" 
+				desc="I will take the case." 
+				correct="true" 
+				feedbackTitle="That's correct!"
+				feedback="Good choice! Your client is right. It doesn't make sense." />
+
+			<choice title="No" 
+				desc="I will not take the case." 
+				correct="false" 
+				feedbackTitle="That's incorrect!"
+				feedback="Oops! The client is right. It doesn't make sense." />
+
+			<amendmentChoices
+
+				correctFeedbackTitle="Correct"
+				correctFeedback="Yes! The Fifth Amendment protects people from going to trial again for the exact same crime. Trials are costly. All evidence should be gathered and presented during pretrial hearings and the first trial. However, if new evidence arises that could prove a person is not guilty, then the defendant could get a new trial."
+
+				incorrectFeedbackTitle="Wrong"
+				incorrectFeedback="Oops, review the Bill of Rights and try again!">
+
+				<choice>2</choice>
+				<choice correct="true">5</choice>
+				<choice>7</choice>
+			</amendmentChoices>
+		</question>
+		
+			
+		
+	<question bgImg="18" desc="The Constitution does not say everyone has to go to school. I don't think I should have to go anymore. My principal said I would be in trouble if I don't show up. She can't punish me.">
+
+			<choice title="Yes" 
+				desc="I will take the case." 
+				correct="false" 
+				feedbackTitle="That's correct!"
+				feedback="Oops! This case will go nowhere in court. The client is trying to deny a right belonging to the community." />
+
+			<choice title="No" 
+				desc="I will not take the case." 
+				correct="true" 
+				feedbackTitle="That's incorrect!"
+				feedback="Good choice! This case will go nowhere in court. The client is trying to deny a right belonging to the community." />
+
+			<amendmentChoices
+
+				correctFeedbackTitle="Correct"
+				correctFeedback="Yes! The 10th Amendment protects state governments' and the peoples' ability to use powers the national government does not have. One example is creating an education system and requiring student attendance. "
+
+				incorrectFeedbackTitle="Wrong"
+				incorrectFeedback="Oops, review the Bill of Rights and try again!">
+
+				<choice>1</choice>
+				<choice>8</choice>
+				<choice correct="true">10</choice>
+			</amendmentChoices>
+		</question>
+	
+	
+	
+	<question bgImg="10" desc="I have a trial coming up, and my lawyer asked the judge for an extension! She said it would help us gather more witnesses and evidence. I am just so tired of waiting and I want a new lawyer!">
+
+		<choice title="Yes" 
+				desc="I will take the case." 
+				correct="false" 
+				feedbackTitle="That's incorrect!"
+				feedback="Oops! Your client may wish for a faster resolution, but changing lawyers may actually slow the process. The current lawyer seems to be working to protect the client's rights." />
+
+			<choice title="No" 
+				desc="I will not take the case." 
+				correct="true" 
+				feedbackTitle="That's correct!"
+				feedback="Good choice! The client may wish for a faster resolution, but changing lawyers may actually slow the process. The current lawyer seems to be working to protect the client's rights." />
+
+			<amendmentChoices
+
+				correctFeedbackTitle="Correct"
+				correctFeedback="Yes! The Sixth Amendment protects people's right to a fair and speedy public trial. It also protects accused people's right to gather their own evidence and witnesses for defense."
+
+				incorrectFeedbackTitle="Wrong"
+				incorrectFeedback="Oops, review the Bill of Rights and try again!">
+
+				<choice>4</choice>
+				<choice correct="true">6</choice>
+				<choice>7</choice>
+			</amendmentChoices>
+		</question>
+		
+		<question bgImg="5" desc="My uncle is a soldier and he stayed with us for a week while on leave. I had to give up my bedroom for him and slept on the couch! My parents say he is welcome anytime. It's not fair!">
+			<choice title="Yes" 
+				desc="I will take the case." 
+				correct="false" 
+				feedbackTitle="That's incorrect!"
+				feedback="Oops! This case will go nowhere in court. The uncle has not broken a law. The client is mistakenly attempting to claim a certain right." />
+
+			<choice title="No" 
+				desc="I will not take the case." 
+				correct="true" 
+				feedbackTitle="That's correct!"
+				feedback="Good choice! This case will go nowhere in court. The client is mistakenly attempting to claim a certain right." />
+
+			<amendmentChoices
+
+				correctFeedbackTitle="Correct"
+				correctFeedback="Yes! The Third Amendment prevents the government from forcing people to shelter and feed soldiers. This is the government's responsibility. However, the government did not send the uncle to stay with your client. His parents invited him. "
+
+				incorrectFeedbackTitle="Wrong"
+				incorrectFeedback="Oops, review the Bill of Rights and try again!">
+
+				<choice>1</choice>
+				<choice correct="true">3</choice>
+				<choice>10</choice>
+			</amendmentChoices>
+		</question>
+	
+	<question bgImg="2" desc="My family likes to go hunting during deer season. When my great aunt tried to purchase a new gun, the clerk said she would have to run a criminal history check first. She is not a criminal. She shouldn't have to wait for the background check!">
+
+
+			<choice title="Yes" 
+				desc="I will take the case." 
+				correct="false" 
+				feedbackTitle="That's incorrect!"
+				feedback="Oops! The clerk must follow laws related to selling dangerous items. The client is mistakenly attempting to claim a certain right." />
+
+			<choice title="No" 
+				desc="I will not take the case." 
+				correct="true" 
+				feedbackTitle="That's correct!"
+				feedback="Good choice! The clerk must follow laws related to selling dangerous items. The client is mistakenly attempting to claim a certain right." />
+
+			<amendmentChoices
+
+				correctFeedbackTitle="Correct"
+				correctFeedback="Yes! The client is attempting to claim the right to arms, or weapons, under the Second Amendment. It protects a person's right to own a weapon, yet the government has passed laws to help make sure people use guns safely."
+
+				incorrectFeedbackTitle="Wrong"
+				incorrectFeedback="Oops, review the Bill of Rights and try again!">
+
+				<choice correct="true">2</choice>
+				<choice>3</choice>
+				<choice>4</choice>
+			</amendmentChoices>
+		</question>
+		
+		<question bgImg="19" desc="We want to build a new skate park in our city. We already have approval from the local and state governments. Our senator said we couldn't build it without special approval from Congress. That's not necessary!">
+
+
+			<choice title="Yes" 
+				desc="I will take the case." 
+				correct="true" 
+				feedbackTitle="That's correct!"
+				feedback="Good choice! Your client's community does have a right to build the skate park without approval from Congress." />
+
+			<choice title="No" 
+				desc="I will not take the case." 
+				correct="false" 
+				feedbackTitle="That's incorrect!"
+				feedback="Oops! Your client's community does have a right to build the skate park without approval from Congress." />
+
+			<amendmentChoices
+
+				correctFeedbackTitle="Correct"
+				correctFeedback="Yes! The 10th Amendment protects state governments' and the peoples' ability to use powers the national government does not have. One example is building facilities to improve the community. However, know that some lands are protected by special laws and may require approval from a federal agency. An example would be land that is inside a protected wildlife area. "
+
+				incorrectFeedbackTitle="Wrong"
+				incorrectFeedback="Oops, review the Bill of Rights and try again!">
+
+				<choice>3</choice>
+				<choice >5</choice>
+				<choice correct="true">10</choice>
+			</amendmentChoices>
+		</question>
+
+
+
+
+		<question bgImg="3" desc="Raccoons are constantly turning over our trash bins! My dad wanted to buy a gun to scare them off, but the store clerk said only police officers could purchase them because of a local law. My dad should be able to scare off wild critters!">
+
+			<choice title="Yes" 
+				desc="I will take the case." 
+				correct="true" 
+				feedbackTitle="That's correct!"
+				feedback="Good choice! Your client's father does have a right to own a weapon." />
+
+			<choice title="No" 
+				desc="I will not take the case." 
+				correct="false" 
+				feedbackTitle="That's incorrect!"
+				feedback="Oops! Your client's father does have a right to own a weapon." />
+
+			<amendmentChoices
+
+				correctFeedbackTitle="Correct"
+				correctFeedback="Yes! The Second Amendment protects the right to bear arms, or own weapons. Note that the government does reserve the right to limit ownership to responsible people."
+
+				incorrectFeedbackTitle="Wrong"
+				incorrectFeedback="Oops, review the Bill of Rights and try again!">
+
+				<choice>1</choice>
+				<choice correct="true">2</choice>
+				<choice>5</choice>
+			</amendmentChoices>
+		</question>
+		
+		
+	<question bgImg="0" desc="My neighbor tells me daily that I am a menace to society because of the way I style my hair. She drives me crazy, and I want to put her in jail. Will you help me punish her?">
+		
+		<choice title="Yes" 
+			desc="I will take the case." 
+			correct="false" 
+			feedbackTitle="That's incorrect!"
+			feedback="Oops! This case will go nowhere in court. The neighbor has not broken a law, so she cannot be placed in jail! However, an amendment does relate to this situation." />
+		
+		<choice title="No" 
+			desc="I will not take the case." 
+			correct="true" 
+			feedbackTitle="That's correct!"
+			feedback="Good choice! This case will go nowhere in court. The neighbor has not broken a law, so she cannot be placed in jail! However, an amendment does relate to this situation." />
+			
+		<amendmentChoices
+			
+			correctFeedbackTitle="Correct"
+			correctFeedback="Yes! The First Amendment protects the right to express opinions and beliefs, including opinions about hairstyle. In addition, your client's neighbor has the right to express her opinion for the same reason. We have to respect the rights of others, just as others have to respect our rights."
+			
+			incorrectFeedbackTitle="Wrong"
+			incorrectFeedback="Oops, review the Bill of Rights and try again!">
+			
+			<choice correct="true">1</choice>
+			<choice>4</choice>
+			<choice>8</choice>
+		</amendmentChoices>
+	</question>
+		
+	
+		
+			
+	
+		<question bgImg="14" desc="A mall cop stopped me for skateboarding in the mall. He said he would break my skateboard and ban me from ever skateboarding again. I don't think he can do that.">
+
+			<choice title="Yes" 
+				desc="I will take the case." 
+				correct="true" 
+				feedbackTitle="That's correct!"
+				feedback="Good choice! Your client is right. The officer cannot ban her from skateboarding forever." />
+
+			<choice title="No" 
+				desc="I will not take the case." 
+				correct="false" 
+				feedbackTitle="That's incorrect!"
+				feedback="Oops! The client is right. The officer cannot ban her from skateboarding forever." />
+
+			<amendmentChoices
+
+				correctFeedbackTitle="Correct"
+				correctFeedback="Yes! The Eighth Amendment protects criminals from cruel or unusual punishment. Breaking the board and a permanent ban is too harsh a punishment for skateboarding. However, the mall has the right to make rules for shoppers' safety."
+
+				incorrectFeedbackTitle="Wrong"
+				incorrectFeedback="Oops, review the Bill of Rights and try again!">
+
+				<choice>1</choice>
+				<choice correct="true">8</choice>
+				<choice>10</choice>
+			</amendmentChoices>
+		</question>
+		
+	
+			<question bgImg="7" desc="My teacher took away my MP3 player! I was jamming away while doing my work. He said I was distracting the class and that the school banned these devices. He can't do that. It's my property!">
+			<choice title="Yes" 
+				desc="I will take the case." 
+				correct="false" 
+				feedbackTitle="That's incorrect!"
+				feedback="Oops! This case will go nowhere in court. The teacher has not broken a law. The client is mistakenly attempting to claim a certain right." />
+
+			<choice title="No" 
+				desc="I will not take the case." 
+				correct="true" 
+				feedbackTitle="That's correct!"
+				feedback="Good choice! This case will go nowhere in court. The teacher has not broken a law. The client is mistakenly attempting to claim a certain right." />
+
+			<amendmentChoices
+
+				correctFeedbackTitle="Correct"
+				correctFeedback="Yes! The Fourth Amendment protects people from government search and seizure without good reason. However, a teacher has the right to enforce school rules for the benefit of all students."
+
+				incorrectFeedbackTitle="Wrong"
+				incorrectFeedback="Oops, review the Bill of Rights and try again!">
+
+				<choice>2</choice>
+				<choice correct="true">4</choice>
+				<choice>7</choice>
+			</amendmentChoices>
+		</question>
+	
+	
+		<question bgImg="9" desc="I saw a student fall down the stairs and break a leg. The stairwell was crowded during the fire drill. The nurse keeps asking me to tell what I saw happen. I don't have to talk. I know my rights!">
+	
+			<choice title="Yes" 
+				desc="I will take the case." 
+				correct="false" 
+				feedbackTitle="That's incorrect!"
+				feedback="Oops! This case will go nowhere in court. The nurse is not violating any student right by asking questions. The client is mistakenly attempting to claim a certain right." />
+
+			<choice title="No" 
+				desc="I will not take the case." 
+				correct="true" 
+				feedbackTitle="That's correct!"
+				feedback="Good choice! This case will go nowhere in court. The nurse is not violating any student right by asking questions. The client is mistakenly attempting to claim a certain right." />
+
+			<amendmentChoices
+
+				correctFeedbackTitle="Correct"
+				correctFeedback="Yes! The Fifth Amendment protects people from having to answer questions that could make them appear guilty of a crime. This client is not accused of a crime, however. The nurse simply wants to know what happened to the hurt student."
+
+				incorrectFeedbackTitle="Wrong"
+				incorrectFeedback="Oops, review the Bill of Rights and try again!">
+
+				<choice>1</choice>
+				<choice correct="true">5</choice>
+				<choice>7</choice>
+			</amendmentChoices>
+		</question>
+		
+			
+		<question bgImg="4" desc="Six U.S. military officers came to our house and said they would have to stay with us a while. It's crowded, and they eat all the cheese puffs! My family should not have to feed and shelter them.">
+			<choice title="Yes" 
+				desc="I will take the case." 
+				correct="true" 
+				feedbackTitle="That's correct!"
+				feedback="Good choice! Your client is right. They should not have to feed and shelter the soldiers." />
+
+			<choice title="No" 
+				desc="I will not take the case." 
+				correct="false" 
+				feedbackTitle="That's incorrect!"
+				feedback="Oops! Your client is right. They should not have to feed and shelter the soldiers." />
+
+			<amendmentChoices
+
+				correctFeedbackTitle="Correct"
+				correctFeedback="Yes! The Third Amendment prevents the government from forcing people to shelter and feed soldiers. This is the government's responsibility."
+
+				incorrectFeedbackTitle="Wrong"
+				incorrectFeedback="Oops, review the Bill of Rights and try again!">
+
+				<choice correct="true">3</choice>
+				<choice>4</choice>
+				<choice>8</choice>
+			</amendmentChoices>
+		</question>
+		
+		
+		
+			<question bgImg="17" desc="I was done with my work and wanted to check my personal email. My school blocked the email site! They can't stop me from viewing any sites on the Internet!">
+
+			<choice title="Yes" 
+				desc="I will take the case." 
+				correct="false" 
+				feedbackTitle="That's incorrect!"
+				feedback="Oops! This case will go nowhere in court. The school has not broken a law. The client is mistakenly attempting to claim a certain right." />
+
+			<choice title="No" 
+				desc="I will not take the case." 
+				correct="true" 
+				feedbackTitle="That's correct!"
+				feedback="Good choice! This case will go nowhere in court. The school has not broken a law. The client is mistakenly attempting to claim a certain right." />
+
+			<amendmentChoices
+
+				correctFeedbackTitle="Correct"
+				correctFeedback="Yes! The Ninth Amendment protects people's ability to use rights the Constitution does not name. Though use of the Internet is one of these rights, schools have the right to restrict material not related to a lesson."
+
+				incorrectFeedbackTitle="Wrong"
+				incorrectFeedback="Oops, review the Bill of Rights and try again!">
+
+				<choice>2</choice>
+				<choice correct="true">9</choice>
+				<choice>10</choice>
+			</amendmentChoices>
+		</question>
+		
+		
+	<question bgImg="11" desc="The judge said that my lawyer would not be able to question the witnesses in front of the jury. How will they hear the evidence? How will they hear my side of the story? This is not fair.">
+
+			<choice title="Yes" 
+				desc="I will take the case." 
+				correct="true" 
+				feedbackTitle="That's correct!"
+				feedback="Good choice! Your client does have the right to question evidence and witnesses during trial." />
+
+			<choice title="No" 
+				desc="I will not take the case." 
+				correct="false" 
+				feedbackTitle="That's incorrect!"
+				feedback="Oops! The client does have the right to question evidence and witnesses during trial." />
+
+			<amendmentChoices
+
+				correctFeedbackTitle="Correct"
+				correctFeedback="Yes! The Sixth Amendment protects people's right to a fair and speedy public trial. It also protects accused people's right to gather their own evidence and witnesses for defense."
+
+				incorrectFeedbackTitle="Wrong"
+				incorrectFeedback="Oops, review the Bill of Rights and try again!">
+
+				<choice>1</choice>
+				<choice correct="true">5</choice>
+				<choice>6</choice>
+			</amendmentChoices>
+		</question>
+		
+		
+		<question bgImg="13" desc="My sister forgot to put away the ice cream. It melted everywhere, and my mom made me help clean it up! She would not buy more ice cream, either. I want to take them both to court because now I have no ice cream to eat!">
+
+			<choice title="Yes" 
+				desc="I will take the case." 
+				correct="false" 
+				feedbackTitle="That's incorrect!"
+				feedback="Oops! This case will go nowhere in court. No one has broken a law. The client is mistakenly attempting to claim a certain right." />
+
+			<choice title="No" 
+				desc="I will not take the case." 
+				correct="true" 
+				feedbackTitle="That's correct!"
+				feedback="Good choice! This case will go nowhere in court. No one has broken a law. The client is mistakenly attempting to claim a certain right." />
+
+			<amendmentChoices
+
+				correctFeedbackTitle="Correct"
+				correctFeedback="Yes! The Seventh Amendment protects people's right to a jury trial, even in civil cases. However, this case is about an item worth less than $20. It will not go to trial. The cost of holding the trial, including paying the lawyers, judges, and other staff, will be far more than the case is worth."
+
+				incorrectFeedbackTitle="Wrong"
+				incorrectFeedback="Oops, review the Bill of Rights and try again!">
+
+				<choice>6</choice>
+				<choice correct="true">7</choice>
+				<choice>9</choice>
+			</amendmentChoices>
+		</question>
+		
+
+			<question bgImg="15" desc="My parents grounded me for a week for failing my test! They said I should use the time to study and retake the test. This punishment is too harsh!">
+			<choice title="Yes" 
+				desc="I will take the case." 
+				correct="false" 
+				feedbackTitle="That's incorrect!"
+				feedback="Oops! This case will go nowhere in court. The parents have not broken a law. The client is mistakenly attempting to claim a certain right." />
+
+			<choice title="No" 
+				desc="I will not take the case." 
+				correct="true" 
+				feedbackTitle="That's correct!"
+				feedback="Good choice! This case will go nowhere in court. The parents have not broken a law. The client is mistakenly attempting to claim a certain right." />
+
+			<amendmentChoices
+
+				correctFeedbackTitle="Correct"
+				correctFeedback="Yes! The Eighth Amendment protects people accused of crimes from cruel or unusual punishment. However, the client is not a criminal. Parents have the right to discipline their children."
+
+				incorrectFeedbackTitle="Wrong"
+				incorrectFeedback="Oops, review the Bill of Rights and try again!">
+
+				<choice>3</choice>
+				<choice correct="true">8</choice>
+				<choice>9</choice>
+			</amendmentChoices>
+		</question>
+		
+		
+			<question bgImg="6" desc="Last night the police came to our house and said a neighbor complained about noise. They looked around the house and took everything that made noise without our consent—TV, stereos, computer, even the dog! This seems wrong. Our town has no rules about noise!">
+
+			<choice title="Yes" 
+				desc="I will take the case." 
+				correct="true" 
+				feedbackTitle="That's correct!"
+				feedback="Good choice! Your client is right. The police action was wrong. " />
+
+			<choice title="No" 
+				desc="I will not take the case." 
+				correct="false" 
+				feedbackTitle="That's incorrect!"
+				feedback="Oops! The client is right. The police action was wrong." />
+
+			<amendmentChoices
+
+				correctFeedbackTitle="Correct"
+				correctFeedback="Yes! The Fourth Amendment protects people from search and seizure without a warrant or probable cause. In this case, the police were acting only on a citizen complaint. No crime was committed. The police could simply ask the client to be quiet."
+
+				incorrectFeedbackTitle="Wrong"
+				incorrectFeedback="Oops, review the Bill of Rights and try again!">
+
+				<choice>3</choice>
+				<choice correct="true">4</choice>
+				<choice>6</choice>
+			</amendmentChoices>
+		</question>
+		
+		
+	
+	<question bgImg="1" desc="I wrote a letter to the local news about security at the local park. My friends and I like to hang out there. Whenever kids gang up on each other, no one is there to stop it! The police took me to jail for complaining about park security. I have a right to complain!">
+
+		
+		<choice title="Yes" 
+			desc="I will take the case." 
+			correct="true" 
+			feedbackTitle="That's correct!"
+			feedback="Good choice! Your client does have a right to respectfully complain or bring attention to problems. The client cannot go to jail for writing a letter." />
+		
+		<choice title="No" 
+			desc="I will not take the case." 
+			correct="false" 
+			feedbackTitle="That's incorrect!"
+			feedback="Oops! The client does have a right to respectfully complain or bring attention to problems. The client cannot go to jail for writing a letter." />
+			
+		<amendmentChoices
+			
+			correctFeedbackTitle="Correct"
+			correctFeedback="Yes! The First Amendment protects the right to express opinions and beliefs, including opinions about how well government is doing its job. However, we cannot speak or publish false information that can cause harm."
+			
+			incorrectFeedbackTitle="Wrong"
+			incorrectFeedback="Oops, review the Bill of Rights and try again!">
+			
+			<choice correct="true">1</choice>
+			<choice>4</choice>
+			<choice>6</choice>
+		</amendmentChoices>
+	</question>
+		
+		<question bgImg="16" desc="The police tapped my cell phone! They said I do not have the right to privacy because it is not in the Constitution. I don't think that gives them the right to tap my phone if I have not broken a law.">
+
+			<choice title="Yes" 
+				desc="I will take the case." 
+				correct="true" 
+				feedbackTitle="That's correct!"
+				feedback="Good choice! Your client is right, the police should not have wiretapped the phone without permission from a judge." />
+
+			<choice title="No" 
+				desc="I will not take the case." 
+				correct="false" 
+				feedbackTitle="That's incorrect!"
+				feedback="Oops! Your client is right, the police should not have wiretapped the phone without permission from a judge." />
+
+			<amendmentChoices
+
+				correctFeedbackTitle="Correct"
+				correctFeedback="Yes! Privacy does not directly appear in the Constitution. However, the Ninth Amendment protects people's ability to use rights the Constitution does not name."
+
+				incorrectFeedbackTitle="Wrong"
+				incorrectFeedback="Oops, review the Bill of Rights and try again!">
+
+				<choice>4</choice>
+				<choice>8</choice>
+				<choice correct="true">9</choice>
+			</amendmentChoices>
+		</question>
+	
+		
+			
+	<question bgImg="12" desc="My ex-friend said he plans to take me to court for accidently breaking his $300 game system. He wants to go on one of those judge reality shows. I want a jury to decide the case, not just one person.">
+
+			<choice title="Yes" 
+				desc="I will take the case." 
+				correct="true" 
+				feedbackTitle="That's correct!"
+				feedback="Good choice! Your client is right. He may choose to have a jury trial. You might mention to your client that those judge shows are not real!" />
+
+			<choice title="No" 
+				desc="I will not take the case." 
+				correct="false" 
+				feedbackTitle="That's incorrect!"
+				feedback="Oops! The client is right. He may choose to have a jury trial. You might also mention to your client that those judge shows are not real!" />
+
+			<amendmentChoices
+
+				correctFeedbackTitle="Correct"
+				correctFeedback="Yes! The Seventh Amendment protects people's right to a jury trial, even in civil cases. This case is between private citizens, so it is a civil case. The game system cost more than $20. Therefore, they can have a jury trial."
+
+				incorrectFeedbackTitle="Wrong"
+				incorrectFeedback="Oops, review the Bill of Rights and try again!">
+
+				<choice>2</choice>
+				<choice>5</choice>
+				<choice correct="true">7</choice>
+			</amendmentChoices>
+		</question>
+	
+
+
+</quiz>

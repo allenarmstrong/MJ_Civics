@@ -1,0 +1,818 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Table>
+	<item>
+		<name>Afghanistan</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Albania</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Algeria</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Angola</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Argentina</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Armenia</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Australia</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Austria</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Azerbaijan</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Bahrain</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Bangladesh</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Barbados</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Belarus</name>
+		<color>0xD48639</color>
+	</item>
+	<item>
+		<name>Belgium</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Belize</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Benin</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Bhutan</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Bolivia</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Bosnia and Herzegovina</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Botswana</name>
+		<color>0xD48639</color>
+	</item>
+	<item>
+		<name>Brazil</name>
+		<color>0xE1A365</color>
+		<data1>Total population–203,429,773</data1>
+		<data2>GDP per capita–$10,800 (102nd in world)</data2>
+		<data3>Literacy Rate–88.6%</data3>
+		<data4>Crime Rate–No statistics Available</data4>
+		<data5>Average Life Expectancy–72.53 years (124th in world)</data5>
+		<data6>Poverty Rate–26%</data6>
+		<data7>Internet Users–76 million (4th in world)</data7>
+	</item>
+	<item>
+		<name>Bulgaria</name>
+		<color>0xD48639</color>
+	</item>
+	<item>
+		<name>Burkina Faso</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Burma</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Burundi</name>
+		<color>0x97AF7D</color>
+	</item>
+	<item>
+		<name>Cambodia</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Cameroon</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Canada</name>
+		<color>0xcc660b</color>
+		<data1>Total population –34,030,589</data1>
+		<data2>GDP per capita–$39,400 (22nd in world)</data2>
+		<data3>Literacy Rate–99%</data3>
+		<data4>Crime Rate–76 per 1000 people (12th in world)</data4>
+		<data5>Average Life Expectancy–81.38 years (12th in world)</data5>
+		<data6>Poverty Rate–9.4%</data6>
+		<data7>Internet Users–27 million (16th in world)</data7>
+	</item>
+	<item>
+		<name>Cape Verde</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Central African Rep</name>
+		<color>0x97AF7D</color>
+	</item>
+	<item>
+		<name>Chad</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Chile</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>China</name>
+		<color>0xE1A365</color>
+		<data1>Total population–1,336,718,015</data1>
+		<data2>GDP per capita–$7,600 (125th in world)</data2>
+		<data3>Literacy Rate–92.2%</data3>
+		<data4>Crime Rate–No statistics Available</data4>
+		<data5>Average Life Expectancy–74.68 years (95th in world)</data5>
+		<data6>Poverty Rate–2.8%</data6>
+		<data7>Internet Users–389 million (1st in world)</data7>
+	</item>
+	<item>
+		<name>Colombia</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Comoros</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Costa Rica</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Cote d'Ivoire</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Croatia</name>
+		<color>0xD48639</color>
+	</item>
+	<item>
+		<name>Cuba</name>
+		<color>0x999999</color>
+		<data1>Total population–11,087,330 </data1>
+		<data2>GDP per capita–$9,900 (109th in world)</data2>
+		<data3>Literacy Rate–99.8%</data3>
+		<data4>Crime Rate–No statistics Available</data4>
+		<data5>Average Life Expectancy–77.7 years (57th in world)</data5>
+		<data6>Poverty Rate–not available</data6>
+		<data7>Internet Users–1.6 million but limited access</data7>
+	</item>
+	<item>
+		<name>Cyprus</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Czech Republic</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Dem Republic of Congo</name>
+		<color>0x97AF7D</color>
+	</item>
+	<item>
+		<name>Denmark</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Djibouti</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Dominica</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Dominican Republic</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Ecuador</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Egypt</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>El Salvador</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Equatorial Guinea</name>
+		<color>0xD48639</color>
+	</item>
+	<item>
+		<name>Eritrea</name>
+		<color>0x97AF7D</color>
+	</item>
+	<item>
+		<name>Estonia</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Ethiopia</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Fed St. Micronesia</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Fiji</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Finland</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>France</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>French Guiana</name>
+		<color>0x999999</color>
+	</item>
+	<item>
+		<name>Gabon</name>
+		<color>0xD48639</color>
+	</item>
+	<item>
+		<name>Georgia</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Germany</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Ghana</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Greece</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Greenland</name>
+		<color>0x999999</color>
+	</item>
+	<item>
+		<name>Guatemala</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Guinea</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Guinea Bissau</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Guyana</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Haiti</name>
+		<color>0xE1A365</color>
+		<data1>Total population–9,719,932</data1>
+		<data2>GDP per capita–$1,200 (207th in world)</data2>
+		<data3>Literacy Rate–52.9%</data3>
+		<data4>Crime Rate–No statistics Available</data4>
+		<data5>Average Life Expectancy–62.17 years (181st in world)</data5>
+		<data6>Poverty Rate–80%</data6>
+		<data7>Internet Users–1,000,000 (99th in world)</data7>
+	</item>
+	<item>
+		<name>Honduras</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Hong Kong</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Hungary</name>
+		<color>0xD48639</color>
+	</item>
+	<item>
+		<name>Iceland</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>India</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Indonesia</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Iran</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Iraq</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Ireland</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Israel</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Italy</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Jamaica</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Japan</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Jordan</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Kazakhstan</name>
+		<color>0xD48639</color>
+	</item>
+	<item>
+		<name>Kenya</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Kiribati</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Kuwait</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Kyrgyzstan</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Laos</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Latvia</name>
+		<color>0xD48639</color>
+	</item>
+	<item>
+		<name>Lebanon</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Lesotho</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Liberia</name>
+		<color>0x97AF7D</color>
+	</item>
+	<item>
+		<name>Libya</name>
+		<color>0x999999</color>
+	</item>
+	<item>
+		<name>Liechtenstein</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Lithuania</name>
+		<color>0xD48639</color>
+	</item>
+	<item>
+		<name>Luxembourg</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Macau</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Macedonia</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Madagascar</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Malawi</name>
+		<color>0x97AF7D</color>
+	</item>
+	<item>
+		<name>Malaysia</name>
+		<color>0xD48639</color>
+	</item>
+	<item>
+		<name>Maldives</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Mali</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Malta</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Mauritania</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Mauritius</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Mexico</name>
+		<color>0xD48639</color>
+		<data1>Total population–113,724,226</data1>
+		<data2>GDP per capita–$13,900 (85th in world)</data2>
+		<data3>Literacy Rate–86.1%</data3>
+		<data4>Crime Rate–13 per 1000 people (39th in world)</data4>
+		<data5>Average Life Expectancy–76.47 years (72nd in world)</data5>
+		<data6>Poverty Rate–18.2%</data6>
+		<data7>Internet Users–31 million (12th in world)</data7>
+	</item>
+	<item>
+		<name>Moldova</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Mongolia</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Morocco</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Mozambique</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Namibia</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Nepal</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Netherlands</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>New Zealand</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Nicaragua</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Niger</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Nigeria</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>North Korea</name>
+		<color>0x999999</color>
+	</item>
+	<item>
+		<name>Norway</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Oman</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Pakistan</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Panama</name>
+		<color>0xD48639</color>
+	</item>
+	<item>
+		<name>Papua New Guinea</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Paraguay</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Peru</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Philippines</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Poland</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Portugal</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Puerto Rico</name>
+		<color>0x999999</color>
+	</item>
+	<item>
+		<name>Qatar</name>
+		<color>0xE1A365</color>
+		<data1>Total population–848,016</data1>
+		<data2>GDP per capita–$179,000 (1st in world)</data2>
+		<data3>Literacy Rate–89%</data3>
+		<data4>Crime Rate–No statistics Available</data4>
+		<data5>Average Life Expectancy–75.7 years (84th in world)</data5>
+		<data6>Poverty Rate–not available</data6>
+		<data7>Internet Users–563,800 (117th in world)</data7>
+	</item>
+	<item>
+		<name>Rep of Montenegro</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Republic of Congo</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Romania</name>
+		<color>0xD48639</color>
+	</item>
+	<item>
+		<name>Russia</name>
+		<color>0xD48639</color>
+	</item>
+	<item>
+		<name>Rwanda</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Sao Tome and Principe</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Saint Lucia</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Saint Vincent and the Grenadines</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Samoa</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Saudi Arabia</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Senegal</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Serbia</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Seychelles</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Sierra Leone</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Singapore</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Slovakia</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Slovenia</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Solomon Islands</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Somalia</name>
+		<color>0x999999</color>
+	</item>
+	<item>
+		<name>South Africa</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>South Korea</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Spain</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Sri Lanka</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Sudan</name>
+		<color>0xB7CCA3</color>
+		<data1>Total population–45,047,502</data1>
+		<data2>GDP per capita–$2,300 (184th in world)</data2>
+		<data3>Literacy Rate–61.1%</data3>
+		<data4>Crime Rate–No statistics Available</data4>
+		<data5>Average Life Expectancy–55.42 years (197th in world)</data5>
+		<data6>Poverty Rate–40%</data6>
+		<data7>Internet Users–4.2 million (56th in world)</data7>
+	</item>
+	<item>
+		<name>Suriname</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Swaziland</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Sweden</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Switzerland</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Syria</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Taiwan</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Tajikistan</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Tanzania</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Thailand</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>The Bahamas</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>The Gambia</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Timor-Leste</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Togo</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Tonga</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Trinidad and Tobago</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Tunisia</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Turkey</name>
+		<color>0xD48639</color>
+	</item>
+	<item>
+		<name>Turkmenistan</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Uganda</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Ukraine</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>United Arab Emirates</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>United Kingdom</name>
+		<color>0xcc660b</color>
+	</item>
+	<item>
+		<name>United States</name>
+		<color>0xCC660B</color>
+		<data1>Total population –313,232,044</data1>
+		<data2>GDP per capita–$47,200 (11th in world)</data2>
+		<data3>Literacy Rate–99%</data3>
+		<data4>Crime Rate–80 per 1000 people (8th in world)</data4>
+		<data5>Average Life Expectancy–78.37 years (50th in world)</data5>
+		<data6>Poverty Rate–15.1%</data6>
+		<data7>Internet Users–245 million (2nd in world)</data7>
+	</item>
+	<item>
+		<name>Uruguay</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Uzbekistan</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Vanuatu</name>
+		<color>0xCC660B</color>
+	</item>
+	<item>
+		<name>Venezuela</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Vietnam</name>
+		<color>0xE1A365</color>
+	</item>
+	<item>
+		<name>Western Sahara</name>
+		<color>0x999999</color>
+	</item>
+	<item>
+		<name>Yemen</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Zambia</name>
+		<color>0xB7CCA3</color>
+	</item>
+	<item>
+		<name>Zimbabwe</name>
+		<color>0x97AF7D</color>
+	</item>
+</Table>

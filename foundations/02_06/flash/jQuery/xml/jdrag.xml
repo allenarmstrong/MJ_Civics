@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dragdrop>
+	
+	<directions>
+		<![CDATA[Select a newspaper. <strong>Drag the pieces</strong> of the <strong>credible story</strong> into <em>The City Herald</em> and the pieces of the <strong>sensational story</strong> into <em>The Regional Inquisitor</em>.<br /><br />Select "Go!" to begin.]]>
+	</directions>
+	
+	<incorrect title="Try Again.">
+		<![CDATA[Ask yourself whether the quotes are attributed to credible sources, whether the news seems relevant to readers’ lives, and whether the reporter has tried to be impartial by presenting both sides of the story.]]>
+	</incorrect>
+	
+	<correct title="Good Job!">
+		<![CDATA[Good job! Take a look at these stories. Do you see how they are different?]]>
+	</correct>
+	
+	<tries title="Please Review.">
+		<![CDATA[<strong>Review the correct answers shown.</strong>Ask yourself whether the quotes are attributed to credible sources, whether the news seems relevant to readers’ lives, and whether the reporter has tried to be impartial by presenting both sides of the story.<br /><br />Select Restart to try again.]]>
+	</tries>
+	
+	<group title="The Regional Inquisitor" total="3">
+  	<innerDirections>
+  		<![CDATA[Drag the sensational story sections to their proper positions in the article on the left.]]>
+  	</innerDirections>
+
+		<title><![CDATA[City Council Places Evening Restriction on Noise]]></title>
+		<item id="1" correct="true">
+			<![CDATA[City council members voted yesterday to reduce noise after 7 p.m., Mayor Reck announced. “We have too many important items to take care of in the morning, and our residents are tired of being tired,” she said in a press conference Monday. “Rock concerts are not our city’s top priority.”]]>
+	  </item>
+		<item id="2" correct="true">
+			<![CDATA[The change would be immediate, according to city records and laws. “First, we will unfortunately have to cancel several concerts unless the bands sign waivers stating that they will lower bass levels at night,” Mayor Reck said. “We are hoping for a good response from the musicians.”]]>
+		</item>
+		<item id="3" correct="true">
+			<![CDATA[Plark O’Rev, who frequents Main Street Park concerts, said, “This is an absolute shame. The city spends its money on poetry readings and museums, but they don’t consider modern music to be important. It’s discrimination.”]]>
+		</item>
+		<item>
+			<![CDATA[Bands that come to play in large parks often face unfair restrictions about the level of bass they play late into the night. Fans have noted a difference in the quality of the performances, and now they are demanding to get their fair share of the music.]]>
+		</item>
+		<item>
+			<![CDATA[“It’s like some kind of joke,” a concertgoer said. “Am I listening to songs in an elevator? I’m at a concert! It should feel like a concert.”]]>
+		</item>
+		<item>
+			<![CDATA[Band members have also expressed irritation at this rule. “I don’t even want to play park concerts,” one lead singer said. His drummer added, “Don’t even get me started about what I have to do to keep my drums quiet.”]]>
+		</item>
+	</group>
+	
+	<group title="The City Herald" total="3">
+  	<innerDirections>
+  		<![CDATA[Drag the credible story sections to their proper positions in the article on the left.]]>
+  	</innerDirections>
+	  
+		<title><![CDATA[Fans, Bands Demand More Bass]]></title>
+		<item id="1" correct="true">
+			<![CDATA[Bands that come to play in large parks often face unfair restrictions about the level of bass they play late into the night. Fans have noted a difference in the quality of the performances, and now they are demanding to get their fair share of the music.]]>
+		</item>
+		<item id="2" correct="true">
+			<![CDATA[“It’s like some kind of joke,” a concertgoer said. “Am I listening to songs in an elevator? I’m at a concert! It should feel like a concert.”]]>
+		</item>
+		<item id="3" correct="true">
+			<![CDATA[Band members have also expressed irritation at this rule. “I don’t even want to play park concerts,” one lead singer said. His drummer added, “Don’t even get me started about what I have to do to keep my drums quiet.”]]>
+		</item>
+		<item>
+			<![CDATA[City council members voted yesterday to reduce noise after 7 p.m., Mayor Reck announced. “We have too many important items to take care of in the morning, and our residents are tired of being tired,” she said in a press conference Monday. “Rock concerts are not our city’s top priority.”]]>
+		</item>
+		<item>
+			<![CDATA[The change would be immediate, according to city records and laws. “First, we will unfortunately have to cancel several concerts unless the bands sign waivers stating that they will lower bass levels at night,” Mayor Reck said. “We are hoping for a good response from the musicians.”]]>
+		</item>
+		<item>
+			<![CDATA[Plark O’Rev, who frequents Main Street Park concerts, said, “This is an absolute shame. The city spends its money on poetry readings and museums, but they don’t consider modern music to be important. It’s discrimination.”]]>
+		</item>
+	</group>
+	
+</dragdrop>

@@ -1,0 +1,110 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Read the questions and select the best possible answer for each.<br/>]]>
+	</instructions>
+
+	<intro>Time for a multiple choice test. Good luck, citizen!</intro>
+
+	<problems>
+		<problem feedback="Montesquieu is famous for the idea of &quot;separation of powers.&quot; He believed in distributing government powers into three branches that share power and responsibilities.">
+			<question>1 of 12: The Baron de Montesquieu wrote about  _____</question>
+			<choice type="correct" feedbackTitle="Correct!" >a. separation of powers </choice>
+			<choice type="" feedbackTitle="Incorrect" >b. bill of rights</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. natural rights</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. common good</choice>
+		</problem>
+		<problem feedback="All of these documents had an effect on the way the colonists thought about government. However, Common Sense was the document published in 1776 that convinced many colonists to declare independence.">
+			<question>2 of 12: Which of the following documents had an immediate effect on convincing colonists to declare independence?</question>
+			<choice type="" feedbackTitle="Incorrect" >a. English Bill of Rights</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. Magna Carta</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. Mayflower Compact</choice>
+			<choice type="correct" feedbackTitle="Correct!" >d. Common Sense</choice>
+		</problem>
+		<problem feedback="The Declaration of Independence accuses the king of breaking the social contract. The colonists believe he abused their rights.">
+			<question>3 of 12: Which of the following is a true statement about the Declaration of Independence?</question>
+			<choice type="correct" feedbackTitle="Correct!" >a. It accuses King George III of breaking the social contract.</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. It divides the U.S. government into three separate branches.</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. It proclaims permanent loyalty to the British king.</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. It promises an immediate end to slavery.</choice>
+		</problem>
+		<problem feedback="The Anti-Federalists demanded greater protection for individual rights before they would agree to ratify the Constitution.">
+			<question>4 of 12: The Anti-Federalists ____</question>
+			<choice type="" feedbackTitle="Incorrect" >a. argued that the Constitution need to be ratified as soon as possible</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. believed the federal government should have more power than the state governments</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. suspected the Federalists of plotting against ratifying the Constitution</choice>
+			<choice type="correct" feedbackTitle="Correct!" >d. wanted more protection for individual rights before they would ratify the Constitution</choice>
+		</problem>
+		<problem feedback="Social contract theory explains that the people consent to their government. Locke said that if government acts against people's rights, the people should start a new government.">
+			<question>5 of 12: In John Locke's idea of the &quot;social contract,&quot; _____</question>
+			<choice type="" feedbackTitle="Incorrect" >a. government has all the power and the people have no choice but to follow its laws</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. the people have all the power and the government is only for ceremony</choice>
+			<choice type="correct" feedbackTitle="Correct" >c. people have the right to form a new government if the current one abuses the people's rights</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. if the people break the social contract, the government can start a rule of tyranny to regain control</choice>
+		</problem>
+		<problem feedback="The Declaration of Independence includes a list of grievances. They were complaints against the British king.">
+			<question>6 of 12: The Declaration of Independence contains a list of _____</question>
+			<choice type="" feedbackTitle="Incorrect" >a. natural rights of the colonists</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. states that would now be independent</choice>
+			<choice type="correct" feedbackTitle="Correct!" >c. grievances against the British king</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. military divisions ready to fight against British rule</choice>
+		</problem>
+		<problem feedback="The president may sign a new law into effect but he or she does not create them. The president is the head of the executive branch. The executive branch enforces the laws. The legislative branch makes the laws. The judicial branch interprets the laws.">
+			<question>7 of 12: Which of the following pairs do not match?</question>
+			<choice type="correct" feedbackTitle="Correct!" >a. president – creates the laws</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. executive – enforces the laws</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. legislative – makes the laws</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. judicial – interprets the laws</choice>
+		</problem>
+		<problem feedback="The First Amendment protects people's rights to freedom of speech, press, assembly, petition, and religion.">
+			<question>8 of 12: If a person is arrested for making rude remarks about the leaders in government, which amendment should the person name in his or her defense?</question>
+			<choice type="correct" feedbackTitle="Correct!" >a. First Amendment</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. Second Amendment</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. Fourth Amendment</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. Eighth Amendment</choice>
+		</problem>
+		<problem feedback="The amendment process has two main steps. First, two-thirds of Congress or the state legislatures may propose an amendment for debate. Then, three-fourths of the states must accept the idea to ratify, or formally approve, the amendment.">
+			<question>9 of 12: Which of the following best describes the first step of the amendment process?</question>
+			<choice type="" feedbackTitle="Incorrect" >a. Proposal by three-quarters of Congress or the states</choice>
+			<choice type="correct" feedbackTitle="Correct!" >b. Proposal by two-thirds of Congress or the states</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. Ratification by two-thirds of the states</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. Ratification by three-quarters of the states</choice>
+		</problem>
+		<problem feedback="Veto power is one of the checks and balances in the U.S. Constitution. Congress may override a veto with a two-thirds vote.">
+			<question>10 of 12: The fact that the president may veto an a law that Congress passes is an example of ____</question>
+			<choice type="" feedbackTitle="Incorrect" >a. natural rights</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. independence</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. unconstitutional law</choice>
+			<choice type="correct" feedbackTitle="Correct!" >d. checks and balances</choice>
+		</problem>
+		<problem feedback="The U.S. Constitution safeguards rights through the amendment process. It also limits individual rights because government can make laws that protect the common good over individuals.">
+			<question>11 of 12: How does the U.S. Constitution both safeguard and limit individual rights?</question>
+			<choice type="correct" feedbackTitle="Correct!" >a. It contains a list of rights that it protects but allows governments to create laws that restrict individual rights for the common good.</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. It lists individual rights to limit individuals from exercising rights they do not have while protecting the rights they do have.</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. It safeguards rights by preventing government from creating any laws that would limit rights, so it limits the rights of government officials.</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. It lists the rights of Americans as well as the exceptions to those rights.</choice>
+		</problem>
+		<problem feedback="Citizens must challenge a law through the courts before the Supreme Court will consider it. If the case comes to the Supreme Court, the justices may consider whether the law follows the U.S. Constitution or not.">
+			<question>12 of 12: The Supreme Court may rule a law unconstitutional ____</question>
+			<choice type="correct" feedbackTitle="Correct!" >a. only after citizens challenge the law through the courts</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. as soon as Congress passes the law</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. six years after the president signs it into law</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. only when a majority of citizens across the nation demand it</choice>
+		</problem>
+	</problems>
+
+	<feedback>
+		<correct>Select continue to close this window and "next" to view the next question.</correct>
+		<retry>Oops, that was wrong. Select "continue" to close this window and try again.</retry>
+		<restart></restart>
+	</feedback>
+
+</settings>	

@@ -1,0 +1,60 @@
+<settings>
+	
+	<config 	quality="HIGH" 
+			debug="false" 
+			screenWidth="660" 
+			screenHeight="550"
+			>
+
+	</config>
+	
+	<title>MAKING INFERENCES</title>
+	
+	<instructions>Now it's time for a game! Complete each of the statements to review what you learned in the lesson. 
+
+Select "instructions" to toggle this window.
+	</instructions>
+	
+	<matching columnA="" columnB="">
+		<set>
+			<choice><![CDATA[A story about a presidents meeting with advisors would be]]></choice>
+			<answer><![CDATA[domestic and political news.]]></answer>
+		</set>
+		<set>
+			<choice><![CDATA[A story about schools in India would be]]></choice>
+			<answer><![CDATA[international and social news.]]></answer>
+		</set>
+		<set>
+			<choice><![CDATA[A natural disaster in one country could be]]></choice>
+			<answer><![CDATA[harmful to the economies and environments and health of other countries around the world.]]></answer>
+		</set>
+		<set>
+			<choice><![CDATA[A decision to limit the exports of one country could be]]></choice>
+			<answer><![CDATA[frustrating for people in another country who used to buy the products.]]></answer>
+		</set>
+		<set>
+			<choice><![CDATA[A choice to declare war in one country could be]]></choice>
+			<answer><![CDATA[concerning to another who has ties of friendship to that country and may be required to send troops.]]></answer>
+		</set>
+		
+		
+	</matching>
+	
+	<feedback>
+		<incorrect> Incorrect. Here are the correct statements.
+
+A story about a president's meeting with advisors would be domestic and political news.
+
+A story about schools in India would be	international and social news.
+
+A natural disaster in one country could be harmful to the economies and environments and health of other countries around the world.
+
+A decision to limit the exports of one country could be frustrating for people in another country who used to buy the products.
+
+A choice to declare war in one country could be concerning to another who has ties of friendship to that country and may be required to send troops.
+</incorrect>
+		<correct>Excellent Work!</correct>
+	</feedback>
+	
+
+</settings>	

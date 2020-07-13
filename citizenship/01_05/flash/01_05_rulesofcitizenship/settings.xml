@@ -1,0 +1,24 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Select the "next" and "prev" buttons to navigate through various locations.<br/><br/> You may also skip directly to a location by selecting a hotspot.<br/>]]>
+	</instructions>
+
+	<intro>Time to learn about different birth locations. Good luck, citizen!</intro>
+
+	<popups>
+		<popup title="Topeka, Kansas" zoom="90%"><![CDATA[Topeka, Kansas: People born within the states of the United States are native U.S. citizens. They have the "law of the soil," or jus soli.]]></popup>
+		<popup title="San Juan, Puerto Rico" zoom="90%"><![CDATA[People born within many territories of the United States, such as Puerto Rico, are native U.S. citizens. They have the "law of the soil," or jus soli.]]></popup>
+		<popup title="U.S. Naval Base at Guantanamo Bay, Cuba" zoom="90%"><![CDATA[U.S. Naval Base at Guantanamo Bay, Cuba: The citizenship of people born on U.S. military bases depends on their parents. If at least one parent is a legal U.S. citizen and has lived in U.S. territory for at least one year before the child's birth, the child is a native U.S. citizen. This situation is jus sanguinis, or "law of the blood."]]></popup>
+		<popup title="Montreal, Canada" zoom="90%"><![CDATA[Montreal, Canada: The citizenship of people born in foreign countries depends on their parents. If at least one parent is a legal U.S. citizen and has lived in U.S. territory for at least one year before the child's birth, the child is a native U.S. citizen. This situation is jus sanguinis, or "law of the blood." Depending on U.S. laws and the laws of the other country, some babies may have dual citizenship. This means that two countries accept them as citizens.]]></popup>
+	</popups>
+
+</settings>	

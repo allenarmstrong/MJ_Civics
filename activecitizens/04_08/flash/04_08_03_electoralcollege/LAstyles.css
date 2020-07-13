@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background-image: url(stripes.png);
+	background-repeat: repeat-x;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#content {
+	height: 600px;
+	width: 900px;
+	padding: 1em;
+	background-color: #FFF;
+	border: medium solid #CCC;
+}
+#content h1 {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 2em;
+	color: #600;
+	background-image: url(tornPaper.png);
+	background-repeat: no-repeat;
+	height: 170px;
+	width: 800px;
+	margin-top: -60px;
+	margin-left: -40px;
+	padding-left: 50px;
+	padding-top: 50px;
+	margin-bottom: -60px;
+}
+#nav {
+	position: absolute;
+	z-index: 10;
+	color: #600;
+	clear: both;
+	bottom: 4em;
+	right: 45%;
+}
+a {
+	text-decoration: none;
+	color: #F90;
+}
+.colorText {
+	color: #600;
+	font-size: 1em;
+	font-weight: bold;
+}
+#content p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	color: #000;
+}
+#content h2 {
+	font-size: 1.2em;
+}
+#help {
+	position: absolute;
+	left: 890px;
+	top: 0px;
+}
+.textOnly {
+	font-size: 0.7em;
+	color: #039; !important
+	text-decoration: underline; !important
+}

@@ -1,0 +1,535 @@
+html{background:#32bcc6 url(../../imgmod01/grade_06/bg_tile.png) repeat;height:100%;}
+body{margin:0px;background:url(../../imgmod01/grade_06/title-bg.jpg) repeat-x; min-height:138px; background-attachment:fixed;height:100%}
+a{outline:none;}
+img{border:0px;}
+p,h1,h2,h3,h4,h5,h6,ul,li,form,label,select{padding:0px;margin:0px;list-style-type:none;}
+#page{width:771px;margin:0px auto;}
+#page-header{width:771px;height:103px;position:fixed;z-index:100;left:auto;display:block; background:url(../../imgmod01/grade_06/page-header.png) no-repeat;}
+#main{
+width:771px;
+z-index:99;
+display:block;
+padding-top:174px;
+}
+#flash-banner{width:818px;height:103px;}
+.block{display:block}
+#page-nav{
+width:771px;
+background:url(../../imgmod01/grade_06/nav.png) no-repeat top left;
+height:72px;
+float:left;
+}
+#main-tabs{
+padding-left:5px;
+height:40px;
+background-image:url(../../imgmod01/grade_06/shadow-bg.jpg);
+background-repeat:no-repeat;
+background-position:bottom right;
+}
+#main-tabs li{
+float:left;
+}
+.tab-intro,.tab-train,.tab-activity,.tab-intro-active,.tab-train-active,.tab-activity-active{
+height:33px;
+display:block;
+text-decoration:none;
+color:#3e3e3e;
+font-family:Arial;
+font-size:18px;
+text-align:center;
+padding-top:7px;
+}
+.tab-intro{
+width:148px;
+background-image:url(../../imgmod01/grade_06/intro.png);
+}
+.tab-intro:hover,.tab-intro-active{
+width:148px;
+background-image:url(../../imgmod01/grade_06/intro.png);
+color:#fff;
+}
+.tab-train{
+width:149px;
+background-image:url(../../imgmod01/grade_06/training.png);
+}
+.tab-train:hover,.tab-train-active{
+width:149px;
+background-image:url(../../imgmod01/grade_06/training.png);
+color:#fff;
+}
+.tab-activity{
+width:149px;
+background-image:url(../../imgmod01/grade_06/activity.png);
+}
+.tab-activity:hover,.tab-activity-active{
+width:149px;
+background-image:url(../../imgmod01/grade_06/activity.png);
+color:#fff;
+}
+
+#nav-menu{
+width:756px;
+background-image:url(../../imgmod01/grade_06/nav.jpg);
+height:31px;
+padding-left:15px;
+}
+#column-left{
+float:left;
+width:481px;
+}
+#column-right{
+float:left;
+}
+.lesson{
+display:block;
+text-decoration:none;
+width:231px;
+height:22px;
+background:url(../../imgmod01/grade_06/lesson.png);
+font:.9em Arial;
+color:#3e3e3e;
+text-indent:10px;
+padding-top:4px;
+}
+.nav-menu-btn{
+padding-left:10px;
+float:left;
+}
+.nav-menu-btn li{
+padding-right:5px;
+float:left;
+}
+.nav-menu-btn li img{
+float:left;
+}
+
+#contentDiv{
+width:741px;
+background-image:url(../../imgmod01/grade_06/content-bg.png);
+background-repeat:repeat-y;
+float:left;
+padding:10px 15px 10px 15px;
+min-height:330px;
+}
+.listed{
+padding:0px 0px 0px 10px;
+float:left;
+color:#3e3e3e;
+}
+.listed li{
+padding:0px 0px 3px 15px;
+background:url(../../imgmod01/grade_06/arrow.jpg) no-repeat 0px 5px;
+}
+.listed-number{
+padding: 10px 30px 0px 30px;
+color:#3e3e3e;
+float:left;
+margin:0px;
+}
+.listed-number li{
+padding:0px 0px 5px 5px; 
+font:.9em Arial;
+list-style-type: decimal;
+}
+#contentDiv h1{
+font:1.2em Arial;
+color:#4C6EAD;
+padding-bottom:10px;
+}
+.subTitle{
+font:1.0em Arial;
+background-image:url(../../imgmod01/grade_06/sub-title-bg.jpg);
+width:731px;
+background-repeat:no-repeat;
+height:24px;
+color:#fff;
+font-weight:normal;
+padding:2px 0px 0px 10px;
+}
+.content-box{
+width:741px;
+padding:10px 0px 10px 0px;
+float:left;
+}
+.content{
+float:left;
+color:#3e3e3e;
+width:581px;
+}
+.content p{
+font:.9em Arial;
+padding-bottom:10px;
+}
+
+.imgLeft{
+width:149px;
+text-align:center;
+float:left;
+font:11px Arial;
+display:block;
+padding-right:10px;
+}
+.imgLeft p,.imgRight p{
+padding-top:5px;
+}
+.imgRight{
+width:149px;
+padding-left:10px;
+text-align:center;
+float:right;
+font:11px Arial;
+display:block;
+}
+.fade{
+filter:alpha(opacity=30);
+opacity:0.30;
+}
+.text{
+font:.9em Arial;
+color:#3e3e3e;
+padding-top:10px;
+line-height:1.1em;
+}
+#site-tabs{
+width:733px;
+height:300px;
+padding:15px 0px 0px 0px;
+}
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float:left;
+	list-style: none;
+	height: 35px; 
+	width: 733px;
+}
+ul.tabs li {
+	float:left;
+	margin: 0 1px 0 0;
+	padding: 0;
+	height: 33px;
+	
+   
+	
+	
+}
+.blue{
+height:26px;
+padding:7px 10px 0px 10px; 	
+font:13px arial;
+text-decoration:none;
+color:#000;
+background-image:url(../../imgmod01/grade_06/grad-bg.jpg);
+background-repeat:repeat-x;
+background-position:left top;
+float:left;
+border:1px solid #DBEAEE;
+
+}
+
+.blue:hover{
+height:26px;
+padding:7px 10px 0px 10px; 	
+font:13px arial;
+text-decoration:none;
+color:#fff;
+background:#20BD6E;
+border:1px solid #428475;
+float:left
+}
+.tab_container{
+width: 733px;
+height:250px;
+border: 1px solid #DBEAEE;
+float:left;
+background-image:url(../../imgmod01/grade_06/tab-bg.jpg);
+background-color:#fff;
+}
+.tab_content {
+padding: 20px;
+font:.9em arial;
+color:#3e3e3e;
+line-height:1.1em;
+}
+.active{
+background:#20BD6E;
+color:#fff;
+border:1px solid #428475;
+}
+.notes{
+width:721px;
+float:left;
+margin-top:10px;
+padding:10px 0px 0px 10px;
+float:left;
+background-color:#FBFCDC;
+background-image:url(../../imgmod01/grade_06/notes-bg.jpg);
+height:190px;
+border:1px solid #ECEED8;
+}
+.notes-img{
+float:left;
+width:721px;
+}
+.notes-container{
+padding:0px 0px 0px 55px;
+float:left;
+}
+.notes-title{
+font:1em Arial;
+color:#4A4A4A;
+background-image:url(../../imgmod01/grade_06/blue-strip.jpg);
+background-repeat:no-repeat;
+float:left;
+width:440px;
+height:22px;
+padding:4px 0px 0px 10px;
+margin:10px 0px 0px 10px;
+font-weight:bold;
+}
+.notes p{
+float:left;
+width:600px;
+}
+.notes ul{
+padding:15px 0px 10px 40px;
+float:left;
+font:.9em Arial;
+color:#3e3e3e;
+}
+.notes ul li{
+background:url(../../imgmod01/grade_06/arrow.gif) no-repeat 0px 5px;
+padding:0px 0px 5px 15px;
+clear:left;
+}
+
+
+
+
+
+
+.display{
+cursor:pointer;
+}
+.float{
+float:left;
+}
+.float-left{
+float:left;
+margin-right:15px;
+}
+.float-right{
+float:right;
+margin-left:15px;
+}
+
+.clear{
+width:739px;
+}
+.clear-left{
+clear:left;
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+#footer{
+width:752px;
+height:59px;
+float:left;
+background-image:url(../../imgmod01/grade_06/footer-left.png);
+background-repeat:no-repeat;
+padding-left:19px;
+
+}
+.footer-txt{
+width:734px;
+height:49px;
+float:left;
+background:url(../../imgmod01/grade_06/footer-center.png) repeat-x;
+padding-top:10px;
+
+}
+.right-curve{
+width:18px;
+height:59px;
+float:left;
+background-image:url(../../imgmod01/grade_06/footer-right.png);
+background-repeat:no-repeat;
+}
+#footer p{
+color:#3e3e3e;
+float:right;
+padding-top:10px;
+padding-right:10px;
+}
+.right{
+text-align:right;
+}
+#footer img{
+float:right;
+}
+
+
+a.link{
+padding-bottom:1px;
+color:#01B55A;
+text-decoration:none;
+background:url(../../imgmod01/grade_06/link-border-hover.jpg) repeat-x bottom left;
+}
+
+a.link:hover{
+
+color:#01B55A;
+}
+a.link-orange{
+background:url(../../imgmod01/grade_06/link-border-orange.jpg) repeat-x bottom left;
+padding-bottom:1px;
+font:1em Arial;
+color:#FC8A2C;
+text-decoration:none;
+
+}
+.link-small{
+font:11px Arial;
+color:#0000FF;
+text-decoration:underline;
+}
+.small-txt{
+font:12px Arial;
+}
+
+.link-small-right{
+font:11px Arial;
+color:#0000FF;
+text-decoration:underline;
+padding-right:70px;
+}
+.link-small-right1{
+font:11px Arial;
+color:#0000FF;
+text-decoration:underline;
+padding-right:10px;
+}
+.link-small-left{
+font:11px Arial;
+color:#0000FF;
+text-decoration:underline;
+padding-left:70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tabular data start */
+.tabulerdata{
+padding:10px 0px 20px 35px;
+width:665px;
+float:left;
+}
+.tabulerdata ul{
+width:665px;
+float:left;
+font:13px Arial;
+border:1px solid #256c95;
+
+ }
+.btn{
+width:355px;
+height:23px;
+background:url(../../imgmod01/grade_06/button.jpg) no-repeat;
+text-align:center;
+font:13px Arial;
+color:#3e3e3e;
+display:block;
+text-decoration:none;
+padding-top:5px;
+margin:0px auto;
+}
+.iconimg{
+}
+.row{
+width:563px;
+text-align:center;
+border-left:1px solid #256c95;
+float:left;
+height:47px;
+padding-top:3px;
+}
+.border{
+border-bottom:1px solid #256c95;
+}
+/* tabular data end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+img{
+border:none;
+}
+
+/* flash object on right side - end */
+/* html pre-loader Start*/
+.lightbox_overlay{
+background-color:#000;
+border:medium none;
+height:100%;
+left:0px;
+margin:0pt;
+opacity:.70;
+filter: alpha(opacity:70);
+outline-color:invert;
+outline-style:none;
+outline-width:medium;
+padding:0pt;
+position:fixed;
+text-align:center;
+top:0px;
+width:100%;
+z-index:200;
+}
+#albumLoader {
+	position:absolute;
+	margin:300px 0px 0px 379px;
+	z-index:210;
+	width:60px;
+	height:60px;
+}
+/* html pre-loader Start*/
+
+

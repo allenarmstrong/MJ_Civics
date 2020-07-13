@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mixed Market Economies</title>
+<link type="text/css" media="screen" href="../../../css/theme.css" rel="stylesheet" />
+<link type="text/css" media="print" href="../../../css/print.css" rel="stylesheet" />
+<script type="text/javascript" src="../../../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../../../js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="../../../js/jquery.swfobject.1-1-1.min.js"></script>
+<script type="text/javascript" src="../../../js/jquery_ui/core/js/custom_plugins/ui_importer.js" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function() {
+		$("div#Scarcity").mouseover(
+		  function () {
+			  $("#Explanation").html('U.S. businesses trade with businesses in other nations for items that are <b>scarce</b> in the United States, such as bananas. U.S. government workers inspect products that come from other countries to be sure they are safe before delivering the products to stores. Without trade, Americans might not have access to and be able to sell many popular items.');
+			  $("#Picture").html('<img src="../../../americanmoney/05_01/images/BannaCrate.jpg" width="223" height="335" alt="A crate of banannas being unloaded at a port.">');
+		  }
+		);
+		$("div#Choice").hover(
+		  function () {
+			  $("#Explanation").html('U.S. students can <b>choose</b> whether to go to college after graduating high school. Their choice will depend on many factors, including their career goals. The U.S. government offers to help pay for school for students going into certain fields. This encourages more people to enter careers that currently do not have enough people. It benefits the economy by increasing the <b>supply</b> of workers in a certain area.');
+			  $("#Picture").html('<img src="../../../americanmoney/05_01/images/YoungStudentInLab.jpg" width="335" height="257" alt="A university student in a research setting.">');
+		  }
+		);
+		$("div#Supply").hover(
+		  function () {
+			  $("#Explanation").html('U.S. farms are especially at risk from <b>supply and demand</b>. If demand drops for a certain crop a farm produces, the farm owners could lose money and the crops could rot. The U.S. government helps protect farmers from sharp changes in supply and demand. One example is by setting minimum prices for crops, so the price does not fall lower than the cost for the farmer to grow the crop. This protects the U.S. economy by ensuring farms stay in operation and enough crops are grown to meet demand.');
+			  $("#Picture").html('<img src="../../../americanmoney/05_01/images/BarnAndTracktor.jpg" width="335" height="223" alt="A large working farm.">');
+		  }
+		);
+		$("div#Opportunity").hover(
+		  function () {
+			  $("#Explanation").html('U.S. leaders must make choices for towns, states, and the nation just like people do for themselves. If a state&rsquo;s leaders decide to make a land area into a wildlife preserve instead of a new highway exit, the <b>opportunity cost</b> is the easing of traffic and experience of new businesses that open near the exit. Leaders must carefully consider <b>opportunity cost</b> before making decisions that will affect the economy of an area for a long time.');
+			  $("#Picture").html('<img src="../../../americanmoney/05_01/images/SeagulsOnBeach.jpg" width="335" height="218" alt="Wildlife Preserve with birds taking flight.">');
+		  }
+		);
+	});
+</script>
+<style type="text/css">
+	#InteractiveChart {
+		position: relative;
+		vertical-align: top;
+	}
+	#InteractiveChart div {
+		position: relative;
+		float: left;
+		margin: 5px;
+	}
+	#InteractiveChart div#Terms div {
+		font-weight: bold;
+		cursor: pointer;
+		text-align:center;
+		width:130px;
+		height:40px;
+		background-image:url(../../../americanmoney/05_01/images/05_01_07_bkgnd.png);
+		line-height:40px;
+		font-size:12px;
+	}
+	#InteractiveChart div#Terms {
+		width: 160px;
+	}
+	#InteractiveChart div#Picture {
+		width: 335px;
+		text-align: center;
+	}
+	#InteractiveChart div#Explanation {
+		width: 200px;
+		overflow: auto;
+	}
+</style>
+</head>
+
+<body>
+<div id="page" style="width:850px;">
+<div id="content" style="padding:20px;">
+<div id="margin">
+<p class="print">[ <a href="javascript:window.print()" title="print page">print page</a> ]</p>
+
+
+<h2>Mixed Market Economies</h2>
+<div class="ui_interactive" data-width="760px" data-height="375px">
+	<div class="ui_slides">
+   		<div class="ui_slide">
+            <div id="InteractiveChart">
+                <div id="Terms">
+                        <div id="Scarcity">Scarcity</div>
+                        <div id="Choice">Choice</div>
+                        <div id="Supply">Supply and Demand</div>
+                        <div id="Opportunity">Opportunity Cost</div>
+                </div>
+                <div id="Picture"><p>Roll your mouse over each of the terms to the left for more information.</p></div>
+                <div id="Explanation"></div>
+            </div>
+    	</div>
+    </div>
+</div>
+
+
+<p class="close">[ <a href="javascript:window.close();" title="Close this external window and return to course">Close this window</a> ]</p>
+</div>
+</div>
+</div>
+</body>
+</html>

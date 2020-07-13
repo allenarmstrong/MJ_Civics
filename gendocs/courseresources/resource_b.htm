@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>M/J Civics</title>
+<link type="text/css" media="screen" href="../../css/theme.css" rel="stylesheet" />
+<link type="text/css" media="print" href="../../css/print.css" rel="stylesheet" />
+<script type="text/javascript" src="../../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.swfobject.1-1-1.min.js"></script>
+<script type="text/javascript" src="../../js/jquery_ui/core/js/custom_plugins/ui_importer.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../js/core.js"></script><script type="text/javascript">var unitNo = 0;</script>
+<script type="text/javascript" src="../../js/links.js"></script>
+
+<script type="text/javascript">
+	
+
+	function loadInto(srcString){
+	//	$('#popUpDiv' ).load(srcString).dialog();	
+	}
+	$(document).ready(function(){
+		
+		/*$('.pop').click(function(){
+			
+			var pLink = $(this).attr('href');
+			//alert('this works ' + $(this).attr('href'));
+			$('#popUpDiv2' ).load(pLink).dialog();		
+			
+		});*/
+		
+		//change href attribute to  'data-click' for use in next function...
+
+		
+		$('.pop2').click(function() {
+		   var $this = $(this);
+		   $('#uimodal-output').remove();
+		   var outputHolder = $("<div id='uimodal-output'><iframe class='ifrm' style='width:99%;height:99%;'></iframe></div>");
+		    outputHolder.dialog('close');
+		   $("body").append(outputHolder);
+		   //outputHolder.load($this.attr("href"), null, function() {
+			 outputHolder.dialog({'width':750,'height':650,'z-index':1004});
+			 $(".ifrm").attr("src", $this.attr("data-href"));
+		   //});
+		   return false;
+		});
+		
+
+	});
+	
+	
+	
+	
+	/*function hideLoad(idString){
+			$('#' + idString).css("visibility", "hidden");
+	}*/
+	
+	
+	
+
+</script>
+
+<style type="text/css">
+#uimodal-output { overflow:hidden;}
+
+div#nav {  z-index:998 !important; }
+div#menu {  z-index:999 !important; }
+
+.pop2 { cursor:pointer; text-decoration:underline; color:#1461E8;}
+</style>
+</head>
+<body>
+<div id="logo"></div>
+<div id="window">
+<div id="page">
+<div id="nav">
+<dl>
+<dt>Navigation</dt>
+<dd>
+<ul>
+<li id="prev"><a href="javascript:history.go(-1)" title="Previous"><span>Previous</span></a></li>
+<li id="home"><a href="../../index.htm" title="Home"><span>Home</span></a></li>
+<li id="resources">Course Resources</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div id="content">
+<div id="margin">
+<div  style="border-bottom:1px solid #dcdcdc;"></div>
+
+
+
+<div class="t5050Left">
+<h2>Segment One</h2>
+<div class="indentresources">
+<h3>Objectives</h3>
+<p><span class="pop2" data-href="objectives/objectives_citizenship.htm" title="Citizenship" rel="750">Citizenship</span><br />
+<span class="pop2" data-href="objectives/objectives_foundations.htm" title="Foundations" rel="750">Foundations</span><br />
+<span class="pop2" data-href="objectives/objectives_sharingpower.htm" title="Sharing Power" rel="750">Sharing Power</span></p>
+</div>
+<div class="indentresources">
+<h3>Collaboration Options</h3>
+<h4>Citizenship</h4>
+<p><span class="pop2" data-href="../../citizenship/01_04/01_04_08_a.htm" title="Call to action" rel="750">Call to Action</span><br />
+<span class="pop2" data-href="../../citizenship/01_06/01_06_08_a.htm" title="Citizenship quest game" rel="750">Citizenship Quest Game</span></p>
+<h4>Foundations</h4>
+<p><span class="pop2" data-href="../../foundations/02_04/02_04_04_b.htm" title="Island constitution" rel="750">Island Constitution</span></p>
+<h4>Sharing Power</h4>
+<p><span class="pop2" data-href="../../sharingpower/03_03/03_03_05_a.htm" title="Laws and teens presentation" rel="750">Laws and Teens Presentation</span><br />
+<span class="pop2" data-href="../../sharingpower/03_08/03_08_03_a.htm" title="Citizen group presentation" rel="750">Citizen Group Presentation</span></p>
+</div>
+<div class="indentresources">
+<h3>CAP Files</h3>
+<h4>Citizenship</h4>
+<p><span class="pop2" data-href="../../citizenship/01_01/01_01_02_a.htm" title="How do We Define the United States?" rel="750">How do We Define the United States?</span>
+<span class="pop2" data-href="../../citizenship/01_02/01_02_02_a.htm" title="What is Culture?" rel="750">What is Culture?</span><br />
+<span class="pop2" data-href="../../citizenship/01_03/01_03_02_a.htm" title="What can Maps Tell Us?" rel="675">What can Maps Tell Us?</span><br />
+<span class="pop2" data-href="../../citizenship/01_04/01_04_02_a.htm" title="How are Citizenship and Ecology Connected?" rel="750">How are Citizenship and Ecology Connected?</span><br />
+<span class="pop2" data-href="../../citizenship/01_05/01_05_02_a.htm" title="What is a U.S. Citizen?" rel="750">What is a U.S. Citizen?</span><br />
+<span class="pop2" data-href="../../citizenship/01_06/01_06_02_a.htm" title="What is Effective Citizenship?" rel="600">What is Effective Citizenship?</span><br />
+<span class="pop2" data-href="../../citizenship/01_07/01_07_02_a.htm" title="Who Shows Great Citizenship? (Advanced)" rel="650">Who Shows Great Citizenship? (Advanced)</span><br />
+<span class="pop2" data-href="../../citizenship/01_08/01_08_02_a.htm" title="Citizenship review" rel="550">Citizenship Review</span></p>
+<h4>Foundations</h4>
+<p><span class="pop2" data-href="../../foundations/02_01/02_01_02_a.htm" title="Who Influenced the Founding Fathers?" rel="750">Who Influenced the Founding Fathers?</span><br />
+<span class="pop2" data-href="../../foundations/02_02/02_02_02_a.htm" title="Which Important Documents Influenced America?">Which Important Documents Influenced America?</span><br />
+<span class="pop2" data-href="../../foundations/02_03/02_03_02_a.htm" title="Why is the Declaration of Independence Important?" rel="750">Why is the Declaration of Independence Important?</span><br />
+<span class="pop2" data-href="../../foundations/02_04/02_04_02_a.htm" title="What Is the Intent of the Constitution?">What Is the Intent of the Constitution?</span><br />
+<span class="pop2" data-href="../../foundations/02_05/02_05_02_a.htm" title="How do the Branches of Government Work?" rel="450">How do the Branches of Government Work?</span><br />
+<span class="pop2" data-href="../../foundations/02_06/02_06_02_a.htm" title="How are the Powers Balanced?" rel="700">How are the Powers Balanced?</span><br />
+<span class="pop2" data-href="../../foundations/02_07/02_07_02_a.htm" title="How are Rights Protected?" rel="750">How are Rights Protected?</span><br />
+<span class="pop2" data-href="../../foundations/02_08/02_08_02_a.htm" title="How Can the Constitution Change?" rel="750">How Can the Constitution Change?</span><br />
+<span class="pop2" data-href="../../foundations/02_09/02_09_02_a.htm" title="What Should Be the Next Amendment? (Advanced)" rel="750">What Should Be the Next Amendment? (Advanced)</span><br />
+<span class="pop2" data-href="../../foundations/02_10/02_10_02_a.htm" title="Foundations review" rel="550">Foundations Review</span></p>
+<h4>Sharing Power</h4>
+<p><span class="pop2" data-href="../../sharingpower/03_01/03_01_02_a.htm" title="What is Federalism?" rel="650">What is Federalism?</span><br />
+<span class="pop2" data-href="../../sharingpower/03_02/03_02_02_a.htm" title="Who is Responsible?" rel="750">Who is Responsible?</span><br />
+<span class="pop2" data-href="../../sharingpower/03_03/03_03_02_a.htm" title="What is the Rule of Law" rel="750">What is the Rule of Law</span><br />
+<span class="pop2" data-href="../../sharingpower/03_04/03_04_02_a.htm" title="What Rules Must You Follow?" rel="750">What Rules Must You Follow?</span><br />
+<span class="pop2" data-href="../../sharingpower/03_05/03_05_02_a.htm" title="How are Laws Made? (Advanced)" rel="400">How are Laws Made? (Advanced)</span><br />
+<span class="pop2" data-href="../../sharingpower/03_06/03_06_02_a.htm" title="How do the Courts Work?" rel="750">How do the Courts Work?</span><br />
+<span class="pop2" data-href="../../sharingpower/03_07/03_07_02_a.htm" title="How Does a Jury Trial Ensure Justice?" rel="750">How Does a Jury Trial Ensure Justice?</span><br />
+<span class="pop2" data-href="../../sharingpower/03_08/03_08_02_a.htm" title="How Can We Solve Local Problems?" rel="750">How Can We Solve Local Problems?</span><br />
+<span class="pop2" data-href="../../sharingpower/03_09/03_09_02_a.htm" title="Sharing power review" rel="550">Sharing Power Review</span></p>
+</div>
+<div class="t5050Left">
+<div class="indentresources">
+<h3>Key Concepts</h3>
+<h4>Citizenship</h4>
+<p><span class="pop2" data-href="citizenship/states_capitals_protectorates_and_landmarks.htm" title="States, capitals, protectorates, and landmarks" rel="750">States, Capitals, Protectorates, and Landmarks</span><br />
+<span class="pop2" data-href="citizenship/path_to_us_citizenship.htm" title="Path to U.S. citizenship" rel="750">Path to U.S. Citizenship</span></p>
+<h4>Foundations</h4>
+<p><span class="pop2" data-href="objectives_citizenship.htm" title="Founding fathers ideas" rel="750">Founding Fathers Ideas </span><br>
+<span class="pop2" data-href="objectives_citizenship.htm" title="Declaration of impendence " rel="750">Declaration of Impendence</span><br>
+<span class="pop2" data-href="objectives_citizenship.htm" title="Preamble of the constitution" rel="750">Preamble of the Constitution</span><br>
+<span class="pop2" data-href="objectives_citizenship.htm" title="Mnemonic constitution" rel="750">Mnemonic Constitution</span><br>
+<span class="pop2" data-href="objectives_citizenship.htm" title="Checks and balances" rel="750">Checks and Balances</span><br>
+<span class="pop2" data-href="objectives_citizenship.htm" title="Bill of rights" rel="750">Bill of Rights</span></p>
+<h4>Sharing Powers</h4>
+<p><span class="pop2" data-href="objectives_citizenship.htm" title="Divided and shared powers" rel="750">Divided and Shared Powers</span><br>
+<span class="pop2" data-href="objectives_citizenship.htm" title="Florida state government organizations" rel="750">Florida State Government Organizations</span><br>
+<span class="pop2" data-href="objectives_citizenship.htm" title="How congress makes laws" rel="750">How Congress makes Laws</span><br>
+<span class="pop2" data-href="objectives_citizenship.htm" title="Research asset" rel="750">Research Asset</span><br>
+<span class="pop2" data-href="objectives_citizenship.htm" title="US court system" rel="750">US Court System</span><br>
+<span class="pop2" data-href="objectives_citizenship.htm" title="Mock trial" rel="750">Mock Trial</span><br>
+<span class="pop2" data-href="objectives_citizenship.htm" title="Creating an citizens action plan " rel="750">Creating an Citizens Action Plan</span></p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="t5050Right">
+<h2>Segment Two</h2>
+<div class="indentresources">
+<h3>Objectives</h3>
+<p><span class="pop2" data-href="objectives/objectives_activecitizens.htm" title="Active Citizens" rel="750">Active Citizens</span><br />
+<span class="pop2" data-href="objectives/objectives_americanmoney.htm" title="American Money" rel="750">American Money</span><br />
+<span class="pop2" data-href="objectives/objectives_goingglobal.htm" title="Going Global" rel="750">Going Global</span></p>
+</div>
+<div class="indentresources">
+<h3>Collaboration Options</h3>
+<h4>Active Citizens</h4>
+<p><span class="pop2" data-href="../../activecitizens/04_07/04_07_03_a.htm" title="Informed voting presentation" rel="750">Informed Voting Presentation</span></p>
+<h4>American Money</h4>
+<p><span class="pop2" data-href="../../americanmoney/05_01/05_01_03_a.htm" title="Advisory team presentation" rel="750">Advisory Team Presentation</span><br />
+<span class="pop2" data-href="../../americanmoney/05_05/05_05_06_a.htm" title="Watchdog portfolio" rel="750">Watchdog Portfolio</span></p>
+<h4>Going Global</h4>
+<p><span class="pop2" data-href="../../goingglobal/06_05/06_05_04_a.htm" title="How does currency affect trade?" rel="750">How Does Currency Affect Trade?</span><br />
+<span class="pop2" data-href="../../goingglobal/06_07/06_07_06_a.htm" title="What's the news?" rel="750">What's the News?</span></p>
+</div>
+<div class="indentresources">
+<h3>CAP Files</h3>
+<h4>Active Citizens</h4>
+<p><span class="pop2" data-href="../../activecitizens/04_01/04_01_02_a.htm" title="How do citizen perspectives differ?" rel="750">How Do Citizen Perspectives Differ?</span><br />
+<span class="pop2" data-href="../../activecitizens/04_02/04_02_02_a.htm" title="What is judicial review?" rel="750">What Is Judicial Review?</span><br />
+<span class="pop2" data-href="../../activecitizens/04_03/04_03_02_a.htm" title="How can art inspire action? (advanced)" rel="750">How Can Art Inspire Action? (Advanced)</span><br />
+<span class="pop2" data-href="../../activecitizens/04_04/04_04_02_a.htm" title="What are the rights of the accused?" rel="750">What Are the Rights of the Accused?</span><br />
+<span class="pop2" data-href="../../activecitizens/04_05/04_05_02_a.htm" title="What are the rights of speech?" rel="750">What Are the Rights of Speech?</span><br />
+<span class="pop2" data-href="../../activecitizens/04_06/04_06_02_a.htm" title="How can we influence government?" rel="750">How Can We Influence Government?</span><br />
+<span class="pop2" data-href="../../activecitizens/04_07/04_07_02_a.htm" title="How do elections impact society?" rel="750">How Do Elections Impact Society?</span><br />
+<span class="pop2" data-href="../../activecitizens/04_08/04_08_02_a.htm" title="What are demographics?" rel="750">What Are Demographics?</span><br />
+<span class="pop2" data-href="../../activecitizens/04_09/04_09_02_a.htm" title="Active citizens review" rel="750">Active Citizens Review</span></p>
+<h4>American Money</h4>
+<p><span class="pop2" data-href="../../americanmoney/05_01/05_01_02_a.htm" title="How does scarcity affect us?" rel="750">How Does Scarcity Affect Us?</span><br />
+<span class="pop2" data-href="../../americanmoney/05_02/05_02_02_a.htm" title="What are incentives?" rel="750">What Are Incentives?</span><br />
+<span class="pop2" data-href="../../americanmoney/05_03/05_03_02_a.htm" title="What is the role of competition?" rel="750">What Is the Role of Competition?</span><br />
+<span class="pop2" data-href="../../americanmoney/05_04/05_04_02_a.htm" title="How does banking work?" rel="750">How Does Banking Work?</span><br />
+<span class="pop2" data-href="../../americanmoney/05_05/05_05_02_a.htm" title="Why should we pay taxes?" rel="750">Why Should We Pay Taxes?</span><br />
+<span class="pop2" data-href="../../americanmoney/05_06/05_06_02_a.htm" title="What are the priorities? (advanced)" rel="750">What Are the Priorities? (Advanced)</span><br />
+<span class="pop2" data-href="../../americanmoney/05_07/05_07_02_a.htm" title="How does borrowing money affect us?" rel="750">How Does Borrowing Money Affect Us?</span><br />
+<span class="pop2" data-href="../../americanmoney/05_08/05_08_02_a.htm" title="American money review" rel="750">American Money Review</span></p>
+<h4>Going Global</h4>
+<p><span class="pop2" data-href="../../goingglobal/06_01/06_01_02_a.htm" title="How do other nations govern?" rel="750">How Do Other Nations Govern?</span><br />
+<span class="pop2" data-href="../../goingglobal/06_02/06_02_02_a.htm" title="How does geography affect society?" rel="750">How Does Geography Affect Society?</span><br />
+<span class="pop2" data-href="../../goingglobal/06_03/06_03_02_a.htm" title="Why should nations diversify?" rel="750">Why Should Nations Diversify?</span><br />
+<span class="pop2" data-href="../../goingglobal/06_04/06_04_02_a.htm" title="What's new in the world? (advanced)" rel="750">What's New in the World? (Advanced)</span><br />
+<span class="pop2" data-href="../../goingglobal/06_05/06_05_02_a.htm" title="What are national policies?" rel="750">What Are National Policies?</span><br />
+<span class="pop2" data-href="../../goingglobal/06_06/06_06_02_a.htm" title="How does currency affect trade?" rel="750">How Does Currency Affect Trade?</span><br />
+<span class="pop2" data-href="../../goingglobal/06_07/06_07_02_a.htm" title="How do we participate in a world community?" rel="750">How Do We Participate in a World Community?</span><br />
+<span class="pop2" data-href="../../goingglobal/06_08/06_08_02_a.htm" title="Going global review" rel="750">Going Global Review</span></p>
+</div></div>
+<div class="t5050Right">
+<div class="indentresources">
+<h3>Key Concepts</h3>
+<h4>Active Citizens</h4>
+<p><span class="pop2" data-href=".htm" title="Rights of the accused" rel="750">Rights of the Accused</span><br>
+<span class="pop2" data-href=".htm" title="Rights of accused in action" rel="750">Rights of Accused in Action</span><br>
+<span class="pop2" data-href=".htm" title="Wheel of citizenship" rel="750">Wheel of Citizenship</span><br>
+<span class="pop2" data-href=".htm" title="Mock election" rel="750">Mock Election</span></p>
+<h4>American Money</h4>
+<p><span class="pop2" data-href=".htm" title="Mixed market economies" rel="750">Mixed Market Economies</span><br>
+<span class="pop2" data-href=".htm" title="Types of economic systems" rel="750">Types of Economic Systems</span><br>
+<span class="pop2" data-href=".htm" title="Circular flow of money" rel="750">Circular Flow of Money</span><br>
+<span class="pop2" data-href=".htm" title="Can you make a budget?" rel="750">Can you make a budget?</span></p>
+<h4>Going Global</h4>
+<p><span class="pop2" data-href=".htm" title="" rel="750"></span>N/A<br></p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div style="clear:both"></div>
+
+</div>
+</div>
+<div id="menu">
+<div id="segments"><a href="../../index.htm" title="Units"><span>Segments</span></a></div>
+</div>
+</div>
+</div>
+<div id="footer">
+<span id="copy">Unless otherwise noted, &copy; 2011 FLVS</span>
+</div>
+</body>
+</html>

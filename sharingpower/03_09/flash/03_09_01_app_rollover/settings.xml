@@ -1,0 +1,41 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Roll your mouse over the following apps to learn more about them.<br/>]]>
+	</instructions>
+
+	<intro>Time for a review. Good luck, citizen.</intro>
+
+	<rollovers>
+		<rollover clip="RolloverClip1" title= "Federalism!" x="166" y="130" rotation="0">
+			<![CDATA[Under federalism, the nation has local, state, and national levels of government. The U.S. Constitution describes the powers of the national level and reserves other powers to the states.]]>
+		</rollover>
+		<rollover clip="RolloverClip2" title="Constitution Collision!" x="254" y="130" rotation="0">
+			<![CDATA[Each of the 50 states has its own constitution. The state constitutions are very similar to the U.S. Constitution. For example, Florida has three branches of government, like the national government.]]>
+		</rollover>
+		<rollover clip="RolloverClip3" title="Rule of Law!" x="166" y="185" rotation="0">
+			<![CDATA[People in the United States obey laws that officials at each level create to make society better. Without the rule of law, society would fall into chaos.]]>
+		</rollover>
+		<rollover clip="RolloverClip4" title="Make a Law!" x="254" y="205" rotation="0">
+			<![CDATA[Making a law begins with an idea. People and officials discuss and debate a bill through many steps it must follow before it can become a law. Most bills do not become laws.]]>
+		</rollover>
+		<rollover clip="RolloverClip5" title="Navigating the Courts!" x="166" y="235" rotation="0">
+			<![CDATA[At both the state and federal levels, cases begin in a trial court. People may be able to take their case to an appellate court for review. When a case needs further review, a supreme court may accept it for review.]]>
+		</rollover>
+		<rollover clip="RolloverClip6" title="Duty Calls!" x="254" y="255" rotation="0">
+			<![CDATA[U.S. citizens serve on juries in trial courts. People have the right to be judged by a jury of ordinary citizens. The trial process includes hearing evidence from both sides of the case. ]]>
+		</rollover>
+		<rollover clip="RolloverClip7" title="Solve It!" x="166" y="305" rotation="0">
+			<![CDATA[People can help resolve issues in their community. They identify problems and explore ways to address them. They contact officials, groups, and other citizens to find support and turn their ideas into action.]]>
+		</rollover>
+	</rollovers>
+
+</settings>	

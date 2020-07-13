@@ -1,0 +1,104 @@
+#site-tabs_roll{
+width:733px;
+height:270px;
+}
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float:left;
+	list-style: none;
+	height: 35px; 
+	width: 733px;
+}
+ul.tabs li {
+	float:left;
+	margin: 0 1px 0 0;
+	padding: 0;
+	height: 34px;
+    border-left:1px solid #d0d0d0;
+	border-top:1px solid #d0d0d0;
+	border-right:1px solid #d0d0d0;
+}
+.orange{
+height:26px;
+padding:7px 10px 0px 10px; 	
+font:13px arial;
+text-decoration:none;
+color:#fff;
+background-image:url(../imgmod01/orange-grad.jpg);
+background-repeat:repeat-x;
+background-position:left top;
+float:left
+}
+
+.orange:hover{
+height:26px;
+padding:7px 10px 0px 10px; 	
+font:13px arial;
+text-decoration:none;
+color:#000;
+background-image:url(../imgmod01/hash-grad.jpg);
+background-repeat:repeat-x;
+background-position:left top;
+float:left
+}
+.tab_container2{
+width: 733px;
+border: 1px solid #d0d0d0;
+float:left;
+background-image:url(../imgmod01/tabbg.jpg);
+background-repeat:repeat-x;
+background-color:#fefefe;
+}
+.tab_container{
+width: 733px;
+height:236px;
+border: 1px solid #d0d0d0;
+float:left;
+position:relative;
+margin-top:-1px;
+background-image:url(../imgmod01/tabbg.jpg);
+background-repeat:repeat-x;
+background-color:#fefefe;
+}
+.tab_content {
+padding: 20px;
+font:13px arial;
+}
+.active{
+background-image:url(../imgmod01/hash-grad.jpg);
+background-repeat:repeat-x;
+background-position:left top;
+color:#000000
+}
+
+<!-- -->
+<!-- image rollover tab1 -->
+.img-rollover{
+width:693px;
+}
+.img-rollover-container
+{
+width:683px;
+padding:7px 5px 5px 5px;
+border:1px solid #025A7F;
+background:#5091D1;
+float:left;
+height:18px;
+}
+.img-rollover .divimg{
+float:left;
+width:173px;
+text-align:center;
+}
+.img-rollover img{
+cursor:pointer;
+}
+.img-rollover-container p{
+float:left;
+font:.9 Arial;
+padding:0px;
+margin:0px;
+}
+
+.style1 {color: #FFFFFF}

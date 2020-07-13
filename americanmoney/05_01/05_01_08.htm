@@ -1,0 +1,241 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>M/J Civics</title>
+<link type="text/css" media="screen" href="../../css/theme.css" rel="stylesheet" />
+<link type="text/css" media="print" href="../../css/print.css" rel="stylesheet" />
+<script type="text/javascript" src="../../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.swfobject.1-1-1.min.js"></script>
+<script type="text/javascript" src="../../js/core.js"></script><script type="text/javascript">var unitNo = 5;</script>
+<script type="text/javascript">var unitNoLesNo = 0501;</script>
+<script type="text/javascript" src="../../js/links.js"></script>
+<script type="text/javascript" src="../../js/plugins/jquery.reorder.js"></script>
+<script type="text/javascript">
+
+	var Selected;
+	var SelectedVal;
+	var Matched;
+	var Points = 0;
+
+	$(document).ready(function() {
+		$("#GameBoard").reorder();
+		$("#GameBoard").data("InProcess","0");
+		$(".box span").attr("unselectable","on")
+		.each(function(){
+			$(this).data("content",$(this).html());
+			$(this).data("disabled","false");
+		})
+		.click(function(){
+			if ( $("#GameBoard").data("InProcess") == 0 ) {
+				$("#GameBoard").data("InProcess","1");
+				if ( !Selected && $(this).data("disabled") == "false" ) {
+					$(this).data("selected","true");
+					Reveal($(this));
+					SelectedVal = $(this).parent().attr("match");
+					Selected = $(this);
+					$("#GameBoard").data("InProcess","0");
+				} 
+				else if ( Selected ) {
+					Matched = $(this).parent().attr("match");
+					if ( SelectedVal == Matched && $(this).data("selected") == "false" ) { 
+						Reveal($(this));
+						$("div[match="+Matched+"] span").each(function(){
+							$(this).data("disabled","true");
+							$(this).parent().css("border","2px solid green");
+							$("#GameBoard").data("InProcess","0");
+							$(this).data("selected","false");
+						});
+					}
+					else { 
+						Reveal($(this));
+						Selected.parent().css("border","2px solid red");
+						$(this).parent().css("border","2px solid red").delay(2000).queue(function(){
+							$(".box span").each(function(){ 
+								if ( $(this).data("selected") == "true" ) { 
+									$(this).parent().css("border","2px solid black");
+									$(this).data("selected","false");
+								}
+							});
+							$(this).css("border","2px solid black");
+							$("#GameBoard").data("InProcess","0");
+							HideAll();
+							$(this).dequeue();	
+						});
+					}
+					SelectedVal = undefined;
+					Selected = undefined;
+				} else { $("#GameBoard").data("InProcess","0"); }
+				if ( $(this).data("disabled") == "false" ) { IteratePoints(); }
+			}
+		});
+		HideAll();
+	});
+	
+	function HideAll() {
+		$(".box span").each(function(){ 
+			if ($(this).data("disabled") == "false") { Hide($(this)); }
+			$(this).data("selected","false");
+		});
+	}
+	
+	function Hide($this) {
+		$this.parent().css("background-color","black")
+		$this.html("<span style='color: white'>Click to reveal</span>");
+	}
+	
+	function Reveal($this) {
+		$this.parent().css("background-color","white");
+		$this.html($this.data("content"));
+	}
+	
+	function IteratePoints() {
+		Points++;
+		$("#Points h4 span").html(Points);
+	}
+	
+</script>
+<style type="text/css">
+	.ui_interactive {
+		background: url("../../js/jquery_ui/skin/images/paper-bg.jpg") repeat scroll 0 0 transparent !important;
+		border: 5px solid #BFBFBF;
+		color: #333333;
+		font-size: 14px;
+		margin: 0 auto;
+		position: relative;
+		height: 450px;
+		width: 600px;
+		background-color: #E4E4E4;
+		padding: 10px;
+		border-radius: 4px 4px 4px 4px;
+	}
+	#GameBoard {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: 470px;
+		float:left;
+	}
+	#Points {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: 120px;
+	}
+	.box {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		font-size: 12px;
+		font-weight: bold;
+		width: 125px;
+		height: 75px;
+		padding: 5px;
+		border: 2px solid black;
+		margin: 5px;
+		text-align: center;
+		cursor: pointer;
+		background-color: black;
+		float:left;
+	}
+	.box span {	
+		color: black;
+		/*display: table-cell;*/
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		width: 125px;
+		height: 75px;
+		vertical-align: middle;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+	}
+</style>
+</head>
+<body>
+<div id="logo"></div>
+<div id="window">
+<div id="page">
+<div id="nav">
+<dl>
+<dt>Navigation</dt>
+<dd>
+<ul>
+<li id="next"><a href="05_01_09.htm" title="Next"><span>Next</span></a></li>
+<li id="prev"><a href="05_01_07.htm" title="Previous"><span>Previous</span></a></li>
+<li id="home"><a href="../../index.htm" title="Home"><span>Home</span></a></li>
+<li id="gloss"><a class="pop" href="../../glossary/glossary.htm" title="Glossary"><span>Glossary</span></a></li>
+<li id="notes"><a href="../../gendocs/courseresources/resource.htm" title="Course resources"><span>Course Resources</span></a></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div id="content">
+<div id="title"><span id="title1"></span><span id="title2"></span></div>
+<div id="margin">
+
+
+<h1>ReCAP!</h1>
+<p>You should now be familiar with a few basic concepts of economics, such as scarcity.</p>
+<p>Review your notes and the information in the lesson. Did you print or save your <a class="pop" href="05_01_02_a.htm" title="CAP file" data-height="750">CAP File</a> and place it in a safe location?</p>
+<p>Now it's time to review! Match the terms with the statements that describe them.</p>
+<div class="ui_interactive">
+	<p><b>Instructions:</b> Click to reveal a term then click another and see if the terms match. Remember which terms you've revealed and try to get the least amount of points.</p>
+    <div id="GameBoard">
+		<div class="box" match="a"><span>Scarcity</span></div>
+        <div class="box" match="a"><span>Limited resources, the reason we must make choices</span></div>
+        <div class="box" match="b"><span>Opportunity cost</span></div>
+        <div class="box" match="b"><span>The experience given up by making a choice</span></div>
+        <div class="box" match="c"><span>Trade-off</span></div>
+        <div class="box" match="c"><span>Giving up some of one thing to have some of another</span></div>
+        <div class="box" match="d"><span>Supply</span></div>
+        <div class="box" match="d"><span>The total amount of a good or service available to purchase</span></div>
+        <div class="box" match="e"><span>Demand</span></div>
+        <div class="box" match="e"><span>The total amount of a good or service that people are willing to purchase</span></div>
+    </div>
+    <div id="Points">
+    	<h4>Points: <span style="color: black">0</span></h4>
+    </div>
+</div>
+
+
+</div>
+</div>
+<div id="menu">
+<div id="segments"><a href="../../index.htm" title="Units"><span>Segments</span></a></div>
+<dl id="units">
+<dt><span>Units</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="lessons">
+<dt><span>Lessons</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="pages">
+<dt><span>8 of 9</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="footer">
+<span id="copy">Unless otherwise noted, &copy; 2011 FLVS</span>
+</div>
+</body>
+</html>

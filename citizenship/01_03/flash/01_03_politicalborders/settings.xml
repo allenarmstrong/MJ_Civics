@@ -1,0 +1,53 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Read the following question presented before you and select the correct border on the map.<br/><br/>Select "next" and "prev" to cycle through all the questions.<br/>]]>
+	</instructions>
+
+	<intro>Time to learn about political borders. Good luck, citizen!</intro>
+	
+	<prompts>
+		<prompt>
+			<question>1 of 5 - Select the international border between the United States and Canada.</question>
+			<answer>Border1</answer>
+			<feedback title="Yes!" x="-32" y="0" zoom="27" >Great work!</feedback>
+		</prompt>
+		<prompt>
+			<question>2 of 5 - Select the state border shared by Texas and New Mexico.</question>
+			<answer>Border2</answer>
+			<feedback title="Yes!" x="-9" y="-157" zoom="69" >Great work!</feedback>
+		</prompt>
+		<prompt>
+			<question>3 of 5 - Select the international border between Mexico and Guatemala.</question>
+			<answer>Border3</answer>
+			<feedback title="Yes!" x="-82" y="-264" zoom="170" >Great work!</feedback>
+		</prompt>
+		<prompt>
+			<question>4 of 5 - Select the international border that New York state shares with another nation.</question>
+			<answer>Border4</answer>
+			<feedback title="Yes!" x="-162" y="-35" zoom="101" >Great work!</feedback>
+		</prompt>
+		<prompt>
+			<question>5 of 5 - Select a state border that Arizona shares with another U.S. state.</question>
+			<answer>Border5</answer>
+			<feedback title="Yes!" x="68" y="-101" zoom="84" >Great work!</feedback>
+		</prompt>
+	</prompts>
+
+	<feedback title="Good Job!">Feedback goes here.</feedback>
+	<wrongFeedback title="Nice try">
+		<first>Oops, try another location.</first>
+		<second>The correct answer is</second>
+		<cont>Select the "next" button to continue to the next question.</cont>
+		<restart x="-9" y="-11" zoom="2">Select "continue" to close this window and the "restart" button to return to the first question.</restart>
+	</wrongFeedback>
+
+</settings>	

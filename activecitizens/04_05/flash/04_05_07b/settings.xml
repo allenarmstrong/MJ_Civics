@@ -1,0 +1,47 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Select "Yes" or "No" for each of the questions in the slideshow. Select "restart" when you reach the end to restart the slideshow.<br/>]]>
+	</instructions>
+
+	<intro>Time to learn about the Supreme Court. Good luck, citizen!</intro>
+	
+	<scenarios>
+
+		<scenario type="scene" clip="IntroClip" label="Intro">
+			<button clip="StartButton" label="Start" destination="Scenario1Clip"/>
+		</scenario>
+
+		<scenario type="scene" clip="Scenario1Clip" label="Scenario1">
+			<button clip="AButton" label="Yes, a student newspaper sponsored by the school is a place for free student expression." destination="Scenario2BClip" />
+			<button clip="BButton" label="No, a student newspaper sponsored by the school is not a place for free student expression." destination="Scenario2AClip" />
+			
+		</scenario>
+
+		<scenario type="scene" clip="Scenario2AClip" label="Scenario2A">
+			<button clip="AButton" label="Yes, just like in the Tinker decision, students have the right to free expression in school. The school cannot censor the ideas and opinions of the students." destination="Scenario3AClip" />
+			<button clip="BButton" label="No, the school has the right to censor material that may be inappropriate for the students. This is a reasonable limit to freedom of expression under the Tinker decision." destination="Scenario3BClip" />
+		</scenario>
+
+		<scenario type="scene" clip="Scenario2BClip" label="Scenario2B">
+			<button clip="AButton" label="Yes, just like in the Tinker decision, students have the right to free expression in school. The school cannot censor the ideas and opinions of the students." destination="Scenario3AClip" />
+			<button clip="BButton" label="No, the school has the right to censor material that may be inappropriate for the students. This is a reasonable limit to freedom of expression under the Tinker decision." destination="Scenario3BClip" />
+		</scenario>
+
+
+		<scenario type="final" clip="Scenario3AClip" label="Scenario3A" destination="ConclusionClip" />
+		<scenario type="final" clip="Scenario3BClip" label="Scenario3B" destination="ConclusionClip" />
+		<scenario type="end" clip="ConclusionClip" label="Conclusion" />
+
+
+	</scenarios>
+
+</settings>	

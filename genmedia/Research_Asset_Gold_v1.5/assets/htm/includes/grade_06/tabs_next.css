@@ -1,0 +1,86 @@
+img{
+border:none;
+}
+#site-nav-tabs{
+width:733px;
+height:270px;
+}
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float:left;
+	list-style: none;
+	height: 35px; 
+	width: 733px;
+}
+ul.tabs li {
+	float:left;
+	margin: 0 1px 0 0;
+	padding: 0;
+	height: 34px;
+    border-left:1px solid #d0d0d0;
+	border-top:1px solid #d0d0d0;
+	border-right:1px solid #d0d0d0;
+	
+	
+}
+.orange{
+height:26px;
+padding:7px 10px 0px 10px; 	
+font:13px arial;
+text-decoration:none;
+color:#fff;
+background-image:url(imgmod01/orange-grad.jpg);
+background-repeat:repeat-x;
+background-position:left top;
+float:left
+}
+
+.orange:hover{
+height:26px;
+padding:7px 10px 0px 10px; 	
+font:13px arial;
+text-decoration:none;
+color:#000;
+background-image:url(imgmod01/hash-grad.jpg);
+background-repeat:repeat-x;
+background-position:left top;
+float:left
+}
+.tab_container{
+width: 733px;
+height:233px;
+border: 1px solid #d0d0d0;
+float:left;
+background-image:url(imgmod01/tabbg.jpg);
+background-repeat:repeat-x;
+background-color:#fefefe;
+}
+.tab_content {
+padding: 10px;
+font:13px arial;
+}
+.tab_content-nav{
+width:693px;
+height:183px;
+}
+.fadecontent{ /*style for each fade content DIV within wrapper. Total width: 330px+10px+10px=350px (".fadecontentwrapper" width minus its padding and borders, if any) */
+display:none;
+width:693px;
+}
+.fadecontenttoggler{
+text-align:right;
+}
+.fadecontenttoggler a.prev, .fadecontenttoggler a.next{ /*style for "prev" and "next" toggler links. ".prev" and ".next" classes auto generated! */
+
+}
+
+.fadecontenttoggler a.prev:hover, .fadecontenttoggler a.next:hover{
+
+}
+.active{
+background-image:url(imgmod01/hash-grad.jpg);
+background-repeat:repeat-x;
+background-position:left top;
+color:#000000
+}

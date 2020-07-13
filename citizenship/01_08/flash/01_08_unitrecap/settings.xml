@@ -1,0 +1,110 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Read the questions and select the best possible answer for each.<br/>]]>
+	</instructions>
+
+	<intro>Time for a multiple choice test. Good luck, citizen!</intro>
+
+	<problems>
+		<problem feedback="Washington D.C., borders Virginia to the southwest and Maryland to the southeast, northwest, and northeast.">
+			<question>1 of 12: The U.S. capital, Washington D.C., borders the states of Virginia and _____</question>
+			<choice type="correct" feedbackTitle="Correct!" >a. Maryland </choice>
+			<choice type="" feedbackTitle="Incorrect" >b. Delaware</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. Pennsylvania</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. Washington</choice>
+		</problem>
+		<problem feedback="The U.S. Virgin Islands and Puerto Rico are U.S. territories in the Caribbean Sea. The Cayman Islands are a British territory. Guam is a U.S. territory in the Pacific Ocean. Haiti is an independent nation.">
+			<question>2 of 12: The United States has two territories in the Caribbean Sea: the U.S. Virgin Islands and ____</question>
+			<choice type="" feedbackTitle="Incorrect" >a. Haiti</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. Guam</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. the Cayman Islands</choice>
+			<choice type="correct" feedbackTitle="Correct!" >d. Puerto Rico</choice>
+		</problem>
+		<problem feedback="Mount Rushmore is in South Dakota. In New York, you will find the Statue of Liberty. Pennsylvania has the Liberty Bell and Independence Hall. California has the Golden Gate Bridge.">
+			<question>3 of 12: In which U.S. state can you find the famous Mount Rushmore?</question>
+			<choice type="correct" feedbackTitle="Correct!" >a. South Dakota</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. New York</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. Pennsylvania</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. California</choice>
+		</problem>
+		<problem feedback="The U.S. Census Bureau divides the U.S. states into the Northeast, South, Midwest, and West.">
+			<question>4 of 12: The major geopolitical and cultural regions of the United States are the Northeast, Midwest, South, and ____</question>
+			<choice type="" feedbackTitle="Incorrect" >a. Pacific</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. Southeast</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. Northwest</choice>
+			<choice type="correct" feedbackTitle="Correct!" >d. West</choice>
+		</problem>
+		<problem feedback="All of these rivers are important to the United States. The Mississippi River, though, flows through the center of the United States. It drains water from 31 states into the Gulf of Mexico.">
+			<question>5 of 12: Which river in the central United States drains 31 states?</question>
+			<choice type="" feedbackTitle="Incorrect" >a. Hudson</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. Ohio</choice>
+			<choice type="correct" feedbackTitle="Correct" >c. Mississippi</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. Rio Grande</choice>
+		</problem>
+		<problem feedback="North America includes Canada, the United States, Mexico, and the nations of Central America and the Caribbean. Japan is in Asia. England is in Europe. Colombia is in South America.">
+			<question>6 of 12: Which of these nations is part of North America?</question>
+			<choice type="" feedbackTitle="Incorrect" >a. England</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. Japan</choice>
+			<choice type="correct" feedbackTitle="Correct!" >c. Mexico</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. Colombia</choice>
+		</problem>
+		<problem feedback="Maps of U.S. Census data show the greatest concentration of people near the Atlantic and Pacific coasts.">
+			<question>7 of 12: Maps of U.S. Census data make it clear that most Americans live ____</question>
+			<choice type="correct" feedbackTitle="Correct!" >a. near the coasts</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. along the Canadian border</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. in Alaska</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. within 50 miles of the Mississippi River</choice>
+		</problem>
+		<problem feedback="Acid rain is the greatest problem in Eastern U.S. states, including Ohio.">
+			<question>8 of 12: Acid rain is an ecological issue, especially in the Eastern United States. We can see on a map where it has the greatest impact. Which of the following states experiences the most acid rain?</question>
+			<choice type="" feedbackTitle="Incorrect" >a. Texas</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. Utah</choice>
+			<choice type="correct" feedbackTitle="Correct!" >c. Ohio</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. Nevada</choice>
+		</problem>
+		<problem feedback="Living legally in the United States for at least five years (three if married to a U.S. citizen) is required before applying to be a U.S. citizen. The Oath of Allegiance is the final step. Changing oneÕs birth record is illegal, and you need to be a U.S. citizen to obtain a U.S. passport.">
+			<question>9 of 12: People who wish to become U.S. citizens must first ____</question>
+			<choice type="" feedbackTitle="Incorrect" >a. change their birth records to indicate birth in a U.S. state</choice>
+			<choice type="correct" feedbackTitle="Correct!" >b. live legally in the nation for five years, or three if married to U.S. citizens</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. take the Oath of Allegiance before a judge in federal court</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. purchase a U.S. passport and return to their nation of birth</choice>
+		</problem>
+		<problem feedback="U.S. citizens must pay taxes, attend school at least until age 16, and serve on juries when called. Voting is an important responsibility, but law does not require it.">
+			<question>10 of 12: All of the following are examples of citizenship duties required by law except ____</question>
+			<choice type="" feedbackTitle="Incorrect" >a. serving on juries</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. attending school</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. paying taxes</choice>
+			<choice type="correct" feedbackTitle="Correct!" >d. voting in elections</choice>
+		</problem>
+		<problem feedback="People become U.S. citizens through either birth or naturalization. Minor children born outside the United States may become U.S. citizens when their parents are naturalized.">
+			<question>11 of 12: People become U.S. citizens through ____</question>
+			<choice type="correct" feedbackTitle="Correct!" >a. either birth or naturalization</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. birth on U.S. soil only</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. naturalization only</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. a quick test offered only when the person is 18</choice>
+		</problem>
+		<problem feedback="Minors are people under the age of 18 who, just like other citizens, must obey laws. In the United States, most minors must attend school.">
+			<question>12 of 12: Obeying laws is an important part of citizenship. Minors ____</question>
+			<choice type="correct" feedbackTitle="Correct!" >a. have to obey laws such as attending school</choice>
+			<choice type="" feedbackTitle="Incorrect" >b. are not citizens so they do not have to obey laws</choice>
+			<choice type="" feedbackTitle="Incorrect" >c. only have to obey their parents, not the government</choice>
+			<choice type="" feedbackTitle="Incorrect" >d. can usually vote to change government laws</choice>
+		</problem>
+	</problems>
+
+	<feedback>
+		<correct>Select continue to close this window and "next" to view the next question.</correct>
+		<retry>Oops, that was wrong. Select "continue" to close this window and try again.</retry>
+		<restart></restart>
+	</feedback>
+
+</settings>	

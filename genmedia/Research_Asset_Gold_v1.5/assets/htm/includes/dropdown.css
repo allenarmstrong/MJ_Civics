@@ -1,0 +1,49 @@
+#dropdown, 
+#dropdown ul {padding:0; margin:0; list-style:none; font:.9em Arial; background:url(transparent.gif); position:relative; z-index:100;}
+#dropdown {height:26px;width:472px; padding:0; background:;}
+
+#dropdown table {border-collapse:collapse;}
+#dropdown li {float:left; padding-right:5px;}
+#dropdown li ul{width:231px;background:#FC892C;}
+#dropdown li li {float:none;width:231px;}
+/* a hack for IE5.x and IE6 */
+#dropdown li a li {float:left; width:231px; padding:0px;}
+
+
+#dropdown li a {display:block;  background:url(../../genimages/section.jpg); float:left; width:231px; color:#3E3B42; text-indent:10px; height:23px; padding:3px 0px 0 0px;  text-decoration:none; white-space:nowrap; }
+
+#dropdown li li a {float:none; width:231px; background:#FC892C; color:#3E3B42; border-bottom:1px solid #D37327; text-indent:10px; height:21px; padding:5px 0px 0 0px; }
+
+#dropdown li:hover {position:relative; z-index:100;background:url(../../genimages/section.jpg); background-repeat:no-repeat}
+#dropdown a:hover {position:relative; z-index:100; background:url(../../genimages/section.jpg);}
+#dropdown li:hover > a {background:; color:#3E3B42;}
+
+#dropdown :hover  ul {left:0; top:26px; z-index:300; }
+#dropdown a:hover ul {background:#FC892C;color:;}
+
+#dropdown ul {position:absolute; left:-9999px; top:-9999px;}
+
+/* it could have been this simple if all browsers understood */
+/* show next level */
+#dropdown li:hover li:hover > ul {left:0; margin-left:100%; top:-1px;}
+/* keep further levels hidden */
+#dropdown li:hover > ul ul {position:absolute; left:-9999px; top:-9999px; width:auto;}
+/* show path followed */
+#dropdown li:hover li:hover > a {background:#FC892C; color:#fff;}
+
+#dropdown li a:hover ul li a:hover {background:#FC892C;color:#fff; }
+
+/* but IE5.x and IE6 need this lot to style the flyouts*/
+/* show next level */
+#dropdown a:hover a:hover ul,
+#dropdown a:hover a:hover a:hover ul,
+#dropdown a:hover a:hover a:hover a:hover ul,
+#dropdown a:hover a:hover a:hover a:hover a:hover ul
+{left:100%; top:-1px;}
+
+/* keep further levels hidden */
+#dropdown a:hover ul ul,
+#dropdown a:hover a:hover ul ul,
+#dropdown a:hover a:hover a:hover ul ul,
+#dropdown a:hover a:hover a:hover a:hover ul ul
+{position:absolute; left:-9999px; top:-9999px;}

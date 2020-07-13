@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gallery>
+	<directions>
+		<![CDATA[<p>Use the following flip cards to learn some quick facts about these public figures. Simply select any of the images and they will flip, revealing the information.</p><p>Select "Go!" to begin.</p>]]>
+	</directions>
+
+  <flipcard>
+    <front>
+      <![CDATA[<img src="../imgs/interactives/01_04b_01-greenley.jpg" alt="Horace Greenley" />]]>
+    </front>
+    <back>
+      <![CDATA[
+      <div class="description">
+        <strong>Horace Greeley</strong> worked during the partisan-press era and promoted his own political views through the New York Tribune, which he edited. He ran for president in 1872, but he lost the race and died before the votes were counted.
+      </div>
+      ]]>
+    </back>
+  </flipcard>
+
+  <flipcard>
+    <front>
+      <![CDATA[<img src="../imgs/interactives/01_04b_02-hurst.jpg" alt="William Randolph Hurst" />]]>
+    </front>
+    <back>
+      <![CDATA[
+      <div class="description">
+        <strong>William Randolph Hearst</strong> made his fortune through sensationalizing journalism. He took over several publications and showed more of an interest in sales than in credibility. Many of his newspapers exploited stories to make them seem more sensational than they were in reality. This practice led to what became known as “yellow journalism”.
+      </div>
+      ]]>
+    </back>
+  </flipcard>
+
+  <flipcard>
+    <front>
+      <![CDATA[<img src="../imgs/interactives/01_04b_03-turner.jpg" alt="Ted Turner" />]]>
+    </front>
+    <back>
+      <![CDATA[
+      <div class="description">
+        <strong>Ted Turner</strong> invested in Cable News Network, or CNN. This became the first channel to provide 24-hour news coverage. In the 1990s, CNN gained prestige as it ran regular stories about the Gulf War. Officials at the Pentagon referred to the “CNN effect,” describing how significantly the public’s constant access to news affected government policies and decisions.
+      </div>
+      ]]>
+    </back>
+  </flipcard>
+
+  <flipcard>
+    <front>
+      <![CDATA[<img src="../imgs/interactives/01_04b_04-murdoch.jpg" alt="Rupert Murdoch" />]]>
+    </front>
+    <back>
+      <![CDATA[
+      <div class="description">
+        Billionaire <strong>Rupert Murdoch</strong> became a household name as he built his media empire through the acquisition of several companies. As CEO of News Corporation, Murdoch owns Fox News, the New York Post newspaper, HarperCollins Publishers, the 20th Century Fox film and TV studios, MySpace, and many other media sources.
+      </div>
+      ]]>
+    </back>
+  </flipcard>
+
+
+
+</gallery>

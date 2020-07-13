@@ -1,0 +1,127 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Drag the states to the correct location on the map. <br/><br/>You may scroll through the remaining states by selecting the "next" and "prev" buttons.<br/>]]>
+	</instructions>
+
+	<intro>Time to play a drag and drop game. Good luck, citizen!</intro>
+
+
+	<segments>
+		<segment clip="AlaskaClip" 	label="Alaska" 	id="0"/>
+		<segment clip="HawaiiClip" 		label="Hawaii"	 	id="1"/>
+		<segment clip="WashingtonClip" 	label="Washington"	 id="2"/>
+		<segment clip="OregonClip" 		label="Oregon"	 	id="3"/>
+		<segment clip="CaliforniaClip" 		label="California"	 	id="4"/>
+		<segment clip="IdahoClip" 		label="Idaho"	 	id="5"/>
+		<segment clip="NevadaClip" 		label="Nevada"	 	id="6"/>
+		<segment clip="MontanaClip" 		label="Montana"	 	id="7"/>
+		<segment clip="WyomingClip" 		label="Wyoming"	 	id="8"/>
+		<segment clip="UtahClip" 		label="Utah"	 	id="9"/>
+		<segment clip="ArizonaClip" 		label="Arizona"	 	id="10"/>
+		<segment clip="ColoradoClip" 		label="Colorado"	 	id="11"/>
+		<segment clip="NewMexicoClip" 		label="New Mexico"	 	id="12"/>
+		<segment clip="NorthDakotaClip" 		label="North Dakota"	 	id="13"/>
+		<segment clip="SouthDakotaClip" 		label="South Dakota"	 	id="14"/>
+		<segment clip="NebraskaClip" 		label="Nebraska"	 	id="15"/>
+		<segment clip="KansasClip" 		label="Kansas"	 	id="16"/>
+		<segment clip="OklahomaClip" 		label="Oklahoma"	 	id="17"/>
+		<segment clip="TexasClip" 		label="Texas"	 	id="18"/>
+		<segment clip="MinnesotaClip" 		label="Minnesota"	 	id="19"/>
+		<segment clip="IowaClip" 		label="Iowa"	 	id="20"/>
+		<segment clip="MissouriClip" 		label="Missouri"	 	id="21"/>
+		<segment clip="ArkansasClip" 		label="Arkansas"	 	id="22"/>
+		<segment clip="LouisianaClip" 		label="Louisiana"	 	id="23"/>
+		<segment clip="WisconsinClip" 		label="Wisconsin"	 	id="24"/>
+		<segment clip="IllinoisClip" 		label="Illinois"	 	id="25"/>
+		<segment clip="KentuckyClip" 		label="Kentucky"	 	id="26"/>
+		<segment clip="TennesseeClip" 		label="Tennessee"	 	id="27"/>
+		<segment clip="MississippiClip" 		label="Mississippi"	 	id="28"/>
+		<segment clip="MichiganClip" 		label="Michigan"	 	id="29"/>
+		<segment clip="IndianaClip" 		label="Indiana"	 	id="30"/>
+		<segment clip="AlabamaClip" 		label="Alabama"	 	id="31"/>
+		<segment clip="OhioClip" 		label="Ohio"	 	id="32"/>
+		<segment clip="WestVirginiaClip" 		label="West Virginia"	 	id="33"/>
+		<segment clip="VirginiaClip" 		label="Virginia"	 	id="34"/>
+		<segment clip="NorthCarolinaClip" 		label="North Carolina"	 	id="35"/>
+		<segment clip="SouthCarolinaClip" 		label="South Carolina"	 	id="36"/>
+		<segment clip="GeorgiaClip" 		label="Georgia"	 	id="37"/>
+		<segment clip="FloridaClip" 		label="Florida"	 	id="38"/>
+		<segment clip="PennsylvaniaClip" 		label="Pennsylvania"	 	id="39"/>
+		<segment clip="NewYorkClip" 		label="New York"	 	id="40"/>
+		<segment clip="VermontClip" 		label="Vermont"	 	id="41"/>
+		<segment clip="NewHampshireClip" 		label="New Hampshire"	 	id="42"/>
+		<segment clip="MaineClip" 		label="Maine"	 	id="43"/>
+		<segment clip="MassachusettsClip" 		label="Massachusetts"	 	id="44"/>
+		<segment clip="ConnecticutClip" 		label="Connecticut"	 	id="45"/>
+		<segment clip="RhodeIslandClip" 		label="Rhode Island"	 	id="46"/>
+		<segment clip="NewJerseyClip" 		label="New Jersey"	 	id="47"/>
+		<segment clip="DelawareClip" 		label="Delaware"	 	id="48"/>
+		<segment clip="MarylandClip" 		label="Maryland"	 	id="49"/>
+	</segments>
+
+	<bins>
+		<bin clip="AlaskaBin" 	label="Alaska" 	id="0"/>
+		<bin clip="HawaiiBin" 		label="Hawaii"	 	id="1"/>
+		<bin clip="WashingtonBin" 	label="Washington"	 id="2"/>
+		<bin clip="OregonBin" 		label="Oregon"	 	id="3"/>
+		<bin clip="CaliforniaBin" 		label="California"	 	id="4"/>
+		<bin clip="IdahoBin" 		label="Idaho"	 	id="5"/>
+		<bin clip="NevadaBin" 		label="Nevada"	 	id="6"/>
+		<bin clip="MontanaBin" 		label="Montana"	 	id="7"/>
+		<bin clip="WyomingBin" 		label="Wyoming"	 	id="8"/>
+		<bin clip="UtahBin" 		label="Utah"	 	id="9"/>
+		<bin clip="ArizonaBin" 		label="Arizona"	 	id="10"/>
+		<bin clip="ColoradoBin" 		label="Colorado"	 	id="11"/>
+		<bin clip="NewMexicoBin" 		label="New Mexico"	 	id="12"/>
+		<bin clip="NorthDakotaBin" 		label="North Dakota"	 	id="13"/>
+		<bin clip="SouthDakotaBin" 		label="South Dakota"	 	id="14"/>
+		<bin clip="NebraskaBin" 		label="Nebraska"	 	id="15"/>
+		<bin clip="KansasBin" 		label="Kansas"	 	id="16"/>
+		<bin clip="OklahomaBin" 		label="Oklahoma"	 	id="17"/>
+		<bin clip="TexasBin" 		label="Texas"	 	id="18"/>
+		<bin clip="MinnesotaBin" 		label="Minnesota"	 	id="19"/>
+		<bin clip="IowaBin" 		label="Iowa"	 	id="20"/>
+		<bin clip="MissouriBin" 		label="Missouri"	 	id="21"/>
+		<bin clip="ArkansasBin" 		label="Arkansas"	 	id="22"/>
+		<bin clip="LouisianaBin" 		label="Louisiana"	 	id="23"/>
+		<bin clip="WisconsinBin" 		label="Wisconsin"	 	id="24"/>
+		<bin clip="IllinoisBin" 		label="Illinois"	 	id="25"/>
+		<bin clip="KentuckyBin" 		label="Kentucky"	 	id="26"/>
+		<bin clip="TennesseeBin" 		label="Tennessee"	 	id="27"/>
+		<bin clip="MississippiBin" 		label="Mississippi"	 	id="28"/>
+		<bin clip="MichiganBin" 		label="Michigan"	 	id="29"/>
+		<bin clip="IndianaBin" 		label="Indiana"	 	id="30"/>
+		<bin clip="AlabamaBin" 		label="Alabama"	 	id="31"/>
+		<bin clip="OhioBin" 		label="Ohio"	 	id="32"/>
+		<bin clip="WestVirginiaBin" 		label="West Virginia"	 	id="33"/>
+		<bin clip="VirginiaBin" 		label="Virginia"	 	id="34"/>
+		<bin clip="NorthCarolinaBin" 		label="North Carolina"	 	id="35"/>
+		<bin clip="SouthCarolinaBin" 		label="South Carolina"	 	id="36"/>
+		<bin clip="GeorgiaBin" 		label="Georgia"	 	id="37"/>
+		<bin clip="FloridaBin" 		label="Florida"	 	id="38"/>
+		<bin clip="PennsylvaniaBin" 		label="Pennsylvania"	 	id="39"/>
+		<bin clip="NewYorkBin" 		label="New York"	 	id="40"/>
+		<bin clip="VermontBin" 		label="Vermont"	 	id="41"/>
+		<bin clip="NewHampshireBin" 		label="New Hampshire"	 	id="42"/>
+		<bin clip="MaineBin" 		label="Maine"	 	id="43"/>
+		<bin clip="MassachusettsBin" 		label="Massachusetts"	 	id="44"/>
+		<bin clip="ConnecticutBin" 		label="Connecticut"	 	id="45"/>
+		<bin clip="RhodeIslandBin" 		label="Rhode Island"	 	id="46"/>
+		<bin clip="NewJerseyBin" 		label="New Jersey"	 	id="47"/>
+		<bin clip="DelawareBin" 		label="Delaware"	 	id="48"/>
+		<bin clip="MarylandBin" 		label="Maryland"	 	id="49"/>
+		
+	</bins>
+
+	<feedback title="Good Job!">Select "continue" to close this window, and then select "reset" to try again.</feedback>
+
+</settings>	

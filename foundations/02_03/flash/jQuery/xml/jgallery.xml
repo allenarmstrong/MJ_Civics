@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gallery accordion="true">
+
+	<directions>
+		<![CDATA[<p>Imagine what it must have been like to hear George Washington read the document aloud to his soldiers in late summer 1776. Listen to some of these powerful words.</p><p>Select "Continue" to begin.</p>]]>
+	</directions>
+
+	<photo src="flash/jQuery/images/02_03_06_01.jpg" title=" ">
+    <audio src="flash/jQuery/audio/02_03_06_01.mp3" />
+		<info><![CDATA[<p><em>&quot;We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.&quot;</em><br /><br /><span style="font-weight:bold;">Here it says people have rights that come from no government or law or agreement. They have rights that come directly from God simply by being a human. This is the idea of natural rights from the philosopher John Locke.</span></p>]]></info>
+		<copyright><![CDATA[Public Domain]]></copyright>
+	</photo>
+	
+	<photo src="flash/jQuery/images/02_03_06_02.jpg" title=" ">
+    <audio src="flash/jQuery/audio/02_03_06_02.mp3" />
+		<info><![CDATA[<p><em>&quot;That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government.&quot;</em><br /><br /><span style="font-weight:bold;">Here Locke's idea of social contract is included. It says that when government is no longer doing its job of protecting natural rights, people have the right to change the government or get rid of it and start a new one.</span></p>]]></info>
+		<copyright><![CDATA[Public Domain]]></copyright>
+	</photo>
+	
+	<photo src="flash/jQuery/images/02_03_06_03.jpg" title=" ">
+    <audio src="flash/jQuery/audio/02_03_06_03.mp3" />
+		<info><![CDATA[<p><em>&quot;The history of the present King of Great Britain is a history of repeated injuries and usurpations, all having in direct object the establishment of an absolute Tyranny over these States. To prove this, let Facts be submitted to a candid world.&quot;</em><br /><br /><span style="font-weight:bold;">Here it says that King George III has abused the colonists' rights repeatedly for a long time. They accuse him of being a tyrant, an evil leader who misuses power. To prove their accusation, they will list his specific actions for people to consider. The colonists needed to convince people their cause was just.</span></p>]]></info>
+		<copyright><![CDATA[Public Domain]]></copyright>
+	</photo>
+	
+	<photo src="flash/jQuery/images/02_03_06_04.jpg" title=" ">
+    <audio src="flash/jQuery/audio/02_03_06_04.mp3" />
+		<info><![CDATA[<p><em>&quot;He has refused his Assent to Laws, the most wholesome and necessary for the public good.&quot;</em><br /><br /><span style="font-weight:bold;">The 29 grievances all begin with "He has," like this one. This puts the focus on King George III and the way the colonists say he acted like a tyrant. Here they complain that he refused to approve laws that were good and important for the colonies.</span></p>]]></info>
+		<copyright><![CDATA[Public Domain]]></copyright>
+	</photo>
+	
+	<photo src="flash/jQuery/images/02_03_06_05.jpg" title=" ">
+    <audio src="flash/jQuery/audio/02_03_06_05.mp3" />
+		<info><![CDATA[<p><em>&quot;He has made Judges dependent on his Will alone, for the tenure of their offices, and the amount and payment of their salaries.&quot;</em><br /><br /><span style="font-weight:bold;">Here they complain about the king controlling the judges in the colonies. If the king did not like their decision on a case, he could fire them or lower their pay. They say that since the judges' jobs and earnings depend on the king, they could never decide cases fairly.</span></p>]]></info>
+		<copyright><![CDATA[Public Domain]]></copyright>
+	</photo>
+	
+	<photo src="flash/jQuery/images/02_03_06_06.jpg" title=" ">
+    <audio src="flash/jQuery/audio/02_03_06_06.mp3" />
+		<info><![CDATA[<p><em>&quot;He has abdicated Government here, by declaring us out of his Protection and waging War against us.&quot;</em><br /><br /><span style="font-weight:bold;">Here it says King George III has already abandoned the colonists. He did this first by declaring them in rebellion and therefore no longer under British protection. Then they describe the early battles of the American Revolution as the king making war on them.</span></p>]]></info>
+		<copyright><![CDATA[Public Domain]]></copyright>
+	</photo>
+	
+	<photo src="flash/jQuery/images/02_03_06_07.jpg" title=" ">
+    <audio src="flash/jQuery/audio/02_03_06_07.mp3" />
+		<info><![CDATA[<p><em>&quot;They too have been deaf to the voice of justice and of consanguinity. We must, therefore, acquiesce in the necessity, which denounces our Separation, and hold them, as we hold the rest of mankind, Enemies in War, in Peace Friends.&quot;</em><br /><br /><span style="font-weight:bold;">Here it accuses the British people and Parliament of ignoring the colonists' concerns as well. Despite ties of culture and family, the colonists separate themselves from the British people as well as the king. Many delegates were deeply upset that neither Parliament nor the general people of the country supported the colonists.</span></p>]]></info>
+		<copyright><![CDATA[Public Domain]]></copyright>
+	</photo>
+	
+	<photo src="flash/jQuery/images/02_03_06_08.jpg" title=" ">
+    <audio src="flash/jQuery/audio/02_03_06_08.mp3" />
+		<info><![CDATA[<p><em>&quot;We, therefore, the Representatives of the United States of America.&quot;</em><br /><br /><span style="font-weight:bold;">Here they give a name to the new nation.</span><br /><br /><em>&quot;solemnly publish and declare, That these United Colonies are, and of Right ought to be Free and Independent States&quot;</em><br /><br /><span style="font-weight:bold;">They announce that the colonies are free and independent, no longer subject to the British king.</span></p>]]></info>
+		<copyright><![CDATA[Public Domain]]></copyright>
+	</photo>
+
+</gallery>

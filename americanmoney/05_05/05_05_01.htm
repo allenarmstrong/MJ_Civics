@@ -1,0 +1,288 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>M/J Civics</title>
+<link type="text/css" media="screen" href="../../css/theme.css" rel="stylesheet" />
+<link type="text/css" media="print" href="../../css/print.css" rel="stylesheet" />
+<link type="text/css" media="screen" href="../../js/jquery_ui/skin/ui_interactive_skin.css" rel="stylesheet" />
+<script type="text/javascript" src="../../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.swfobject.1-1-1.min.js"></script>
+<script type="text/javascript" src="../../js/core.js"></script><script type="text/javascript">var unitNo = 5;</script>
+<script type="text/javascript">var unitNoLesNo = 0505;</script>
+<script type="text/javascript" src="../../js/links.js"></script>
+<script type="text/javascript" src="../../js/jquery_ui/core/js/jquery-ui-1.8.11.custom.min.js"></script>
+
+<script type="text/javascript">
+	
+	var Cash = Number(20);
+
+	$(document).ready(function() {
+
+    	$("#IconContainer img").draggable({ 
+			cursor: "move",
+			containment: "#InteractiveChart"
+		});
+
+		$("#Cart").droppable({
+     		over: DragOn,
+			out: DragOut
+    	});
+		$("#undo").click(function() {
+    	    revertDraggable($("#IconContainer img"));
+			ChangeDisplay();
+	    });
+		$("#IconContainer img").each(function() {
+			$(this).data("originalPosition",$(this).position());
+		});
+		$("#checkout").click(function() {
+			ChangeDisplay();
+			$("#taxPopup").dialog('open');
+		});
+
+		$("#taxPopup").dialog({
+		    autoOpen: false,
+			//show: 'slide',
+		    resizable: false
+		});
+		
+	});
+	
+	function DragOn( event, ui ) {
+		var draggable = ui.draggable;
+		if (draggable.data('counted') != 1) { ChangeResults(draggable.attr('cost'),1); }
+		draggable.data('counted',1);
+	}
+	function DragOut( event, ui ) {
+		var draggable = ui.draggable;
+		if (draggable.data('counted') == 1) { ChangeResults(draggable.attr('cost'),0); }
+		draggable.data('counted',0);
+	}
+	
+	function ChangeResults(Amount,ChangeType) {
+		if (ChangeType == 0) { Cash += Number(Amount); }
+		if (ChangeType == 1) { Cash -= Number(Amount); }
+		if (ChangeType == 2) { Cash = Number(Amount); }
+	}
+	
+	function ChangeDisplay() {
+		$("#Results .CashLeft").html("$" + Cash.toFixed(2));
+		$("#Results .CashSpent").html("$" + (20 - Cash).toFixed(2));
+		if ( Cash < 0 ) { 
+			$("#Results span").css("color","red"); 
+			$("#Results .Status").html("You've spent too much!");
+		} else { 
+			$("#Results span").css("color","black");
+			$("#Results .Status").empty();
+		}
+	}
+
+	function revertDraggable($selector) {
+		$selector.each(function() {
+			var $this = $(this), position = $this.data("originalPosition");
+			if (position) {
+				$this.animate({
+					left: position.left,
+					top: position.top
+				}, 500);
+			}
+			$this.data('counted',0)
+		});
+		ChangeResults(20,2);
+	}
+</script>
+
+<style type="text/css">
+	.ui_interactive {
+		background: url("../../js/jquery_ui/skin/images/paper-bg.jpg") repeat scroll 0 0 transparent !important;
+		border: 5px solid #BFBFBF;
+		color: #333333;
+		font-size: 14px;
+		margin: 0 auto;
+		position: relative;
+		height: 540px;
+		width: 680px;
+		background-color: #E4E4E4;
+		padding: 10px;
+		border-radius: 4px 4px 4px 4px;
+	}
+	#InteractiveChart {
+		position: relative;
+		width: 680px;
+		height: 530px;
+		background-color: white;
+	}
+	#IconContainer {
+		position: absolute;
+		width: 78px;
+		left: 10px;
+		top: 10px;
+		z-index: 2;
+	}
+	#CartContainer {
+		position: absolute;
+		width: 471px;
+		height: 462px;
+		top: 20px;
+		left: 209px;
+		background: url(images/05_05_01-GuyWithCart.jpg) no-repeat;
+		z-index: 1;
+	}
+	#IconContainer table { width: 200px; }
+	#IconContainer table, #IconContainer table td, #IconContainer table tr {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		background-color: white;
+		vertical-align: middle;
+	}
+	#InteractiveChart .header {
+		position: absolute;
+		left: 175px;
+		top: 2px;
+		color: #664B3D;		
+		z-index: 3;
+		font-size: 15px;
+		font-weight: bold;
+		text-align: center;
+	}
+	#Cart {
+		position: absolute;
+		left: 17px;
+		top: 225px;
+		width: 193px;
+		height: 145px;
+	}
+	#Results {
+		position: absolute;
+		width: 200px;
+		height: 100px;
+		top: 20px;
+		left: 0px;
+	}
+	#Results p {
+		font-size: 13px;
+		text-align: center;
+	}
+	#Results span, #Results .Status { font-weight: bold; }
+	#Results button { margin-left: 50px; width: 100px; margin-bottom: 5px; }
+	#IconContainer img { position: absolute; }
+	#Book { top: 0px; left: 0px; }
+	#Candy { top: 47px; left: 0px; }
+	#CD { top: 105px; left: 0px; }
+	#Gum { top: 149px; left: 0px; }
+	#Movie { top: 201px; left: 0px; }
+	#Paper { top: 245px; left: 0px; }
+	#Shirt { top: 295px; left: 0px; }
+	#Shoes { top: 350px; left: 0px; }
+	#Soda { top: 399px; left: 0px; }
+	#Game { top: 458px; left: 0px; }
+
+	#taxPopup { display:none; padding:10px; }
+</style>
+</head>
+<body>
+
+<div id="logo"></div>
+<div id="window">
+<div id="page">
+<div id="nav">
+<dl>
+<dt>Navigation</dt>
+<dd>
+<ul>
+<li id="next"><a href="05_05_02.htm" title="Next"><span>Next</span></a></li>
+<li id="prev"><a href="../05_04/05_04_08.htm" title="Previous"><span>Previous</span></a></li>
+<li id="home"><a href="../../index.htm" title="Home"><span>Home</span></a></li>
+<li id="gloss"><a class="pop" href="../../glossary/glossary.htm" title="Glossary"><span>Glossary</span></a></li>
+<li id="notes"><a href="../../gendocs/courseresources/resource.htm" title="Course resources"><span>Course Resources</span></a></li>
+</ul>
+</dd>
+</dl>
+</div>
+
+
+<div id="content">
+<div id="title"><span id="title1"></span><span id="title2"></span></div>
+<div id="margin">
+
+
+<h1>How Far Can 20 Dollars Go?</h1>
+<p>Imagine you have 20 dollars. You go to the store to spend your cash. How will you choose to spend it? Try this activity to see a few options.</p>
+
+<div class="ui_interactive">
+    <div id="InteractiveChart">
+    	<div class="header">Drag what you want to buy into the cart<br>and be sure to hit Check Out.</div>
+        <div id="IconContainer">
+           <table>
+                <tr><td width="78" height="44"><img id="Book" cost="8.4" src="images/05_05_01-Book.png" width="78" height="44"></td><td>Book = <strong>$8</strong></td></tr>
+                <tr><td width="78" height="54"><img id="Candy" cost="3.15" src="images/05_05_01-Candy.png" width="78" height="54"></td><td>Candy = <strong>$3</strong></td></tr>
+                <tr><td width="78" height="41"><img id="CD" cost="15.75" src="images/05_05_01-CD.png" width="78" height="41"></td><td>CD = <strong>$15</strong></td></tr>
+                <tr><td width="78" height="48"><img id="Gum" cost="1.05" src="images/05_05_01-Gum.png" width=78"" height="48"></td><td>Gum = <strong>$1</strong></td></tr>
+                <tr><td width="78" height="41"><img id="Movie" cost="10.50" src="images/05_05_01-Movie.png" width="78" height="41"></td><td>Movie = <strong>$10</strong></td></tr>
+                <tr><td width="78" height="46"><img id="Paper" cost="5.25" src="images/05_05_01-Paper.png" width="78" height="46"></td><td>Magazine = <strong>$5</strong></td></tr>
+                <tr><td width="78" height="52"><img id="Shirt" cost="12.6" src="images/05_05_01-Shirt.png" width="78" height="52"></td><td>Shirt = <strong>$12</strong></td></tr>
+                <tr><td width="78" height="45"><img id="Shoes" cost="18.0" src="images/05_05_01-Shoes.png" width="78" height="45"></td><td>Shoes = <strong>$18</strong></td></tr>
+                <tr><td width="78" height="56"><img id="Soda" cost="2.1" src="images/05_05_01-Soda.png" width="78" height="56"></td><td>Soda = <strong>$2</strong></td></tr>
+                <tr><td width="78" height="50"><img id="Game" cost="21" src="images/05_05_01-VideoGame.png" width="78" height="50"></td><td>Video Game = <strong>$20</strong></td></tr>
+            </table>
+        </div>
+        <div id="CartContainer">
+            <div id="Results">
+            	<p>
+                Cash Spent: <span class="CashSpent">$0.00</span><br>
+                Cash Left: <span class="CashLeft">$20.00</span></p>
+            	<p class="Status"></p>
+                <button id="checkout" type="button">Check Out</button><button id="undo" type="button">Empty Cart</button>
+            </div>
+            <div id="Cart"></div>
+        </div>
+    </div>
+    <span class="imgNote">&copy;2011 Photodisc/Brand X Pictures/Comstock/PhotoObjects.net/Stockbyte/Thinkstock</span>
+</div>
+
+<div id="taxPopup" title="Taxes">
+	<p>At checkout you were required to pay a 5% sales tax. Did you think about this before you checked out? Did you have enough money to buy the items and pay for the tax?  If not try again keeping the 5% sales tax in mind.</p>
+</div>
+
+
+<div class="textVersion"><a class="pop" href="05_05_01_a.htm" title="Shopping" data-height="525">Text Version</a></div>
+
+
+</div>
+</div>
+<div id="menu">
+<div id="segments"><a href="../../index.htm" title="Units"><span>Segments</span></a></div>
+<dl id="units">
+<dt><span>Units</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="lessons">
+<dt><span>Lessons</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="pages">
+<dt><span>1 of 10</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="footer">
+<span id="copy">Unless otherwise noted, &copy; 2011 FLVS</span>
+</div>
+</body>
+</html>

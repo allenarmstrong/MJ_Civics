@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* This is for the basic flash object player. It has to be offset a little to appear correctly in a browser.*/
+span.jQPlayer object{
+margin-right:5px;
+background-color:#000;
+outline:none;
+position:relative;
+top:4px;
+}
+/* Below are random styles that aren't required but make can make the player match it's surroundings.*/
+span.jQPlayer span{
+font-weight:bold;
+}
+span#blue object{
+background-color:#2cacff;
+border:1px solid #003366;
+}
+span.red object{
+background-color:#990000;
+}
+span.red{
+color:#990000;
+font-size:12px;
+font-family:Arial, Helvetica, sans-serif;
+}
+span.green object{
+background-color:#006600;
+}

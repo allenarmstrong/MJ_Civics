@@ -1,0 +1,77 @@
+<settings>
+	
+	<config 	quality="HIGH" 
+			debug="false" 
+			screenWidth="660" 
+			screenHeight="700"
+			>
+
+	</config>
+	
+	<title>INFLUENCE OF THE ENLIGHTENMENT </title>
+	
+	<instructions>Now it's time for a game! Review important concepts from this lesson. Match each word or phrase to the sentence where it makes sense. Play as often as you wish to improve your learning.
+
+Select "instructions" to toggle this window.
+	</instructions>
+	
+	<matching columnA="" columnB="">
+		<set>
+			<choice><![CDATA[Direct democracy]]></choice>
+			<answer><![CDATA[a form of government where the laws are made directly by the citizens]]></answer>
+		</set>
+		<set>
+			<choice><![CDATA[Enlightenment]]></choice>
+			<answer><![CDATA[a time of change in Europe in the 17th and 18th centuries where philosophers focused on reason as a way to solve problems]]></answer>
+		</set>
+		<set>
+			<choice><![CDATA[Executive branch]]></choice>
+			<answer><![CDATA[the part of government responsible for enforcing the laws]]></answer>
+		</set>
+		<set>
+			<choice><![CDATA[Influence]]></choice>
+			<answer><![CDATA[to have an effect on something]]></answer>
+		</set>
+		<set>
+			<choice><![CDATA[Judicial branch]]></choice>
+			<answer><![CDATA[the part of government responsible for interpreting the laws]]></answer>
+		</set>
+		<set>
+			<choice><![CDATA[Legislative branch]]></choice>
+			<answer><![CDATA[the part of government responsible for making laws]]></answer>
+		</set>
+		<set>
+			<choice><![CDATA[Reason]]></choice>
+			<answer><![CDATA[the ability to think logically, clearly, and without emotion]]></answer>
+		</set>
+		<set>
+			<choice><![CDATA[Republic]]></choice>
+			<answer><![CDATA[a form of government where the citizens elect representatives to make laws]]></answer>
+		</set>
+		<set>
+			<choice><![CDATA[Tyranny]]></choice>
+			<answer><![CDATA[the abusive use of power]]></answer>
+		</set>
+		
+	</matching>
+	
+	<feedback>
+		<incorrect> Incorrect. Here are the correct statements.
+
+Direct democracy: a form of government where the laws are made directly by the citizens
+
+Enlightenment: a time of change in Europe in the 17th and 18th centuries where philosophers focused on reason as a way to solve problems
+
+Executive branch: the part of government responsible for enforcing the laws 
+Influence: to have an effect on something
+
+Judicial branch: the part of government responsible for interpreting the laws
+Legislative branch: the part of government responsible for making laws
+Reason: the ability to think logically, clearly, and without emotion
+Republic: a form of government where the citizens elect representatives to make laws
+Tyranny: the abusive use of power</incorrect>
+		<correct>Excellent Work!</correct>
+	</feedback>
+	
+
+</settings>	

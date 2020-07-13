@@ -1,0 +1,57 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Select "Yes" or "No" for each of the questions in the slideshow. Select "restart" when you reach the end to restart the slideshow.<br/>]]>
+	</instructions>
+
+	<intro>Time to learn about the Supreme Court. Good luck, citizen!</intro>
+	
+	<scenarios>
+
+		<scenario type="scene" clip="IntroClip" label="Intro">
+			<button clip="StartButton" label="Start" destination="Scenario1Clip"/>
+		</scenario>
+
+		<scenario type="scene" clip="Scenario1Clip" label="Scenario1">
+			<button clip="AButton" label="Yes, actions can express ideas and therefore is a type of speech." destination="Scenario2BClip" />
+			<button clip="BButton" label="No, speech only refers to language spoken aloud by people." destination="Scenario2AClip" />
+			
+		</scenario>
+
+		<scenario type="scene" clip="Scenario2AClip" label="Scenario2A">
+			<button clip="AButton" label="Yes, the First Amendment protects the Tinkers' right to wear arm bands and other forms of free speech in public schools." destination="Scenario3AClip" />
+			<button clip="BButton" label="No, the First Amendment does not protect the Tinker's wearing of arm bands and other forms of free speech in public schools." destination="Scenario3BClip" />
+		</scenario>
+
+		<scenario type="scene" clip="Scenario2BClip" label="Scenario2B">
+			<button clip="AButton" label="Yes, the First Amendment protects the Tinkers' right to wear arm bands and other forms of free speech in public schools." destination="Scenario3AClip" />
+			<button clip="BButton" label="No, the First Amendment does not protect the Tinker's wearing of arm bands and other forms of free speech in public schools." destination="Scenario3BClip" />
+		</scenario>
+
+		<scenario type="scene" clip="Scenario3AClip" label="Scenario3A">
+			<button clip="AButton" label="Yes, the armbands were a significant disruption. The school board's ban is a reasonable limit on freedom of speech." destination="Scenario4AClip" />
+			<button clip="BButton" label="No, the armbands did not cause significant disruption. The school board's ban is an unreasonable limit on freedom of speech." destination="Scenario4BClip" />
+		</scenario>
+
+		<scenario type="scene" clip="Scenario3BClip" label="Scenario3B">
+			<button clip="AButton" label="Yes, the armbands were a significant disruption. The school board's ban is a reasonable limit on freedom of speech." destination="Scenario4AClip" />
+			<button clip="BButton" label="No, the armbands did not cause significant disruption. The school board's ban is an unreasonable limit on freedom of speech." destination="Scenario4BClip" />
+		</scenario>
+
+
+		<scenario type="final" clip="Scenario4AClip" label="Scenario4A" destination="ConclusionClip" />
+		<scenario type="final" clip="Scenario4BClip" label="Scenario4B" destination="ConclusionClip" />
+		<scenario type="end" clip="ConclusionClip" label="Conclusion" />
+
+
+	</scenarios>
+
+</settings>	

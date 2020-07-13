@@ -1,0 +1,49 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Challenge yourself to locate the states that would most likely be effected by Mississippi River flooding.  Check off the states and select "submit" when you are confident with your choices. 
+<br/>You may view a map of the Mississippi River and surrounding states at any time by selecting the "help" icon.<br/>]]>
+	</instructions>
+
+	<intro>The Mississippi is flooding! Who needs help?</intro>
+
+	<guides>
+		<guide>Identify the threatened states!</guide>
+	</guides>
+
+	<checkboxes>
+		<checkbox correct="true">Arkansas</checkbox>
+		<checkbox correct="true">Iowa</checkbox>
+		<checkbox correct="false">Maine</checkbox>
+		<checkbox correct="true">Minnesota</checkbox>
+		<checkbox correct="true">Missouri</checkbox>
+		<checkbox correct="false">Montana</checkbox>
+		<checkbox correct="true">Tennessee</checkbox>
+		<checkbox correct="false">Texas</checkbox>
+		<checkbox correct="false">Virginia</checkbox>
+		<checkbox correct="false">Washington</checkbox>
+		<checkbox correct="true">Wisconsin</checkbox>
+	</checkboxes>
+
+	<feedback>
+		<correct title="Correct">Great job! You must be familiar with U.S. geography! Close this window and examine the map to confirm your choices.
+
+After closing the map, select "next" to continue to the next screen.</correct>
+		<incorrect title="Incorrect">Oops, not quite. Close this window and examine the map to see which states border the Mississippi River.</incorrect>
+		<failed title="Incorrect">Nice try. Close this window to view the correct answers.
+
+Select "next" when you are ready to reset the interactive.</failed>
+		<freebie title="There you go!">Now you are familiar with U.S. geography!
+
+Close this window and select "reset" to restart the interactive.</freebie>
+	</feedback>
+
+</settings>	

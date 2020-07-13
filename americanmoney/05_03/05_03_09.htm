@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>M/J Civics</title>
+<link type="text/css" media="screen" href="../../css/theme.css" rel="stylesheet" />
+<link type="text/css" media="print" href="../../css/print.css" rel="stylesheet" />
+<link type="text/css" media="screen" href="../../js/jquery_ui/core/css/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+
+<script type="text/javascript" src="../../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.swfobject.1-1-1.min.js"></script>
+<script type="text/javascript" src="../../js/core.js">
+</script><script type="text/javascript">var unitNo = 5;</script>
+<script type="text/javascript">var unitNoLesNo = 0503;</script>
+<script type="text/javascript" src="../../js/links.js"></script>
+<script type="text/javascript" src="../../js/jquery_ui/core/js/jquery-ui-1.8.11.custom.min.js"></script>
+<script type="text/javascript" src="../../js/plugins/jquery.reorder.js"></script>
+<script type="text/javascript">
+	
+	var Cash = Number(0);
+	
+	$(document).ready(function() {
+		$(".Left").reorder();
+		$(".SpectrumAnswers").reorder();
+    	$(".draggable").draggable({ 
+			cursor: "move"
+		});
+		$(".undo").click(function() {
+    	    revertDraggable($(".draggable"));
+			$(".droppable").css("border-color","black");
+			$(".droppable").css("color","black");
+			Cash = Number(0);
+			$(".Cash").html("0");
+	    });
+		$(".droppable").droppable({
+     		drop: DropOn
+    	});
+		$(".draggable").each(function() {
+			$(this).data("originalPosition",$(this).position());
+		});
+		$(".InteractiveChart").each(function() { $(this).data("originalHeight",$(this).height()); });
+		revertDraggable($(".draggable")); // Resets positions on load
+		$(".InteractiveChart").each(function() { $(this).height($(this).data("originalHeight")); });
+	});
+	
+	function DropOn( event, ui ) {
+		var $this = ui.draggable;
+		var $that = $(this);
+		if ( $this.attr("data-label") == $that.attr("data-label") ) {
+			$that.css("border-color","green");
+			$that.css("color","grey");
+			$this.hide();
+			Cash++;
+			$(".Cash").html(Cash);
+		} else {
+			revertDraggable($this);
+		}
+	}
+	
+	function revertDraggable($selector) {
+		$selector.each(function() {
+			var $this = $(this), position = $this.data("originalPosition");
+			if (position) {
+				$this.css("position","absolute");
+				$this.animate({
+					left: position.left,
+					top: position.top
+				}, 500);
+			}
+			$selector.show();
+		});
+	}
+	$(function() {
+		$( "#tabs" ).tabs();
+	});
+</script>
+
+<style type="text/css">
+	#tabs {
+		background: url("../../js/jquery_ui/skin/images/paper-bg.jpg") repeat scroll 0 0 transparent !important;
+		border: 5px solid #BFBFBF;
+		color: #333333;
+		font-size: 10pt;
+		margin: 0 auto;
+		position: relative;
+		background-color: #E4E4E4;
+		padding: 10px;
+		border-radius: 4px 4px 4px 4px;
+	}
+	.InteractiveChart {
+		position: relative;
+		width: 655px;
+		height: 525px;
+		background-color: white;
+		vertical-align: top;
+		padding: 5px;
+		margin: 8px;
+		border: 1px solid black;
+	
+	background-image: url(../../goingglobal/06_01/images/capitol.png);
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+}
+	}
+	.InteractiveChart h2 {
+		text-align: center;
+	}
+	.Left {
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		vertical-align: top;
+		width: 200px;
+		margin-right: 50px;
+		z-index: 1;
+	}
+	.Right {
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		vertical-align: top;
+		width: 400px;
+		z-index: 1;
+	}
+	.Right .droppable {
+		border: 2px solid black;
+		padding: 10px;
+		margin: 4px;
+		cursor:default;
+		background-color: white;
+		z-index: 2;
+	}
+	.Left .draggable {
+		border: 1px solid black;
+		margin: 4px;
+		padding: 4px;
+		text-align: center;
+		cursor: pointer;
+		background-color: white;
+		width: 150px;
+		z-index: 1;
+		height: 48px;
+		font-size: 12px;
+	}
+	.Spectrum {
+		width: 630px;
+		border-bottom: 2px dotted black;
+		margin-left: 15px;
+	}
+	.SpectrumAnswers {
+		margin: auto; width: 640px;
+	}
+	.Spectrum .droppable {
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		width: 185px;
+		margin: 5px 5px 0px 5px;
+		padding: 5px;
+		cursor: default;
+		background-color: white;
+		border-left: 1px dashed black;
+		border-right: 1px dashed black;
+		border-top: 1px dashed black;
+	}
+	.SpectrumAnswers {
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	.SpectrumAnswers .draggable {
+		position: relative;
+		font-weight: bold;
+		z-index: 30;
+		background-color: white;
+		cursor: pointer;
+		text-align: center;
+		width: 100px;
+		padding: 5px;
+	}
+	.CashBox {
+		float: right;
+		width: 125px;
+		margin: 10px 30px 10px 0px;
+		font-size: 14px;
+		font-weight: bold;
+		color: green;
+	}
+	.undo { width: 50px; }
+</style>
+</head>
+<body>
+<div id="logo"></div>
+<div id="window">
+<div id="page">
+<div id="nav">
+<dl>
+<dt>Navigation</dt>
+<dd>
+<ul>
+<li id="next"><a href="05_03_10.htm" title="Next"><span>Next</span></a></li>
+<li id="prev"><a href="05_03_08.htm" title="Previous"><span>Previous</span></a></li>
+<li id="home"><a href="../../index.htm" title="Home"><span>Home</span></a></li>
+<li id="gloss"><a class="pop" href="../../glossary/glossary.htm" title="Glossary"><span>Glossary</span></a></li>
+<li id="notes"><a href="../../gendocs/courseresources/resource.htm" title="Course resources"><span>Course Resources</span></a></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div id="content">
+<div id="title"><span id="title1"></span><span id="title2"></span></div>
+<div id="margin">
+
+
+<h1>ReCAP!</h1>
+<p>You should now be familiar with types of economies and how the United States promotes competition.</p>
+<p>Review your notes and the information in the lesson. Did you print or save your <a class="pop" href="05_03_02_a.htm" title="CAP file" data-height="750">CAP File</a> and place it in a safe location?</p>
+<p>Now it's time for a game! Compete for profits by matching each statement in all three sections:</p>
+
+
+<div id="tabs">
+    <ul>
+    	<li><a href="#tabs-1">Match the Statement</a></li>
+	    <li><a href="#tabs-2">Match the Cause and Effect</a></li>
+	    <li><a href="#tabs-3">Match the Economic System</a></li>
+    </ul>
+    <div id="tabs-1">
+       <div class="InteractiveChart">
+            <div class="CashBox"><button class="undo" type="button">Reset</button>&nbsp;Cash: $<span class="Cash">0</span></div>
+            <h2>Match the statement</h2>
+            <p>Match the items to the correct statement.</p>
+            <div class="Left">
+                <div class="draggable" data-label="A">Adam Smith</div>
+                <div class="draggable" data-label="B">John Maynard Keynes</p></div>
+                <div class="draggable" data-label="C">Karl Marx</div>
+                <div class="draggable" data-label="D">Antitrust Law</div>
+                <div class="draggable" data-label="E">Patent Law</div>
+                <div class="draggable" data-label="F">Three economic questions</div>
+            </div> 
+            <div class="Right">
+                <div class="droppable" data-label="A">Supported a free market economy with little or no government regulation</div>
+                <div class="droppable" data-label="B">Thought a market economy was best with government protection from economic problems</div>
+                <div class="droppable" data-label="C">Believed market economies were unfair and government should make economic decisions</div>
+                <div class="droppable" data-label="D">Prevents a business from driving out the competition and making unfair profits</div>
+                <div class="droppable" data-label="E">Protects an inventor's creation so others can not steal and profit from the idea</div>
+                <div class="droppable" data-label="F">Are what to produce, how to produce it, and for whom will it be produced</div>
+            </div>
+        </div>
+    </div>     
+	
+    <div id="tabs-2">
+    	<div class="InteractiveChart">
+            <div class="CashBox"><button class="undo" type="button">Reset</button>&nbsp;Cash: $<span class="Cash">0</span></div>
+            <h2>Match the Cause and Effect</h2> 
+            <p>Match the cause to the correct effect.</p>   
+            <div class="Left">
+                <div class="draggable" data-label="A">An inventor obtains a patent for a new invention.</div>
+                <div class="draggable" data-label="B">A regulation sets a minimum price for a certain product.</p></div>
+                <div class="draggable" data-label="C">A federal court rules that a certain company is violating antitrust law.</div>
+            </div> 
+            <div class="Right">
+                <div class="droppable" data-label="A">Companies will have to obtain permission and give payment to the inventor to produce and sell the invention.</div>
+                <div class="droppable" data-label="B">Businesses that sell the item change their prices to reflect the new regulation. Some have to increase their prices and lose customers. Those who lower their prices might gain customers.</div>
+                <div class="droppable" data-label="C">The company that has a monopoly must split into separate companies or send customers to a different company.</div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="tabs-3">
+		<div class="InteractiveChart">
+            <div class="CashBox"><button class="undo" type="button">Reset</button>&nbsp;Cash: $<span class="Cash">0</span></div>
+            <h2>Match the Economic System</h2>    
+            <p>Place each type of economic system on this line based on level of government involvement.</p>
+            <div class="Spectrum">
+                <div class="droppable" data-label="A" style="text-align: left;">*Many Government Decisions</div>
+                <div class="droppable" data-label="B" style="text-align: center;">&nbsp;</div>
+                <div class="droppable" data-label="C" style="text-align: right;">Few Government Decisions*</div>
+            </div>
+            <div class="SpectrumAnswers">
+                <div class="draggable" data-label="A">Command</div>
+                <div class="draggable" data-label="B">Mixed</div>
+                <div class="draggable" data-label="C">Free Market</div>
+            </div> 
+        </div>
+    </div>    
+</div>
+<div class="textVersion"><a class="pop" href="05_03_09_a.htm" title="Profits" data-height="750">Text Version</a></div>
+
+                
+
+
+</div>
+</div>
+<div id="menu">
+<div id="segments"><a href="../../index.htm" title="Units"><span>Segments</span></a></div>
+<dl id="units">
+<dt><span>Units</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="lessons">
+<dt><span>Lessons</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="pages">
+<dt><span>9 of 10</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="footer">
+<span id="copy">Unless otherwise noted, &copy; 2011 FLVS</span>
+</div>
+</body>
+</html>

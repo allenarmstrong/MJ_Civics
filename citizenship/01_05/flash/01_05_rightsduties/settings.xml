@@ -1,0 +1,45 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Determine whether each item is for legal citizens only (Legal) or for all U.S. residents (All).<br/><br/>When you are confident with your choices, select "submit." <br/>]]>
+	</instructions>
+
+	<intro>Time to show what you know!</intro>
+
+	<guides>
+		<guide>Make Your Selection</guide>
+	</guides>
+
+	
+
+	<selections>
+		<selection><question>Serving on a jury</question><choice type="correct">Legal</choice><choice type="">All</choice></selection>
+		<selection><question>Attending school</question><choice type="">Legal</choice><choice type="correct">All</choice></selection>
+		<selection><question>Attending a city council meeting</question><choice type="">Legal</choice><choice type="correct">All</choice></selection>
+		<selection><question>Obtaining a U.S. passport</question><choice type="correct">Legal</choice><choice type="">All</choice></selection>
+		<selection><question>Voting in national elections</question><choice type="correct">Legal</choice><choice type="">All</choice></selection>
+		<selection><question>Paying taxes</question><choice type="">Legal</choice><choice type="correct">All</choice></selection>
+		<selection><question>Volunteering in the community</question><choice type="">Legal</choice><choice type="correct">All</choice></selection>
+		<selection><question>Working for the federal government</question><choice type="correct">Legal</choice><choice type="">All</choice></selection>
+		<selection><question>Working for a privately run business, like a restaurant</question><choice type="">Legal</choice><choice type="correct">All</choice></selection>
+		<selection><question>Running for federal office</question><choice type="correct">Legal</choice><choice type="">All</choice></selection>
+		<selection><question>Writing a letter to the newspaper about a local law</question><choice type="">Legal</choice><choice type="correct">All</choice></selection>
+		<selection><question>Obeying laws</question><choice type="">Legal</choice><choice type="correct">All</choice></selection>
+	</selections>
+
+	<feedback>
+		<correct title="Correct">Great job!</correct>
+		<incorrect title="Incorrect">Oops, not quite. The wrong answers have been indicated with bold, red text.</incorrect>
+		<failed title="Incorrect">Nice try. Select "continue" to view the correct answers.</failed>
+		<freebie title="There you go!">Select "continue" and then select "reset" to try again.</freebie>
+	</feedback>
+
+</settings>	

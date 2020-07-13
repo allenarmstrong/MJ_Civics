@@ -1,0 +1,38 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Roll your mouse over the following apps to learn more about them.<br/>]]>
+	</instructions>
+
+	<intro>Time for a review. Good luck, citizen.</intro>
+
+	<rollovers>
+		<rollover clip="RolloverClip1" title="I See Land!" x="166" y="130" rotation="0">
+			<![CDATA[The United States contains 50 states, capitals, insular areas, and the national capital, Washington, D.C. The physical features of the land are diverse and are important national resources.]]>
+		</rollover>
+		<rollover clip="RolloverClip2" title="Culture-tastic!" x="254" y="130" rotation="0">
+			<![CDATA[North America, and the United States within it, has many cultural regions. Traits of culture include language, foods, and holiday traditions.]]>
+		</rollover>
+		<rollover clip="RolloverClip3" title="U.S. Borders!" x="166" y="215" rotation="0">
+			<![CDATA[Maps of the United States can show us information about the nation's borders, people, and land. Most Americans can move freely between the U.S. states.]]>
+		</rollover>
+		<rollover clip="RolloverClip4" title="Eco-Data!" x="254" y="215" rotation="0">
+			<![CDATA[The United States faces many ecological issues. We can view this data on maps. Citizens can help address these issues through conservation efforts.]]>
+		</rollover>
+		<rollover clip="RolloverClip5" title="Become a Citizen!" x="166" y="295" rotation="0">
+			<![CDATA[People become U.S. citizens through either birth or naturalization. The naturalization process takes a lot of time and effort. Many immigrants to the United States hope to become legal citizens.]]>
+		</rollover>
+		<rollover clip="RolloverClip6" title="Citizenship!" x="254" y="295" rotation="0">
+			<![CDATA[U.S. citizens have many duties and responsibilities. Obeying laws, paying taxes, serving on juries, and defending the nation are some of the duties required by law. Responsibilities include helping others, voting, and respecting the troops. ]]>
+		</rollover>
+	</rollovers>
+
+</settings>	

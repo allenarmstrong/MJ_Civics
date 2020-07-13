@@ -1,0 +1,54 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Drag the U.S. protectorates to the correct location on the map. <br/><br/>You may scroll through the remaining protectorates by selecting the "next" and "prev" buttons.<br/>]]>
+	</instructions>
+
+	<intro>Time to play a drag and drop game. Good luck, citizen!</intro>
+
+
+	<segments>
+		<segment clip="SamoaClip" 	label="American Samoa" 	id="0"/>
+		<segment clip="BakerClip" 	label="Baker Island" 	id="1"/>
+		<segment clip="GuamClip" 	label="Guam" 	id="2"/>
+		<segment clip="HowlandClip" 	label="Howland Island" 	id="3"/>
+		<segment clip="JarvisClip" 	label="Jarvis Island" 	id="4"/>
+		<segment clip="JohnstonClip" 	label="Johnston Atoll" 	id="5"/>
+		<segment clip="KingmanClip" 	label="Kingman Reef" 	id="6"/>
+		<segment clip="MidwayClip" 	label="Midway Atoll" 	id="7"/>
+		<segment clip="NavassaClip" 	label="Navassa Island" 	id="8"/>
+		<segment clip="MarianasClip" 	label="Northern Mariana Islands" 	id="9"/>
+		<segment clip="PalmyraClip" 	label="Palmyra Atoll" 	id="10"/>
+		<segment clip="PRClip" 	label="Puerto Rico" 	id="11"/>
+		<segment clip="VirginClip" 	label="U.S. Virgin Islands" 	id="12"/>
+		<segment clip="WakeClip" 	label="Wake Islands" 	id="13"/>
+	</segments>
+
+	<bins>
+		<bin clip="SmallPoint" 	label="American Samoa" 	id="0"/>
+		<bin clip="SmallPoint" 	label="Baker Island" 	id="1"/>
+		<bin clip="SmallPoint" 	label="Guam" 	id="2"/>
+		<bin clip="SmallPoint" 	label="Howland Island" 	id="3"/>
+		<bin clip="SmallPoint" 	label="Jarvis Island" 	id="4"/>
+		<bin clip="SmallPoint" 	label="Johnston Atoll" 	id="5"/>
+		<bin clip="SmallPoint" 	label="Kingman Reef" 	id="6"/>
+		<bin clip="SmallPoint" 	label="Midway Atoll" 	id="7"/>
+		<bin clip="SmallPoint" 	label="Navassa Island" 	id="8"/>
+		<bin clip="SmallPoint" 	label="Northern Mariana Islands" 	id="9"/>
+		<bin clip="SmallPoint" 	label="Palmyra Atoll" 	id="10"/>
+		<bin clip="SmallPoint" 	label="Puerto Rico" 	id="11"/>
+		<bin clip="SmallPoint" 	label="U.S. Virgin Islands" 	id="12"/>
+		<bin clip="SmallPoint" 	label="Wake Islands" 	id="13"/>
+	</bins>
+
+	<feedback title="Good Job!">Select "continue" to close this window, and then select "reset" to try again.</feedback>
+
+</settings>	

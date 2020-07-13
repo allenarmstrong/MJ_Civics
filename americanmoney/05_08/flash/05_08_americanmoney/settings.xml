@@ -1,0 +1,38 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Roll your mouse over the following apps to learn more about them.<br/>]]>
+	</instructions>
+
+	<intro>Time for a review. Good luck, citizen.</intro>
+
+	<rollovers>
+		<rollover clip="RolloverClip1" title="Motivate!" x="160" y="130" rotation="0">
+			<![CDATA[Profit, incentives, and competition motivate people and businesses. Some people become entrepreneurs. Business competition motivates citizens to buy certain goods and services.]]>
+		</rollover>
+		<rollover clip="RolloverClip2" title="It's Scarce!" x="265" y="130" rotation="0">
+			<![CDATA[Scarcity forces us to make choices. Each choice has an opportunity cost. The forces of supply and demand lead to changes in prices.]]>
+		</rollover>
+		<rollover clip="RolloverClip3" title="Competition!" x="160" y="215" rotation="0">
+			<![CDATA[The U.S. economy is a mixed economy. People have freedom to choose how to earn and spend income. The government creates some laws to protect them and promote competition.]]>
+		</rollover>
+		<rollover clip="RolloverClip4" title="Wise Credit!" x="265" y="215" rotation="0">
+			<![CDATA[The U.S. government and citizens use credit services. Interest is the cost of using credit. Financial institutions offer credit, and the government regulates their practices.]]>
+		</rollover>
+		<rollover clip="RolloverClip5" title="Budget It!" x="160" y="295" rotation="0">
+			<![CDATA[People and governments create budgets to monitor income and spending. Taxes from income and spending help support services that governments provide to citizens.]]>
+		</rollover>
+		<rollover clip="RolloverClip6" title="To The Bank!" x="265" y="295" rotation="0">
+			<![CDATA[Banks are businesses that people use to save and grow their income. The Federal Reserve is the central bank of the United States. It regulates banking practices to help control the money supply and economy.]]>
+		</rollover>
+	</rollovers>
+
+</settings>	

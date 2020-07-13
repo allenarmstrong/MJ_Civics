@@ -1,0 +1,32 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Welcome to the Wheel of Citizenship!
+
+Select the wheel, "next" or "prev," and I will make it spin! <br/><br/>Rolling your mouse over a term will reveal more information about that term.<br/>]]>
+	</instructions>
+
+	<intro>Time to study some terms. Good luck, citizen!</intro>
+
+	<terms>
+		<term title="Culture"><![CDATA[Culture is the shared practices and beliefs of a group of people. People in the United States come from diverse backgrounds, but share a common American culture.]]></term>
+		<term title="Insular area"><![CDATA[The United States has many insular areas, such as Guam. An insular area is U.S. territory that is not a state, a part of a state, or the District of Columbia.]]></term>
+		<term title="Citizen"><![CDATA[A citizen is a person who is native or naturalized to a country. Citizens have many duties and responsibilities. Most U.S. citizens are native-born.]]></term>
+		<term title="Civic responsibility"><![CDATA[Civic responsibility includes the things good citizens do to promote the common good.  Voting in elections and helping others in the community are examples of civic responsibilities. ]]></term>
+		<term title="Civic duty"><![CDATA[Civic duty includes the obligations citizens are required by law to fulfill. Paying taxes and serving on juries are examples of civic duties.]]></term>
+		<term title="Data"><![CDATA[Data is information, facts, or statistics. The U.S. Census Bureau collects data about Americans. The Census helps the government serve the people.]]></term>
+		<term title="Geopolitical"><![CDATA[Geopolitical means relating to political divisions over a geographic area. We use ÒgeopoliticalÓ to talk about human-made borders. An example is the imaginary lines between states.]]></term>
+		<term title="Conservation"><![CDATA[Conservation is the actions we take to protect Earth's resources. Good citizenship includes making choices that help protect our environment.]]></term>
+		<term title="Citizenship"><![CDATA[Citizenship is the legal status of being a citizen or a personÕs actions and behavior as a citizen. All people, whether legal citizens or not, can act like good citizens by meeting civic responsibilities and duties.]]></term>
+		<term title="Naturalization"><![CDATA[Naturalization is the legal process for nonnative residents to become U.S. citizens. This is a long process. It includes residence, an application, interviews, a test, and an oath.]]></term>
+		<term title="Community"><![CDATA[A community is a group of people who live in the same area, have a common background, or share similar interests. You can belong to multiple communities.]]></term>
+	</terms>
+</settings>	

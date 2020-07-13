@@ -1,0 +1,27 @@
+/* CSS Document */
+
+.timeline {background:url(../imgs/toy_timeline.png) no-repeat top left; width:750px; height:87px;}
+.timeline2 {background:url(../imgs/toy_timeline2.png) no-repeat top left; width:750px; height:87px;}
+
+.timeline ul {float: left; margin-left:0px;}
+.timeline ul li { display:inline; float:left; list-style-type:none; margin-top:2px;}
+.timeline url li a:hover {cursor:pointer;}
+.timeline ul li #crayons {margin-left:35px;}
+.timeline ul li #lincolnlogs {margin-left:60px;}
+.timeline ul li #yoyo {margin-left:65px;}
+.timeline ul li #monopoly {margin-left:25px;}
+.timeline ul li #slinky {margin-left:60px;}
+.timeline ul li #sillyputty {margin-left:2px;}
+.timeline ul li #etchsketch {margin-left:45px;}
+.timeline ul li #rubik {margin-left:90px;}
+.timeline ul li #transformer {margin-left:30px;}
+.timeline ul li #furby {margin-left:50px;}
+.timeline ul li #scooter {margin-left:2px;}
+
+.timeline2 ul {float: left; margin-left:0px;}
+.timeline2 ul li { display:inline; float:left; list-style-type:none; margin-top:10px;}
+.timeline2 ul li #mcd_1 {margin-left:86px;}
+.timeline2 ul li #mcd_2 {margin-left:5px;}
+.timeline2 ul li #mcd_3 {margin-left:118px;}
+.timeline2 ul li #mcd_4 {margin-left:40px;}
+.timeline2 ul li #mcd_5 {margin-left:385px;}

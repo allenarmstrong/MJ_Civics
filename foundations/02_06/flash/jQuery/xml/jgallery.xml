@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gallery accordion="true">
+
+	<directions>
+		<![CDATA[<p>Advancements in technology led to many changes in the United States, including changes in American journalism.</p><p>Select "Go!" to begin.</p>]]>
+	</directions>
+
+	<photo src="../imgs/interactives/01_03b_01_printing-press.jpg" title="Rotary Press">
+    <audio src="../media/audio/audio1.mp3" />
+		<info><![CDATA[<h3>Accordion 1</h3><div><p>This allowed newspapers to reach many more people faster and at a lower cost.</p></div><h3>Accordion 2</h3><div><p>This allowed newspapers to reach many more people faster and at a lower cost.</p></div>]]></info>
+		<copyright><![CDATA[Public Domain]]></copyright>
+	</photo>
+	
+	<photo src="../imgs/interactives/01_03b_02_telegraph.jpg" title="Telegraph">
+    <audio src="../media/audio/audio2.mp3" />
+		<info><![CDATA[<h3>Accordion 1</h3><div><p>This allowed newspapers to reach many more people faster and at a lower cost.</p></div><h3>Accordion 2</h3><div><p>This allowed newspapers to reach many more people faster and at a lower cost.</p></div>]]></info>
+		<copyright><![CDATA[&copy; 2010 AP Images]]></copyright>
+	</photo>
+	
+	<photo src="../imgs/interactives/01_03b_03_railroad.jpg" title="Railroad">
+    <audio src="../media/audio/audio3.mp3" />
+		<info><![CDATA[<h3>Accordion 1</h3><div><p>This allowed newspapers to reach many more people faster and at a lower cost.</p></div><h3>Accordion 2</h3><div><p>This allowed newspapers to reach many more people faster and at a lower cost.</p></div>]]></info>
+		<copyright><![CDATA[&copy; 2010 AP Images]]></copyright>
+	</photo>
+
+</gallery>

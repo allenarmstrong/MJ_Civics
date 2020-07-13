@@ -1,0 +1,21 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="530"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[The sentences below the crossword puzzle are clues. Read each numbered clue and type the answer in the boxes with the same number.<br/><br/>If you get stuck, select the hint icon and then select a text box to reveal the correct letter.<br/><br/>Select "reset" to clear the boxes.<br/>]]>
+	</instructions>
+
+	<intro>Time to solve a crossword puzzle. Good luck, citizen!</intro>
+
+	<feedback>
+		<correct title="Correct!">You are correct.</correct>
+		<incorrect title="Incorrect.">You did not fill the crossword puzzle correctly. If you get stuck, select the hint icon and then select a text box to reveal the correct letter.</incorrect>
+	</feedback>
+</settings>	

@@ -1,0 +1,32 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Welcome to the Wheel of Citizenship!
+
+Select the wheel, "next" or "prev," and I will make it spin! <br/><br/>Rolling your mouse over a term will reveal more information about that term.<br/>]]>
+	</instructions>
+
+	<intro>Time to study some terms. Good luck, citizen!</intro>
+
+	<terms>
+		<term title="Globalization"><![CDATA[Globalization is the process of increasing the connections and interdependence of the world's countries. It often refers to trade. People say the world seems smaller because of globalization.]]></term>
+		<term title="Parliament"><![CDATA[Parliament is the name given to the legislative branch of government in Britain and other countries. A parliament makes laws, like the U.S. Congress.]]></term>
+		<term title="Socialism"><![CDATA[Socialism is an economic system that limits individual choice and ownership to benefit the whole community. The government would make most economic choices in this system.]]></term>
+		<term title="Gross Domestic Product"><![CDATA[Gross domestic product is the market value of all goods and services produced within a country in a given period. We call it GDP for short. We use GDP per capita to compare countries. ]]></term>
+		<term title="Standard of living"><![CDATA[Standard of living is a level of needs and wants enjoyed by people each day. We measure standard of living using many data. Examples are GDP and literacy rate.]]></term>
+		<term title="Diversification"><![CDATA[Diversification is the process of starting new industries to increase variety in an economy. A country with diverse resources and products has a better chance of meeting challenges.]]></term>
+		<term title="Natural resource"><![CDATA[Natural resources are materials found in nature that people can use for their own benefit. An example is oil. Oil is an important energy resource around the world.]]></term>
+		<term title="Diplomacy"><![CDATA[Diplomacy is discussion between leaders or representatives from separate nations. Being part of an international organization is an act of diplomacy. An example is the United Nations.]]></term>
+		<term title="Ambassador"><![CDATA[An ambassador is an official sent by one country to be its representative in another country. The U.S. government sends ambassadors to foreign countries. They also work in international organizations.]]></term>
+		<term title="Foreign exchange rate"><![CDATA[A foreign exchange rate is the amount of one currency that will be traded for another. The strength of a particular currency benefits some people but hurts others in trade.]]></term>
+		<term title="Alliance"><![CDATA[An alliance is a group of countries that agree to work together for a common purpose. The North Atlantic Treaty Organization is a military alliance that includes the United States.]]></term>
+	</terms>
+</settings>	

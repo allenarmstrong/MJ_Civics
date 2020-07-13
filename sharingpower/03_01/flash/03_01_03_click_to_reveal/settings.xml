@@ -1,0 +1,20 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[The U.S. Constitution establishes the relationship between the national and state governments. 
+
+Select "next" and "prev" to see examples of the delegated, reserved, and concurrent powers. <br/>]]>
+	</instructions>
+
+	<intro>Time to learn about the different types of power.</intro>
+	
+
+</settings>	

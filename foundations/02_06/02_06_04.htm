@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>M/J Civics</title>
+<link type="text/css" media="screen" href="../../css/theme.css" rel="stylesheet" />
+<link type="text/css" media="print" href="../../css/print.css" rel="stylesheet" />
+<script type="text/javascript" src="../../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.swfobject.1-1-1.min.js"></script>
+<script type="text/javascript" src="../../js/core.js"></script><script type="text/javascript">var unitNo = 2;</script>
+<script type="text/javascript">var unitNoLesNo = 0206;</script>
+<script type="text/javascript" src="../../js/links.js"></script>
+<script type="text/javascript" src="../../js/jquery_ui/core/js/custom_plugins/ui_importer.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../js/plugins/jQueryRotateCompressed.2.1.js" charset="utf-8"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("div#A1 img").rotate(270);
+		$("div#A2 img").rotate(90);
+		$("div#A3 img").rotate(325);
+		$("div#A4 img").rotate(145);
+		$("div#A5 img").rotate(215);
+		$("div#A6 img").rotate(35);
+		$("#RolloverText p").hide();
+		$("#RolloverText p#P0").show();
+	});
+	$(function() {
+		$("#Chart img").mouseover(function() {
+			$("#Chart img").attr("src","images/arrow-0d-red.png");
+			$(this).attr("src","images/arrow-0d-blue.png");
+		});
+	});
+	$(function() {
+		$("div#A1").mouseover(function() { 	$("#RolloverText p").hide();$("#RolloverText #P1").show();	});
+		$("div#A2").mouseover(function() { 	$("#RolloverText p").hide();$("#RolloverText #P2").show();	});
+		$("div#A3").mouseover(function() { 	$("#RolloverText p").hide();$("#RolloverText #P3").show();	});
+		$("div#A4").mouseover(function() {  $("#RolloverText p").hide();$("#RolloverText #P4").show();	});
+		$("div#A5").mouseover(function() {  $("#RolloverText p").hide();$("#RolloverText #P5").show();	});
+		$("div#A6").mouseover(function() {  $("#RolloverText p").hide();$("#RolloverText #P6").show();	});
+	});
+</script>
+<style type="text/css">
+	#InteractiveChart {
+		vertical-align: top;
+	}
+	#Chart{
+		position: relative;
+		float: left;
+		background: url(images/02_06_04.jpg) no-repeat;
+		width: 550px;
+		height: 451px;
+	}
+	#RolloverText {
+		position: relative;
+		float: left;
+		width: 140px;
+		height: 440px;
+		border: 1px solid black;
+		background-color: white;
+		padding: 5px;
+		vertical-align: top;
+		margin-right: 5px;
+		z-index: 2;
+	}
+	div#A1 {
+		position: absolute;
+		left: 255px;
+		top: 5px;
+	}
+	div#A2 {
+		position: absolute;
+		left: 255px;
+		top: 60px;
+	}
+	div#A3 {
+		position: absolute;
+		left: 185px;
+		top: 155px;
+	}
+	div#A4 {
+		position: absolute;
+		left: 140px;
+		top: 190px;
+	}
+	div#A5 {
+		position: absolute;
+		left: 370px;
+		top: 190px;
+	}
+	div#A6 {
+		position: absolute;
+		left: 320px;
+		top: 155px;
+	}
+	#RolloverText p {
+		position: absolute;
+		top: 25px;
+		left: 5px;
+	}
+
+</style>
+</head>
+<body>
+<div id="logo"></div>
+<div id="window">
+<div id="page">
+<div id="nav">
+<dl>
+<dt>Navigation</dt>
+<dd>
+<ul>
+<li id="next"><a href="02_06_05.htm" title="Next"><span>Next</span></a></li>
+<li id="prev"><a href="02_06_03.htm" title="Previous"><span>Previous</span></a></li>
+<li id="home"><a href="../../index.htm" title="Home"><span>Home</span></a></li>
+<li id="gloss"><a class="pop" href="../../glossary/glossary.htm" title="Glossary"><span>Glossary</span></a></li>
+<li id="notes"><a href="../../gendocs/courseresources/resource.htm" title="Course resources"><span>Course Resources</span></a></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div id="content">
+<div id="title"><span id="title1"></span><span id="title2"></span></div>
+<div id="margin">
+
+
+<h1>What Are Checks and Balances?</h1>
+<p>Some of the powers of each branch were designed to limit, or "check," the overall power of the other branches. The purpose of these checks is to balance the branches of government so that no one branch could become too powerful.</p>
+<p>The U.S. Constitution lists the powers of each branch and ensures that the branches can both share and can limit each other's power. Checks and balances is the name we give to this system of shared powers and limits. Examine this chart to see some of these powers that limit the overall power of the branches.</p>
+<div class="left imgNone"><img src="../../imgs/cap_icon.png" alt="Cap icon" /></div><br />
+<p>Make sure to take notes in your <a class="pop" href="02_06_02_a.htm" title="CAP file" data-height="700">CAP File</a> as you go through this activity.</p><br />
+
+<div class="ui_interactive" data-width="765px" data-height="500px">
+	<div class="ui_slides">
+    	<div class="ui_slide">
+        	<div class="ui_dialog instructions" title="Hello, citizen!">
+               <p>Hold your mouse over the arrows in the diagram for more information.</p>
+            </div>
+            <div id="InteractiveChart">
+                <div id="RolloverText">
+                    <p id="P0">Hold your mouse over the arrows in the diagram for more information.</p>
+                    <p id="P1"><b>How can the executive branch check the power of the legislative branch?</b> The president can propose laws, veto bills, call a special session of Congress.</p>
+                    <p id="P2"><b>How can the legislative branch check the power of the executive branch?</b> Congress approves budget, can override a veto with a two-thirds vote, and can <a class="ui_tooltip"><span class="ui_tooltip_content">Impeach: to make a formal accusation of misconduct against a public official</span>impeach</a> the president. The Senate also approves treaties and nominations for federal positions.</p>
+                    <p id="P3"><b>How can the judicial branch check the power of the legislative branch?</b> The Supreme Court can declare a law unconstitutional if someone challenges the law in court.</p>
+                    <p id="P4"><b>How can the legislative branch check the power of the judicial branch?</b> Congress can impeach federal judges, can set number and location of federal courts, can set number of judges, and can propose amendment to the Constitution.</p>
+                    <p id="P5"><b>How can the executive branch check the power of the judicial branch?</b> The president nominates federal judges and can grant pardons for people convicted of federal crimes.</p>
+                    <p id="P6"><b>How can the judicial branch check the power of the executive branch?</b> The Supreme Court can declare executive actions unconstitutional. </p>
+                </div>
+                <div id="Chart">
+                    <div id="A1"><img src="images/arrow-0d-red.png" width="48" height="125" alt="Arrow Pointing toward government branch."></div>
+                    <div id="A2"><img src="images/arrow-0d-red.png" width="48" height="125" alt="Arrow Pointing toward government branch."></div>
+                    <div id="A3"><img src="images/arrow-0d-red.png" width="48" height="125" alt="Arrow Pointing toward government branch."></div>
+                    <div id="A4"><img src="images/arrow-0d-red.png" width="48" height="125" alt="Arrow Pointing toward government branch."></div>
+                    <div id="A5"><img src="images/arrow-0d-red.png" width="48" height="125" alt="Arrow Pointing toward government branch."></div>
+                    <div id="A6"><img src="images/arrow-0d-red.png" width="48" height="125" alt="Arrow Pointing toward government branch."></div>
+                </div>
+            </div>
+       </div>
+</div>
+</div>
+
+<div class="textVersion"><a class="pop" href="02_06_04_a.htm" title="Power chart" data-height="575">Text Version</a></div>
+
+
+
+</div>
+<div id="menu">
+<div id="segments"><a href="../../index.htm" title="Units"><span>Segments</span></a></div>
+<dl id="units">
+<dt><span>Units</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="lessons">
+<dt><span>Lessons</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="pages">
+<dt><span>4 of 10</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="footer">
+<span id="copy">Unless otherwise noted, &copy; 2011 FLVS</span>
+</div>
+</body>
+</html>

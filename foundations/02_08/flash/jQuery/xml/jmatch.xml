@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings 
+directions="Select a phrase on the left that that creates a true sentence with a phrase on the right. When you get a correct match they will both disappear. Select “Continue” to get started." 	
+innerDirections="Select phrases on each side that match to create a true sentence.">  	
+<word id="match1">The amendment process has</word> 	
+<definition id="match1">two main steps: proposal and ratification.</definition> 
+<word id="match2">Proposing an amendment requires</word> 	
+<definition id="match2">a two-thirds vote of Congress or the state legislatures.</definition> 	 	
+<word id="match3">Ratifying an amendment requires</word> 	
+<definition id="match3">a three-fourths vote of the state legislatures or state conventions.</definition> 	 	
+<word id="match4">The 13th Amendment</word> 	
+<definition id="match4">made slavery unconstitutional.</definition> 	 	
+<word id="match5">The 14th Amendment</word> 	
+<definition id="match5">guarantees equal protection of the law to all citizens.</definition> 	 
+<word id="match6">The 15th Amendment</word> 	
+<definition id="match6">extended the right to vote to former male slaves.</definition> 	 	
+<word id="match7">The 19th Amendment</word> 	
+<definition id="match7">extended the right to vote to women.</definition> 
+<word id="match8">The 24th Amendment</word> 	
+<definition id="match8">prohibits the states from charging voters a poll tax.</definition> 	 	
+<word id="match9">The 26th Amendment</word> 	
+<definition id="match9">protects the right to vote for all citizens aged 18 and older.</definition> 	 	
+
+</settings>

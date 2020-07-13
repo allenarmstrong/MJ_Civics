@@ -1,0 +1,44 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Roll your mouse over the following apps to learn more about them.<br/>]]>
+	</instructions>
+
+	<intro>Time for a review. Good luck, citizen.</intro>
+
+	<rollovers>
+		<rollover clip="RolloverClip1" title= "Enlighten Me" x="166" y="130" rotation="0">
+			<![CDATA[The ideas of Enlightenment thinkers had an impact on the Founding Fathers. An example is John Locke's idea about Ònatural rights.Ó The ideas helped shape the way early leaders thought government should work and what it should do for its citizens.]]>
+		</rollover>
+		<rollover clip="RolloverClip2" title="Doc Rap!" x="254" y="130" rotation="0">
+			<![CDATA[The Magna Carta, Mayflower Compact, English Bill of Rights, and Common Sense are important documents in history. They shaped what the colonists thought about government.]]>
+		</rollover>
+		<rollover clip="RolloverClip3" title="Freedom!" x="166" y="185" rotation="0">
+			<![CDATA[The Declaration of Independence declared the United States free from British rule. It explains the colonistsÕ ideas about government. It includes their specific complaints against the British king and Parliament.]]>
+		</rollover>
+		<rollover clip="RolloverClip4" title="Make a Plan!" x="254" y="185" rotation="0">
+			<![CDATA[The Articles of Confederation was the first plan for U.S. government. The Founding Fathers made it too weak to work well. In 1787, they met and created the U.S. Constitution as a better plan.]]>
+		</rollover>
+		<rollover clip="RolloverClip5" title="Branching Out!" x="166" y="235" rotation="0">
+			<![CDATA[The U.S. Constitution divides government functions and power into three separate branches. They are the executive, legislative, and judicial branches. Each has its own structure and functions.]]>
+		</rollover>
+		<rollover clip="RolloverClip6" title="Balancing Act!" x="254" y="235" rotation="0">
+			<![CDATA[Separating the powers into branches provides for checks and balances in government. Each branch has actions it can take to check, or limit, the power of the other branches. This prevents any one branch from becoming too powerful.]]>
+		</rollover>
+		<rollover clip="RolloverClip7" title="Protecting Rights!" x="166" y="305" rotation="0">
+			<![CDATA[Despite checks and balances, the Anti-Federalists believed the U.S. Constitution should list rights for the people. The Bill of Rights is the first 10 amendments to the U.S. Constitution. It lists many important basic rights for Americans.]]>
+		</rollover>
+		<rollover clip="RolloverClip8" title="Amend It!" x="254" y="305" rotation="0">
+			<![CDATA[The U.S. Constitution has 27 amendments, or formal changes. The process to amend the Constitution is long and difficult to achieve. It requires the state governments and federal government to work together.]]>
+		</rollover>
+	</rollovers>
+
+</settings>	

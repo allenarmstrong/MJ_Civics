@@ -1,0 +1,30 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Select the wheel, "next" or "prev" to cycle through the terms. <br/><br/>Rolling your mouse over a term will reveal more information about that term.<br/>]]>
+	</instructions>
+
+	<intro>Time to study some terms. Good luck, citizen!</intro>
+
+	<terms>
+		<term title="Natural Rights"><![CDATA[Natural rights are rights that people are born with and that no government can take away. John Locke wrote that government should protect the people&#39;s natural rights, which he said were life, liberty, and property. ]]></term>
+		<term title="Separation of Powers"><![CDATA[&quot;Separation of powers&quot; is the distribution of government power into legislative, executive, and judicial branches. The idea is to prevent any one branch from gaining too much power. The U.S. Constitution divides government into these three branches.]]></term>
+		<term title="Checks and Balances"><![CDATA[&quot;Checks and balances&quot; is a system in the Constitution where one branch of government may use its own powers to limit those of another branch. This prevents any branch or official within a branch from becoming too powerful. For example, the president may veto a bill passed by Congress. The members of Congress, with enough support, may override the veto.]]></term>
+		<term title="Amendment"><![CDATA[An amendment is a formal change to the U.S. Constitution. The first 10 amendments make up the Bill of Rights. Seventeen amendments have been ratified since, for 27 amendments total to date.]]></term>
+		<term title="Articles of Confederation"><![CDATA[The Articles of Confederation was the first plan for the U.S. government. The Founding Fathers made it a weak government to prevent tyranny. However, it was too weak to be effective. The U.S. Constitution replaced the document.]]></term>
+		<term title="U.S. Constitution"><![CDATA[The U.S. Constitution details the structure, functions, and powers of the federal government. It contains the Preamble, seven articles, and 27 amendments.]]></term>
+		<term title="Ratify"><![CDATA[To ratify is to formally approve or make official, such as a law or policy. The states ratified the U.S. Constitution in 1789. To add an amendment to the Constitution, three-fourths of the states must ratify the amendment.]]></term>
+		<term title="Social Contract"><![CDATA[The &quot;social contract&quot; is the idea that people agree, or consent, to government authority. In return, the government protects the people and their rights. ]]></term>
+		<term title="Common Good"><![CDATA[&quot;Common good&quot; refers to the greatest possible conditions of society for the greatest number of people living in it. Sometimes laws limit personal rights for the sake of everyone in a group. ]]></term>
+		<term title="Grievances"><![CDATA[A grievance is a reason or cause for complaint. The Declaration of Independence contained a list of grievances the colonists had against King George III of Great Britain.]]></term>
+		<term title="Federalism"><![CDATA[Federalism is the division of powers among the local, state, and national governments. It spreads power among different groups of people. This protects the people from tyranny.]]></term>
+	</terms>
+</settings>	

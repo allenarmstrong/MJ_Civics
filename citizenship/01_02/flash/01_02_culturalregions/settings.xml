@@ -1,0 +1,56 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Can you track the cultural traits? <br/><br/>Examine each map and answer the question that follows by selecting one of the answers and selecting "submit"<br/>]]>
+	</instructions>
+	
+	<intro>Time to learn about cultural traits. Good luck, citizen!</intro>
+
+	<popups>
+		<set>
+			<popup title="Question 1" zoom="0%"><![CDATA[1. Where are most French speakers in Canada?]]></popup>
+			<choice type="correct">East</choice>
+			<choice type="incorrect">West</choice>
+			<correctFeedback title="Good job!">You chose the right answer.</correctFeedback>
+			<incorrectFeedback title="Try again">You chose the wrong answer.</incorrectFeedback>
+		</set>
+		<set>
+			<popup title="Question 2" zoom="0%"><![CDATA[2. Which state has more people who were born outside the United States?]]></popup>
+			<choice type="incorrect">Illinois</choice>
+			<choice type="correct">California</choice>
+			<correctFeedback title="Nice work!">You chose the right answer.</correctFeedback>
+			<incorrectFeedback title="Wrong answer">You chose the wrong answer.</incorrectFeedback>
+		</set>
+		<set>
+			<popup title="Question 3" zoom="0%"><![CDATA[3. Which religion is most common in North America?]]></popup>
+			<choice type="correct">Christianity</choice>
+			<choice type="incorrect">Buddhism</choice>
+			<correctFeedback title="That's correct!">You chose the right answer.</correctFeedback>
+			<incorrectFeedback title="Incorrect">You chose the wrong answer.</incorrectFeedback>
+		</set>
+		<set>
+			<popup title="Question 4" zoom="0%"><![CDATA[4. Where do Native Americans have the greatest influence on culture?]]></popup>
+			<choice type="incorrect">East</choice>
+			<choice type="correct">West</choice>
+			<correctFeedback title="Excellent!">You chose the right answer.</correctFeedback>
+			<incorrectFeedback title="Nice try">You chose the wrong answer.</incorrectFeedback>
+		</set>
+		<set>
+			<popup title="Question 5" zoom="0%"><![CDATA[5. Which Mexican state was more popular with U.S.-born seniors in 2000?]]></popup>
+			<choice type="correct">Baja California</choice>
+			<choice type="incorrect"><![CDATA[Coahuila  ]]></choice>
+			<correctFeedback title="You're correct!">You chose the right answer. Select "continue" to close this window and the "restart" button to return to the first question.</correctFeedback>
+			<incorrectFeedback title="Wrong">You chose the wrong answer.</incorrectFeedback>
+		</set>
+	</popups>
+
+
+</settings>	

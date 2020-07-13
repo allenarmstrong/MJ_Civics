@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>M/J Civics</title>
+<link type="text/css" media="screen" href="../../css/theme.css" rel="stylesheet" />
+<link type="text/css" media="print" href="../../css/print.css" rel="stylesheet" />
+<script type="text/javascript" src="../../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.swfobject.1-1-1.min.js"></script>
+<script type="text/javascript" src="../../js/core.js"></script><script type="text/javascript">var unitNo = 4;</script>
+<script type="text/javascript">var unitNoLesNo = 0403;</script>
+<script type="text/javascript" src="../../js/links.js"></script>
+<script type="text/javascript" src="../../js/jquery_ui/core/js/custom_plugins/ui_importer.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../js/plugins/jquery.jplayer.min.js"></script>
+<link type="text/css" media="screen" href="../../js/plugins/jplayer.blue.monday.css" rel="stylesheet" />
+<script type="text/javascript">
+function PlayAudio(FileToPlay) {
+	$("#jquery_jplayer_1").jPlayer("destroy");
+	$("#jquery_jplayer_1").jPlayer({ 
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				oga: "audio/04_03_05_a.ogg",
+				mp3: "audio/04_03_05_a.mp3"
+			}).jPlayer("play");
+		},
+		swfPath: "../../js/plugins/Jplayer.swf",
+		supplied: "oga,mp3",
+		wmode: "window",
+		cssSelectorAncestor: "#jp_container_1"
+	});
+}
+
+$(document).ready(function () {
+	
+	$('.ui_interactive').bind('TRANSITION_COMPLETE', function(event, data) { 
+		if (data == 2) { PlayAudio();/* console.log("Here"); */} // Runs only on slide 3 (data is 0 based)
+		else { $("#jquery_jplayer_1").jPlayer("destroy"); } // Makes sure the player doesn't exist on other slides.
+	});	
+
+});
+</script>
+
+<style type="text/css">
+
+.slideBack {
+	background-image:url(images/04_03_05_book.png);	
+	background-repeat:no-repeat;
+	background-position: left center;
+	
+}
+
+.slideBack  div {
+	width:400px;
+	padding-left:50px;
+	margin-bottom:20px;
+	margin-top: 20px;
+}
+.indent { width:400px!important; margin-left:35px!important;padding-left:0!important;}
+.indent p {
+	width:385px;
+	padding-left:0!important;
+}
+
+</style>
+</head>
+<body>
+<div id="logo"></div>
+<div id="window">
+  <div id="page">
+    <div id="nav">
+      <dl>
+        <dt>Navigation</dt>
+        <dd>
+          <ul>
+            <li id="next"><a href="04_03_06.htm" title="Next"><span>Next</span></a></li>
+            <li id="prev"><a href="04_03_04.htm" title="Previous"><span>Previous</span></a></li>
+            <li id="home"><a href="../../index.htm" title="Home"><span>Home</span></a></li>
+            <li id="gloss"><a class="pop" href="../../glossary/glossary.htm" title="Glossary"><span>Glossary</span></a></li>
+            <li id="notes"><a href="../../gendocs/courseresources/resource.htm" title="Course resources"><span>Course Resources</span></a></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div id="content">
+      <div id="title"><span id="title1"></span><span id="title2"></span></div>
+      <div id="margin">
+        <h1>What Are Some Examples of Art Inspiring Action?</h1>
+        <p>The Civil Rights Movement and migrant workers during the Great Depression both have significant representation in American art. Music, stories, and photographs bring these events to life even years after they happened.</p>
+        <p>The actions of people involved in the Civil Rights Movement encouraged Congress to pass new laws protecting the rights of African Americans. One example is the Civil Rights Act of 1965.</p>
+        <p>Public outcry at the conditions of migrant farm workers during the Great Depression encouraged Congress to create policies that would assist those families in need. The government sent emergency food and set up camps where the migrant workers could live while working in an area.</p>
+        <p>View this presentation to see examples of art from both movements.</p>
+        <div class="ui_interactive" data-width="550px" data-height="350px" data-transition="blend">
+          <div class="ui_slides">
+            <div class="ui_slide" data-width="550px" data-height="350px">
+              <p>
+              <div class="showcaseNone"><img src="images/04_03_05_bg.png" alt="The Civil Rights Movement" /></div>
+              </p>
+            </div>
+		  
+            <div class="ui_slide"  data-width="550px" data-height="350px">
+              <p>The Civil Rights Movement is famous for the many songs that people sang to emphasize their goals. Americans from across the nation gathered in Washington, D.C. in 1963. They showed support for laws that would protect equal rights for African Americans. They heard civil rights leader Dr. Martin Luther King speak to the importance of their cause. "We Shall Overcome" is one of the most famous songs the marchers sang there. Many artists recorded their own versions of the song.</p>
+            </div>
+		  
+            <div class="ui_slide" data-width="550px" data-height="520px">
+              <p>Listen to a recorded version of "We Shall Overcome."</p>
+              <div class="showcaseNone"><img src="images/04_03_05_a.jpg" alt="" /></div>
+              <div class="textVersion">© 2011 Associated Press</div>
+              
+              <div class="Media" style="margin: 5px 0px 0px 50px;">
+                <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                <div id="jp_container_1" class="jp-audio Player">
+                    <div class="jp-type-single">
+                      <div class="jp-gui jp-interface">
+                        <ul class="jp-controls">
+                          <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                          <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                          <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+                          <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+                          <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+                          <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+                        </ul>
+                        <div class="jp-progress">
+                          <div class="jp-seek-bar">
+                            <div class="jp-play-bar"></div>
+                          </div>
+                        </div>
+                        <div class="jp-volume-bar">
+                          <div class="jp-volume-bar-value"></div>
+                        </div>
+                        <div class="jp-time-holder">
+                          <div class="jp-current-time"></div>
+                          <div class="jp-duration"></div>
+                        </div>
+                      </div>
+                      <div class="jp-no-solution">
+                        <span>Update Required</span>
+                        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                      </div>
+                    </div>
+                	</div>
+                </div>
+            </div>
+		  
+            <div class="ui_slide" data-width="550px" data-height="550px">
+              <p>Music can be a powerful tool in shaping history.  Combining words and music makes a person think as well as feel. Emotion can have a great effect on a person's choices, inspiring them to act. Music is powerful way to generate emotion in people and lead to choices that change history. This image captures that spirit as people hold a <a class="ui_tooltip"><span class="ui_tooltip_content">Sit-in: a form of protest where people occupy a public place and refuse to leave until demands are met</span>sit-in</a> at a barbershop where an African American was refused service in 1964.
+              <div class="showcaseNone"><img src="images/04_03_05_b.jpg" alt="" /></div>
+              <div class="textVersion">© 2011 Associated Press</div>
+              
+              </p>
+            </div>
+		  
+            <div class="ui_slide"  data-width="550px" data-height="340px">
+              <p>Art can survive and help us remember the importance of a social movement long after it has passed. The news clips from 1963 in this video helped Americans around the nation understand the size and importance of the Civil Rights Movement. We can view them today to see how people acted at the time and how reporters described the event. Watch this video and hear the marchers sing. </p>
+              <div align="center">
+                <form class="discoveryVideo" action="http://streaming.discoveryeducation.com/index.cfm?guidAssetId=6E46AD2B-3EBE-453E-9446-67BC11A6476E" method="post" name="formLogin" target="_blank" id="formLogin">
+                  <input type="hidden" name="blnPasscode" value="false" />
+                  <input name="username" type="hidden" value="flvs4" class="form" size="20" tabindex="1" />
+                  <input name="password" type="hidden" value="student" class="form" size="20" tabindex="2" />
+                  <input class="video" type="submit" name="submit" value="Dr. King's Dream (3:11) " tabindex="3" />
+                </form>
+              </div>
+            </div>
+		  
+            <div class="ui_slide" data-width="550px" data-height="820px">
+            	<h4>Migrant Farm Workers during the Great Depression </h4>
+              <p>Dorothea Lange, working for the U.S. government, took this photograph in 1936. Her job was to document the lives of migrant farm workers. Florence Thompson was a 32-year old mother of six when Lange photographed her near a migrant farm workers' camp in California. She had traveled with her family from Oklahoma. Her husband had recently died and the family car was broken down. Americans saw this image of a hungry, dirty, anxious woman and her children. They demanded government action to bring relief to the migrant workers.
+              <div class="showcaseNone"><img src="images/04_03_05_c.jpg" alt="" /></div>
+              <div class="textVersion">© 2011 Associated Press</div>
+              </p>
+            </div>
+		  
+            <div class="ui_slide" data-width="550px" data-height="420px">
+              <p>The Great Depression was a time of economic hardship across the United States. Farmers in the Plains states had a particularly tough time. Their land was worn out and weather conditions made things worse. Many headed west, like Florence Thompson, hoping for a better life. Watch this video to learn more.</p>
+              <div align="center">
+                <form class="discoveryVideo" action="http://streaming.discoveryeducation.com/index.cfm?guidAssetId=6880EF9C-7B4C-4575-97D7-D3ADEFFFCC97" method="post" name="formLogin" target="_blank" id="formLogin">
+                  <input type="hidden" name="blnPasscode" value="false" />
+                  <input name="username" type="hidden" value="flvs4" class="form" size="20" tabindex="1" />
+                  <input name="password" type="hidden" value="student" class="form" size="20" tabindex="2" />
+                  <input class="video" type="submit" name="submit" value="The Dust Bowl (2:18) " tabindex="3" />
+                </form>
+              </div>
+            </div>
+            <div class="ui_slide slideBack" data-width="550px" data-height="720px">
+              <div><p>The people who moved to California during the 
+<a class="ui_tooltip"><span class="ui_tooltip_content">Dust Bowl: an area in the central United States that suffered severe dust storms during the 1930s</span>Dust Bowl</a> did not find a land of riches. They became migrant farm workers, following harvest seasons. For example, when it was time to pick potatoes people headed to potato farms asking for work. Then they would move on to the next farm needing work. However, so many people competed for the same jobs that the migrants often had trouble finding work. The U.S. government set up camps where the people could live for a short while. The conditions were poor. Other people looked down on them and were sometimes cruel. The John Steinbeck novel The Grapes of Wrath describes the challenges of one migrant family from the Dust Bowl and how they stuck together to survive. The novel also helped bring attention and concern to the struggles of migrant farm workers.</p></div>
+              
+		    <div class="indent">
+                <p>&ldquo;Okie use' ta mean you was from Oklahoma. Now it means … you're scum. Don't mean nothing itself, it's the way they say it.&rdquo;<br>
+                  The Grapes of Wrath<br>
+                  Chapter 18</p>
+                <p>&ldquo;How can you frighten a man whose hunger is not only in his own cramped stomach but in the wretched bellies of his children? You can't scare him--he has known a fear beyond every other.&rdquo;<br>
+                  The Grapes of Wrath<br>
+                  Chapter 19</p>
+              </div>
+            </div>
+            
+            <!--END INTERACTIVE--> 
+          </div>
+          <!--END SLIDES--> 
+        </div>
+        <div class="textVersion"><a class="pop" href="04_03_05_a.htm" title="The civil rights movement" data-height="750">Text Version</a></div>
+      </div>
+    </div>
+    <div id="menu">
+      <div id="segments"><a href="../../index.htm" title="Units"><span>Segments</span></a></div>
+      <dl id="units">
+        <dt><span>Units</span></dt>
+        <dd>
+          <ul>
+            <li></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl id="lessons">
+        <dt><span>Lessons</span></dt>
+        <dd>
+          <ul>
+            <li></li>
+          </ul>
+        </dd>
+      </dl>
+      <dl id="pages">
+        <dt><span>5 of 7</span></dt>
+        <dd>
+          <ul>
+            <li></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+  </div>
+</div>
+<div id="footer"> <span id="copy">Unless otherwise noted, &copy; 2011 FLVS</span> </div>
+</body>
+</html>

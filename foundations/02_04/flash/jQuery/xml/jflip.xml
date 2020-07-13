@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gallery>
+	<directions>
+		<![CDATA[<p>Use the following flip cards to learn some quick facts about the weaknesses of the Articles of Confederation and why it caused problems. Select each weakness to see why it caused a problem. Use the scroll bar to the right to see all nine flipcards.</p><p>Select "Continue" to begin.</p>]]>
+	</directions>
+
+  <flipcard>
+    <front>
+		<![CDATA[
+		<div class="front_text">Weakness:<br /><br />Each state had one vote in the legislative branch.</div>
+		]]>
+	</front>
+    <back>
+      <![CDATA[
+      <div class="description">
+        Why It Caused a Problem:<br /><br />States with larger populations, like Virginia, did not think it was fair to have the same amount of power as a state with fewer people. 
+      </div>
+      ]]>
+    </back>
+  </flipcard>
+
+  <flipcard>
+    <front>
+		<![CDATA[
+		<div class="front_text">Weakness:<br /><br />The government did not have an executive branch.</div>
+		]]>
+	</front>
+    <back>
+      <![CDATA[
+      <div class="description">Why It Caused a Problem:<br /><br />When Congress passed a law, the state governments were supposed to enforce it. Congress had no power to make sure each state enforced the law.</div>
+      ]]>
+    </back>
+  </flipcard>
+
+  <flipcard>
+  	<front>
+		<![CDATA[
+  		<div class="front_text">Weakness:<br /><br />The government did not have a separate judicial branch.</div>
+		]]>
+	</front>
+    <back>
+      <![CDATA[
+      <div class="description">
+        Why It Caused a Problem:<br /><br />If a law's meaning was in question, there was no one who could fairly settle the issue and make sure all states followed the ruling. 
+      </div>
+      ]]>
+    </back>
+  </flipcard>
+
+  <flipcard>
+    <front>
+		<![CDATA[
+		<div class="front_text">Weakness:<br /><br />Congress could not create taxes.</div>
+		]]>
+	</front>
+    <back>
+      <![CDATA[
+      <div class="description">
+       Why It Caused a Problem:<br /><br />Taxes pay for a government's functions. Congress could only request money from the state legislatures. If the states did not send any, Congress was powerless. 
+	   </div>
+      ]]>
+    </back>
+  </flipcard>
+  
+    <flipcard>
+    <front>
+      <![CDATA[<div class="front_text">Weakness:<br /><br />Congress could not raise a national military separate from the states.</div>]]>
+    </front>
+    <back>
+      <![CDATA[
+      <div class="description">
+       Why It Caused a Problem:<br /><br />During the Revolutionary War, General George Washington requested money for supplies. Congress could not force the states to pay. The troops often went without, starving at times.
+      </div>
+      ]]>
+    </back>
+  </flipcard>
+
+  <flipcard>
+    <front>
+      <![CDATA[<div class="front_text">Weakness:<br /><br />Each state printed its own currency.</div>]]>
+    </front>
+    <back>
+      <![CDATA[
+      <div class="description">
+        Why It Caused a Problem:<br /><br />A person might need paper money from several different states to do business. Currencies from different states did not have the same value.
+      </div>
+      ]]>
+    </back>
+  </flipcard>
+
+  <flipcard>
+    <front>
+      <![CDATA[<div class="front_text">Weakness:<br /><br />Congress could not control trade between states and with other nations.</div>]]>
+    </front>
+    <back>
+      <![CDATA[
+      <div class="description">
+       Why It Caused a Problem:<br /><br />Each state acted for its own benefit and did not consider the good of the whole nation.<br /><br />Other nations could take advantage of differences in the states' trade agreements.
+      </div>
+      ]]>
+    </back>
+  </flipcard>
+    <flipcard>
+    <front>
+      <![CDATA[<div class="front_text">Weakness:<br /><br />New laws would require the support of nine of the 13 states, more than a majority.</div>]]>
+    </front>
+    <back>
+      <![CDATA[
+      <div class="description">
+        Why It Caused a Problem:<br /><br />Congress had a difficult time passing laws because nearly all of the states would have to agree. Its work was limited as a result.
+      </div>
+      ]]>
+    </back>
+  </flipcard>
+
+  <flipcard>
+    <front>
+      <![CDATA[<div class="front_text">Weakness:<br /><br />The Articles of Confederation required unanimous agreement of the states to amend the document.</div>]]>
+    </front>
+    <back>
+      <![CDATA[
+      <div class="description">
+        Why It Caused a Problem:<br /><br />Congress realized that the Articles of Confederation needed changes. Yet it could do nothing without all the states' support. Unanimous agreement is rare, even in everyday situations.
+      </div>
+      ]]>
+    </back>
+  </flipcard>
+
+
+  
+</gallery>

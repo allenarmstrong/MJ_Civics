@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<questions>
+	<directions><![CDATA[What is the basic purpose of journalism?<br /><br />Select “Go!” to begin.]]></directions>
+	<innerDirections><![CDATA[Select the correct answer.]]></innerDirections>
+
+	<question string="What is the basic purpose of journalism?">
+		<correct>
+			<![CDATA[
+				<p class="correct">That is correct!</p>
+				<p><strong>Very good!</strong> The most basic purpose of journalism is to inform the public. Journalists can inform the public about many different topics.</p>
+			]]>
+		</correct>
+		<incorrect>
+			<![CDATA[
+				<p class="incorrect">Try Again.</p>
+				<p>Why is the freedom of the press protected by the Constitution?</p>
+			]]>
+		</incorrect>
+
+		<choice string="To inform the public" correct="true" />
+		<choice string="To gossip about celebrities" correct="false" />
+		<choice string="To make money" correct="false" />
+	</question>
+	
+	<question string="What is the basic purpose of journalism?">
+		<correct>
+			<![CDATA[
+				<p class="correct">That is correct!</p>
+				<p><strong>Very good!</strong> The most basic purpose of journalism is to inform the public. Journalists can inform the public about many different topics.</p>
+			]]>
+		</correct>
+		<incorrect>
+			<![CDATA[
+				<p class="incorrect">Try Again.</p>
+				<p>Why is the freedom of the press protected by the Constitution?</p>
+			]]>
+		</incorrect>
+
+		<choice string="To inform the public" correct="true" />
+		<choice string="To gossip about celebrities" correct="false" />
+		<choice string="To make money" correct="false" />
+	</question>	
+</questions>

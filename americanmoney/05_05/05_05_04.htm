@@ -1,0 +1,405 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>M/J Civics</title>
+<link type="text/css" media="screen" href="../../css/theme.css" rel="stylesheet" />
+<link type="text/css" media="print" href="../../css/print.css" rel="stylesheet" />
+<script type="text/javascript" src="../../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.swfobject.1-1-1.min.js"></script>
+<script type="text/javascript" src="../../js/core.js"></script><script type="text/javascript">var unitNo = 5;</script>
+<script type="text/javascript">var unitNoLesNo = 0505;</script>
+<script type="text/javascript" src="../../js/links.js"></script>
+<script type="text/javascript" src="../../js/jquery_ui/core/js/custom_plugins/ui_importer.js" charset="utf-8"></script>
+<script type="text/javascript">
+
+	var ValuePair = new Array();
+
+	function ChangeBudget() {
+		var TotalMonthly = Number(0);
+		var TotalExpenses = Number(0);
+		var WhatsLeft = Number(0);
+		var Warning = 0;
+		var GasSelected = 0;
+		
+		$(function() {
+			$("option:selected").each(function() {
+				var ValA = Number(0);
+				var ValB = Number(0);
+				var TempValuePair = new Array();			
+				TempValuePair = $(this).val().split(":");
+				ValA = Number(TempValuePair[1]);
+				ValB = Number(TempValuePair[3]);
+				
+				if (ValA > 0) { TotalMonthly += ValA; }
+				if (ValA < 0) { TotalExpenses -= ValA; }
+				if (ValB > 0) { TotalMonthly += ValB; }
+				if (ValB < 0) { TotalExpenses -= ValB; }
+				
+				if (TempValuePair[2] == "x") { GasSelected = 1; }
+			});
+		});
+		WhatsLeft = TotalMonthly - TotalExpenses;
+		$("#ChartTotals td.MonthTotal").html('$'+TotalMonthly.toFixed(2));
+		$("#ChartTotals td.ExpensesTotal").html('$'+TotalExpenses.toFixed(2));
+		$("#ChartTotals td.WhatsLeft").html('$'+WhatsLeft.toFixed(2));
+		
+		$("#Warnings").empty();
+		$(".ResultText").empty();
+		
+		if ( $(".Income option:selected").val() == "$0:0:$0:0" ) { Warning = 1; $("#Warnings").append("<p class='red'>You have no income selected.</p>"); }
+		if ( $(".Savings option:selected").val() == "$0:0:$0:0" ) { Warning = 1; $("#Warnings").append("<p class='red'>You have no savings selected.</p>"); }
+		if ( $(".Housing option:selected").val() == "$0:0:$0:0" ) { Warning = 1; $("#Warnings").append("<p class='red'>You have no housing selected.</p>"); }
+		if ( $(".Phone option:selected").val() == "$0:0:$0:0" ) { Warning = 1; $("#Warnings").append("<p class='red'>You have no phone selected.</p>"); }
+		if ( $(".Cable option:selected").val() == "$0:0:$0:0" ) { Warning = 1; $("#Warnings").append("<p class='red'>You have no cable or internet selected.</p>"); }
+		if ( $(".Transportation option:selected").val() == "$0:0:$0:0" ) { Warning = 1; $("#Warnings").append("<p class='red'>You have no transportation selected.</p>"); }
+		if ( $(".Insurance option:selected").val() == "$0:0:$0:0" ) { Warning = 1; $("#Warnings").append("<p class='red'>You have no insurance selected.</p>"); }
+		if ( $(".Food option:selected").val() == "$0:0:$0:0" ) { Warning = 1; $("#Warnings").append("<p class='red'>You have no food selected.</p>"); }
+		if ( $(".Variable option:selected").val() == undefined ) { Warning = 1; $("#Warnings").append("<p class='red'>You have no variable expenses selected.</p>"); }
+		if ( (($(".Transportation option:selected").val() !== "$100:-100:0:0") && ($(".Transportation option:selected").val() !== "$0:0:$0:0")) && GasSelected == 0) { Warning = 1; $("#Warnings").append("<p class='red'>You've selected to have transportation but no gas from variable expenses.</p>"); }
+		if ( (($(".Transportation option:selected").val() !== "$100:-100:0:0") && ($(".Transportation option:selected").val() !== "$0:0:$0:0")) && $(".Insurance option:selected").val() == "$0:0:y:0" ) { Warning = 1; $("#Warnings").append("<p class='red'>You've selected to have transportation but no insurance.</p>"); }
+
+		if ( WhatsLeft > 0 && Warning == 0 ) { $(".ResultText").html('You still have money left over. Great job! You kept your spending under your total income. You could put that extra money into savings and plan for something special.'); }
+		if ( WhatsLeft == 0 && Warning == 0 ) { $(".ResultText").html('You balanced your budget! You have controlled your spending to match your total income. You can adjust your spending to save more money for a special purchase.'); }
+		if ( WhatsLeft < 0 && Warning == 0 ) { $(".ResultText").html('Oops! Your spending is out of control! You are spending more than you are earning. Your budget is in trouble. Adjust your spending to make sure your income covers it.'); }
+		if ( Warning > 0 ) { $(".ResultText").html('You must complete the exercise completely. See the errors below:'); }
+		
+		if ( WhatsLeft < 0 ) { $("#ChartTotals td.WhatsLeft").css("color","red"); }
+		else { $("#ChartTotals td.WhatsLeft").css("color","black"); }
+	}
+
+	$(function() {
+		$("select").change(
+			function(){
+				if ( $("option:selected",this).val() !== undefined) { ValuePair = $("option:selected",this).val().split(":"); }
+				$("tr:nth-child(2) td:nth-child(2)",$(this).parents("table")).html(ValuePair[0]);
+				$("tr:nth-child(2) td:nth-child(3)",$(this).parents("table")).html(ValuePair[2]);
+				ChangeBudget();
+			}
+		);
+		
+	});
+	
+	$(document).ready( function () {
+		ChangeBudget(); // Runs the changebudget function the first time the page is loaded.
+	});
+</script>
+<style type="text/css">
+	#InteractiveChart {
+		position: relative;
+		vertical-align: top;
+		width:600px;
+	}
+	#ChartTotal {
+		width: 250px;
+		padding-top: 10px;
+		float: right;
+	}
+	.ChartTotals {
+		padding: 0px;
+		margin: 0px;
+		border: none;
+	}
+	.ChartText {
+		font-weight: bold;
+		text-align: right;
+		width: 175px;
+		border-left: 1px solid black;
+		border-top:  1px solid black;
+		border-bottom:  1px solid black;
+		border-right: 0px;
+	}
+	.MonthTotal, .ExpensesTotal, .WhatsLeft {
+		width:75px;
+		border: 0px;
+		border-right:  1px solid black;
+		border-top:  1px solid black;
+		border-bottom:  1px solid black;
+		border-left: 0px;
+	}
+	.ui_accordion {
+		clear: right;
+	}
+	.red { color: red; }
+	.ui-slideshow-clip { height: 520px !important; overflow:visible;}
+	.ui-slideshow-item { width: 620px; height: 520px !important;}
+</style>
+</head>
+<body>
+<div id="logo"></div>
+<div id="window">
+<div id="page">
+<div id="nav">
+<dl>
+<dt>Navigation</dt>
+<dd>
+<ul>
+<li id="next"><a href="05_05_05.htm" title="Next"><span>Next</span></a></li>
+<li id="prev"><a href="05_05_03.htm" title="Previous"><span>Previous</span></a></li>
+<li id="home"><a href="../../index.htm" title="Home"><span>Home</span></a></li>
+<li id="gloss"><a class="pop" href="../../glossary/glossary.htm" title="Glossary"><span>Glossary</span></a></li>
+<li id="notes"><a href="../../gendocs/courseresources/resource.htm" title="Course resources"><span>Course Resources</span></a></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div id="content">
+<div id="title"><span id="title1"></span><span id="title2"></span></div>
+<div id="margin">
+
+
+<h1>Can You Budget?</h1>
+<p>There are three main steps to creating a budget. A person or a government creating a budget will follow these basic steps:</p>
+<ol>
+  <li>Calculate income</li>
+  <li>Calculate expenses</li>
+  <li><span class="tooltip">Analyze<span><strong>Analyze:</strong> to examine something in detail in order to understand it better, often by breaking it down into parts</span></span> and adjust</li>
+</ol>
+<p>You can use a variety of tools to plan a budget. Some people use computer programs. Some will use pen and paper. A nation&rsquo;s budget has thousands of pages of information! No matter how big or small, a budget tracks income and expenses.</p>
+<p>Income is another word for earnings. You can earn money from a job and by saving. You can earn <span class="tooltip">interest<span><strong>Interest:</strong> rate paid or charged for use of money</span></span> by placing your savings in a bank account. Expenses can be <span class="tooltip">fixed<span><strong>Fixed:</strong> paid regularly and amount does not change or only slightly, like rent payments and car insurance</span></span> or <span class="tooltip">variable<span><strong>Variable:</strong> amount paid depends on how often or how much the good or service is used, like attending movies or haircuts</span></span>. For example, housing cost is a fixed expense because the amount someone pays for their home is typically the same each month. Money spent on trips to the movies can be a variable expense, since the number of visits to the movies and the amount spent there can change each month.</p> 
+<p>The goal for a person or group making a budget is for the total expenses to match or be less than the total income. The analysis step is where a person compares income and expenses. See how well you can budget in this activity.</p>
+
+<div class="ui_interactive" data-width="675px" data-height="550px">
+	<div class="ui_slides">
+   		<div class="ui_slide">
+            <div id="InteractiveChart">
+            	<form>
+            	<div id="ChartTotal">
+                    <table id="ChartTotals" cellpadding="0" cellspacing="0">
+                    	<tr><th colspan="2">Your Total Budget:</th></tr>
+                        <tr><td class="ChartText">Total Monthly Income:</td><td class="MonthTotal">$0</td></tr>
+                        <tr><td class="ChartText">Total Monthly Expenses:</td><td class="ExpensesTotal">$0</td></tr>
+                        <tr><td class="ChartText">What&rsquo;s Left:</td><td class="WhatsLeft">$0</td></tr>
+                    </table>
+                </div>
+            	<h3>Can you make a budget?</h3>
+				<p>Instructions: Imagine you are creating a monthly budget for when you complete your education. For each item, select from the available options.</p>
+            	<div class="ui_accordion">
+                    <h3><a href="#">Income</a></h3>
+                    <div>
+	                    <p>First, you must calculate your earnings. Select your expected income based on level of education from this list. The pay you receive is your earnings minus income taxes paid to the government.</p>
+                        <table class="Income">
+                        	<tr><th>Options:</th><th>Monthly Earnings:</th><th>After Taxes:</th></tr>
+                            <tr>
+                                <td>
+                                	<select>
+                                    	<option value="$0:0:$0:0" selected="selected">Choose your income:</option>
+                                    	<option value="$2,500:0:$1,625:1650">I will be a high school graduate</option>
+                                        <option value="$2,900:0:$1,885:1885">I will complete job training after high school</option>
+                                        <option value="$3,800:0:$2,470:2470">I will be a college graduate</option>
+                                    </select>
+                                </td>
+                                <td>$0</td>
+                                <td>$0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h3><a href="#">Savings</a></h3>
+                    <div>
+                    	<p>Budget experts will tell you to "pay yourself first." By saving some of your income, you can plan for big purchases like a boat or vacation. You can even earn some money by saving money in certain types of bank accounts and other investments. Select one savings option.</p>
+                        <table class="Savings">
+                        	<tr><th>Options:</th><th>Monthly Savings:</th><th>Interest Earned:</th></tr>
+                            <tr>
+                                <td>
+                                	<select>
+                                    	<option value="$0:0:$0:0" selected="selected">Choose how much to save:</option>
+                                    	<option value="$50:-50:$1.50:1.50">Save just a little for a rainy day</option>
+                                        <option value="$100:-100:$3:3">Save for a vacation</option>
+                                        <option value="$200:-200:$6:6">Save for a boat or other big purchase</option>
+                                    </select>
+                                </td>
+                                <td>$0</td>
+                                <td>$0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h3><a href="#">Housing Expense</a></h3>
+                    <div>
+                    	<p>Housing is one of your fixed expenses. Select one living arrangement.</p>
+                        <table class="Housing">
+                        	<tr><th>Options:</th><th>Housing Expense:</th></tr>
+                            <tr>
+                                <td>
+                                	<select>
+                                    	<option value="$0:0:$0:0" selected="selected">Choose where to live:</option>
+                                    	<option value="$300:-300:0:0">Rent a two-bedroom apartment with a friend</option>
+                                        <option value="$600:-600:0:0">Rent a one-bedroom apartment alone</option>
+                                        <option value="$750:-750:0:0">Rent a one-bedroom apartment in a luxury location</option>
+                                    </select>
+                                </td>
+                                <td>$0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h3><a href="#">Phone Expense</a></h3>
+                    <div>
+                    	<p>A phone to communicate with others is another fixed expense. Select one of the options below.</p>
+                        <table class="Phone">
+                        	<tr><th>Options:</th><th>Monthly Cost:</th></tr>
+                            <tr>
+                                <td>
+                                	<select>
+                                    	<option value="$0:0:$0:0" selected="selected">Choose how you use a phone:</option>
+                                    	<option value="$30:-30:0:0">Basic cell phone - I like to have it for emergencies.</option>
+                                        <option value="$60:-60:0:0">Cell Phone - I want unlimited minutes and to call people out of the area.</option>
+                                        <option value="$100:-100:0:0">Cell Phone - I need a plan that lets me talk and text as much as I want!</option>
+                                        <option value="$65:-65:0:0">Cell phone and landline telephone - I will make most of my calls from the landline.</option>
+                                        <option value="$35:-35:0:0">Land line telephone only - I only need a phone at home.</option>
+                                    </select>
+                                </td>
+                                <td>$0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h3><a href="#">Cable TV and Internet Expense</a></h3>
+                    <div>
+                    	<p>Cable television and Internet are also fixed expenses. Select one of the options below.</p>
+                        <table class="Cable">
+                        	<tr><th>Options:</th><th>Monthly Cost:</th></tr>
+                            <tr>
+                                <td>
+                                	<select>
+                                    	<option value="$0:0:$0:0" selected="selected">Choose how you will get Cable TV and/or Internet:</option>
+                                    	<option value="$50:-50:0:0">Basic Cable TV package - I like the news and game shows.</option>
+                                        <option value="$75:-75:0:0">Cable TV with premium channels - I like to watch many movies.</option>
+                                        <option value="$50:-50:0:0">High speed Internet - I only spend my time on the Internet.</option>
+                                        <option value="$100:-100:0:0">Basic Cable TV and Internet - I like some TV, but use the Internet too.</option>
+                                        <option value="$125:-125:0:0">Premium Cable TV and Internet - I want it all!</option>
+                                    </select>
+                                </td>
+                                <td>$0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h3><a href="#">Transportation Expense</a></h3>
+                    <div>
+                    	<p>Your method of transportation is a fixed expense. Select one of the options below.</p>
+                        <table class="Transportation">
+                        	<tr><th>Options:</th><th>Monthly Cost:</th></tr>
+                            <tr>
+                                <td>
+                                	<select>
+                                    	<option value="$0:0:$0:0" selected="selected">Choose your method of transportation:</option>
+                                    	<option value="$100:-100:0:0">Public transportation - I can master a bus schedule.</option>
+                                        <option value="$200:-200:0:0">Used car - I want my own car but don&rsquo;t mind an old one.</option>
+                                        <option value="$300:-300:0:0">New small car - I just need a small, reliable car.</option>
+                                        <option value="$400:-400:0:0">New large car or small SUV - I like a lot of room.</option>
+                                        <option value="$500:-500:0:0">Luxury car or large SUV - Only the best will do!</option>
+                                    </select>
+                                </td>
+                                <td>$0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h3><a href="#">Insurance Expense</a></h3>
+                    <div>
+                    	<p>By law in most states, you must carry auto insurance if you own a vehicle. It is also a fixed expense. Select one of the options below.</p>
+                        <table class="Insurance">
+                        	<tr><th>Options:</th><th>Monthly Cost:</th></tr>
+                            <tr>
+                                <td>
+                                	<select>
+                                    	<option value="$0:0:$0:0" selected="selected">Choose your Insurance:</option>
+                                    	<option value="$0:0:y:0">I use public transporation only.</option>
+                                        <option value="$100:-100:0:0">I&rsquo;m a safe driver!</option>
+                                        <option value="$175:-175:0:0">I like to drive fast. I have a few speeding tickets and accidents.</option>
+                                    </select>
+                                </td>
+                                <td>$0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h3><a href="#">Food Expense</a></h3>
+                    <div>
+                    	<p>Food is a variable expense. You are not likely to spend the exact same amount on food from month to month. Select one of the options below.</p>
+                        <table class="Food">
+                        	<tr><th>Options:</th><th>Monthly Cost:</th></tr>
+                            <tr>
+                                <td>
+                                	<select>
+                                    	<option value="$0:0:$0:0" selected="selected">Choose your food expense:</option>
+                                    	<option value="$200:-200:0:0">I will make every meal at home and pack lunch for work.</option>
+                                        <option value="$280:-280:0:0">I want fast food twice per week.</option>
+                                        <option value="$360:-360:0:0">I prefer to eat out at a nice restaurant twice per week.</option>
+                                        <option value="$500:-500:0:0">I hate to cook! I eat fast food for lunch each day and dinner out frequently.</option>
+                                    </select>
+                                </td>
+                                <td>$0</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h3><a href="#">Other Variable Expenses</a></h3>
+                    <div>
+                    	<p>Entertainment, gasoline, and clothing expenses tend to vary. You may also wish to keep some "pocket money" on you for small items like bubble gum and the occasional soda. (Don't forget to buy a toothbrush, too!) Select as many of the options below as you like. If you chose to own a car, you must select one of the gasoline options.</p>
+                        <table class="Variable">
+                        	<tr><th>Options:</th></tr>
+                            <tr>
+                                <td>
+                                	Select all other things you want to spend money on.<br>Use the <b>CTRL</b> key to select as many as you want.<br>
+                                	<select multiple="multiple" size="8">
+                                    	<option value="$50:-50:0:0">I like to see a movie twice per month. +$50</option>
+                                        <option value="$50:-50:0:0">I would enjoy a concert once per month. +$50</option>
+                                        <option value="$50:-50:0:0">I like to go bowling or roller-skating once a week. +50</option>
+                                        <option value="$150:-150:x:0">I drive mostly to work - need only one tank of gas a week. +$150</option>
+                                        <option value="$300:-300:x:0">I like to drive a lot and see my friends - need two tanks of gas a week. +$300</option>
+                                        <option value="$25:-25:0:0">I would rather buy new books than use the public library. +$25</option>
+                                        <option value="$75:-75:0:0">I will buy clothes only as my old items wear out. +$75</option>
+                                        <option value="$150:-150:0:0">I love shopping for new clothes! +$150</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h3><a href="#">Budget Analysis and Feedback</a></h3>
+                    <div id="Result">
+                        <p>Overall Result: <span class="ResultText"></span></p>
+                        <div id="Warnings">
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+    	</div>
+    </div>
+</div>
+<br>
+<div class="textVersion"><a class="pop" href="05_05_04_a.htm" title="Can you make a budget" data-height="750">Text Version</a></div>
+
+
+</div>
+</div>
+<div id="menu">
+<div id="segments"><a href="../../index.htm" title="Units"><span>Segments</span></a></div>
+<dl id="units">
+<dt><span>Units</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="lessons">
+<dt><span>Lessons</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="pages">
+<dt><span>4 of 10</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="footer">
+<span id="copy">Unless otherwise noted, &copy; 2011 FLVS</span>
+</div>
+</body>
+</html>

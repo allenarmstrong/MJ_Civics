@@ -1,0 +1,34 @@
+<settings>
+	
+	<config 	
+			quality="HIGH" 
+			debug="false" 
+			screenWidth="550" 
+			screenHeight="450"
+			>
+
+	</config>
+	
+	<instructions title="  Instructions"><![CDATA[Roll your mouse over the following photographs to learn more some examples of interest groups and their influences on government. You may drag and drop the photos.
+
+Photos ©2011 Associated Press]]>
+	</instructions>
+
+	<intro>Time to learn about interest groups. Good luck, citizen.</intro>
+
+	<rollovers>
+		<rollover clip="RolloverClip1" title="Greenpeace" x="127" y="294" rotation="-5">
+			<![CDATA[Greenpeace International works to raise awareness on many environmental issues. The interest group says that coal-fired power plants are the "single greatest threat" to Earth's climate. In this image, members of Greenpeace block construction of a new coal-fired plant. ]]>
+		</rollover>
+		<rollover clip="RolloverClip2" title="SADD" x="346" y="99" rotation="10">
+			<![CDATA[Students Against Destructive Decisions (SADD) supports laws and programs that protect students from harmful actions. Examples include drugs, alcohol, and bullying.  Nearly 10,000 SADD chapters across the United States meet to plan activities. They empower young citizens to make positive choices. They collaborate with other organizations and government leaders to achieve their goals.]]>
+		</rollover>
+		<rollover clip="RolloverClip3" title="Citizens Flag Alliance" x="150" y="142" rotation="-5">
+			<![CDATA[The Citizens Flag Alliance is an interest group with a focused goal. Members want an amendment added to the U.S. Constitution that would protect the U.S. flag as an important national symbol.  The Supreme Court ruled in 1989 that someone who burned the flag as a protest was using the right to freedom of speech. This interest group believes this type of protest or other destructive displays of the flag disrespect the nation and its history. Members contact state and federal leaders hoping to convince people to support their amendment. In 2011, a representative introduced the amendment idea in Congress again.]]>
+		</rollover>
+		<rollover clip="RolloverClip4" title="AAA" x="332" y="240" rotation="5">
+			<![CDATA[The American Automobile Association, now known simply as "Triple A," has been working for the rights and safety of travelers since 1902. In 1997, AAA began educating the public and elected officials about Graduated Driver Licensing. They believe that if teens begin with a limited license for practice they will be safer drivers. Because of the AAA members' efforts, all 50 states have some type of graduated driver licensing program today.]]>
+		</rollover>
+	</rollovers>
+
+</settings>	

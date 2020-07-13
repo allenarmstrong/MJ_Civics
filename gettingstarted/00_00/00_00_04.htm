@@ -1,0 +1,673 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>M/J Civics</title>
+<link type="text/css" media="screen" href="../../css/theme.css" rel="stylesheet" />
+<link type="text/css" media="print" href="../../css/print.css" rel="stylesheet" />
+<script type="text/javascript" src="../../js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.lightbox-0.5.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.swfobject.1-1-1.min.js"></script>
+<script type="text/javascript" src="../../js/core.js"></script><script type="text/javascript">var unitNo = 0;</script>
+<script type="text/javascript">var unitNoLesNo = 0000;</script>
+<script type="text/javascript" src="../../js/links.js"></script>
+<script type="text/javascript">
+
+	var CurrentDiv = Number(0);
+	var NumAttempts = Number(0);
+	var SlideDone = 0;
+
+	$(document).ready(function(){
+		
+		Prepare();
+		
+		$(".Correct").click(function(event){
+			if ( SlideDone == 0 ) {
+				event.stopPropagation();
+				$( ".SC" + CurrentDiv + "_Message").css("border","3px solid green");
+				$( ".SC" + CurrentDiv + " .Correct").css("border","2px solid green");
+				$( ".SC" + CurrentDiv + " .Next").show();
+				SlideDone = 1;
+			}
+		});
+		
+		$("#Interactive").click(function(){
+			if ( SlideDone == 0 ) {
+				NumAttempts++;
+				if ( NumAttempts > 2 ) { 
+					$( ".SC" + CurrentDiv + "_Message").css("border","3px solid red");
+					$( ".SC" + CurrentDiv + " .Correct").css("border","2px solid green");
+					$( ".SC" + CurrentDiv + " .Next").show();
+					NumAttempts = 0;
+					SlideDone = 1;
+				} else {
+					$( ".SC" + CurrentDiv + " .Incorrect").fadeIn("slow").delay(500).fadeOut("slow");
+				}
+			}
+		});
+		
+		$(".Next").click(function(event){
+			event.stopPropagation();
+			IterateDiv();
+		});
+		
+		$(".Restart").click(function(){
+			$(".SC" + CurrentDiv).hide();
+			$( ".SC1_Message").css("border","3px solid white");
+			$( ".SC2_Message").css("border","3px solid white");
+			$( ".SC3_Message").css("border","3px solid white");
+			$( ".SC4_Message").css("border","3px solid white");
+			$( ".SC5_Message").css("border","3px solid white");
+			$( ".SC6_Message").css("border","3px solid white");
+			$( ".SC7_Message").css("border","3px solid white");
+			$( ".SC8_Message").css("border","3px solid white");
+			$( ".Correct").css("border","none");
+			$( ".Next").hide();
+			
+			Prepare();
+		});
+	});
+	
+	function Prepare() {
+		$(".SC0").show();
+		$(".SC0 .Next").show();
+		CurrentDiv = Number(0);
+		NumAttempts = Number(0);
+		SlideDone = 0;
+	}
+	
+	function IterateDiv () {
+		$(".SC" + CurrentDiv).hide();
+		CurrentDiv++;
+		$(".SC" + CurrentDiv).show();
+		SlideDone = 0;
+		NumAttempts = 0;
+	}
+	
+</script>
+<style type="text/css">
+	#Interactive {
+		positon: relative;
+		width: 700px;
+		height: 490px;
+		margin-left: 25px;
+	}
+	.Correct {
+		cursor: default;
+	}
+	.Incorrect {
+		cursor: default;
+		position: absolute;
+		width: 100px;
+		height: 20px;
+		left: 300px;
+		top: 225px;
+		font-weight: bold;
+		font-size: 14px;
+		color: white;
+		background-color: red;
+		text-align: center;
+		padding: 5px;
+		display: none;
+	}
+	.Next {
+		cursor: default;
+		display: none;
+	}
+	.Restart {
+		position: absolute;
+		left: 294px;
+		top: 210px;
+		padding: 5px 40px;
+		font-size: 14px;
+		background-color: white;
+		border: 2px solid black;
+		border-radius: 4px;
+		z-index: 10;
+	}
+	.Restart:hover { border: 2px solid green; }
+	
+	/* Slide 1  - Intro */
+	.SC0 {
+		position: absolute;
+		width: 700px;
+		height: 440px;
+		background: url(images/00_00_04_a.jpg) no-repeat;
+		display: none;
+	}
+	.SC0_Next {
+		position: absolute;
+		left: 420px;
+		top: 200px;
+		padding: 5px 40px;
+		font-size: 14px;
+		background-color: white;
+		border: 2px solid black;
+		border-radius: 4px;
+		z-index: 10;
+	}
+	.SC0_Next:hover { border: 2px solid green; }
+	
+	/* Slide 2 - Home */
+	.SC1 {
+		position: absolute;
+		width: 700px;
+		height: 440px;
+		background: url(images/00_00_04_b.jpg) no-repeat;
+		display: none;
+	}
+	.SC1_Next {
+		position: absolute;
+		left: 530px;
+		top: 310px;
+		padding: 5px 40px;
+		font-size: 14px;
+		background-color: white;
+		border: 2px solid black;
+		border-radius: 4px;
+		z-index: 10;
+	}
+	.SC1_Next:hover { border: 2px solid green; }
+	.SC1_B1 {
+		position: absolute;
+		left: 20px;
+		top: 85px;
+		width: 210px;
+		height: 80px;
+		z-index: 5;
+	}
+	.SC1_B2 {
+		position: absolute;
+		left: 555px;
+		top: 122px;
+		width: 30px;
+		height: 27px;
+		z-index: 5;
+	}
+	.SC1_Message {
+		position: absolute;
+		width: 300px;
+		height: 45px;
+		border: 3px solid white;
+		background-color: black;
+		border-radius: 4px;
+		color: white;
+		font-size: 16px;
+		padding: 5px;
+		left: 428px;
+		top: 250px;
+	}
+
+	/* Slide 3 - Definitions */
+	.SC2 {
+		position: absolute;
+		width: 700px;
+		height: 440px;
+		background: url(images/00_00_04_c.jpg) no-repeat;
+		display: none;
+	}
+	.SC2_Next {
+		position: absolute;
+		left: 530px;
+		top: 110px;
+		padding: 5px 40px;
+		font-size: 14px;
+		background-color: white;
+		border: 2px solid black;
+		border-radius: 4px;
+		z-index: 10;
+	}
+	.SC2_Next:hover { border: 2px solid green; }
+	.SC2_B1 { /* consent */
+		position: absolute;
+		left: 188px;
+		top: 225px;
+		width: 40px;
+		height: 13px;
+		z-index: 5;
+	}
+	.SC2_B2 { /* contract */
+		position: absolute;
+		left: 511px;
+		top: 243px;
+		width: 40px;
+		height: 13px;
+		z-index: 5;
+	}
+	.SC2_B3 { /* rights */
+		position: absolute;
+		left: 75px;
+		top: 340px;
+		width: 31px;
+		height: 11px;
+		z-index: 5;
+	}
+	.SC2_B4 { /* protests */
+		position: absolute;
+		left: 538px;
+		top: 323px;
+		width: 40px;
+		height: 13px;
+		z-index: 5;
+	}
+	.SC2_Message {
+		position: absolute;
+		width: 300px;
+		height: 45px;
+		border: 3px solid white;
+		background-color: black;
+		border-radius: 4px;
+		color: white;
+		font-size: 16px;
+		padding: 5px;
+		left: 428px;
+		top: 50px;
+	}
+
+	/* Slide 4 - Units */
+	.SC3 {
+		position: absolute;
+		width: 700px;
+		height: 440px;
+		background: url(images/00_00_04_c.jpg) no-repeat;
+		display: none;
+	}
+	.SC3_Next {
+		position: absolute;
+		left: 530px;
+		top: 310px;
+		padding: 5px 40px;
+		font-size: 14px;
+		background-color: white;
+		border: 2px solid black;
+		border-radius: 4px;
+		z-index: 10;
+	}
+	.SC3_Next:hover { border: 2px solid green; }
+	.SC3_B1 {
+		position: absolute;
+		left: 238px;
+		top: 127px;
+		width: 56px;
+		height: 17px;
+		z-index: 5;
+	}
+	.SC3_Message {
+		position: absolute;
+		width: 300px;
+		height: 45px;
+		border: 3px solid white;
+		background-color: black;
+		border-radius: 4px;
+		color: white;
+		font-size: 16px;
+		padding: 5px;
+		left: 428px;
+		top: 250px;
+	}	
+
+	/* Slide 5 - Next Arrow */
+	.SC4 {
+		position: absolute;
+		width: 700px;
+		height: 440px;
+		background: url(images/00_00_04_c.jpg) no-repeat;
+		display: none;
+	}
+	.SC4_Next {
+		position: absolute;
+		left: 530px;
+		top: 310px;
+		padding: 5px 40px;
+		font-size: 14px;
+		background-color: white;
+		border: 2px solid black;
+		border-radius: 4px;
+		z-index: 10;
+	}
+	.SC4_Next:hover { border: 2px solid green; }
+	.SC4_B1 {
+		position: absolute;
+		left: 625px;
+		top: 123px;
+		width: 31px;
+		height: 27px;
+		z-index: 5;
+	}
+	.SC4_Message {
+		position: absolute;
+		width: 300px;
+		height: 45px;
+		border: 3px solid white;
+		background-color: black;
+		border-radius: 4px;
+		color: white;
+		font-size: 16px;
+		padding: 5px;
+		left: 428px;
+		top: 250px;
+	}
+	
+	/* Slide 6 - Continue */
+	.SC5 {
+		position: absolute;
+		width: 700px;
+		height: 440px;
+		background: url(images/00_00_04_d.jpg) no-repeat;
+		display: none;
+	}
+	.SC5_Next {
+		position: absolute;
+		left: 530px;
+		top: 80px;
+		padding: 5px 40px;
+		font-size: 14px;
+		background-color: white;
+		border: 2px solid black;
+		border-radius: 4px;
+		z-index: 10;
+	}
+	.SC5_Next:hover { border: 2px solid green; }
+	.SC5_B1 {
+		position: absolute;
+		left: 461px;
+		top: 355px;
+		width: 81px;
+		height: 29px;
+		z-index: 5;
+	}
+	.SC5_Message {
+		position: absolute;
+		width: 300px;
+		height: 45px;
+		border: 3px solid white;
+		background-color: black;
+		border-radius: 4px;
+		color: white;
+		font-size: 16px;
+		padding: 5px;
+		left: 428px;
+		top: 20px;
+	}
+		
+	/* Slide 7 - Cap File */
+	.SC6 {
+		position: absolute;
+		width: 700px;
+		height: 440px;
+		background: url(images/00_00_04_e.jpg) no-repeat;
+		display: none;
+	}
+	.SC6_Next {
+		position: absolute;
+		left: 530px;
+		top: 310px;
+		padding: 5px 40px;
+		font-size: 14px;
+		background-color: white;
+		border: 2px solid black;
+		border-radius: 4px;
+		z-index: 10;
+	}
+	.SC6_Next:hover { border: 2px solid green; }
+	.SC6_B1 {
+		position: absolute;
+		left: 169px;
+		top: 343px;
+		width: 41px;
+		height: 13px;
+		z-index: 5;
+	}
+	.SC6_Message {
+		position: absolute;
+		width: 300px;
+		height: 45px;
+		border: 3px solid white;
+		background-color: black;
+		border-radius: 4px;
+		color: white;
+		font-size: 16px;
+		padding: 5px;
+		left: 428px;
+		top: 250px;
+	}
+
+	/* Slide 8 - Collaboration */
+	.SC7 {
+		position: absolute;
+		width: 700px;
+		height: 440px;
+		background: url(images/00_00_04_f.jpg) no-repeat;
+		display: none;
+	}
+	.SC7_Next {
+		position: absolute;
+		left: 528px;
+		top: 307px;
+		padding: 5px 40px;
+		font-size: 14px;
+		background-color: white;
+		border: 2px solid black;
+		border-radius: 4px;
+		z-index: 10;
+	}
+	.SC7_Next:hover { border: 2px solid green; }
+	.SC7_B1 {
+		position: absolute;
+		left: 288px;
+		top: 405px;
+		width: 95px;
+		height: 13px;
+		z-index: 5;
+	}
+	.SC7_Message {
+		position: absolute;
+		width: 300px;
+		height: 45px;
+		border: 3px solid white;
+		background-color: black;
+		border-radius: 4px;
+		color: white;
+		font-size: 16px;
+		padding: 5px;
+		left: 428px;
+		top: 250px;
+	}
+
+	/* Slide 9 - Grading */
+	.SC8 {
+		position: absolute;
+		width: 700px;
+		height: 440px;
+		background: url(images/00_00_04_g.jpg) no-repeat;
+		display: none;
+	}
+	.SC8_Next {
+		position: absolute;
+		left: 530px;
+		top: 310px;
+		padding: 5px 40px;
+		font-size: 14px;
+		background-color: white;
+		border: 2px solid black;
+		border-radius: 4px;
+		z-index: 10;
+	}
+	.SC8_Next:hover { border: 2px solid green; }
+	.SC8_B1 {
+		position: absolute;
+		left: 132px;
+		top: 348px;
+		width: 127px;
+		height: 13px;
+		z-index: 5;
+	}
+	.SC8_Message {
+		position: absolute;
+		width: 300px;
+		height: 45px;
+		border: 3px solid white;
+		background-color: black;
+		border-radius: 4px;
+		color: white;
+		font-size: 16px;
+		padding: 5px;
+		left: 428px;
+		top: 250px;
+	}
+
+	/* Slide 10 - Restart */
+	.SC9 {
+		position: absolute;
+		width: 700px;
+		height: 440px;
+		background: url(images/00_00_04_h.jpg) no-repeat;
+		display: none;
+	}
+</style>
+</head>
+<body>
+<div id="logo"></div>
+<div id="window">
+<div id="page">
+<div id="nav">
+<dl>
+<dt>Navigation</dt>
+<dd>
+<ul>
+<li id="next"><a href="00_00_05.htm" title="Next"><span>Next</span></a></li>
+<li id="prev"><a href="00_00_03.htm" title="Previous"><span>Previous</span></a></li>
+<li id="home"><a href="../../index.htm" title="Home"><span>Home</span></a></li>
+<li id="gloss"><a class="pop" href="../../glossary/glossary.htm" title="Glossary"><span>Glossary</span></a></li>
+<li id="notes"><a href="../../gendocs/courseresources/resource.htm" title="Course resources"><span>Course Resources</span></a></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div id="content">
+<div id="title"><span id="title1"></span><span id="title2"></span></div>
+<div id="margin">
+
+<h1>So, How Do I Find All This Great Information?</h1>
+<p>Watch as Super Citizen explains how to navigate your M/J Civics course.</p>
+
+<div class="tabs"> 
+    <h3>Walkthrough</h3> 
+	<div class="tab"> 
+    	<p><a class="swf" href="flash/00_00_04_video.swf" data-height="flash/00_00_04_video.swf:720:480"></a></p>
+		<div class="textVersion"><a class="pop" href="00_00_04_b.htm" title="Course Walkthrough" data-height="750">Text Version</a></div> 
+     </div> 
+	
+     <h3>Self Check</h3>
+     <div class="tab"> 
+     	<div id="Interactive">
+        	<div class="SC0">
+            	<div class="Next SC0_Next">Begin</div>
+            </div>
+            <div class="SC1">
+            	<div class="Next SC1_Next">Next</div>
+                <div class="Correct SC1_B1"></div>
+                <div class="Correct SC1_B2"></div>
+                <div class="SC1_Message">What button would you select to go back to the course home page?</div>
+                <div class="Incorrect">Try Again</div>
+            </div>
+
+            <div class="SC2">
+            	<div class="Next SC2_Next">Next</div>
+                <div class="Correct SC2_B1"></div>
+                <div class="Correct SC2_B2"></div>
+                <div class="Correct SC2_B3"></div>
+                <div class="Correct SC2_B4"></div>
+                <div class="SC2_Message">Select the glossary term to see its definition.</div>
+                <div class="Incorrect">Try Again</div>
+            </div>
+
+            <div class="SC3">
+            	<div class="Next SC3_Next">Next</div>
+                <div class="Correct SC3_B1"></div>
+                <div class="SC3_Message">What would you select for the fastest navigation to another unit?</div>
+                <div class="Incorrect">Try Again</div>
+            </div>
+
+            <div class="SC4">
+            	<div class="Next SC4_Next">Next</div>
+                <div class="Correct SC4_B1"></div>
+                <div class="SC4_Message">Select the arrow that will move you to the next lesson page.</div>
+                <div class="Incorrect">Try Again</div>
+            </div>
+
+            <div class="SC5">
+            	<div class="Next SC5_Next">Next</div>
+                <div class="Correct SC5_B1"></div>
+                <div class="SC5_Message">Select the spot that will begin the activity on this page.</div>
+                <div class="Incorrect">Try Again</div>
+            </div>
+
+            <div class="SC6">
+            	<div class="Next SC6_Next">Next</div>
+                <div class="Correct SC6_B1"></div>
+                <div class="SC6_Message">Select the link to your note-taking file for the lesson.</div>
+                <div class="Incorrect">Try Again</div>
+            </div>
+
+            <div class="SC7">
+            	<div class="Next SC7_Next">Next</div>
+                <div class="Correct SC7_B1"></div>
+                <div class="SC7_Message">Select the link to that allows you to view the collaboration option for the lesson.</div>
+                <div class="Incorrect">Try Again</div>
+            </div>
+
+            <div class="SC8">
+            	<div class="Next SC8_Next">Next</div>
+                <div class="Correct SC8_B1"></div>
+                <div class="SC8_Message">What would you select to see how an assessment will be graded?</div>
+                <div class="Incorrect">Try Again</div>
+            </div>
+            
+            <div class="SC9">
+                <div class="Restart">Restart</div>
+            </div>
+        </div>
+		<div class="textVersion"><a class="pop" href="00_00_04_a.htm" title="Self Check" data-height="425">Text Version</a></div>
+     </div>
+</div>
+
+
+
+
+</div>
+</div>
+<div id="menu">
+<div id="segments"><a href="../../index.htm" title="Units"><span>Segments</span></a></div>
+<dl id="units">
+<dt><span>Units</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="lessons">
+<dt><span>Lessons</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+<dl id="pages">
+<dt><span>4 of 5</span></dt>
+<dd>
+<ul>
+<li></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="footer">
+<span id="copy">Unless otherwise noted, &copy; 2011 FLVS</span>
+</div>
+</body>
+</html>

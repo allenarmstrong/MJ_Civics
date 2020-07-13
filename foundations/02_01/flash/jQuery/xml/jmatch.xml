@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings 
+directions="Select a term on the left and then select the definition on the right that best matches the term. When you correctly match the term and definition, they will both disappear. Select &quot;Continue&quot; to get started." 	
+innerDirections="Select a term on the left and then select the definition on the right that best matches the term.">  	
+<word id="match1">Direct democracy</word> 	
+<definition id="match1">a form of government where the laws are made directly by the citizens</definition> 
+<word id="match2">Enlightenment</word> 	
+<definition id="match2">a time of change in Europe in the 17th and 18th centuries where philosophers focused on reason as a way to solve problems</definition> 	 	
+<word id="match3">Executive branch</word> 	
+<definition id="match3">the part of government responsible for enforcing the laws</definition> 	 	
+<word id="match4">Influence</word> 	
+<definition id="match4">to have an effect on something</definition> 	 	
+<word id="match5">Judicial branch</word> 	
+<definition id="match5">the part of government responsible for interpreting the laws and settling disputes</definition> 	 
+<word id="match6">Legislative branch</word> 	
+<definition id="match6">the part of government responsible for making laws</definition> 	 	
+<word id="match7">Reason</word> 	
+<definition id="match7">the ability to think logically, clearly, and without emotion</definition> 
+<word id="match8">Republic</word> 	
+<definition id="match8">a form of government where the citizens elect representatives to make laws</definition> 	 	
+<word id="match9">Tyranny</word> 	
+<definition id="match9">the abusive use of power</definition> 	 	
+
+</settings>

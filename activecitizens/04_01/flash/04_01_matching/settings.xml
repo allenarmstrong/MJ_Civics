@@ -1,0 +1,64 @@
+<settings>
+	
+	<config 	quality="HIGH" 
+			debug="false" 
+			screenWidth="660" 
+			screenHeight="550"
+			>
+
+	</config>
+	
+	<title>MAKING INFERENCES</title>
+	
+	<instructions>Now it's time for a game! Complete each of the statements to review what you learned in the lesson. 
+
+Select "instructions" to toggle this window.
+	</instructions>
+	
+	<matching columnA="" columnB="">
+		<set>
+			<choice><![CDATA[Good citizens consider]]></choice>
+			<answer><![CDATA[different perspectives on issues before making their own judgments.]]></answer>
+		</set>
+		<set>
+			<choice><![CDATA[You can learn more about]]></choice>
+			<answer><![CDATA[issues in your area from trusted adults and the media.]]></answer>
+		</set>
+		<set>
+			<choice><![CDATA[People who want to build superstores]]></choice>
+			<answer><![CDATA[say it will improve life for a city through lower prices and cleaning up an older area.]]></answer>
+		</set>
+		<set>
+			<choice><![CDATA[People against offshore oil drilling]]></choice>
+			<answer><![CDATA[express concern for the health and safety of people and the environment.]]></answer>
+		</set>
+		<set>
+			<choice><![CDATA[People who would increase the minimum driving age]]></choice>
+			<answer><![CDATA[mention the higher rates of accidents among those who lack experience.]]></answer>
+		</set>
+		<set>
+			<choice><![CDATA[People against increasing government spending on emergency assistance for those in poverty]]></choice>
+			<answer><![CDATA[say that more long-term solutions need to be found and that current programs are helping.]]></answer>
+		</set>
+		
+	</matching>
+	
+	<feedback>
+		<incorrect> Incorrect. Here are the correct statements.
+
+Good citizens consider different perspectives on issues before making their own judgments.
+
+You can learn more about issues in your area from trusted adults and the media.
+
+People who want to build superstores say it will improve life for a city through lower prices and cleaning up an older area.
+
+People against offshore oil drilling express concern for the health and safety of people and the environment.
+
+People who would increase the minimum driving age mention the higher rates of accidents among those who lack experience.
+
+People against increasing government spending on emergency assistance for those in poverty say that more long-term solutions need to be found and that current programs are helping.</incorrect>
+		<correct>Excellent Work!</correct>
+	</feedback>
+	
+
+</settings>	
